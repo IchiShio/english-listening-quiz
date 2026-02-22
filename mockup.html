@@ -475,6 +475,57 @@
       font-family: 'SF Mono', 'Fira Code', 'Consolas', monospace;
     }
 
+    /* ── TRANSCRIPT ── */
+    .transcript-toggle {
+      display: none;
+      background: none;
+      border: 1.5px dashed var(--border);
+      border-radius: 10px;
+      color: var(--text-3);
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.3px;
+      cursor: pointer;
+      padding: 9px 16px;
+      width: 100%;
+      margin-top: 10px;
+      transition: all var(--t);
+    }
+    .transcript-toggle.show { display: block; }
+    .transcript-toggle:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+      background: var(--accent-light);
+    }
+
+    .transcript {
+      display: none;
+      margin-top: 10px;
+      padding: 18px 20px;
+      background: var(--card);
+      border-radius: var(--radius);
+      border: 1.5px solid var(--border-light);
+      box-shadow: var(--shadow-sm);
+    }
+    .transcript.show {
+      display: block;
+      animation: slideUp 0.22s ease-out;
+    }
+    .transcript-label {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: var(--text-3);
+      margin-bottom: 10px;
+    }
+    .transcript-text {
+      font-size: 15px;
+      line-height: 1.85;
+      color: var(--text-1);
+      font-style: italic;
+    }
+
     /* ── NEXT BUTTON ── */
     .next-btn {
       width: 100%;
@@ -721,6 +772,14 @@
           <div class="key-phrases" id="explKP"></div>
         </div>
 
+        <button class="transcript-toggle" id="transcriptToggle" onclick="toggleTranscript()">
+          英文を確認する ▾
+        </button>
+        <div class="transcript" id="transcriptEl">
+          <div class="transcript-label">Script</div>
+          <div class="transcript-text" id="transcriptText"></div>
+        </div>
+
         <button class="next-btn" id="nextBtn" onclick="next()">次の問題 →</button>
       </div>
 
@@ -915,6 +974,9 @@ function loadQ() {
   document.getElementById('loadingView').classList.add('show');
   document.getElementById('questionView').classList.remove('show');
   document.getElementById('explEl').classList.remove('show');
+  document.getElementById('transcriptToggle').classList.remove('show');
+  document.getElementById('transcriptToggle').textContent = '英文を確認する ▾';
+  document.getElementById('transcriptEl').classList.remove('show');
   document.getElementById('nextBtn').classList.remove('show');
 
   // Simulate loading (mimics future API call)
@@ -981,7 +1043,19 @@ function choose(idx) {
   });
 
   el.classList.add('show');
+  document.getElementById('transcriptText').textContent = current.text;
+  document.getElementById('transcriptToggle').classList.add('show');
   document.getElementById('nextBtn').classList.add('show');
+}
+
+// ─────────────────────────────────────────
+// TRANSCRIPT
+// ─────────────────────────────────────────
+function toggleTranscript() {
+  const el  = document.getElementById('transcriptEl');
+  const btn = document.getElementById('transcriptToggle');
+  const open = el.classList.toggle('show');
+  btn.textContent = open ? '英文を閉じる ▴' : '英文を確認する ▾';
 }
 
 // ─────────────────────────────────────────
