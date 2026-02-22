@@ -605,6 +605,16 @@
 <div class="screen" id="quizScreen">
   <div class="content">
 
+    <!-- Difficulty pills — always visible during quiz -->
+    <div class="quiz-meta">
+      <div class="diff-pills">
+        <button class="diff-pill" id="p-beginner"     onclick="changeDiff('beginner')"    >🌱 初級</button>
+        <button class="diff-pill active" id="p-intermediate" onclick="changeDiff('intermediate')">🌿 中級</button>
+        <button class="diff-pill" id="p-advanced"     onclick="changeDiff('advanced')"    >🌳 上級</button>
+      </div>
+      <div class="q-counter" id="qCounter">—</div>
+    </div>
+
     <!-- Loading -->
     <div class="loading-view" id="loadingView">
       <div class="spinner"></div>
@@ -613,15 +623,6 @@
 
     <!-- Question -->
     <div class="question-view" id="questionView">
-
-      <div class="quiz-meta">
-        <div class="diff-pills">
-          <button class="diff-pill" id="p-beginner"     onclick="changeDiff('beginner')"    >🌱 初級</button>
-          <button class="diff-pill active" id="p-intermediate" onclick="changeDiff('intermediate')">🌿 中級</button>
-          <button class="diff-pill" id="p-advanced"     onclick="changeDiff('advanced')"    >🌳 上級</button>
-        </div>
-        <div class="q-counter" id="qCounter">1問目</div>
-      </div>
 
       <!-- Audio Player -->
       <div class="audio-card">
