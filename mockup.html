@@ -785,7 +785,7 @@ function setDiff(d) {
   syncPills(d);
 }
 
-// Called from quiz screen pills — changes diff for NEXT question, keeps score
+// Called from quiz screen pills — changes diff and immediately loads a new question
 function changeDiff(d) {
   diff = d;
   // Sync start screen cards
@@ -793,8 +793,9 @@ function changeDiff(d) {
   document.getElementById('d-' + d).classList.add('active');
   // Sync quiz pills
   syncPills(d);
-  // Rebuild queue from new difficulty (takes effect on next question)
+  // Rebuild queue from new difficulty and jump to a new question right away
   buildQueue();
+  loadQ();
 }
 
 function syncPills(d) {
