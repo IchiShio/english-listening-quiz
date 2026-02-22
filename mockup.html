@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <title>English Listening Quiz — Mockup</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:            #EDE8E0;
+      --header:        #1A2035;
+      --card:          #FFFFFF;
+      --accent:        #3B5BDB;
+      --accent-dark:   #2F4AC3;
+      --accent-light:  #EDF2FF;
+      --success:       #2F9E44;
+      --success-bg:    #EBFBEE;
+      --error:         #E03131;
+      --error-bg:      #FFF5F5;
+      --text-1:        #1A2035;
+      --text-2:        #5C6070;
+      --text-3:        #9AA0B4;
+      --border:        #D8D2C8;
+      --border-light:  #E8E3DA;
+      --radius:        16px;
+      --radius-lg:     20px;
+      --shadow-sm:     0 1px 4px rgba(26,32,53,0.07);
+      --shadow:        0 2px 12px rgba(26,32,53,0.09);
+      --shadow-lg:     0 8px 32px rgba(26,32,53,0.13);
+      --t:             0.18s ease;
+    }
+
+    html, body { height: 100%; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Hiragino Sans', 'Yu Gothic UI', 'Segoe UI', sans-serif;
+      background: var(--bg);
+      color: var(--text-1);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ── MOCKUP BANNER ── */
+    .mockup-banner {
+      background: #FFF3BF;
+      border-bottom: 1px solid #FFD43B;
+      color: #7D5A00;
+      text-align: center;
+      padding: 7px 16px;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.2px;
+    }
+
+    /* ── HEADER ── */
+    .app-header {
+      background: var(--header);
+      color: white;
+      height: 56px;
+      padding: 0 20px;
+      display: none;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .header-logo {
+      font-size: 15px;
+      font-weight: 700;
+      letter-spacing: -0.3px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .header-right {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .score-wrap {
+      font-size: 13px;
+      color: rgba(255,255,255,0.55);
+    }
+
+    .score-num {
+      font-size: 19px;
+      font-weight: 800;
+      color: #74C0FC;
+    }
+
+    .reset-btn {
+      background: rgba(255,255,255,0.1);
+      border: 1px solid rgba(255,255,255,0.15);
+      color: rgba(255,255,255,0.55);
+      border-radius: 8px;
+      padding: 5px 10px;
+      font-size: 12px;
+      cursor: pointer;
+      transition: all var(--t);
+    }
+
+    .reset-btn:hover {
+      background: rgba(255,255,255,0.18);
+      color: rgba(255,255,255,0.85);
+    }
+
+    /* ── SCREENS ── */
+    .screen { display: none; }
+    .screen.active { display: block; }
+
+    .content {
+      max-width: 480px;
+      margin: 0 auto;
+      padding: 28px 16px 48px;
+    }
+
+    /* ── START SCREEN ── */
+    .start-hero {
+      text-align: center;
+      padding: 36px 0 40px;
+    }
+
+    .start-emoji { font-size: 64px; line-height: 1; margin-bottom: 20px; }
+
+    .start-title {
+      font-size: 28px;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      margin-bottom: 10px;
+    }
+
+    .start-desc {
+      font-size: 15px;
+      color: var(--text-2);
+      line-height: 1.75;
+    }
+
+    .section-label {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: var(--text-3);
+      margin-bottom: 12px;
+    }
+
+    .diff-list {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-bottom: 32px;
+    }
+
+    .diff-card {
+      background: var(--card);
+      border: 2px solid var(--border-light);
+      border-radius: var(--radius);
+      padding: 16px 18px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      cursor: pointer;
+      transition: all var(--t);
+      text-align: left;
+      width: 100%;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .diff-card:hover { border-color: var(--accent); background: var(--accent-light); }
+    .diff-card.active { border-color: var(--accent); background: var(--accent-light); }
+
+    .diff-icon { font-size: 28px; width: 44px; text-align: center; flex-shrink: 0; }
+
+    .diff-info { flex: 1; }
+
+    .diff-name { font-size: 15px; font-weight: 700; color: var(--text-1); }
+
+    .diff-sub { font-size: 12px; color: var(--text-2); margin-top: 2px; }
+
+    .diff-radio {
+      width: 22px; height: 22px;
+      border-radius: 50%;
+      border: 2px solid var(--border);
+      background: white;
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+      transition: all var(--t);
+    }
+
+    .diff-card.active .diff-radio {
+      background: var(--accent);
+      border-color: var(--accent);
+    }
+
+    .diff-radio::after {
+      content: '';
+      width: 8px; height: 8px;
+      border-radius: 50%;
+      background: white;
+      display: none;
+    }
+
+    .diff-card.active .diff-radio::after { display: block; }
+
+    .start-btn {
+      width: 100%;
+      background: var(--accent);
+      color: white;
+      border: none;
+      border-radius: var(--radius);
+      padding: 18px;
+      font-size: 17px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all var(--t);
+      letter-spacing: -0.2px;
+    }
+
+    .start-btn:hover {
+      background: var(--accent-dark);
+      transform: translateY(-1px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .start-btn:active { transform: translateY(0); box-shadow: none; }
+
+    /* ── QUIZ META ── */
+    .quiz-meta {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 18px;
+    }
+
+    .diff-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      background: var(--card);
+      border: 1px solid var(--border-light);
+      border-radius: 20px;
+      padding: 5px 12px;
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--text-2);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .q-counter { font-size: 12px; color: var(--text-3); font-weight: 500; }
+
+    /* ── AUDIO CARD ── */
+    .audio-card {
+      background: var(--header);
+      border-radius: var(--radius-lg);
+      padding: 26px 24px 22px;
+      text-align: center;
+      margin-bottom: 20px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .audio-card::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at 70% 20%, rgba(59,91,219,0.35) 0%, transparent 65%);
+      pointer-events: none;
+    }
+
+    .audio-label {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.35);
+      margin-bottom: 18px;
+    }
+
+    /* Waveform */
+    .waveform {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+      height: 50px;
+      margin-bottom: 18px;
+    }
+
+    .bar {
+      width: 4px;
+      border-radius: 2px;
+      background: rgba(255,255,255,0.18);
+      height: 8px;
+      transition: height 0.12s, background 0.12s;
+    }
+
+    .waveform.playing .bar {
+      background: #74C0FC;
+      animation: wave 1.4s ease-in-out infinite;
+    }
+
+    @keyframes wave {
+      0%, 100% { height: 6px; opacity: 0.5; }
+      50%       { height: 38px; opacity: 1; }
+    }
+
+    .waveform.playing .bar:nth-child(1)  { animation-delay: 0.00s; }
+    .waveform.playing .bar:nth-child(2)  { animation-delay: 0.10s; }
+    .waveform.playing .bar:nth-child(3)  { animation-delay: 0.20s; }
+    .waveform.playing .bar:nth-child(4)  { animation-delay: 0.08s; }
+    .waveform.playing .bar:nth-child(5)  { animation-delay: 0.16s; }
+    .waveform.playing .bar:nth-child(6)  { animation-delay: 0.24s; }
+    .waveform.playing .bar:nth-child(7)  { animation-delay: 0.05s; }
+    .waveform.playing .bar:nth-child(8)  { animation-delay: 0.14s; }
+    .waveform.playing .bar:nth-child(9)  { animation-delay: 0.22s; }
+    .waveform.playing .bar:nth-child(10) { animation-delay: 0.11s; }
+
+    .play-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(255,255,255,0.08);
+      color: rgba(255,255,255,0.9);
+      border: 1.5px solid rgba(255,255,255,0.18);
+      border-radius: 50px;
+      padding: 11px 24px;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all var(--t);
+    }
+
+    .play-btn:hover {
+      background: rgba(255,255,255,0.15);
+      border-color: rgba(255,255,255,0.32);
+    }
+
+    .play-btn:active { transform: scale(0.97); }
+
+    .play-btn.playing {
+      background: rgba(116,192,252,0.15);
+      border-color: rgba(116,192,252,0.4);
+      color: #74C0FC;
+    }
+
+    /* ── OPTIONS ── */
+    .question-label {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--text-2);
+      text-align: center;
+      margin-bottom: 14px;
+    }
+
+    .options-list {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-bottom: 18px;
+    }
+
+    .opt-btn {
+      background: var(--card);
+      border: 2px solid var(--border-light);
+      border-radius: var(--radius);
+      padding: 15px 16px;
+      display: flex;
+      align-items: center;
+      gap: 13px;
+      cursor: pointer;
+      transition: all var(--t);
+      text-align: left;
+      width: 100%;
+      font-size: 15px;
+      font-weight: 500;
+      color: var(--text-1);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .opt-btn:not(:disabled):hover {
+      border-color: var(--accent);
+      background: var(--accent-light);
+      transform: translateX(3px);
+      box-shadow: var(--shadow);
+    }
+
+    .opt-btn:disabled { cursor: default; }
+
+    .opt-btn.correct { border-color: var(--success) !important; background: var(--success-bg) !important; }
+    .opt-btn.wrong   { border-color: var(--error)   !important; background: var(--error-bg)   !important; }
+
+    .opt-num {
+      width: 32px; height: 32px;
+      border-radius: 50%;
+      background: var(--bg);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 14px;
+      font-weight: 700;
+      flex-shrink: 0;
+      color: var(--text-2);
+      transition: all var(--t);
+    }
+
+    .opt-btn:not(:disabled):hover .opt-num { background: var(--accent); color: white; }
+    .opt-btn.correct .opt-num { background: var(--success); color: white; }
+    .opt-btn.wrong   .opt-num { background: var(--error);   color: white; }
+
+    .opt-text { flex: 1; line-height: 1.4; }
+
+    /* ── EXPLANATION ── */
+    .explanation {
+      background: var(--card);
+      border-radius: var(--radius);
+      padding: 18px 20px;
+      margin-bottom: 14px;
+      box-shadow: var(--shadow);
+      display: none;
+    }
+
+    .explanation.show {
+      display: block;
+      animation: slideUp 0.25s ease-out;
+    }
+
+    @keyframes slideUp {
+      from { opacity: 0; transform: translateY(10px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    .expl-verdict {
+      font-size: 15px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .expl-verdict.ok  { color: var(--success); }
+    .expl-verdict.ng  { color: var(--error); }
+
+    .expl-text {
+      font-size: 13px;
+      color: var(--text-2);
+      line-height: 1.75;
+      margin-bottom: 12px;
+    }
+
+    .key-phrases { display: flex; flex-wrap: wrap; gap: 6px; }
+
+    .kp {
+      background: var(--accent-light);
+      color: var(--accent);
+      border-radius: 6px;
+      padding: 4px 10px;
+      font-size: 12px;
+      font-weight: 700;
+      font-family: 'SF Mono', 'Fira Code', 'Consolas', monospace;
+    }
+
+    /* ── NEXT BUTTON ── */
+    .next-btn {
+      width: 100%;
+      background: var(--accent);
+      color: white;
+      border: none;
+      border-radius: var(--radius);
+      padding: 17px;
+      font-size: 16px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all var(--t);
+      display: none;
+      letter-spacing: -0.2px;
+    }
+
+    .next-btn.show {
+      display: block;
+      animation: slideUp 0.25s ease-out;
+    }
+
+    .next-btn:hover {
+      background: var(--accent-dark);
+      transform: translateY(-1px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .next-btn:active { transform: translateY(0); box-shadow: none; }
+
+    /* ── LOADING ── */
+    .loading-view {
+      text-align: center;
+      padding: 64px 20px;
+      display: none;
+    }
+
+    .loading-view.show { display: block; }
+
+    .spinner {
+      width: 42px; height: 42px;
+      border: 3px solid var(--border);
+      border-top-color: var(--accent);
+      border-radius: 50%;
+      animation: spin 0.75s linear infinite;
+      margin: 0 auto 16px;
+    }
+
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    .loading-text { font-size: 14px; color: var(--text-2); font-weight: 500; }
+
+    /* ── QUESTION VIEW ── */
+    .question-view { display: none; }
+
+    .question-view.show {
+      display: block;
+      animation: fadeIn 0.28s ease-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Mockup Banner -->
+<div class="mockup-banner">
+  🎨 Mockup — Claude API 未接続・ハードコードされた問題で動作確認中
+</div>
+
+<!-- Header -->
+<header class="app-header" id="appHeader">
+  <div class="header-logo">🎧 English Listening Quiz</div>
+  <div class="header-right">
+    <div class="score-wrap">
+      正解 <span class="score-num" id="scoreVal">0</span> / <span id="totalVal">0</span>
+    </div>
+    <button class="reset-btn" onclick="goToStart()">設定</button>
+  </div>
+</header>
+
+<!-- ════════════════════════════════ START SCREEN ════════════════════════════════ -->
+<div class="screen active" id="startScreen">
+  <div class="content">
+
+    <div class="start-hero">
+      <div class="start-emoji">🎧</div>
+      <h1 class="start-title">English Listening Quiz</h1>
+      <p class="start-desc">ネイティブ英語を聴いて、<br>どんなシチュエーションか当てよう</p>
+    </div>
+
+    <div class="section-label">難易度を選ぶ</div>
+    <div class="diff-list">
+      <button class="diff-card" id="d-beginner" onclick="setDiff('beginner')">
+        <div class="diff-icon">🌱</div>
+        <div class="diff-info">
+          <div class="diff-name">初級</div>
+          <div class="diff-sub">日常会話・明確なシチュエーション・ゆっくりめ</div>
+        </div>
+        <div class="diff-radio"></div>
+      </button>
+      <button class="diff-card active" id="d-intermediate" onclick="setDiff('intermediate')">
+        <div class="diff-icon">🌿</div>
+        <div class="diff-info">
+          <div class="diff-name">中級</div>
+          <div class="diff-sub">自然な会話・慣用表現も含む・標準スピード</div>
+        </div>
+        <div class="diff-radio"></div>
+      </button>
+      <button class="diff-card" id="d-advanced" onclick="setDiff('advanced')">
+        <div class="diff-icon">🌳</div>
+        <div class="diff-info">
+          <div class="diff-name">上級</div>
+          <div class="diff-sub">スラング・ビジネス用語・微妙なニュアンス</div>
+        </div>
+        <div class="diff-radio"></div>
+      </button>
+    </div>
+
+    <button class="start-btn" onclick="startQuiz()">スタート →</button>
+
+  </div>
+</div>
+
+<!-- ════════════════════════════════ QUIZ SCREEN ════════════════════════════════ -->
+<div class="screen" id="quizScreen">
+  <div class="content">
+
+    <!-- Loading -->
+    <div class="loading-view" id="loadingView">
+      <div class="spinner"></div>
+      <div class="loading-text">問題を読み込み中...</div>
+    </div>
+
+    <!-- Question -->
+    <div class="question-view" id="questionView">
+
+      <div class="quiz-meta">
+        <div class="diff-badge" id="diffBadge">🌿 中級</div>
+        <div class="q-counter" id="qCounter">1問目</div>
+      </div>
+
+      <!-- Audio Player -->
+      <div class="audio-card">
+        <div class="audio-label">英語音声</div>
+        <div class="waveform" id="waveform">
+          <div class="bar"></div><div class="bar"></div><div class="bar"></div>
+          <div class="bar"></div><div class="bar"></div><div class="bar"></div>
+          <div class="bar"></div><div class="bar"></div><div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+        <button class="play-btn" id="playBtn" onclick="replay()">
+          <span id="playIcon">▶</span>
+          <span id="playLabel">もう一度聴く</span>
+        </button>
+      </div>
+
+      <!-- Options -->
+      <div class="question-label">この会話はどんな状況でしょう？</div>
+      <div class="options-list" id="optList"></div>
+
+      <!-- Explanation -->
+      <div class="explanation" id="explEl">
+        <div class="expl-verdict" id="explVerdict"></div>
+        <div class="expl-text"   id="explText"></div>
+        <div class="key-phrases" id="explKP"></div>
+      </div>
+
+      <!-- Next -->
+      <button class="next-btn" id="nextBtn" onclick="next()">次の問題 →</button>
+
+    </div>
+  </div>
+</div>
+
+<script>
+// ─────────────────────────────────────────
+// QUESTION DATA (hardcoded for mockup)
+// ─────────────────────────────────────────
+const DATA = [
+  {
+    diff: 'beginner',
+    text: "Excuse me. I think I missed my stop. Which station is this? How do I get back to Central Park?",
+    answer: "電車で乗り過ごしてしまった",
+    opts: [
+      "電車で乗り過ごしてしまった",
+      "タクシーで行き先を告げている",
+      "空港でゲートを探している",
+      "地図アプリで道を調べている",
+      "バスの時刻を確認している",
+    ],
+    correct: 0,
+    kp: ["missed my stop", "how do I get back"],
+    expl: "\"missed my stop\" は「乗り過ごした」という意味。駅員に助けを求めている場面です。",
+  },
+  {
+    diff: 'beginner',
+    text: "Achoo! Ugh, sorry. I've had this cold for like three days now. My throat's been killing me and I just can't stop sneezing.",
+    answer: "風邪の症状を説明している",
+    opts: [
+      "アレルギーの薬を探している",
+      "運動後の疲れについて話している",
+      "風邪の症状を説明している",
+      "天気の悪さについて愚痴っている",
+      "病院で医師に相談している",
+    ],
+    correct: 2,
+    kp: ["this cold", "throat's been killing me", "can't stop sneezing"],
+    expl: "\"throat's been killing me\" は喉がひどく痛いという口語表現。くしゃみ後に風邪を訴えている場面です。",
+  },
+  {
+    diff: 'intermediate',
+    text: "Could I get a large oat milk latte to go? Oh, and do you have any of those almond croissants left? Perfect. Can I get a name on that? It's Yusuke.",
+    answer: "カフェでドリンクを注文している",
+    opts: [
+      "ホテルでルームサービスを頼んでいる",
+      "カフェでドリンクを注文している",
+      "コンビニで商品の場所を聞いている",
+      "食料品店で品物を探している",
+      "レストランでメニューを確認している",
+    ],
+    correct: 1,
+    kp: ["to go", "do you have any left", "a name on that"],
+    expl: "\"to go\" はテイクアウト、\"a name on that\" は注文に名前をつける（カフェ特有の表現）。カフェでの注文シーンです。",
+  },
+  {
+    diff: 'intermediate',
+    text: "Hi, I have a reservation under Johnson. Table for four at seven thirty. Oh — actually, one of our party just texted. She's running about fifteen minutes late. Is that still okay?",
+    answer: "レストランで予約を確認している",
+    opts: [
+      "ホテルにチェックインしている",
+      "美容院で予約時間を変更している",
+      "映画館で座席を変更している",
+      "レストランで予約を確認している",
+      "友人の遅刻を代わりに謝っている",
+    ],
+    correct: 3,
+    kp: ["reservation under", "running late"],
+    expl: "\"reservation under [名前]\" は予約名の確認、\"running late\" は遅刻中を意味します。レストランの予約シーンです。",
+  },
+  {
+    diff: 'advanced',
+    text: "Look, I hear what you're saying, but we really need to circle back on this before we pull the trigger. Let's loop in Sarah and get her buy-in first. Can we set up a sync for Thursday?",
+    answer: "会議で意思決定を一旦保留している",
+    opts: [
+      "製品不具合をクライアントに説明している",
+      "会議で意思決定を一旦保留している",
+      "投資家に事業計画をピッチしている",
+      "エンジニアにバグ修正を依頼している",
+      "新入社員に会社のルールを説明している",
+    ],
+    correct: 1,
+    kp: ["circle back", "pull the trigger", "buy-in", "sync"],
+    expl: "\"circle back\"＝後で再検討、\"pull the trigger\"＝決断する、\"buy-in\"＝賛同、\"sync\"＝打ち合わせ。ビジネス語彙が密集した会議の場面です。",
+  },
+  {
+    diff: 'advanced',
+    text: "We're gonna have to pivot on the go-to-market strategy. The beta feedback was pretty brutal — users aren't seeing the value prop clearly enough. Let's workshop this Monday and bring some fresh thinking.",
+    answer: "スタートアップの戦略を見直している",
+    opts: [
+      "スタートアップの戦略を見直している",
+      "マーケティング会社に新規依頼している",
+      "投資家に失敗の原因を報告している",
+      "製品ロードマップを説明している",
+      "競合他社の分析を発表している",
+    ],
+    correct: 0,
+    kp: ["pivot", "go-to-market", "value prop", "workshop"],
+    expl: "\"pivot\"＝方向転換、\"value prop\"＝バリュープロポジション、\"workshop\"＝動詞でワークショップを実施する意味。スタートアップ特有の語彙が並ぶ場面です。",
+  },
+];
+
+const NUMS = ['①', '②', '③', '④', '⑤'];
+
+const DIFF_META = {
+  beginner:     { icon: '🌱', label: '初級',  rate: 0.82 },
+  intermediate: { icon: '🌿', label: '中級',  rate: 0.90 },
+  advanced:     { icon: '🌳', label: '上級',  rate: 1.00 },
+};
+
+// ─────────────────────────────────────────
+// STATE
+// ─────────────────────────────────────────
+let diff      = 'intermediate';
+let queue     = [];
+let current   = null;
+let score     = 0;
+let total     = 0;
+let answered  = false;
+let isPlaying = false;
+
+// ─────────────────────────────────────────
+// DIFFICULTY
+// ─────────────────────────────────────────
+function setDiff(d) {
+  diff = d;
+  document.querySelectorAll('.diff-card').forEach(el => el.classList.remove('active'));
+  document.getElementById('d-' + d).classList.add('active');
+}
+
+// ─────────────────────────────────────────
+// START
+// ─────────────────────────────────────────
+function startQuiz() {
+  score = 0; total = 0;
+  buildQueue();
+  document.getElementById('startScreen').classList.remove('active');
+  document.getElementById('quizScreen').classList.add('active');
+  document.getElementById('appHeader').style.display = 'flex';
+  updateScore();
+  loadQ();
+}
+
+function goToStart() {
+  speechSynthesis.cancel();
+  document.getElementById('quizScreen').classList.remove('active');
+  document.getElementById('startScreen').classList.add('active');
+  document.getElementById('appHeader').style.display = 'none';
+}
+
+// ─────────────────────────────────────────
+// QUEUE
+// ─────────────────────────────────────────
+function buildQueue() {
+  let pool = DATA.filter(q => q.diff === diff);
+  if (!pool.length) pool = [...DATA];
+  queue = shuffle(pool);
+}
+
+// ─────────────────────────────────────────
+// LOAD QUESTION
+// ─────────────────────────────────────────
+function loadQ() {
+  answered = false;
+  speechSynthesis.cancel();
+
+  document.getElementById('loadingView').classList.add('show');
+  document.getElementById('questionView').classList.remove('show');
+  document.getElementById('explEl').classList.remove('show');
+  document.getElementById('nextBtn').classList.remove('show');
+
+  // Simulate loading (mimics future API call)
+  setTimeout(() => {
+    if (!queue.length) buildQueue();
+    current = queue.shift();
+    render();
+    document.getElementById('loadingView').classList.remove('show');
+    document.getElementById('questionView').classList.add('show');
+    // Auto-play after short delay (user gesture already granted by Start button)
+    setTimeout(() => speak(current.text), 550);
+  }, 1100);
+}
+
+// ─────────────────────────────────────────
+// RENDER
+// ─────────────────────────────────────────
+function render() {
+  const meta = DIFF_META[current.diff] || DIFF_META.intermediate;
+  document.getElementById('diffBadge').textContent = `${meta.icon} ${meta.label}`;
+  document.getElementById('qCounter').textContent  = `${total + 1}問目`;
+  setPlayBtn(false);
+  document.getElementById('waveform').classList.remove('playing');
+
+  const list = document.getElementById('optList');
+  list.innerHTML = '';
+  current.opts.forEach((opt, i) => {
+    const btn = document.createElement('button');
+    btn.className = 'opt-btn';
+    btn.innerHTML = `<div class="opt-num">${NUMS[i]}</div><div class="opt-text">${opt}</div>`;
+    btn.addEventListener('click', () => choose(i));
+    list.appendChild(btn);
+  });
+}
+
+// ─────────────────────────────────────────
+// ANSWER
+// ─────────────────────────────────────────
+function choose(idx) {
+  if (answered) return;
+  answered = true;
+  total++;
+  const ok = idx === current.correct;
+  if (ok) score++;
+  updateScore();
+
+  document.querySelectorAll('.opt-btn').forEach((btn, i) => {
+    btn.disabled = true;
+    if (i === current.correct) btn.classList.add('correct');
+    if (i === idx && !ok)      btn.classList.add('wrong');
+  });
+
+  // Explanation
+  const el = document.getElementById('explEl');
+  document.getElementById('explVerdict').className = 'expl-verdict ' + (ok ? 'ok' : 'ng');
+  document.getElementById('explVerdict').textContent = ok ? '✅ 正解！' : '❌ 不正解...';
+  document.getElementById('explText').textContent    = current.expl;
+
+  const kpEl = document.getElementById('explKP');
+  kpEl.innerHTML = '';
+  (current.kp || []).forEach(p => {
+    const s = document.createElement('span');
+    s.className = 'kp';
+    s.textContent = p;
+    kpEl.appendChild(s);
+  });
+
+  el.classList.add('show');
+  document.getElementById('nextBtn').classList.add('show');
+}
+
+// ─────────────────────────────────────────
+// NEXT
+// ─────────────────────────────────────────
+function next() { loadQ(); }
+
+// ─────────────────────────────────────────
+// SCORE
+// ─────────────────────────────────────────
+function updateScore() {
+  document.getElementById('scoreVal').textContent = score;
+  document.getElementById('totalVal').textContent = total;
+}
+
+// ─────────────────────────────────────────
+// TTS
+// ─────────────────────────────────────────
+function speak(text) {
+  speechSynthesis.cancel();
+  const u = new SpeechSynthesisUtterance(text);
+  u.lang  = 'en-US';
+  u.rate  = (DIFF_META[current?.diff] || DIFF_META.intermediate).rate;
+  u.pitch = 1.0;
+
+  // Pick best available English voice
+  const voices = speechSynthesis.getVoices();
+  const PREFER  = ['Samantha', 'Alex', 'Karen', 'Moira', 'Tessa', 'Daniel', 'Nicky'];
+  let voice = null;
+  for (const name of PREFER) {
+    voice = voices.find(v => v.name === name);
+    if (voice) break;
+  }
+  if (!voice) voice = voices.find(v => v.lang === 'en-US');
+  if (voice) u.voice = voice;
+
+  u.onstart = () => {
+    isPlaying = true;
+    setPlayBtn(true);
+    document.getElementById('waveform').classList.add('playing');
+  };
+
+  const done = () => {
+    isPlaying = false;
+    setPlayBtn(false);
+    document.getElementById('waveform').classList.remove('playing');
+  };
+  u.onend   = done;
+  u.onerror = done;
+
+  speechSynthesis.speak(u);
+}
+
+function replay() {
+  if (current) speak(current.text);
+}
+
+function setPlayBtn(playing) {
+  document.getElementById('playBtn').classList.toggle('playing', playing);
+  document.getElementById('playIcon').textContent  = playing ? '⏸' : '▶';
+  document.getElementById('playLabel').textContent = playing ? '再生中...' : 'もう一度聴く';
+}
+
+// ─────────────────────────────────────────
+// HELPERS
+// ─────────────────────────────────────────
+function shuffle(arr) {
+  const a = [...arr];
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
+// Pre-load voices (Chrome / iOS Safari workaround)
+speechSynthesis.getVoices();
+if (speechSynthesis.onvoiceschanged !== undefined) {
+  speechSynthesis.onvoiceschanged = () => speechSynthesis.getVoices();
+}
+
+// Init
+setDiff('intermediate');
+</script>
+</body>
+</html>
