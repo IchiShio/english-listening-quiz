@@ -236,18 +236,34 @@
       margin-bottom: 18px;
     }
 
-    .diff-badge {
+    .diff-pills { display: flex; gap: 6px; }
+
+    .diff-pill {
       display: inline-flex;
       align-items: center;
-      gap: 5px;
+      gap: 4px;
       background: var(--card);
-      border: 1px solid var(--border-light);
+      border: 1.5px solid var(--border-light);
       border-radius: 20px;
-      padding: 5px 12px;
+      padding: 5px 11px;
       font-size: 12px;
       font-weight: 600;
       color: var(--text-2);
+      cursor: pointer;
+      transition: all var(--t);
       box-shadow: var(--shadow-sm);
+    }
+
+    .diff-pill:hover {
+      border-color: var(--accent);
+      background: var(--accent-light);
+      color: var(--accent);
+    }
+
+    .diff-pill.active {
+      background: var(--header);
+      border-color: var(--header);
+      color: white;
     }
 
     .q-counter { font-size: 12px; color: var(--text-3); font-weight: 500; }
@@ -599,7 +615,11 @@
     <div class="question-view" id="questionView">
 
       <div class="quiz-meta">
-        <div class="diff-badge" id="diffBadge">🌿 中級</div>
+        <div class="diff-pills">
+          <button class="diff-pill" id="p-beginner"     onclick="changeDiff('beginner')"    >🌱 初級</button>
+          <button class="diff-pill active" id="p-intermediate" onclick="changeDiff('intermediate')">🌿 中級</button>
+          <button class="diff-pill" id="p-advanced"     onclick="changeDiff('advanced')"    >🌳 上級</button>
+        </div>
         <div class="q-counter" id="qCounter">1問目</div>
       </div>
 
@@ -757,8 +777,29 @@ let isPlaying = false;
 // ─────────────────────────────────────────
 function setDiff(d) {
   diff = d;
+  // Start screen cards
   document.querySelectorAll('.diff-card').forEach(el => el.classList.remove('active'));
   document.getElementById('d-' + d).classList.add('active');
+  // Quiz screen pills (sync)
+  syncPills(d);
+}
+
+// Called from quiz screen pills — changes diff for NEXT question, keeps score
+function changeDiff(d) {
+  diff = d;
+  // Sync start screen cards
+  document.querySelectorAll('.diff-card').forEach(el => el.classList.remove('active'));
+  document.getElementById('d-' + d).classList.add('active');
+  // Sync quiz pills
+  syncPills(d);
+  // Rebuild queue from new difficulty (takes effect on next question)
+  buildQueue();
+}
+
+function syncPills(d) {
+  document.querySelectorAll('.diff-pill').forEach(el => el.classList.remove('active'));
+  const pill = document.getElementById('p-' + d);
+  if (pill) pill.classList.add('active');
 }
 
 // ─────────────────────────────────────────
@@ -767,6 +808,7 @@ function setDiff(d) {
 function startQuiz() {
   score = 0; total = 0;
   buildQueue();
+  syncPills(diff);   // reflect start-screen selection in quiz pills
   document.getElementById('startScreen').classList.remove('active');
   document.getElementById('quizScreen').classList.add('active');
   document.getElementById('appHeader').style.display = 'flex';
@@ -818,9 +860,7 @@ function loadQ() {
 // RENDER
 // ─────────────────────────────────────────
 function render() {
-  const meta = DIFF_META[current.diff] || DIFF_META.intermediate;
-  document.getElementById('diffBadge').textContent = `${meta.icon} ${meta.label}`;
-  document.getElementById('qCounter').textContent  = `${total + 1}問目`;
+  document.getElementById('qCounter').textContent = `${total + 1}問目`;
   setPlayBtn(false);
   document.getElementById('waveform').classList.remove('playing');
 
