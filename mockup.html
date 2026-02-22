@@ -538,6 +538,75 @@
       from { opacity: 0; }
       to   { opacity: 1; }
     }
+
+    /* ── TABLET 640px+ ── */
+    @media (min-width: 640px) {
+      .content      { max-width: 640px; padding: 36px 32px 64px; }
+
+      .start-emoji  { font-size: 80px; }
+      .start-title  { font-size: 34px; }
+      .start-desc   { font-size: 16px; }
+
+      .diff-card    { padding: 20px 22px; }
+      .diff-icon    { font-size: 32px; width: 50px; }
+      .diff-name    { font-size: 16px; }
+      .diff-sub     { font-size: 13px; }
+      .start-btn    { padding: 20px; font-size: 18px; border-radius: 18px; }
+
+      .diff-pill    { padding: 7px 15px; font-size: 13px; }
+      .quiz-meta    { margin-bottom: 22px; }
+
+      .audio-card   { padding: 36px 32px 30px; border-radius: 24px; }
+      .waveform     { height: 58px; gap: 6px; }
+      .bar          { width: 5px; }
+      .play-btn     { padding: 14px 32px; font-size: 15px; }
+
+      .question-label { font-size: 15px; }
+      .opt-btn      { padding: 18px 20px; font-size: 16px; }
+      .opt-num      { width: 36px; height: 36px; font-size: 15px; }
+
+      .explanation  { padding: 20px 22px; border-radius: 18px; }
+      .expl-verdict { font-size: 16px; }
+      .expl-text    { font-size: 14px; }
+
+      .next-btn     { padding: 20px; font-size: 17px; border-radius: 18px; }
+    }
+
+    /* ── DESKTOP 960px+ — 2-column quiz ── */
+    @media (min-width: 960px) {
+      .content      { max-width: 940px; padding: 52px 48px 88px; }
+
+      .start-emoji  { font-size: 96px; }
+      .start-title  { font-size: 42px; }
+      .start-desc   { font-size: 17px; }
+      .diff-card    { padding: 22px 26px; }
+      .diff-icon    { font-size: 36px; width: 54px; }
+      .start-btn    { padding: 22px; font-size: 19px; }
+
+      .audio-card   { padding: 44px 40px 36px; border-radius: 28px; }
+      .waveform     { height: 68px; gap: 7px; }
+      .bar          { width: 6px; }
+      .play-btn     { padding: 16px 40px; font-size: 16px; }
+
+      .opt-btn      { padding: 20px 24px; font-size: 16px; border-radius: 18px; }
+      .opt-num      { width: 38px; height: 38px; font-size: 15px; }
+      .next-btn     { padding: 22px; font-size: 18px; border-radius: 18px; }
+      .explanation  { padding: 22px 26px; border-radius: 20px; }
+
+      /* 2-column layout */
+      .question-view.show {
+        display: flex;
+        flex-direction: row;
+        gap: 36px;
+        align-items: start;
+      }
+      .quiz-left {
+        flex: 0 0 42%;
+        position: sticky;
+        top: 72px;
+      }
+      .quiz-right { flex: 1; min-width: 0; }
+    }
   </style>
 </head>
 <body>
@@ -624,34 +693,36 @@
     <!-- Question -->
     <div class="question-view" id="questionView">
 
-      <!-- Audio Player -->
-      <div class="audio-card">
-        <div class="audio-label">英語音声</div>
-        <div class="waveform" id="waveform">
-          <div class="bar"></div><div class="bar"></div><div class="bar"></div>
-          <div class="bar"></div><div class="bar"></div><div class="bar"></div>
-          <div class="bar"></div><div class="bar"></div><div class="bar"></div>
-          <div class="bar"></div>
+      <!-- Left column: audio player (sticky on desktop) -->
+      <div class="quiz-left">
+        <div class="audio-card">
+          <div class="audio-label">英語音声</div>
+          <div class="waveform" id="waveform">
+            <div class="bar"></div><div class="bar"></div><div class="bar"></div>
+            <div class="bar"></div><div class="bar"></div><div class="bar"></div>
+            <div class="bar"></div><div class="bar"></div><div class="bar"></div>
+            <div class="bar"></div>
+          </div>
+          <button class="play-btn" id="playBtn" onclick="replay()">
+            <span id="playIcon">▶</span>
+            <span id="playLabel">もう一度聴く</span>
+          </button>
         </div>
-        <button class="play-btn" id="playBtn" onclick="replay()">
-          <span id="playIcon">▶</span>
-          <span id="playLabel">もう一度聴く</span>
-        </button>
       </div>
 
-      <!-- Options -->
-      <div class="question-label">この会話はどんな状況でしょう？</div>
-      <div class="options-list" id="optList"></div>
+      <!-- Right column: options + explanation + next -->
+      <div class="quiz-right">
+        <div class="question-label">この会話はどんな状況でしょう？</div>
+        <div class="options-list" id="optList"></div>
 
-      <!-- Explanation -->
-      <div class="explanation" id="explEl">
-        <div class="expl-verdict" id="explVerdict"></div>
-        <div class="expl-text"   id="explText"></div>
-        <div class="key-phrases" id="explKP"></div>
+        <div class="explanation" id="explEl">
+          <div class="expl-verdict" id="explVerdict"></div>
+          <div class="expl-text"   id="explText"></div>
+          <div class="key-phrases" id="explKP"></div>
+        </div>
+
+        <button class="next-btn" id="nextBtn" onclick="next()">次の問題 →</button>
       </div>
-
-      <!-- Next -->
-      <button class="next-btn" id="nextBtn" onclick="next()">次の問題 →</button>
 
     </div>
   </div>
