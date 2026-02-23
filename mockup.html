@@ -3,32 +3,32 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-  <title>English Listening Quiz — Mockup</title>
+  <title>ListenUp — 英語リスニングが変わる</title>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
-      --bg:            #EDE8E0;
-      --header:        #1A2035;
-      --card:          #FFFFFF;
-      --accent:        #3B5BDB;
-      --accent-dark:   #2F4AC3;
-      --accent-light:  #EDF2FF;
-      --success:       #2F9E44;
-      --success-bg:    #EBFBEE;
-      --error:         #E03131;
-      --error-bg:      #FFF5F5;
-      --text-1:        #1A2035;
-      --text-2:        #5C6070;
-      --text-3:        #9AA0B4;
-      --border:        #D8D2C8;
-      --border-light:  #E8E3DA;
-      --radius:        16px;
-      --radius-lg:     20px;
-      --shadow-sm:     0 1px 4px rgba(26,32,53,0.07);
-      --shadow:        0 2px 12px rgba(26,32,53,0.09);
-      --shadow-lg:     0 8px 32px rgba(26,32,53,0.13);
-      --t:             0.18s ease;
+      --bg:         #060C1B;
+      --surface:    rgba(255,255,255,0.04);
+      --surface-2:  rgba(255,255,255,0.07);
+      --border:     rgba(255,255,255,0.08);
+      --gold:       #FBBF24;
+      --gold-dim:   rgba(251,191,36,0.65);
+      --gold-glow:  rgba(251,191,36,0.2);
+      --success:    #34D399;
+      --success-bg: rgba(52,211,153,0.12);
+      --error:      #F87171;
+      --error-bg:   rgba(248,113,113,0.12);
+      --text-1:     rgba(255,255,255,0.92);
+      --text-2:     rgba(255,255,255,0.55);
+      --text-3:     rgba(255,255,255,0.28);
+      --radius:     16px;
+      --radius-lg:  20px;
+      --t:          0.18s ease;
+    }
+
+    html {
+      scroll-behavior: smooth;
     }
 
     html, body { height: 100%; }
@@ -36,26 +36,75 @@
     body {
       font-family: -apple-system, BlinkMacSystemFont, 'Hiragino Sans', 'Yu Gothic UI', 'Segoe UI', sans-serif;
       background: var(--bg);
+      background-image: radial-gradient(rgba(255,255,255,0.03) 1px, transparent 1px);
+      background-size: 28px 28px;
       color: var(--text-1);
       -webkit-font-smoothing: antialiased;
     }
 
+    /* ── BACKGROUND ORBS ── */
+    .orb {
+      position: fixed;
+      border-radius: 50%;
+      pointer-events: none;
+      z-index: 0;
+      filter: blur(80px);
+    }
+    .orb-1 {
+      width: 700px; height: 700px;
+      background: radial-gradient(circle at center, rgba(59,91,219,0.4), transparent 70%);
+      top: -250px; left: -200px;
+      animation: float1 16s ease-in-out infinite;
+    }
+    .orb-2 {
+      width: 500px; height: 500px;
+      background: radial-gradient(circle at center, rgba(251,191,36,0.22), transparent 70%);
+      top: 25%; right: -150px;
+      animation: float2 20s ease-in-out infinite;
+    }
+    .orb-3 {
+      width: 450px; height: 450px;
+      background: radial-gradient(circle at center, rgba(124,58,237,0.28), transparent 70%);
+      bottom: -100px; left: 15%;
+      animation: float3 24s ease-in-out infinite;
+    }
+    @keyframes float1 {
+      0%, 100% { transform: translate(0, 0); }
+      33%       { transform: translate(40px, 30px); }
+      66%       { transform: translate(-20px, 50px); }
+    }
+    @keyframes float2 {
+      0%, 100% { transform: translate(0, 0); }
+      40%       { transform: translate(-30px, -40px); }
+      70%       { transform: translate(20px, -20px); }
+    }
+    @keyframes float3 {
+      0%, 100% { transform: translate(0, 0); }
+      30%       { transform: translate(50px, -30px); }
+      60%       { transform: translate(-20px, 40px); }
+    }
+
+    .screen, .app-header, .mockup-banner { position: relative; z-index: 1; }
+
     /* ── MOCKUP BANNER ── */
     .mockup-banner {
-      background: #FFF3BF;
-      border-bottom: 1px solid #FFD43B;
-      color: #7D5A00;
+      background: rgba(251,191,36,0.07);
+      border-bottom: 1px solid rgba(251,191,36,0.18);
+      color: rgba(251,191,36,0.75);
       text-align: center;
       padding: 7px 16px;
       font-size: 12px;
       font-weight: 600;
       letter-spacing: 0.2px;
+      backdrop-filter: blur(8px);
     }
 
     /* ── HEADER ── */
     .app-header {
-      background: var(--header);
-      color: white;
+      background: rgba(6,12,27,0.8);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--border);
       height: 56px;
       padding: 0 20px;
       display: none;
@@ -65,52 +114,490 @@
       top: 0;
       z-index: 100;
     }
-
     .header-logo {
-      font-size: 15px;
-      font-weight: 700;
-      letter-spacing: -0.3px;
-      display: flex;
-      align-items: center;
-      gap: 8px;
+      font-size: 15px; font-weight: 700; letter-spacing: -0.3px;
+      display: flex; align-items: center; gap: 8px;
+      background: linear-gradient(120deg, rgba(255,255,255,0.9) 0%, var(--gold) 100%);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
     }
-
-    .header-right {
-      display: flex;
-      align-items: center;
-      gap: 14px;
-    }
-
-    .score-wrap {
-      font-size: 13px;
-      color: rgba(255,255,255,0.55);
-    }
-
-    .score-num {
-      font-size: 19px;
-      font-weight: 800;
-      color: #74C0FC;
-    }
-
+    .header-right { display: flex; align-items: center; gap: 14px; }
+    .score-wrap { font-size: 13px; color: var(--text-3); }
+    .score-num { font-size: 19px; font-weight: 800; color: var(--gold); display: inline-block; }
     .reset-btn {
-      background: rgba(255,255,255,0.1);
-      border: 1px solid rgba(255,255,255,0.15);
-      color: rgba(255,255,255,0.55);
-      border-radius: 8px;
-      padding: 5px 10px;
-      font-size: 12px;
-      cursor: pointer;
-      transition: all var(--t);
+      background: rgba(255,255,255,0.05); border: 1px solid var(--border);
+      color: var(--text-2); border-radius: 8px; padding: 5px 10px;
+      font-size: 12px; cursor: pointer; transition: all var(--t);
     }
-
-    .reset-btn:hover {
-      background: rgba(255,255,255,0.18);
-      color: rgba(255,255,255,0.85);
-    }
+    .reset-btn:hover { background: rgba(255,255,255,0.09); color: var(--text-1); }
 
     /* ── SCREENS ── */
     .screen { display: none; }
     .screen.active { display: block; }
+
+    /* ═══════════════════════════════════════════
+       LANDING PAGE
+    ═══════════════════════════════════════════ */
+
+    .lp-wrap {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* ── HERO ── */
+    .lp-hero {
+      min-height: calc(100svh - 36px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 64px 20px 80px;
+    }
+    .lp-hero-inner { max-width: 680px; margin: 0 auto; }
+
+    .hero-eyebadge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(251,191,36,0.09);
+      border: 1px solid rgba(251,191,36,0.22);
+      color: var(--gold);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+      padding: 5px 14px;
+      border-radius: 20px;
+      margin-bottom: 28px;
+      animation: fadeUp 0.6s ease-out both;
+    }
+
+    .hero-h1 {
+      font-size: clamp(36px, 7vw, 68px);
+      font-weight: 900;
+      letter-spacing: -1.5px;
+      line-height: 1.08;
+      margin-bottom: 22px;
+      animation: fadeUp 0.6s 0.1s ease-out both;
+    }
+
+    .text-gold {
+      background: linear-gradient(120deg, var(--gold) 0%, #FCD34D 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .hero-sub {
+      font-size: clamp(15px, 2.2vw, 18px);
+      color: var(--text-2);
+      line-height: 1.8;
+      margin-bottom: 36px;
+      animation: fadeUp 0.6s 0.2s ease-out both;
+    }
+
+    .hero-ctas {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 18px;
+      animation: fadeUp 0.6s 0.3s ease-out both;
+    }
+
+    @media (min-width: 500px) {
+      .hero-ctas { flex-direction: row; justify-content: center; }
+    }
+
+    .btn-primary-lg {
+      display: inline-flex; align-items: center; gap: 6px;
+      background: linear-gradient(135deg, #F59E0B 0%, #FBBF24 50%, #FCD34D 100%);
+      color: #000; font-weight: 800; font-size: 16px;
+      border: none; border-radius: 14px; padding: 16px 28px;
+      cursor: pointer; transition: all var(--t);
+      box-shadow: 0 4px 24px rgba(251,191,36,0.3);
+      white-space: nowrap;
+    }
+    .btn-primary-lg:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 40px rgba(251,191,36,0.5);
+      filter: brightness(1.05);
+    }
+    .btn-primary-lg:active { transform: translateY(0); }
+
+    .btn-ghost {
+      display: inline-flex; align-items: center; gap: 6px;
+      background: rgba(255,255,255,0.05);
+      color: var(--text-2); font-weight: 600; font-size: 15px;
+      border: 1px solid var(--border); border-radius: 14px; padding: 16px 24px;
+      cursor: pointer; transition: all var(--t);
+      white-space: nowrap;
+    }
+    .btn-ghost:hover {
+      background: rgba(255,255,255,0.08);
+      color: var(--text-1);
+      border-color: rgba(255,255,255,0.15);
+    }
+
+    .hero-fine {
+      font-size: 12px;
+      color: var(--text-3);
+      animation: fadeUp 0.6s 0.4s ease-out both;
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(16px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ── STATS STRIP ── */
+    .stats-strip {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 0;
+      padding: 20px 20px;
+      background: rgba(255,255,255,0.025);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+    .stat {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 10px 28px;
+    }
+    .stat strong {
+      font-size: 22px;
+      font-weight: 800;
+      color: var(--gold);
+      line-height: 1;
+      margin-bottom: 4px;
+    }
+    .stat span {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      color: var(--text-3);
+      text-transform: uppercase;
+    }
+    .stat-div {
+      width: 1px;
+      height: 32px;
+      background: var(--border);
+    }
+
+    /* ── SECTIONS ── */
+    .lp-section {
+      padding: 88px 0;
+    }
+    .lp-section-alt {
+      padding: 88px 0;
+      background: rgba(255,255,255,0.018);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .section-eyebrow {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 12px;
+    }
+    .section-h2 {
+      font-size: clamp(26px, 4vw, 38px);
+      font-weight: 800;
+      letter-spacing: -0.8px;
+      line-height: 1.2;
+      margin-bottom: 48px;
+    }
+
+    /* ── HOW IT WORKS ── */
+    .steps-row {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    @media (min-width: 700px) {
+      .steps-row {
+        flex-direction: row;
+        align-items: stretch;
+        gap: 0;
+      }
+    }
+
+    .step-card {
+      flex: 1;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 28px 24px;
+      text-align: center;
+      backdrop-filter: blur(8px);
+      transition: border-color 0.25s, transform 0.25s;
+    }
+    .step-card:hover {
+      border-color: rgba(251,191,36,0.3);
+      transform: translateY(-3px);
+    }
+
+    .step-connector {
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 0 8px;
+      color: var(--text-3);
+      font-size: 20px;
+      flex-shrink: 0;
+    }
+    @media (min-width: 700px) { .step-connector { display: flex; } }
+
+    .step-no {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      color: var(--gold);
+      margin-bottom: 14px;
+    }
+    .step-icon { font-size: 36px; margin-bottom: 12px; }
+    .step-card h3 { font-size: 17px; font-weight: 700; margin-bottom: 8px; }
+    .step-card p  { font-size: 13px; color: var(--text-2); line-height: 1.7; }
+
+    /* ── PRICING ── */
+    .pricing-row {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      margin-bottom: 56px;
+    }
+    @media (min-width: 640px) {
+      .pricing-row {
+        flex-direction: row;
+        align-items: stretch;
+      }
+    }
+
+    .pricing-card {
+      flex: 1;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 32px 28px;
+      backdrop-filter: blur(10px);
+      position: relative;
+      display: flex;
+      flex-direction: column;
+    }
+    .pricing-featured {
+      border-color: var(--gold);
+      background: rgba(251,191,36,0.05);
+      box-shadow: 0 0 48px rgba(251,191,36,0.12), 0 0 0 1px rgba(251,191,36,0.25);
+    }
+
+    .plan-rec-badge {
+      position: absolute;
+      top: -12px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: linear-gradient(135deg, #F59E0B, #FBBF24);
+      color: #000;
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      padding: 4px 14px;
+      border-radius: 20px;
+    }
+
+    .plan-label {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--text-3);
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+    .plan-price-wrap {
+      display: flex;
+      align-items: baseline;
+      gap: 4px;
+      margin-bottom: 6px;
+    }
+    .plan-price {
+      font-size: 44px;
+      font-weight: 900;
+      letter-spacing: -2px;
+      color: var(--text-1);
+    }
+    .pricing-featured .plan-price { color: var(--gold); }
+    .plan-per {
+      font-size: 15px;
+      color: var(--text-2);
+      font-weight: 500;
+    }
+    .plan-trial-text {
+      font-size: 12px;
+      color: var(--success);
+      font-weight: 600;
+      margin-bottom: 24px;
+    }
+
+    .plan-feats {
+      list-style: none;
+      flex: 1;
+      margin-bottom: 28px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .plan-feats li {
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .feat-ok { color: var(--text-1); }
+    .feat-ng { color: var(--text-3); text-decoration: line-through; }
+    .feat-ok::before { content: '✓'; color: var(--success); font-weight: 700; flex-shrink: 0; }
+    .feat-ng::before { content: '✗'; color: var(--text-3); font-weight: 700; flex-shrink: 0; }
+
+    .plan-btn {
+      width: 100%;
+      border: none;
+      border-radius: 14px;
+      padding: 15px;
+      font-size: 15px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all var(--t);
+    }
+    .plan-btn-gold {
+      background: linear-gradient(135deg, #F59E0B 0%, #FBBF24 50%, #FCD34D 100%);
+      color: #000;
+      box-shadow: 0 4px 20px rgba(251,191,36,0.28);
+    }
+    .plan-btn-gold:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 36px rgba(251,191,36,0.45);
+      filter: brightness(1.05);
+    }
+    .plan-btn-ghost {
+      background: rgba(255,255,255,0.06);
+      color: var(--text-2);
+      border: 1px solid var(--border);
+    }
+    .plan-btn-ghost:hover {
+      background: rgba(255,255,255,0.1);
+      color: var(--text-1);
+    }
+
+    /* ── DIFFICULTY SELECTION (within landing) ── */
+    .diff-select-wrap {
+      max-width: 560px;
+      margin: 0 auto;
+      text-align: left;
+    }
+    .diff-select-h {
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 16px;
+      margin-top: 12px;
+    }
+
+    .diff-list {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+    .diff-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 16px 18px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      cursor: pointer;
+      transition: all 0.22s ease;
+      text-align: left;
+      width: 100%;
+      backdrop-filter: blur(10px);
+    }
+    .diff-card:hover {
+      border-color: rgba(251,191,36,0.38);
+      background: rgba(251,191,36,0.05);
+      transform: translateY(-2px);
+    }
+    .diff-card.active {
+      border-color: var(--gold);
+      background: rgba(251,191,36,0.07);
+      box-shadow: 0 0 0 1px rgba(251,191,36,0.28), 0 8px 28px rgba(251,191,36,0.1);
+    }
+    .diff-icon { font-size: 28px; width: 44px; text-align: center; flex-shrink: 0; }
+    .diff-info { flex: 1; }
+    .diff-name { font-size: 15px; font-weight: 700; }
+    .diff-sub  { font-size: 12px; color: var(--text-2); margin-top: 2px; }
+    .diff-radio {
+      width: 22px; height: 22px; border-radius: 50%;
+      border: 2px solid rgba(255,255,255,0.18);
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0; transition: all var(--t);
+    }
+    .diff-card.active .diff-radio { background: var(--gold); border-color: var(--gold); }
+    .diff-radio::after {
+      content: ''; width: 8px; height: 8px; border-radius: 50%;
+      background: var(--bg); display: none;
+    }
+    .diff-card.active .diff-radio::after { display: block; }
+
+    .start-btn {
+      width: 100%;
+      background: linear-gradient(135deg, #F59E0B 0%, #FBBF24 50%, #FCD34D 100%);
+      color: #000; border: none; border-radius: var(--radius);
+      padding: 18px; font-size: 17px; font-weight: 800;
+      cursor: pointer; transition: all var(--t);
+      box-shadow: 0 4px 20px rgba(251,191,36,0.28);
+    }
+    .start-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 36px rgba(251,191,36,0.45);
+    }
+    .start-btn:active { transform: translateY(0); }
+
+    /* ── BOTTOM CTA ── */
+    .lp-bottom-cta {
+      padding: 100px 20px;
+      text-align: center;
+      border-top: 1px solid var(--border);
+    }
+    .lp-bottom-cta h2 {
+      font-size: clamp(24px, 4vw, 36px);
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      margin-bottom: 12px;
+    }
+    .lp-bottom-cta p {
+      font-size: 15px;
+      color: var(--text-2);
+      margin-bottom: 32px;
+    }
+
+    /* ── LP FOOTER ── */
+    .lp-footer {
+      padding: 24px 20px;
+      text-align: center;
+      font-size: 12px;
+      color: var(--text-3);
+      border-top: 1px solid var(--border);
+    }
+
+    /* ═══════════════════════════════════════════
+       QUIZ SCREEN
+    ═══════════════════════════════════════════ */
 
     .content {
       max-width: 480px;
@@ -118,115 +605,26 @@
       padding: 28px 16px 48px;
     }
 
-    /* ── START SCREEN ── */
-    .start-hero {
-      text-align: center;
-      padding: 36px 0 40px;
-    }
-
-    .start-emoji { font-size: 64px; line-height: 1; margin-bottom: 20px; }
-
-    .start-title {
-      font-size: 28px;
-      font-weight: 800;
-      letter-spacing: -0.5px;
-      margin-bottom: 10px;
-    }
-
-    .start-desc {
-      font-size: 15px;
-      color: var(--text-2);
-      line-height: 1.75;
-    }
-
-    .section-label {
-      font-size: 11px;
-      font-weight: 700;
-      letter-spacing: 1px;
-      text-transform: uppercase;
-      color: var(--text-3);
-      margin-bottom: 12px;
-    }
-
-    .diff-list {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-      margin-bottom: 32px;
-    }
-
-    .diff-card {
-      background: var(--card);
-      border: 2px solid var(--border-light);
-      border-radius: var(--radius);
-      padding: 16px 18px;
-      display: flex;
-      align-items: center;
-      gap: 14px;
-      cursor: pointer;
-      transition: all var(--t);
-      text-align: left;
-      width: 100%;
-      box-shadow: var(--shadow-sm);
-    }
-
-    .diff-card:hover { border-color: var(--accent); background: var(--accent-light); }
-    .diff-card.active { border-color: var(--accent); background: var(--accent-light); }
-
-    .diff-icon { font-size: 28px; width: 44px; text-align: center; flex-shrink: 0; }
-
-    .diff-info { flex: 1; }
-
-    .diff-name { font-size: 15px; font-weight: 700; color: var(--text-1); }
-
-    .diff-sub { font-size: 12px; color: var(--text-2); margin-top: 2px; }
-
-    .diff-radio {
-      width: 22px; height: 22px;
-      border-radius: 50%;
-      border: 2px solid var(--border);
-      background: white;
-      display: flex; align-items: center; justify-content: center;
-      flex-shrink: 0;
-      transition: all var(--t);
-    }
-
-    .diff-card.active .diff-radio {
-      background: var(--accent);
-      border-color: var(--accent);
-    }
-
-    .diff-radio::after {
-      content: '';
-      width: 8px; height: 8px;
-      border-radius: 50%;
-      background: white;
+    /* Free mode banner */
+    .free-banner {
       display: none;
+      background: rgba(251,191,36,0.08);
+      border: 1px solid rgba(251,191,36,0.2);
+      border-radius: 10px;
+      padding: 10px 16px;
+      margin-bottom: 16px;
+      text-align: center;
+      font-size: 13px;
+      color: var(--gold);
+      font-weight: 600;
     }
-
-    .diff-card.active .diff-radio::after { display: block; }
-
-    .start-btn {
-      width: 100%;
-      background: var(--accent);
-      color: white;
-      border: none;
-      border-radius: var(--radius);
-      padding: 18px;
-      font-size: 17px;
-      font-weight: 700;
+    .free-banner.show { display: block; }
+    .free-banner a {
+      color: var(--gold);
+      text-decoration: underline;
       cursor: pointer;
-      transition: all var(--t);
-      letter-spacing: -0.2px;
+      margin-left: 6px;
     }
-
-    .start-btn:hover {
-      background: var(--accent-dark);
-      transform: translateY(-1px);
-      box-shadow: var(--shadow-lg);
-    }
-
-    .start-btn:active { transform: translateY(0); box-shadow: none; }
 
     /* ── QUIZ META ── */
     .quiz-meta {
@@ -235,96 +633,58 @@
       justify-content: space-between;
       margin-bottom: 18px;
     }
-
     .diff-pills { display: flex; gap: 6px; }
-
     .diff-pill {
-      display: inline-flex;
-      align-items: center;
-      gap: 4px;
-      background: var(--card);
-      border: 1.5px solid var(--border-light);
-      border-radius: 20px;
-      padding: 5px 11px;
-      font-size: 12px;
-      font-weight: 600;
-      color: var(--text-2);
-      cursor: pointer;
-      transition: all var(--t);
-      box-shadow: var(--shadow-sm);
+      display: inline-flex; align-items: center; gap: 4px;
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: 20px; padding: 5px 11px;
+      font-size: 12px; font-weight: 600; color: var(--text-2);
+      cursor: pointer; transition: all var(--t); backdrop-filter: blur(8px);
     }
-
-    .diff-pill:hover {
-      border-color: var(--accent);
-      background: var(--accent-light);
-      color: var(--accent);
-    }
-
-    .diff-pill.active {
-      background: var(--header);
-      border-color: var(--header);
-      color: white;
-    }
-
+    .diff-pill:hover { border-color: rgba(251,191,36,0.38); color: var(--gold); background: rgba(251,191,36,0.05); }
+    .diff-pill.active { background: rgba(251,191,36,0.1); border-color: var(--gold); color: var(--gold); }
     .q-counter { font-size: 12px; color: var(--text-3); font-weight: 500; }
 
     /* ── AUDIO CARD ── */
     .audio-card {
-      background: var(--header);
-      border-radius: var(--radius-lg);
-      padding: 26px 24px 22px;
-      text-align: center;
-      margin-bottom: 20px;
-      position: relative;
-      overflow: hidden;
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: var(--radius-lg); padding: 26px 24px 22px;
+      text-align: center; margin-bottom: 20px;
+      position: relative; overflow: hidden;
+      backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
+      transition: border-color 0.4s, box-shadow 0.4s;
     }
-
     .audio-card::before {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background: radial-gradient(ellipse at 70% 20%, rgba(59,91,219,0.35) 0%, transparent 65%);
+      content: ''; position: absolute; inset: 0;
+      background: radial-gradient(ellipse at 70% 20%, rgba(59,91,219,0.18) 0%, transparent 65%);
       pointer-events: none;
     }
-
+    .audio-card.is-playing {
+      border-color: rgba(251,191,36,0.45);
+      box-shadow: 0 0 36px rgba(251,191,36,0.12), inset 0 0 60px rgba(251,191,36,0.04);
+    }
     .audio-label {
-      font-size: 10px;
-      font-weight: 700;
-      letter-spacing: 1px;
-      text-transform: uppercase;
-      color: rgba(255,255,255,0.35);
-      margin-bottom: 18px;
+      font-size: 10px; font-weight: 700; letter-spacing: 1px;
+      text-transform: uppercase; color: var(--text-3); margin-bottom: 18px;
     }
 
-    /* Waveform */
     .waveform {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 5px;
-      height: 50px;
-      margin-bottom: 18px;
+      display: flex; align-items: center; justify-content: center;
+      gap: 5px; height: 50px; margin-bottom: 18px;
     }
-
     .bar {
-      width: 4px;
-      border-radius: 2px;
-      background: rgba(255,255,255,0.18);
-      height: 8px;
+      width: 4px; border-radius: 2px;
+      background: rgba(255,255,255,0.12); height: 8px;
       transition: height 0.12s, background 0.12s;
     }
-
     .waveform.playing .bar {
-      background: #74C0FC;
-      animation: wave 1.4s ease-in-out infinite;
-      box-shadow: 0 0 10px rgba(116, 192, 252, 0.65);
+      background: var(--gold); animation: wave 1.4s ease-in-out infinite;
+      box-shadow: 0 0 10px rgba(251,191,36,0.55);
     }
-
     @keyframes wave {
       0%, 100% { height: 6px; opacity: 0.5; }
       50%       { height: 38px; opacity: 1; }
     }
-
     .waveform.playing .bar:nth-child(1)  { animation-delay: 0.00s; }
     .waveform.playing .bar:nth-child(2)  { animation-delay: 0.10s; }
     .waveform.playing .bar:nth-child(3)  { animation-delay: 0.20s; }
@@ -337,259 +697,137 @@
     .waveform.playing .bar:nth-child(10) { animation-delay: 0.11s; }
 
     .play-btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      background: rgba(255,255,255,0.08);
-      color: rgba(255,255,255,0.9);
-      border: 1.5px solid rgba(255,255,255,0.18);
-      border-radius: 50px;
-      padding: 11px 24px;
-      font-size: 14px;
-      font-weight: 600;
-      cursor: pointer;
-      transition: all var(--t);
+      display: inline-flex; align-items: center; gap: 8px;
+      background: rgba(255,255,255,0.06); color: var(--text-1);
+      border: 1px solid var(--border); border-radius: 50px;
+      padding: 11px 24px; font-size: 14px; font-weight: 600;
+      cursor: pointer; transition: all var(--t);
     }
-
-    .play-btn:hover {
-      background: rgba(255,255,255,0.15);
-      border-color: rgba(255,255,255,0.32);
-    }
-
+    .play-btn:hover { background: rgba(255,255,255,0.1); border-color: rgba(255,255,255,0.15); }
     .play-btn:active { transform: scale(0.97); }
-
     .play-btn.playing {
-      background: rgba(116,192,252,0.15);
-      border-color: rgba(116,192,252,0.4);
-      color: #74C0FC;
+      background: rgba(251,191,36,0.1); border-color: rgba(251,191,36,0.38); color: var(--gold);
     }
 
     /* ── OPTIONS ── */
     .question-label {
-      font-size: 14px;
-      font-weight: 600;
-      color: var(--text-2);
-      text-align: center;
-      margin-bottom: 14px;
+      font-size: 14px; font-weight: 600; color: var(--text-2);
+      text-align: center; margin-bottom: 14px;
     }
-
-    .options-list {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-      margin-bottom: 18px;
-    }
-
+    .options-list { display: flex; flex-direction: column; gap: 10px; margin-bottom: 18px; }
     .opt-btn {
-      background: var(--card);
-      border: 2px solid var(--border-light);
-      border-radius: var(--radius);
-      padding: 15px 16px;
-      display: flex;
-      align-items: center;
-      gap: 13px;
-      cursor: pointer;
-      transition: all var(--t);
-      text-align: left;
-      width: 100%;
-      font-size: 15px;
-      font-weight: 500;
-      color: var(--text-1);
-      box-shadow: var(--shadow-sm);
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: var(--radius); padding: 15px 16px;
+      display: flex; align-items: center; gap: 13px;
+      cursor: pointer; transition: all var(--t); text-align: left;
+      width: 100%; font-size: 15px; font-weight: 500; color: var(--text-1);
+      backdrop-filter: blur(8px);
     }
-
     .opt-btn:not(:disabled):hover {
-      border-color: var(--accent);
-      background: var(--accent-light);
-      transform: translateX(10px) scale(1.01);
-      box-shadow: var(--shadow);
+      border-color: rgba(251,191,36,0.42); background: rgba(251,191,36,0.05);
+      transform: translateX(6px);
+      box-shadow: 0 4px 20px rgba(0,0,0,0.3), 0 0 0 1px rgba(251,191,36,0.18);
     }
-
     .opt-btn:disabled { cursor: default; }
-
-    .opt-btn.correct { border-color: var(--success) !important; background: var(--success-bg) !important; }
-    .opt-btn.wrong   { border-color: var(--error)   !important; background: var(--error-bg)   !important; }
-
-    .opt-num {
-      width: 32px; height: 32px;
-      border-radius: 50%;
-      background: var(--bg);
-      display: flex; align-items: center; justify-content: center;
-      font-size: 14px;
-      font-weight: 700;
-      flex-shrink: 0;
-      color: var(--text-2);
-      transition: all var(--t);
+    .opt-btn.correct {
+      border-color: var(--success) !important; background: var(--success-bg) !important;
+      box-shadow: 0 0 24px rgba(52,211,153,0.15) !important;
     }
-
-    .opt-btn:not(:disabled):hover .opt-num { background: var(--accent); color: white; }
-    .opt-btn.correct .opt-num { background: var(--success); color: white; }
-    .opt-btn.wrong   .opt-num { background: var(--error);   color: white; }
-
+    .opt-btn.wrong {
+      border-color: var(--error) !important; background: var(--error-bg) !important;
+      box-shadow: 0 0 24px rgba(248,113,113,0.15) !important;
+    }
+    .opt-num {
+      width: 32px; height: 32px; border-radius: 50%;
+      background: rgba(255,255,255,0.07);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 14px; font-weight: 700; flex-shrink: 0;
+      color: var(--text-2); transition: all var(--t);
+    }
+    .opt-btn:not(:disabled):hover .opt-num { background: var(--gold); color: #000; }
+    .opt-btn.correct .opt-num { background: var(--success); color: #000; }
+    .opt-btn.wrong   .opt-num { background: var(--error);   color: #fff; }
     .opt-text { flex: 1; line-height: 1.4; }
 
     /* ── EXPLANATION ── */
     .explanation {
-      background: var(--card);
-      border-radius: var(--radius);
-      padding: 18px 20px;
-      margin-bottom: 14px;
-      box-shadow: var(--shadow);
-      display: none;
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: var(--radius); padding: 18px 20px; margin-bottom: 14px;
+      backdrop-filter: blur(8px); display: none;
     }
-
-    .explanation.show {
-      display: block;
-      animation: slideUp 0.25s ease-out;
-    }
+    .explanation.show { display: block; animation: slideUp 0.25s ease-out; }
 
     @keyframes slideUp {
       from { opacity: 0; transform: translateY(10px); }
       to   { opacity: 1; transform: translateY(0); }
     }
 
-    .expl-verdict {
-      font-size: 15px;
-      font-weight: 700;
-      margin-bottom: 8px;
-    }
-
+    .expl-verdict { font-size: 15px; font-weight: 700; margin-bottom: 8px; }
     .expl-verdict.ok  { color: var(--success); }
     .expl-verdict.ng  { color: var(--error); }
-
-    .expl-text {
-      font-size: 13px;
-      color: var(--text-2);
-      line-height: 1.75;
-      margin-bottom: 12px;
-    }
-
+    .expl-text { font-size: 13px; color: var(--text-2); line-height: 1.75; margin-bottom: 12px; }
     .key-phrases { display: flex; flex-wrap: wrap; gap: 6px; }
-
     .kp {
-      background: var(--accent-light);
-      color: var(--accent);
-      border-radius: 6px;
-      padding: 4px 10px;
-      font-size: 12px;
-      font-weight: 700;
+      background: rgba(251,191,36,0.09); color: var(--gold);
+      border: 1px solid rgba(251,191,36,0.2); border-radius: 6px;
+      padding: 4px 10px; font-size: 12px; font-weight: 700;
       font-family: 'SF Mono', 'Fira Code', 'Consolas', monospace;
     }
 
     /* ── TRANSCRIPT ── */
     .transcript-toggle {
-      display: none;
-      background: none;
-      border: 1.5px dashed var(--border);
-      border-radius: 10px;
-      color: var(--text-3);
-      font-size: 12px;
-      font-weight: 600;
-      letter-spacing: 0.3px;
-      cursor: pointer;
-      padding: 9px 16px;
-      width: 100%;
-      margin-top: 10px;
-      transition: all var(--t);
+      display: none; background: none;
+      border: 1px dashed rgba(255,255,255,0.14); border-radius: 10px;
+      color: var(--text-3); font-size: 12px; font-weight: 600;
+      letter-spacing: 0.3px; cursor: pointer; padding: 9px 16px;
+      width: 100%; margin-top: 10px; transition: all var(--t);
     }
     .transcript-toggle.show { display: block; }
     .transcript-toggle:hover {
-      border-color: var(--accent);
-      color: var(--accent);
-      background: var(--accent-light);
+      border-color: rgba(251,191,36,0.32); color: var(--gold-dim);
+      background: rgba(251,191,36,0.04);
     }
-
     .transcript {
-      display: none;
-      margin-top: 10px;
-      padding: 18px 20px;
-      background: var(--card);
-      border-radius: var(--radius);
-      border: 1.5px solid var(--border-light);
-      box-shadow: var(--shadow-sm);
+      display: none; margin-top: 10px; padding: 18px 20px;
+      background: var(--surface); border-radius: var(--radius);
+      border: 1px solid var(--border); backdrop-filter: blur(8px);
     }
-    .transcript.show {
-      display: block;
-      animation: slideUp 0.22s ease-out;
-    }
+    .transcript.show { display: block; animation: slideUp 0.22s ease-out; }
     .transcript-label {
-      font-size: 10px;
-      font-weight: 700;
-      letter-spacing: 1px;
-      text-transform: uppercase;
-      color: var(--text-3);
-      margin-bottom: 10px;
+      font-size: 10px; font-weight: 700; letter-spacing: 1px;
+      text-transform: uppercase; color: var(--text-3); margin-bottom: 10px;
     }
-    .transcript-text {
-      font-size: 15px;
-      line-height: 1.85;
-      color: var(--text-1);
-      font-style: italic;
-    }
+    .transcript-text { font-size: 15px; line-height: 1.85; color: var(--text-1); font-style: italic; }
 
     /* ── NEXT BUTTON ── */
     .next-btn {
       width: 100%;
-      background: var(--accent);
-      color: white;
-      border: none;
-      border-radius: var(--radius);
-      padding: 17px;
-      font-size: 16px;
-      font-weight: 700;
-      cursor: pointer;
-      transition: all var(--t);
-      display: none;
-      letter-spacing: -0.2px;
+      background: linear-gradient(135deg, #F59E0B 0%, #FBBF24 50%, #FCD34D 100%);
+      color: #000; border: none; border-radius: var(--radius);
+      padding: 17px; font-size: 16px; font-weight: 800;
+      cursor: pointer; transition: all var(--t);
+      display: none; letter-spacing: -0.2px;
+      box-shadow: 0 4px 20px rgba(251,191,36,0.22); margin-top: 14px;
     }
-
-    .next-btn.show {
-      display: block;
-      animation: slideUp 0.25s ease-out;
-    }
-
-    .next-btn:hover {
-      background: var(--accent-dark);
-      transform: translateY(-1px);
-      box-shadow: var(--shadow-lg);
-    }
-
-    .next-btn:active { transform: translateY(0); box-shadow: none; }
+    .next-btn.show { display: block; animation: slideUp 0.25s ease-out; }
+    .next-btn:hover { transform: translateY(-2px); box-shadow: 0 8px 36px rgba(251,191,36,0.42); filter: brightness(1.05); }
+    .next-btn:active { transform: translateY(0); }
 
     /* ── LOADING ── */
-    .loading-view {
-      text-align: center;
-      padding: 64px 20px;
-      display: none;
-    }
-
+    .loading-view { text-align: center; padding: 64px 20px; display: none; }
     .loading-view.show { display: block; }
-
     .spinner {
-      width: 42px; height: 42px;
-      border: 3px solid var(--border);
-      border-top-color: var(--accent);
-      border-radius: 50%;
-      animation: spin 0.75s linear infinite;
-      margin: 0 auto 16px;
+      width: 42px; height: 42px; border: 3px solid rgba(255,255,255,0.08);
+      border-top-color: var(--gold); border-radius: 50%;
+      animation: spin 0.75s linear infinite; margin: 0 auto 16px;
     }
-
     @keyframes spin { to { transform: rotate(360deg); } }
-
     .loading-text { font-size: 14px; color: var(--text-2); font-weight: 500; }
 
     /* ── QUESTION VIEW ── */
     .question-view { display: none; }
-
-    .question-view.show {
-      display: block;
-      animation: fadeIn 0.28s ease-out;
-    }
-
-    @keyframes fadeIn {
-      from { opacity: 0; }
-      to   { opacity: 1; }
-    }
+    .question-view.show { display: block; animation: fadeIn 0.28s ease-out; }
+    @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
 
     /* ── KINETIC ANIMATIONS ── */
     @keyframes shake {
@@ -601,201 +839,355 @@
       75%       { transform: translateX(-4px); }
       90%       { transform: translateX(4px); }
     }
-
     @keyframes pop {
       0%   { transform: scale(1); }
       35%  { transform: scale(1.05); }
       100% { transform: scale(1); }
     }
-
     @keyframes score-bump {
       0%   { transform: scale(1); }
       40%  { transform: scale(1.4); }
       100% { transform: scale(1); }
     }
-
     .opt-btn.anim-shake { animation: shake 0.45s ease-out; }
     .opt-btn.anim-pop   { animation: pop   0.35s ease-out; }
 
     /* ── STREAK & PROGRESS ── */
     .streak-badge {
-      display: flex;
-      align-items: center;
-      gap: 3px;
-      font-size: 13px;
-      font-weight: 800;
-      color: #FFD43B;
-      min-width: 42px;
-      transition: color 0.2s;
+      display: flex; align-items: center; gap: 3px;
+      font-size: 13px; font-weight: 800; color: var(--gold);
+      min-width: 42px; transition: color 0.2s;
     }
-    .streak-badge.zero { color: rgba(255,255,255,0.25); }
-
-    .progress-wrap {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-end;
-      gap: 5px;
-    }
-
+    .streak-badge.zero { color: var(--text-3); }
+    .progress-wrap { display: flex; flex-direction: column; align-items: flex-end; gap: 5px; }
     .progress-track {
-      width: 72px;
-      height: 4px;
-      background: rgba(255,255,255,0.12);
-      border-radius: 2px;
-      overflow: hidden;
+      width: 72px; height: 4px; background: rgba(255,255,255,0.08);
+      border-radius: 2px; overflow: hidden;
     }
-
     .progress-fill {
       height: 100%;
-      background: linear-gradient(90deg, #74C0FC, #A9E34B);
-      border-radius: 2px;
-      width: 0%;
+      background: linear-gradient(90deg, var(--gold), #FCD34D);
+      border-radius: 2px; width: 0%;
       transition: width 0.55s cubic-bezier(0.34, 1.56, 0.64, 1);
     }
-
     .score-num { display: inline-block; }
     .score-num.bump { animation: score-bump 0.3s ease-out; }
 
-    /* ── TABLET 640px+ ── */
+    /* ── PAYWALL MODAL ── */
+    .paywall-overlay {
+      display: none;
+      position: fixed; inset: 0; z-index: 500;
+      background: rgba(6,12,27,0.85);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      animation: fadeIn 0.25s ease-out;
+    }
+    .paywall-overlay.show { display: flex; }
+
+    .paywall-modal {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(251,191,36,0.35);
+      border-radius: 24px;
+      padding: 40px 32px 32px;
+      max-width: 420px;
+      width: 100%;
+      text-align: center;
+      box-shadow: 0 0 60px rgba(251,191,36,0.12), 0 24px 80px rgba(0,0,0,0.5);
+      animation: slideUp 0.3s ease-out;
+      backdrop-filter: blur(20px);
+    }
+
+    .paywall-crown { font-size: 42px; margin-bottom: 16px; }
+    .paywall-title {
+      font-size: 22px; font-weight: 800; letter-spacing: -0.4px; margin-bottom: 8px;
+    }
+    .paywall-sub { font-size: 14px; color: var(--text-2); line-height: 1.6; margin-bottom: 24px; }
+
+    .paywall-feats {
+      list-style: none; text-align: left;
+      background: rgba(255,255,255,0.03);
+      border: 1px solid var(--border); border-radius: 14px;
+      padding: 16px 20px; margin-bottom: 24px;
+      display: flex; flex-direction: column; gap: 8px;
+    }
+    .paywall-feats li {
+      font-size: 14px; display: flex; align-items: center; gap: 8px; color: var(--text-1);
+    }
+    .paywall-feats li::before { content: '✓'; color: var(--success); font-weight: 700; }
+
+    .paywall-price {
+      margin-bottom: 20px;
+    }
+    .paywall-price strong {
+      font-size: 36px; font-weight: 900; letter-spacing: -1px; color: var(--gold);
+    }
+    .paywall-price span {
+      font-size: 14px; color: var(--text-2);
+    }
+    .paywall-price .trial-note {
+      display: block; font-size: 12px; color: var(--success); font-weight: 600; margin-top: 2px;
+    }
+
+    .paywall-cta {
+      width: 100%;
+      background: linear-gradient(135deg, #F59E0B 0%, #FBBF24 50%, #FCD34D 100%);
+      color: #000; border: none; border-radius: 14px;
+      padding: 16px; font-size: 16px; font-weight: 800;
+      cursor: pointer; transition: all var(--t); margin-bottom: 14px;
+      box-shadow: 0 4px 20px rgba(251,191,36,0.3);
+    }
+    .paywall-cta:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 36px rgba(251,191,36,0.5);
+    }
+    .paywall-skip {
+      font-size: 12px; color: var(--text-3); text-decoration: underline;
+      cursor: pointer; display: block; transition: color 0.15s;
+    }
+    .paywall-skip:hover { color: var(--text-2); }
+
+    /* ── RESPONSIVE: TABLET 640px+ ── */
     @media (min-width: 640px) {
       .content      { max-width: 640px; padding: 36px 32px 64px; }
-
-      .start-emoji  { font-size: 80px; }
-      .start-title  { font-size: 34px; }
-      .start-desc   { font-size: 16px; }
-
       .diff-card    { padding: 20px 22px; }
       .diff-icon    { font-size: 32px; width: 50px; }
       .diff-name    { font-size: 16px; }
       .diff-sub     { font-size: 13px; }
-      .start-btn    { padding: 20px; font-size: 18px; border-radius: 18px; }
-
       .diff-pill    { padding: 7px 15px; font-size: 13px; }
       .quiz-meta    { margin-bottom: 22px; }
-
       .audio-card   { padding: 36px 32px 30px; border-radius: 24px; }
       .waveform     { height: 58px; gap: 6px; }
       .bar          { width: 5px; }
       .play-btn     { padding: 14px 32px; font-size: 15px; }
-
       .question-label { font-size: 15px; }
       .opt-btn      { padding: 18px 20px; font-size: 16px; }
       .opt-num      { width: 36px; height: 36px; font-size: 15px; }
-
       .explanation  { padding: 20px 22px; border-radius: 18px; }
       .expl-verdict { font-size: 16px; }
       .expl-text    { font-size: 14px; }
-
       .next-btn     { padding: 20px; font-size: 17px; border-radius: 18px; }
     }
 
-    /* ── DESKTOP 960px+ — 2-column quiz ── */
+    /* ── RESPONSIVE: DESKTOP 960px+ ── */
     @media (min-width: 960px) {
       .content      { max-width: 940px; padding: 52px 48px 88px; }
-
-      .start-emoji  { font-size: 96px; }
-      .start-title  { font-size: 42px; }
-      .start-desc   { font-size: 17px; }
       .diff-card    { padding: 22px 26px; }
       .diff-icon    { font-size: 36px; width: 54px; }
-      .start-btn    { padding: 22px; font-size: 19px; }
-
       .audio-card   { padding: 44px 40px 36px; border-radius: 28px; }
       .waveform     { height: 68px; gap: 7px; }
       .bar          { width: 6px; }
       .play-btn     { padding: 16px 40px; font-size: 16px; }
-
       .opt-btn      { padding: 20px 24px; font-size: 16px; border-radius: 18px; }
       .opt-num      { width: 38px; height: 38px; font-size: 15px; }
       .next-btn     { padding: 22px; font-size: 18px; border-radius: 18px; }
       .explanation  { padding: 22px 26px; border-radius: 20px; }
-
-      /* 2-column layout */
       .question-view.show {
-        display: flex;
-        flex-direction: row;
-        gap: 36px;
-        align-items: start;
+        display: flex; flex-direction: row; gap: 36px; align-items: start;
       }
-      .quiz-left {
-        flex: 0 0 42%;
-        position: sticky;
-        top: 72px;
-      }
+      .quiz-left  { flex: 0 0 42%; position: sticky; top: 72px; }
       .quiz-right { flex: 1; min-width: 0; }
     }
   </style>
 </head>
 <body>
 
+<!-- Background Orbs -->
+<div class="orb orb-1"></div>
+<div class="orb orb-2"></div>
+<div class="orb orb-3"></div>
+
 <!-- Mockup Banner -->
 <div class="mockup-banner">
-  🎨 Mockup — Claude API 未接続・ハードコードされた問題で動作確認中
+  ✦ Mockup — Claude API 未接続・ハードコードされた問題で動作確認中
 </div>
 
-<!-- Header -->
+<!-- Quiz Header (hidden on start screen) -->
 <header class="app-header" id="appHeader">
-  <div class="header-logo">🎧 English Listening Quiz</div>
+  <div class="header-logo">🎧 ListenUp</div>
   <div class="header-right">
     <div class="streak-badge zero" id="streakBadge">🔥 <span id="streakVal">0</span></div>
     <div class="progress-wrap">
       <div class="score-wrap">
-        <span class="score-num" id="scoreVal">0</span><span style="color:rgba(255,255,255,0.3)"> / </span><span id="totalVal">0</span>
+        <span class="score-num" id="scoreVal">0</span><span style="color:var(--text-3)"> / </span><span id="totalVal">0</span>
       </div>
       <div class="progress-track"><div class="progress-fill" id="progressFill"></div></div>
     </div>
-    <button class="reset-btn" onclick="goToStart()">設定</button>
+    <button class="reset-btn" onclick="goToStart()">← TOP</button>
   </div>
 </header>
 
-<!-- ════════════════════════════════ START SCREEN ════════════════════════════════ -->
+<!-- ═══════════════ START SCREEN (Landing Page) ═══════════════ -->
 <div class="screen active" id="startScreen">
-  <div class="content">
 
-    <div class="start-hero">
-      <div class="start-emoji">🎧</div>
-      <h1 class="start-title">English Listening Quiz</h1>
-      <p class="start-desc">ネイティブ英語を聴いて、<br>どんなシチュエーションか当てよう</p>
+  <!-- ── SECTION 1: Hero ── -->
+  <section class="lp-hero">
+    <div class="lp-hero-inner">
+      <div class="hero-eyebadge">🎯 AI Listening Training</div>
+      <h1 class="hero-h1">英語が、<br><span class="text-gold">聴こえ始める</span>。</h1>
+      <p class="hero-sub">
+        ネイティブ音声を聴いて状況を判断する。<br>
+        最短で実践力が身につく、次世代のリスニングトレーニング。
+      </p>
+      <div class="hero-ctas">
+        <button class="btn-primary-lg" onclick="startPremiumTrial()">7日間 無料で試す →</button>
+        <button class="btn-ghost" onclick="startFreeQuiz()">まず3問 無料体験</button>
+      </div>
+      <p class="hero-fine">クレジットカード不要 · いつでもキャンセル可</p>
     </div>
+  </section>
 
-    <div class="section-label">難易度を選ぶ</div>
-    <div class="diff-list">
-      <button class="diff-card" id="d-beginner" onclick="setDiff('beginner')">
-        <div class="diff-icon">🌱</div>
-        <div class="diff-info">
-          <div class="diff-name">初級</div>
-          <div class="diff-sub">日常会話・明確なシチュエーション・ゆっくりめ</div>
-        </div>
-        <div class="diff-radio"></div>
-      </button>
-      <button class="diff-card active" id="d-intermediate" onclick="setDiff('intermediate')">
-        <div class="diff-icon">🌿</div>
-        <div class="diff-info">
-          <div class="diff-name">中級</div>
-          <div class="diff-sub">自然な会話・慣用表現も含む・標準スピード</div>
-        </div>
-        <div class="diff-radio"></div>
-      </button>
-      <button class="diff-card" id="d-advanced" onclick="setDiff('advanced')">
-        <div class="diff-icon">🌳</div>
-        <div class="diff-info">
-          <div class="diff-name">上級</div>
-          <div class="diff-sub">スラング・ビジネス用語・微妙なニュアンス</div>
-        </div>
-        <div class="diff-radio"></div>
-      </button>
-    </div>
-
-    <button class="start-btn" onclick="startQuiz()">スタート →</button>
-
+  <!-- ── SECTION 2: Stats ── -->
+  <div class="stats-strip">
+    <div class="stat"><strong>12,000+</strong><span>学習者</span></div>
+    <div class="stat-div"></div>
+    <div class="stat"><strong>98%</strong><span>継続率</span></div>
+    <div class="stat-div"></div>
+    <div class="stat"><strong>500+</strong><span>練習問題</span></div>
+    <div class="stat-div"></div>
+    <div class="stat"><strong>4.9 ★</strong><span>評価</span></div>
   </div>
+
+  <!-- ── SECTION 3: How It Works ── -->
+  <section class="lp-section">
+    <div class="lp-wrap">
+      <div class="section-eyebrow">HOW IT WORKS</div>
+      <h2 class="section-h2">3ステップで<span class="text-gold">耳が鍛えられる</span></h2>
+      <div class="steps-row">
+        <div class="step-card">
+          <div class="step-no">01</div>
+          <div class="step-icon">🎧</div>
+          <h3>聴く</h3>
+          <p>ネイティブスピーカーの自然な会話音声を集中して聴く。リピート再生で繰り返し確認できる。</p>
+        </div>
+        <div class="step-connector">→</div>
+        <div class="step-card">
+          <div class="step-no">02</div>
+          <div class="step-icon">🧠</div>
+          <h3>推測する</h3>
+          <p>文脈・イントネーション・語彙から、どんな状況か5択で判断する。答えは直感より推論で。</p>
+        </div>
+        <div class="step-connector">→</div>
+        <div class="step-card">
+          <div class="step-no">03</div>
+          <div class="step-icon">💡</div>
+          <h3>定着させる</h3>
+          <p>キーフレーズと日本語解説で「聴き取れた理由」を体得。同じ表現に次は必ず反応できる。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SECTION 4: Pricing ── -->
+  <section class="lp-section-alt" id="pricingSection">
+    <div class="lp-wrap">
+      <div class="section-eyebrow">PRICING</div>
+      <h2 class="section-h2">シンプルな料金プラン</h2>
+
+      <div class="pricing-row">
+        <!-- Free Plan -->
+        <div class="pricing-card">
+          <div class="plan-label">無料プラン</div>
+          <div class="plan-price-wrap">
+            <span class="plan-price">¥0</span>
+          </div>
+          <div style="height:26px"></div>
+          <ul class="plan-feats">
+            <li class="feat-ok">1日 3問まで体験可能</li>
+            <li class="feat-ok">初級レベルの問題</li>
+            <li class="feat-ng">詳細解説・キーフレーズ</li>
+            <li class="feat-ng">スクリプト確認機能</li>
+            <li class="feat-ng">中級・上級レベル</li>
+            <li class="feat-ng">進捗管理・ストリーク</li>
+          </ul>
+          <button class="plan-btn plan-btn-ghost" onclick="startFreeQuiz()">無料で3問体験する</button>
+        </div>
+
+        <!-- Premium Plan -->
+        <div class="pricing-card pricing-featured">
+          <div class="plan-rec-badge">おすすめ</div>
+          <div class="plan-label">プレミアムプラン</div>
+          <div class="plan-price-wrap">
+            <span class="plan-price">¥980</span>
+            <span class="plan-per">/月</span>
+          </div>
+          <div class="plan-trial-text">最初の7日間は完全無料</div>
+          <ul class="plan-feats">
+            <li class="feat-ok">毎日 <strong>無制限</strong>に練習</li>
+            <li class="feat-ok">全難易度（初級〜上級）</li>
+            <li class="feat-ok">詳細解説 & キーフレーズ</li>
+            <li class="feat-ok">スクリプト確認機能</li>
+            <li class="feat-ok">進捗管理 & ストリーク</li>
+            <li class="feat-ok">新問題 毎週追加</li>
+          </ul>
+          <button class="plan-btn plan-btn-gold" onclick="scrollToDiff()">7日間 無料で試す →</button>
+        </div>
+      </div>
+
+      <!-- Difficulty Selection -->
+      <div class="diff-select-wrap" id="diffSelectWrap">
+        <div class="section-eyebrow" style="margin-top:48px;text-align:center">SELECT LEVEL</div>
+        <h3 class="diff-select-h" style="text-align:center">難易度を選んでスタート</h3>
+        <div class="diff-list">
+          <button class="diff-card" id="d-beginner" onclick="setDiff('beginner')">
+            <div class="diff-icon">🌱</div>
+            <div class="diff-info">
+              <div class="diff-name">初級</div>
+              <div class="diff-sub">日常会話・明確なシチュエーション・ゆっくりめ</div>
+            </div>
+            <div class="diff-radio"></div>
+          </button>
+          <button class="diff-card active" id="d-intermediate" onclick="setDiff('intermediate')">
+            <div class="diff-icon">🌿</div>
+            <div class="diff-info">
+              <div class="diff-name">中級</div>
+              <div class="diff-sub">自然な会話・慣用表現も含む・標準スピード</div>
+            </div>
+            <div class="diff-radio"></div>
+          </button>
+          <button class="diff-card" id="d-advanced" onclick="setDiff('advanced')">
+            <div class="diff-icon">🌳</div>
+            <div class="diff-info">
+              <div class="diff-name">上級</div>
+              <div class="diff-sub">スラング・ビジネス用語・微妙なニュアンス</div>
+            </div>
+            <div class="diff-radio"></div>
+          </button>
+        </div>
+        <button class="start-btn" onclick="startPremiumTrial()">7日間無料で始める →</button>
+        <p style="text-align:center;font-size:12px;color:var(--text-3);margin-top:10px">クレジットカード不要</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SECTION 6: Bottom CTA ── -->
+  <div class="lp-bottom-cta">
+    <div class="lp-wrap">
+      <h2>今すぐ、英語リスニングを変えよう</h2>
+      <p>7日間の無料体験から始めてください。クレジットカード不要。</p>
+      <button class="btn-primary-lg" onclick="scrollToDiff()">7日間 無料で試す →</button>
+    </div>
+  </div>
+
+  <div class="lp-footer">
+    © 2025 ListenUp · すべての機能は7日間無料でお試しいただけます
+  </div>
+
 </div>
 
-<!-- ════════════════════════════════ QUIZ SCREEN ════════════════════════════════ -->
+<!-- ═══════════════ QUIZ SCREEN ═══════════════ -->
 <div class="screen" id="quizScreen">
   <div class="content">
 
-    <!-- Difficulty pills — always visible during quiz -->
+    <!-- Free mode notice -->
+    <div class="free-banner" id="freeBanner">
+      無料体験中 — 残り <span id="freeRemaining">3</span> 問
+      <a onclick="scrollToDiffAndUpgrade()">→ プレミアムで続ける</a>
+    </div>
+
+    <!-- Difficulty pills -->
     <div class="quiz-meta">
       <div class="diff-pills">
         <button class="diff-pill" id="p-beginner"     onclick="changeDiff('beginner')"    >🌱 初級</button>
@@ -814,9 +1206,8 @@
     <!-- Question -->
     <div class="question-view" id="questionView">
 
-      <!-- Left column: audio player (sticky on desktop) -->
       <div class="quiz-left">
-        <div class="audio-card">
+        <div class="audio-card" id="audioCard">
           <div class="audio-label">英語音声</div>
           <div class="waveform" id="waveform">
             <div class="bar"></div><div class="bar"></div><div class="bar"></div>
@@ -831,7 +1222,6 @@
         </div>
       </div>
 
-      <!-- Right column: options + explanation + next -->
       <div class="quiz-right">
         <div class="question-label">この会話はどんな状況でしょう？</div>
         <div class="options-list" id="optList"></div>
@@ -857,9 +1247,34 @@
   </div>
 </div>
 
+<!-- ═══════════════ PAYWALL MODAL ═══════════════ -->
+<div class="paywall-overlay" id="paywallOverlay">
+  <div class="paywall-modal">
+    <div class="paywall-crown">👑</div>
+    <h2 class="paywall-title">無料体験が終了しました</h2>
+    <p class="paywall-sub">
+      プレミアムプランで学習を続けましょう。<br>
+      最初の7日間は完全無料です。
+    </p>
+    <ul class="paywall-feats">
+      <li>毎日 無制限に練習できる</li>
+      <li>全難易度（初級〜上級）が解放される</li>
+      <li>詳細解説 & キーフレーズが確認できる</li>
+      <li>スクリプト確認で英文をチェックできる</li>
+      <li>進捗管理 & ストリークで継続できる</li>
+    </ul>
+    <div class="paywall-price">
+      <strong>¥980</strong><span>/月</span>
+      <span class="trial-note">最初の7日間は完全無料 · いつでもキャンセル可</span>
+    </div>
+    <button class="paywall-cta" onclick="upgradeToPremium()">7日間 無料で試す →</button>
+    <a class="paywall-skip" onclick="closePaywall()">デモ用：スキップして続ける（実際の製品では非表示）</a>
+  </div>
+</div>
+
 <script>
 // ─────────────────────────────────────────
-// QUESTION DATA (hardcoded for mockup)
+// QUESTION DATA
 // ─────────────────────────────────────────
 const DATA = [
   {
@@ -962,6 +1377,8 @@ const DIFF_META = {
   advanced:     { icon: '🌳', label: '上級',  rate: 1.00 },
 };
 
+const FREE_LIMIT = 3;
+
 // ─────────────────────────────────────────
 // STATE
 // ─────────────────────────────────────────
@@ -973,28 +1390,36 @@ let total     = 0;
 let streak    = 0;
 let answered  = false;
 let isPlaying = false;
+let freeMode  = false;
+
+// ─────────────────────────────────────────
+// NAVIGATION
+// ─────────────────────────────────────────
+function scrollToDiff() {
+  document.getElementById('diffSelectWrap').scrollIntoView({ behavior: 'smooth', block: 'center' });
+}
+
+function scrollToDiffAndUpgrade() {
+  closePaywall();
+  goToStart();
+  setTimeout(() => scrollToDiff(), 150);
+}
 
 // ─────────────────────────────────────────
 // DIFFICULTY
 // ─────────────────────────────────────────
 function setDiff(d) {
   diff = d;
-  // Start screen cards
   document.querySelectorAll('.diff-card').forEach(el => el.classList.remove('active'));
   document.getElementById('d-' + d).classList.add('active');
-  // Quiz screen pills (sync)
   syncPills(d);
 }
 
-// Called from quiz screen pills — changes diff and immediately loads a new question
 function changeDiff(d) {
   diff = d;
-  // Sync start screen cards
   document.querySelectorAll('.diff-card').forEach(el => el.classList.remove('active'));
   document.getElementById('d-' + d).classList.add('active');
-  // Sync quiz pills
   syncPills(d);
-  // Rebuild queue from new difficulty and jump to a new question right away
   buildQueue();
   loadQ();
 }
@@ -1008,22 +1433,70 @@ function syncPills(d) {
 // ─────────────────────────────────────────
 // START
 // ─────────────────────────────────────────
-function startQuiz() {
+function startFreeQuiz() {
+  freeMode = true;
+  beginQuiz();
+}
+
+function startPremiumTrial() {
+  freeMode = false;
+  beginQuiz();
+}
+
+function beginQuiz() {
   score = 0; total = 0; streak = 0;
   buildQueue();
-  syncPills(diff);   // reflect start-screen selection in quiz pills
+  syncPills(diff);
   document.getElementById('startScreen').classList.remove('active');
   document.getElementById('quizScreen').classList.add('active');
   document.getElementById('appHeader').style.display = 'flex';
+
+  // Free mode banner
+  const banner = document.getElementById('freeBanner');
+  if (freeMode) {
+    banner.classList.add('show');
+    updateFreeRemaining();
+  } else {
+    banner.classList.remove('show');
+  }
+
   updateScore();
   loadQ();
 }
 
 function goToStart() {
   speechSynthesis.cancel();
+  freeMode = false;
   document.getElementById('quizScreen').classList.remove('active');
   document.getElementById('startScreen').classList.add('active');
   document.getElementById('appHeader').style.display = 'none';
+  document.getElementById('freeBanner').classList.remove('show');
+  window.scrollTo({ top: 0 });
+}
+
+// ─────────────────────────────────────────
+// PAYWALL
+// ─────────────────────────────────────────
+function showPaywall() {
+  document.getElementById('paywallOverlay').classList.add('show');
+}
+
+function closePaywall() {
+  document.getElementById('paywallOverlay').classList.remove('show');
+}
+
+function upgradeToPremium() {
+  freeMode = false;
+  closePaywall();
+  document.getElementById('freeBanner').classList.remove('show');
+  // Continue with current state (in real app: go to Stripe)
+  loadQ();
+}
+
+function updateFreeRemaining() {
+  const remaining = Math.max(0, FREE_LIMIT - total);
+  const el = document.getElementById('freeRemaining');
+  if (el) el.textContent = remaining;
 }
 
 // ─────────────────────────────────────────
@@ -1050,14 +1523,12 @@ function loadQ() {
   document.getElementById('transcriptEl').classList.remove('show');
   document.getElementById('nextBtn').classList.remove('show');
 
-  // Simulate loading (mimics future API call)
   setTimeout(() => {
     if (!queue.length) buildQueue();
     current = queue.shift();
     render();
     document.getElementById('loadingView').classList.remove('show');
     document.getElementById('questionView').classList.add('show');
-    // Auto-play after short delay (user gesture already granted by Start button)
     setTimeout(() => speak(current.text), 550);
   }, 1100);
 }
@@ -1066,9 +1537,13 @@ function loadQ() {
 // RENDER
 // ─────────────────────────────────────────
 function render() {
-  document.getElementById('qCounter').textContent = `${total + 1}問目`;
+  const qLabel = freeMode
+    ? `${total + 1}問目（無料体験 ${total + 1}/${FREE_LIMIT}）`
+    : `${total + 1}問目`;
+  document.getElementById('qCounter').textContent = qLabel;
   setPlayBtn(false);
   document.getElementById('waveform').classList.remove('playing');
+  document.getElementById('audioCard').classList.remove('is-playing');
 
   const list = document.getElementById('optList');
   list.innerHTML = '';
@@ -1091,6 +1566,7 @@ function choose(idx) {
   const ok = idx === current.correct;
   if (ok) { score++; streak++; } else { streak = 0; }
   updateScore();
+  if (freeMode) updateFreeRemaining();
 
   document.querySelectorAll('.opt-btn').forEach((btn, i) => {
     btn.disabled = true;
@@ -1106,11 +1582,10 @@ function choose(idx) {
 
   if (ok) launchConfetti();
 
-  // Explanation
   const el = document.getElementById('explEl');
   document.getElementById('explVerdict').className = 'expl-verdict ' + (ok ? 'ok' : 'ng');
   document.getElementById('explVerdict').textContent = ok ? '✅ 正解！' : '❌ 不正解...';
-  document.getElementById('explText').textContent    = current.expl;
+  document.getElementById('explText').textContent = current.expl;
 
   const kpEl = document.getElementById('explKP');
   kpEl.innerHTML = '';
@@ -1122,9 +1597,19 @@ function choose(idx) {
   });
 
   el.classList.add('show');
-  document.getElementById('transcriptText').textContent = current.text;
-  document.getElementById('transcriptToggle').classList.add('show');
+
+  // Transcript: hidden in free mode
+  if (!freeMode) {
+    document.getElementById('transcriptText').textContent = current.text;
+    document.getElementById('transcriptToggle').classList.add('show');
+  }
+
   document.getElementById('nextBtn').classList.add('show');
+
+  // Change next button label in free mode when limit reached
+  if (freeMode && total >= FREE_LIMIT) {
+    document.getElementById('nextBtn').textContent = '続けるにはプレミアムへ →';
+  }
 }
 
 // ─────────────────────────────────────────
@@ -1140,7 +1625,13 @@ function toggleTranscript() {
 // ─────────────────────────────────────────
 // NEXT
 // ─────────────────────────────────────────
-function next() { loadQ(); }
+function next() {
+  if (freeMode && total >= FREE_LIMIT) {
+    showPaywall();
+    return;
+  }
+  loadQ();
+}
 
 // ─────────────────────────────────────────
 // SCORE
@@ -1149,14 +1640,12 @@ function updateScore() {
   const scoreEl = document.getElementById('scoreVal');
   scoreEl.textContent = score;
   scoreEl.classList.remove('bump');
-  void scoreEl.offsetWidth; // reflow to restart animation
+  void scoreEl.offsetWidth;
   if (score > 0) scoreEl.classList.add('bump');
 
   document.getElementById('totalVal').textContent = total;
-
   const pct = total > 0 ? Math.round(score / total * 100) : 0;
   document.getElementById('progressFill').style.width = pct + '%';
-
   document.getElementById('streakVal').textContent = streak;
   document.getElementById('streakBadge').classList.toggle('zero', streak === 0);
 }
@@ -1171,9 +1660,8 @@ function speak(text) {
   u.rate  = (DIFF_META[current?.diff] || DIFF_META.intermediate).rate;
   u.pitch = 1.0;
 
-  // Pick best available English voice
   const voices = speechSynthesis.getVoices();
-  const PREFER  = ['Samantha', 'Alex', 'Karen', 'Moira', 'Tessa', 'Daniel', 'Nicky'];
+  const PREFER = ['Samantha', 'Alex', 'Karen', 'Moira', 'Tessa', 'Daniel', 'Nicky'];
   let voice = null;
   for (const name of PREFER) {
     voice = voices.find(v => v.name === name);
@@ -1186,22 +1674,20 @@ function speak(text) {
     isPlaying = true;
     setPlayBtn(true);
     document.getElementById('waveform').classList.add('playing');
+    document.getElementById('audioCard').classList.add('is-playing');
   };
-
   const done = () => {
     isPlaying = false;
     setPlayBtn(false);
     document.getElementById('waveform').classList.remove('playing');
+    document.getElementById('audioCard').classList.remove('is-playing');
   };
   u.onend   = done;
   u.onerror = done;
-
   speechSynthesis.speak(u);
 }
 
-function replay() {
-  if (current) speak(current.text);
-}
+function replay() { if (current) speak(current.text); }
 
 function setPlayBtn(playing) {
   document.getElementById('playBtn').classList.toggle('playing', playing);
@@ -1222,35 +1708,24 @@ function launchConfetti() {
 
   const COLORS = ['#FF6B6B','#FFE66D','#4ECDC4','#74C0FC','#A9E34B','#CC5DE8','#F08C00','#F783AC'];
   const particles = Array.from({ length: 100 }, () => ({
-    x:   Math.random() * canvas.width,
-    y:   -10 - Math.random() * 100,
-    w:   5 + Math.random() * 9,
-    h:   3 + Math.random() * 5,
+    x: Math.random() * canvas.width, y: -10 - Math.random() * 100,
+    w: 5 + Math.random() * 9, h: 3 + Math.random() * 5,
     color: COLORS[Math.floor(Math.random() * COLORS.length)],
-    vx:  (Math.random() - 0.5) * 8,
-    vy:  2  + Math.random() * 5,
-    rot: Math.random() * 360,
-    rotV:(Math.random() - 0.5) * 14,
-    opacity: 1,
+    vx: (Math.random() - 0.5) * 8, vy: 2 + Math.random() * 5,
+    rot: Math.random() * 360, rotV: (Math.random() - 0.5) * 14, opacity: 1,
   }));
 
   if (confettiRaf) cancelAnimationFrame(confettiRaf);
-
   function draw() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     let alive = false;
     for (const p of particles) {
-      p.x += p.vx;
-      p.y += p.vy;
-      p.vy += 0.18;
-      p.rot += p.rotV;
-      p.opacity -= 0.013;
+      p.x += p.vx; p.y += p.vy; p.vy += 0.18;
+      p.rot += p.rotV; p.opacity -= 0.013;
       if (p.opacity <= 0) continue;
       alive = true;
-      ctx.save();
-      ctx.globalAlpha = Math.max(0, p.opacity);
-      ctx.fillStyle   = p.color;
-      ctx.translate(p.x, p.y);
+      ctx.save(); ctx.globalAlpha = Math.max(0, p.opacity);
+      ctx.fillStyle = p.color; ctx.translate(p.x, p.y);
       ctx.rotate(p.rot * Math.PI / 180);
       ctx.fillRect(-p.w / 2, -p.h / 2, p.w, p.h);
       ctx.restore();
@@ -1273,13 +1748,11 @@ function shuffle(arr) {
   return a;
 }
 
-// Pre-load voices (Chrome / iOS Safari workaround)
 speechSynthesis.getVoices();
 if (speechSynthesis.onvoiceschanged !== undefined) {
   speechSynthesis.onvoiceschanged = () => speechSynthesis.getVoices();
 }
 
-// Init
 setDiff('intermediate');
 </script>
 <canvas id="confettiCanvas" style="position:fixed;inset:0;pointer-events:none;z-index:9999;display:none"></canvas>

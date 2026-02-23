@@ -1,0 +1,302 @@
+[
+  {
+    "diff": "beginner",
+    "text": "Oh no, I just missed the bus! When's the next one? I really can't be late for school today.",
+    "answer": "バスに乗り遅れて次のバスを確認している",
+    "choices": ["バスに乗り遅れて次のバスを確認している", "電車が遅延して困っている", "タクシーを呼ぼうとしている", "学校を休もうとしている", "友達に迎えを頼んでいる"]
+  },
+  {
+    "diff": "beginner",
+    "text": "Can I get a Big Mac meal, large size? And could I swap the Coke for a Sprite? Oh, and extra ketchup on the side, please.",
+    "answer": "ファストフードで食事を注文している",
+    "choices": ["ファストフードで食事を注文している", "カフェでコーヒーを注文している", "コンビニで買い物をしている", "レストランでメニューを確認している", "食べ物のデリバリーを頼んでいる"]
+  },
+  {
+    "diff": "beginner",
+    "text": "Ugh, I think I left my wallet at home. Can I pay with my phone? I have Apple Pay.",
+    "answer": "財布を忘れてスマホで支払おうとしている",
+    "choices": ["財布を忘れてスマホで支払おうとしている", "クレジットカードが使えるか聞いている", "両替をしようとしている", "お金を借りようとしている", "支払いを後回しにしようとしている"]
+  },
+  {
+    "diff": "beginner",
+    "text": "It's been raining all week! I'm so over it. My laundry's been sitting wet in the machine for two days.",
+    "answer": "雨続きの天気に不満を言っている",
+    "choices": ["雨続きの天気に不満を言っている", "洗濯機が壊れて困っている", "洗濯物を外に干せなくて困っている", "天気予報を確認しようとしている", "傘を持ってこなかったことを後悔している"]
+  },
+  {
+    "diff": "beginner",
+    "text": "Alright, I'm off! I'll text you when I land. Don't forget to water my plants, okay? See you in two weeks!",
+    "answer": "旅行に出発する前に見送りをしている",
+    "choices": ["旅行に出発する前に見送りをしている", "空港で友人を出迎えている", "引っ越しで別れを告げている", "長期入院前に挨拶している", "仕事の転勤で別れを告げている"]
+  },
+  {
+    "diff": "beginner",
+    "text": "Excuse me, do you have the time? My phone just died and I think I might be late for my dentist appointment.",
+    "answer": "スマホが切れて時間を人に聞いている",
+    "choices": ["スマホが切れて時間を人に聞いている", "電車の時刻を確認している", "友達との待ち合わせに遅れそうになっている", "スマホを充電しようとしている", "道に迷って時間を確認している"]
+  },
+  {
+    "diff": "beginner",
+    "text": "Hi, I have a reservation under Tanaka. It should be a standard room with a king bed. Could I also get an extra towel? Oh, and is the gym open 24 hours?",
+    "answer": "ホテルにチェックインしながら確認事項を伝えている",
+    "choices": ["ホテルにチェックインしながら確認事項を伝えている", "ホテルの部屋をアップグレードしようとしている", "ホテルのサービスについてクレームを言っている", "ルームサービスを注文している", "チェックアウト時間を確認している"]
+  },
+  {
+    "diff": "beginner",
+    "text": "Two round trips to Boston, please. For this Saturday, returning Sunday evening. Do you have anything before noon?",
+    "answer": "電車のチケットを購入しようとしている",
+    "choices": ["電車のチケットを購入しようとしている", "バスの時刻表を確認している", "飛行機の予約を変更している", "レンタカーを予約している", "ツアーパッケージを申し込んでいる"]
+  },
+  {
+    "diff": "beginner",
+    "text": "Oh gosh, I can't find my phone anywhere! Can you call it for me? It might be on silent though. Last time I had it was at the coffee shop.",
+    "answer": "スマホをなくして探している",
+    "choices": ["スマホをなくして探している", "スマホが壊れて修理に出そうとしている", "スマホの充電がなくなって困っている", "スマホを誰かに貸していて返ってこない", "スマホのロックを解除できなくて困っている"]
+  },
+  {
+    "diff": "beginner",
+    "text": "We just got a puppy! She's a golden retriever, only eight weeks old. She keeps chewing on everything, but she's just so cute I can't get mad.",
+    "answer": "新しく飼い始めた子犬について話している",
+    "choices": ["新しく飼い始めた子犬について話している", "ペットショップで犬を探している", "犬のしつけ方法を相談している", "子犬が病気で心配している", "犬を飼いたいと家族を説得している"]
+  },
+  {
+    "diff": "beginner",
+    "text": "So for Saturday, I was thinking we could pack a lunch and head to Riverside Park. The forecast looks perfect — sunny and seventy-five. You in?",
+    "answer": "週末に公園でピクニックをする計画を立てている",
+    "choices": ["週末に公園でピクニックをする計画を立てている", "天気予報を確認して外出を迷っている", "ハイキングに行く計画を立てている", "友達にランチに誘っている", "バーベキューパーティの準備をしている"]
+  },
+  {
+    "diff": "beginner",
+    "text": "My head is pounding. I've had this headache since this morning and it just won't go away. I think I need to lie down.",
+    "answer": "頭痛がひどくて横になろうとしている",
+    "choices": ["頭痛がひどくて横になろうとしている", "二日酔いで体調が悪い", "体調不良で病院に行こうとしている", "疲れて早めに帰ろうとしている", "薬を飲もうとしている"]
+  },
+  {
+    "diff": "beginner",
+    "text": "Hey, is it okay if I borrow your umbrella? I totally forgot mine and it's supposed to rain all afternoon. I'll bring it back tomorrow, promise.",
+    "answer": "傘を借りようとしている",
+    "choices": ["傘を借りようとしている", "傘をなくして困っている", "コンビニで傘を買おうとしている", "雨宿りする場所を探している", "天気予報が外れて驚いている"]
+  },
+  {
+    "diff": "beginner",
+    "text": "Oh my gosh, have you seen Dune Part Two yet? The visuals were insane. I literally had chills the whole time. You have to go this weekend.",
+    "answer": "映画を観て感動して友達に勧めている",
+    "choices": ["映画を観て感動して友達に勧めている", "映画のチケットを予約しようとしている", "映画のあらすじを説明している", "映画の続編が公開されるのを待っている", "映画のレビューを読んで観るか迷っている"]
+  },
+  {
+    "diff": "beginner",
+    "text": "I had the best ramen for lunch today. The broth was so rich and they put this slow-cooked egg on top — honestly, I'm still thinking about it.",
+    "answer": "ランチで食べたラーメンが美味しかったと話している",
+    "choices": ["ランチで食べたラーメンが美味しかったと話している", "おすすめのラーメン店を教えている", "昼食を何にするか迷っている", "食事制限のためにメニューを選んでいる", "ラーメンの作り方を説明している"]
+  },
+  {
+    "diff": "beginner",
+    "text": "Excuse me, I'm looking for the cereal aisle. I've been going around in circles for five minutes and I still can't find it.",
+    "answer": "スーパーで売り場を探して店員に聞いている",
+    "choices": ["スーパーで売り場を探して店員に聞いている", "商品が品切れで困っている", "スーパーで道に迷っている", "商品の値段を確認している", "特売品を探している"]
+  },
+  {
+    "diff": "beginner",
+    "text": "I am absolutely exhausted. Back-to-back meetings all day, then a two-hour commute home. I'm going to sleep for twelve hours.",
+    "answer": "仕事で疲れ果てて帰宅した",
+    "choices": ["仕事で疲れ果てて帰宅した", "残業を頼まれて断ろうとしている", "仕事の量が多すぎて上司に相談している", "長距離移動で疲れている", "体調が悪くて早退したい"]
+  },
+  {
+    "diff": "beginner",
+    "text": "Let's meet at the park entrance at two, okay? If I'm a little late, just wait by the fountain. I'll text you if anything comes up.",
+    "answer": "友達と待ち合わせの場所と時間を決めている",
+    "choices": ["友達と待ち合わせの場所と時間を決めている", "待ち合わせに遅刻して謝っている", "集合場所の変更を伝えている", "道に迷って場所を確認している", "待ち合わせをキャンセルしようとしている"]
+  },
+  {
+    "diff": "beginner",
+    "text": "Did you check the weather? It says there might be thunderstorms tonight. We should probably leave the event early just in case.",
+    "answer": "天気を心配して早めに帰ることを提案している",
+    "choices": ["天気を心配して早めに帰ることを提案している", "嵐の準備をするよう警告している", "天気予報が外れたと文句を言っている", "雨具を用意するよう勧めている", "屋外イベントの中止を心配している"]
+  },
+  {
+    "diff": "beginner",
+    "text": "Shh! She has no idea we're doing this. Everyone needs to be here by six and hide before she walks in. Jake's bringing the cake.",
+    "answer": "誕生日のサプライズパーティを計画している",
+    "choices": ["誕生日のサプライズパーティを計画している", "誰かの帰宅を待ち伏せしようとしている", "パーティの準備が遅れていて焦っている", "友達の誕生日を忘れてプレゼントを急いでいる", "こっそりイベントを準備している"]
+  },
+  {
+    "diff": "beginner",
+    "text": "Hi! Can I get a medium iced matcha latte with oat milk, half sweet? And can you put less ice? Oh, and I have a reward — let me pull up the app.",
+    "answer": "カフェでカスタマイズしたドリンクを注文している",
+    "choices": ["カフェでカスタマイズしたドリンクを注文している", "コーヒーショップのポイントを使おうとしている", "抹茶の作り方を聞いている", "テイクアウトのドリンクを受け取っている", "カフェのメニューを確認している"]
+  },
+  {
+    "diff": "beginner",
+    "text": "Sorry, could you slow down a bit? I didn't catch the last part. Could you say that again, a little more slowly?",
+    "answer": "相手の話が早くて聞き返している",
+    "choices": ["相手の話が早くて聞き返している", "電話の電波が悪くて聞き取れない", "周りが騒がしくて会話できない", "英語が難しすぎて理解できない", "発音が違うと指摘している"]
+  },
+  {
+    "diff": "beginner",
+    "text": "I still have like three chapters left and the test is tomorrow morning. Why did I leave this to the last minute again? I need coffee.",
+    "answer": "試験前日に勉強が終わらなくて焦っている",
+    "choices": ["試験前日に勉強が終わらなくて焦っている", "宿題の締め切りを過ぎてしまった", "レポートを徹夜で書こうとしている", "試験勉強の方法が分からなくて困っている", "友達に勉強を手伝ってもらっている"]
+  },
+  {
+    "diff": "beginner",
+    "text": "Excuse me! Could we get the check, please? And could you split it three ways? Actually, you know what, let's just do it evenly.",
+    "answer": "レストランで会計を頼んで割り勘にしようとしている",
+    "choices": ["レストランで会計を頼んで割り勘にしようとしている", "料金に間違いがあると申し出ている", "注文したものが来ていないと伝えている", "領収書を発行してもらおうとしている", "コースの追加注文をしている"]
+  },
+  {
+    "diff": "beginner",
+    "text": "The train was absolutely packed this morning. I had someone's bag in my face the whole ride. I don't know how people do this every single day.",
+    "answer": "満員電車で通勤してうんざりしている",
+    "choices": ["満員電車で通勤してうんざりしている", "電車が遅延して怒っている", "電車で隣の人に迷惑を掛けてしまった", "混雑を避けるために時間をずらそうとしている", "公共交通機関を使うのをやめようとしている"]
+  },
+  {
+    "diff": "intermediate",
+    "text": "Excuse me, I need to speak to the manager. The guests in the room next to ours were up until three in the morning making noise. We barely slept. We'd like to be moved to a different room.",
+    "answer": "ホテルで隣の部屋の騒音をマネージャーにクレームしている",
+    "choices": ["ホテルで隣の部屋の騒音をマネージャーにクレームしている", "ホテルの設備が壊れていて修理を頼んでいる", "チェックアウトを早めたいと申し出ている", "ホテルの周辺環境の騒音に困っている", "部屋のグレードアップを交渉している"]
+  },
+  {
+    "diff": "intermediate",
+    "text": "I'm picking up a rental. It's under Williams. Now, the agent mentioned the collision damage waiver — is that something I really need? What exactly does it cover?",
+    "answer": "レンタカーを借りる際に保険の内容を確認している",
+    "choices": ["レンタカーを借りる際に保険の内容を確認している", "車の事故後に保険会社に連絡している", "車を返却する際に傷の確認をしている", "レンタカーの料金プランを比較している", "海外旅行保険の補償内容を確認している"]
+  },
+  {
+    "diff": "intermediate",
+    "text": "I've been having sharp pains in my lower stomach since yesterday. It comes and goes, but it's getting worse. I also feel kind of nauseous. No fever, though.",
+    "answer": "医師に下腹部の痛みと吐き気の症状を説明している",
+    "choices": ["医師に下腹部の痛みと吐き気の症状を説明している", "薬局で痛み止めを求めている", "救急車を呼ぼうとしている", "食あたりの可能性を考えている", "過去の病歴を説明している"]
+  },
+  {
+    "diff": "intermediate",
+    "text": "Come on, fifty dollars for this? Look at the stitching — it's not even that good quality. How about thirty? I'll take two of them if you do thirty each.",
+    "answer": "フリーマーケットで値段を交渉している",
+    "choices": ["フリーマーケットで値段を交渉している", "商品の品質に不満を言っている", "ネットショッピングで値段を比較している", "偽物商品を指摘している", "まとめ買いで割引を要求している"]
+  },
+  {
+    "diff": "intermediate",
+    "text": "Hi, I'd like to make a reservation for Saturday evening, around eight o'clock. Table for five. Oh, and one of our guests has a severe nut allergy — can that be accommodated?",
+    "answer": "レストランにアレルギーを伝えながら予約を入れている",
+    "choices": ["レストランにアレルギーを伝えながら予約を入れている", "食べられないものをウェイターに確認している", "アレルギー反応が出て助けを求めている", "特別メニューのリクエストをしている", "食事制限のある友人のためにメニューを確認している"]
+  },
+  {
+    "diff": "intermediate",
+    "text": "Hi, I received my order last week but the zipper on the jacket is completely broken. It's unworn — literally took it out of the box and noticed immediately. I'd like a full refund, please.",
+    "answer": "破損した商品の全額返金を求めている",
+    "choices": ["破損した商品の全額返金を求めている", "注文した商品が届かないと問い合わせている", "サイズが違う商品を交換しようとしている", "商品レビューの苦情を書いている", "返品の送料を負担してもらうよう交渉している"]
+  },
+  {
+    "diff": "intermediate",
+    "text": "Hi, I'm picking up a prescription for Nguyen. My doctor faxed it over this morning. Oh — is this one okay to take with ibuprofen? I'm also on that.",
+    "answer": "薬局で処方薬を受け取り他の薬との飲み合わせを確認している",
+    "choices": ["薬局で処方薬を受け取り他の薬との飲み合わせを確認している", "市販薬の効果を薬剤師に相談している", "処方箋がなくて薬をもらえるか聞いている", "薬の副作用について医師に相談している", "海外で薬を購入しようとしている"]
+  },
+  {
+    "diff": "intermediate",
+    "text": "My bags weren't on the carousel. I've been waiting for forty minutes. I have a connecting flight in two hours and I need my luggage. What are my options here?",
+    "answer": "空港で荷物が出てこずスタッフに対応を求めている",
+    "choices": ["空港で荷物が出てこずスタッフに対応を求めている", "フライトに乗り遅れて振替を求めている", "荷物の重量オーバーで追加料金を払っている", "盗まれた荷物を申告している", "トランジット中の荷物の保管を頼んでいる"]
+  },
+  {
+    "diff": "intermediate",
+    "text": "Hi, I'm calling about a booking I have for the fourteenth. Something's come up and I need to change it to the seventeenth. Is there a change fee? The ticket was a flex fare.",
+    "answer": "航空便の日程変更を電話で依頼している",
+    "choices": ["航空便の日程変更を電話で依頼している", "フライトのキャンセルと払い戻しを求めている", "フライトの遅延に対する補償を求めている", "座席のアップグレードを申し込んでいる", "予約が見つからないと問い合わせている"]
+  },
+  {
+    "diff": "intermediate",
+    "text": "Well, I'd say my biggest strength is staying calm under pressure. In my last role, we had a product launch go sideways two days before the deadline, and I managed to coordinate the team to fix the core issues overnight.",
+    "answer": "就職面接でプレッシャー下での対処能力をアピールしている",
+    "choices": ["就職面接でプレッシャー下での対処能力をアピールしている", "職場でのトラブルを上司に報告している", "チームワークの重要性を説明している", "転職理由を面接官に説明している", "残業対応のエピソードを話している"]
+  },
+  {
+    "diff": "intermediate",
+    "text": "Excuse me, I'm trying to find the Guggenheim Museum. I know it's somewhere on Fifth Avenue but I can't figure out which direction to walk from here.",
+    "answer": "観光地への道を地元の人に聞いている",
+    "choices": ["観光地への道を地元の人に聞いている", "観光案内所でマップをもらおうとしている", "タクシーの運転手に行き先を告げている", "スマホのナビが使えなくて困っている", "目的地の住所を確認しようとしている"]
+  },
+  {
+    "diff": "intermediate",
+    "text": "Is the salmon wild-caught or farmed? And the risotto — is the broth vegetable-based? I try to avoid meat stock when I can. Also, can the scallops be made without butter?",
+    "answer": "食材や調理法について詳しくウェイターに確認している",
+    "choices": ["食材や調理法について詳しくウェイターに確認している", "ベジタリアン用メニューを求めている", "アレルギーのある食材を確認している", "料理の量が少ないと文句を言っている", "シェフのおすすめを聞いている"]
+  },
+  {
+    "diff": "intermediate",
+    "text": "Okay so we're thinking two weeks in Southeast Asia — Thailand and Vietnam. We want a mix of beaches and culture. Should we fly into Bangkok or Ho Chi Minh first?",
+    "answer": "東南アジアへの旅行ルートを相談している",
+    "choices": ["東南アジアへの旅行ルートを相談している", "旅行代理店にツアーパッケージを依頼している", "バックパッカーとしての旅行を計画している", "ビザの取得方法を確認している", "現地での移動手段について相談している"]
+  },
+  {
+    "diff": "intermediate",
+    "text": "I'd like to open a checking account. I'm new to the area — just moved here for work. What do I need to bring? And is there a minimum balance requirement?",
+    "answer": "銀行で新規口座を開設しようとしている",
+    "choices": ["銀行で新規口座を開設しようとしている", "銀行に住所変更を届け出ている", "ローンの申請方法を確認している", "海外送金の手続きを行っている", "キャッシュカードの再発行を依頼している"]
+  },
+  {
+    "diff": "intermediate",
+    "text": "Hi, I bought these jeans here about two weeks ago but they're a size too small. I haven't worn them — the tags are still on. Can I exchange them for the next size up?",
+    "answer": "購入した衣類のサイズ交換を申し出ている",
+    "choices": ["購入した衣類のサイズ交換を申し出ている", "破損した商品の返品を求めている", "セール品の返金ポリシーを確認している", "服のサイズ感についてスタッフに相談している", "オンラインで注文した商品を店舗で返品しようとしている"]
+  },
+  {
+    "diff": "advanced",
+    "text": "Look, I hear what you're saying, but signing off on this without Sarah's input is a risk I'm not willing to take. Let's table it until Thursday and loop her in. I'd rather slow down and get it right.",
+    "answer": "重要な決定を関係者が揃うまで保留することを主張している",
+    "choices": ["重要な決定を関係者が揃うまで保留することを主張している", "責任の所在を部下に押し付けようとしている", "プロジェクトの進行が遅れていることに怒っている", "上司の判断に従わないと宣言している", "会議の参加者を制限しようとしている"]
+  },
+  {
+    "diff": "advanced",
+    "text": "Q3 revenue came in at eight point two million — that's about twelve percent below forecast. The shortfall was driven primarily by slower-than-expected enterprise adoption in EMEA. We do see recovery signals heading into Q4.",
+    "answer": "四半期決算の下振れ結果を投資家や経営陣に報告している",
+    "choices": ["四半期決算の下振れ結果を投資家や経営陣に報告している", "売上目標の達成を祝っている", "競合他社との比較分析を発表している", "新製品の販売戦略を説明している", "会計の不正を指摘している"]
+  },
+  {
+    "diff": "advanced",
+    "text": "Mr. Harrington, I completely understand your frustration, and I sincerely apologize for the experience you had. What I'd like to do is escalate this to our senior team and have someone reach out to you within the hour with a concrete solution.",
+    "answer": "激怒した顧客に真摯に謝罪し上位対応を約束している",
+    "choices": ["激怒した顧客に真摯に謝罪し上位対応を約束している", "クレームを法的問題として処理しようとしている", "顧客の要求が不当だと断っている", "カスタマーサポートの標準対応を説明している", "担当外の問題だとして別部署に転送している"]
+  },
+  {
+    "diff": "advanced",
+    "text": "I know the original deadline was the twenty-first, but we've hit some unexpected technical blockers on the API integration. We're looking at needing another five business days. I can send you a detailed breakdown of what happened.",
+    "answer": "技術的な問題を説明してプロジェクトの納期延長を依頼している",
+    "choices": ["技術的な問題を説明してプロジェクトの納期延長を依頼している", "APIの仕様変更を顧客に伝えている", "開発チームの怠慢を謝罪している", "追加費用が発生することを説明している", "納期を守れないことへの責任を回避している"]
+  },
+  {
+    "diff": "advanced",
+    "text": "This is a Severity One incident. The production database is down and we're seeing a full outage for enterprise clients. I'm pulling in the infra team now. We need an all-hands call in ten minutes and a status page update immediately.",
+    "answer": "本番環境の重大障害発生を受けて緊急対応を指示している",
+    "choices": ["本番環境の重大障害発生を受けて緊急対応を指示している", "システムのメンテナンス計画を立てている", "セキュリティインシデントへの対応を指揮している", "データベースの移行作業を開始している", "サービスのパフォーマンス問題を報告している"]
+  },
+  {
+    "diff": "advanced",
+    "text": "We're okay with the sixty-day payment terms, but we'll need a clause protecting us if there's a currency fluctuation of more than three percent. Can your legal team turn that around before Friday's signing?",
+    "answer": "契約の支払い条件と為替変動リスクの条項を交渉している",
+    "choices": ["契約の支払い条件と為替変動リスクの条項を交渉している", "契約違反に対するペナルティを要求している", "支払い期限の延長を一方的に通告している", "為替リスクを保険で補う方法を相談している", "法律事務所に契約書のレビューを依頼している"]
+  },
+  {
+    "diff": "advanced",
+    "text": "We're a B2B SaaS platform targeting mid-market logistics companies. Our AI reduces manual data entry by seventy percent. We're pre-revenue but have six LOIs and are looking for a two-million-dollar seed round at an eight-million pre-money valuation.",
+    "answer": "投資家にスタートアップの事業内容と資金調達条件を説明している",
+    "choices": ["投資家にスタートアップの事業内容と資金調達条件を説明している", "新サービスの料金プランを顧客に提案している", "M&Aの交渉で会社の価値を主張している", "テクノロジーカンファレンスで製品を発表している", "共同創業者を探してパートナーシップを提案している"]
+  },
+  {
+    "diff": "advanced",
+    "text": "I want to acknowledge the strong work you've done on the client side — that's been genuinely excellent. The area we need to discuss is the internal reporting. There have been three missed deadlines this quarter, and that's affecting the broader team.",
+    "answer": "業績評価で優れた点を認めつつ改善すべき問題点を伝えている",
+    "choices": ["業績評価で優れた点を認めつつ改善すべき問題点を伝えている", "昇給の交渉をしている", "部下の退職を引き留めようとしている", "プロジェクトのフィードバックを伝えている", "社内表彰の対象者を発表している"]
+  },
+  {
+    "diff": "advanced",
+    "text": "We need to get ahead of this before it hits the news cycle. Our comms team is drafting a statement, but I want to be clear — we lead with accountability, not deflection. No boilerplate. Genuine and specific.",
+    "answer": "報道される前にPRクライシスへの対応方針を社内で固めている",
+    "choices": ["報道される前にPRクライシスへの対応方針を社内で固めている", "プレスリリースの文章を校正している", "炎上したSNS投稿の削除を指示している", "弁護士と訴訟リスクについて相談している", "社内不正を外部に公表するか議論している"]
+  },
+  {
+    "diff": "advanced",
+    "text": "Before we finalize the agenda, I want to flag something. In our culture, showing enthusiasm by talking over each other is normal — but I understand that might read as interrupting here. Let's find a flow that works for everyone.",
+    "answer": "文化的なコミュニケーションスタイルの違いを率先して指摘している",
+    "choices": ["文化的なコミュニケーションスタイルの違いを率先して指摘している", "会議の議事進行ルールを厳しく伝えている", "多国籍チームへのダイバーシティ研修を行っている", "通訳が必要だと申し出ている", "相手の無礼な態度を指摘している"]
+  }
+]
