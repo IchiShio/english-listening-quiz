@@ -972,6 +972,47 @@
     }
     .paywall-skip:hover { color: var(--text-2); }
 
+    /* ── RETURNING STATS PANEL ── */
+    .returning-stats {
+      display: none;
+      align-items: center;
+      justify-content: center;
+      gap: 0;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.09);
+      border-radius: 14px;
+      padding: 14px 0;
+      margin: 0 auto 28px;
+      max-width: 400px;
+      width: 100%;
+      animation: fadeUp 0.6s 0.15s ease-out both;
+    }
+    .rs-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2px;
+      padding: 0 24px;
+    }
+    .rs-item span {
+      font-size: 22px;
+      font-weight: 800;
+      color: var(--gold);
+      letter-spacing: -0.5px;
+      line-height: 1.1;
+    }
+    .rs-item small {
+      font-size: 11px;
+      color: var(--text-3);
+      letter-spacing: 0.2px;
+    }
+    .rs-divider {
+      width: 1px;
+      height: 32px;
+      background: var(--border);
+      flex-shrink: 0;
+    }
+
     /* ── RESPONSIVE: SHORT SCREEN (iPhone SE etc.) max-height: 700px ── */
     @media (max-height: 700px) {
       .app-header   { height: 48px; }
@@ -1070,11 +1111,18 @@
         ネイティブ音声を聴いて状況を判断する。<br>
         最短で実践力が身につく、次世代のリスニングトレーニング。
       </p>
+      <div class="returning-stats" id="returningStats">
+        <div class="rs-item"><span id="rsTotalAnswered">—</span><small>累計回答</small></div>
+        <div class="rs-divider"></div>
+        <div class="rs-item"><span id="rsDailyStreak">—</span><small>連続学習</small></div>
+        <div class="rs-divider"></div>
+        <div class="rs-item"><span id="rsAccuracy">—</span><small>正解率</small></div>
+      </div>
       <div class="hero-ctas">
         <button class="btn-primary-lg" onclick="startPremiumTrial()">7日間 無料で試す →</button>
-        <button class="btn-ghost" onclick="startFreeQuiz()">まず3問 無料体験</button>
+        <button class="btn-ghost" id="freeTrialBtn" onclick="startFreeQuiz()">今日の練習を始める</button>
       </div>
-      <p class="hero-fine">クレジットカード不要 · いつでもキャンセル可</p>
+      <p class="hero-fine">1日5問まで無料 · クレジットカード不要</p>
     </div>
   </section>
 
@@ -1163,7 +1211,7 @@
             <li class="feat-ng">中級・上級レベル</li>
             <li class="feat-ng">進捗管理・ストリーク</li>
           </ul>
-          <button class="plan-btn plan-btn-ghost" onclick="startFreeQuiz()">無料で3問体験する</button>
+          <button class="plan-btn plan-btn-ghost" onclick="startFreeQuiz()">今日の練習を試す（無料）</button>
         </div>
 
         <!-- Premium Plan -->
@@ -1219,7 +1267,7 @@
 
     <!-- Free mode notice -->
     <div class="free-banner" id="freeBanner">
-      無料体験中 — 残り <span id="freeRemaining">3</span> 問
+      今日 残り <span id="freeRemaining">5</span> 問
       <a onclick="scrollToDiffAndUpgrade()">→ プレミアムで続ける</a>
     </div>
 
@@ -1287,10 +1335,10 @@
 <div class="paywall-overlay" id="paywallOverlay">
   <div class="paywall-modal">
     <div class="paywall-crown">👑</div>
-    <h2 class="paywall-title">無料体験が終了しました</h2>
-    <p class="paywall-sub">
-      プレミアムプランで学習を続けましょう。<br>
-      最初の7日間は完全無料です。
+    <h2 class="paywall-title" id="paywallTitle">今日の練習が終わりました</h2>
+    <p class="paywall-sub" id="paywallSub">
+      今日の5問が完了しました。<br>
+      毎日続けることが上達への近道です。明日また練習しましょう。
     </p>
     <ul class="paywall-feats">
       <li>毎日 無制限に練習できる</li>
@@ -1779,7 +1827,82 @@ const DIFF_META = {
   advanced:     { icon: '🌳', label: '上級',  rate: 1.00 },
 };
 
-const FREE_LIMIT = 3;
+const FREE_LIMIT = 3; // legacy (未使用)
+const FREE_DAILY_LIMIT = 5;
+
+// ─────────────────────────────────────────
+// LOCAL STORAGE
+// ─────────────────────────────────────────
+const STORAGE_KEY = 'listenup_v1';
+
+function getToday() {
+  return new Date().toISOString().slice(0, 10);
+}
+
+function loadProgress() {
+  try {
+    const raw = localStorage.getItem(STORAGE_KEY);
+    return raw ? JSON.parse(raw) : {
+      totalAnswered: 0,
+      totalCorrect: 0,
+      dailyStreak: 0,
+      lastVisitDate: '',
+      todayAnswered: 0,
+      todayDate: ''
+    };
+  } catch (e) {
+    return { totalAnswered: 0, totalCorrect: 0, dailyStreak: 0, lastVisitDate: '', todayAnswered: 0, todayDate: '' };
+  }
+}
+
+function saveProgress(p) {
+  try { localStorage.setItem(STORAGE_KEY, JSON.stringify(p)); } catch (e) {}
+}
+
+function updateDailyStreakInProgress(p) {
+  const today    = getToday();
+  const yesterday = new Date(Date.now() - 86400000).toISOString().slice(0, 10);
+  if (p.lastVisitDate === today) {
+    // 今日すでに訪問済み: ストリーク変更なし
+  } else if (p.lastVisitDate === yesterday) {
+    p.dailyStreak++;
+  } else if (!p.lastVisitDate) {
+    p.dailyStreak = 1;
+  } else {
+    p.dailyStreak = 1; // 途切れた
+  }
+  p.lastVisitDate = today;
+  if (p.todayDate !== today) {
+    p.todayAnswered = 0;
+    p.todayDate = today;
+  }
+  return p;
+}
+
+function showReturningStats() {
+  const p = loadProgress();
+  if (p.totalAnswered === 0) return;
+
+  const today         = getToday();
+  const todayAnswered = (p.todayDate === today) ? p.todayAnswered : 0;
+  const remaining     = Math.max(0, FREE_DAILY_LIMIT - todayAnswered);
+  const acc           = p.totalAnswered > 0 ? Math.round(p.totalCorrect / p.totalAnswered * 100) : 0;
+
+  document.getElementById('rsTotalAnswered').textContent = p.totalAnswered.toLocaleString();
+  document.getElementById('rsDailyStreak').textContent   = p.dailyStreak + '日';
+  document.getElementById('rsAccuracy').textContent      = acc + '%';
+  document.getElementById('returningStats').style.display = 'flex';
+
+  const btn = document.getElementById('freeTrialBtn');
+  if (remaining === 0) {
+    btn.textContent = '今日は完了 · また明日';
+    btn.disabled    = true;
+    btn.style.opacity = '0.45';
+    btn.style.cursor  = 'default';
+  } else {
+    btn.textContent = `今日の練習（残り${remaining}問）`;
+  }
+}
 
 // ─────────────────────────────────────────
 // STATE
@@ -1792,9 +1915,10 @@ let current   = null;
 let score     = 0;
 let total     = 0;
 let streak    = 0;
-let answered  = false;
-let isPlaying = false;
-let freeMode  = false;
+let answered           = false;
+let isPlaying          = false;
+let freeMode           = false;
+let dailyFreeAnswered  = 0; // 今日の無料モード回答数（localStorage連動）
 
 // ─────────────────────────────────────────
 // NAVIGATION
@@ -1814,6 +1938,13 @@ function scrollToDiffAndUpgrade() {
 // ─────────────────────────────────────────
 function startFreeQuiz() {
   freeMode = true;
+  const p    = loadProgress();
+  const today = getToday();
+  dailyFreeAnswered = (p.todayDate === today) ? p.todayAnswered : 0;
+  if (dailyFreeAnswered >= FREE_DAILY_LIMIT) {
+    showPaywall('daily');
+    return;
+  }
   beginQuiz();
 }
 
@@ -1823,6 +1954,11 @@ function startPremiumTrial() {
 }
 
 function beginQuiz() {
+  // 連続学習ストリーク更新
+  let p = loadProgress();
+  p = updateDailyStreakInProgress(p);
+  saveProgress(p);
+
   score = 0; total = 0; streak = 0;
   currentLevel = 1; correctStreak = 0;
   initPools();
@@ -1852,12 +1988,22 @@ function goToStart() {
   document.getElementById('appHeader').style.display = 'none';
   document.getElementById('freeBanner').classList.remove('show');
   window.scrollTo({ top: 0 });
+  showReturningStats();
 }
 
 // ─────────────────────────────────────────
 // PAYWALL
 // ─────────────────────────────────────────
-function showPaywall() {
+function showPaywall(reason) {
+  if (reason === 'daily') {
+    document.getElementById('paywallTitle').textContent = '今日の練習が終わりました';
+    document.getElementById('paywallSub').innerHTML =
+      '今日の5問が完了しました。<br>毎日続けることが上達への近道です。明日また練習しましょう。';
+  } else {
+    document.getElementById('paywallTitle').textContent = '無制限で練習したい方へ';
+    document.getElementById('paywallSub').innerHTML =
+      'プレミアムプランで毎日無制限に練習できます。<br>最初の7日間は完全無料です。';
+  }
   document.getElementById('paywallOverlay').classList.add('show');
 }
 
@@ -1874,7 +2020,7 @@ function upgradeToPremium() {
 }
 
 function updateFreeRemaining() {
-  const remaining = Math.max(0, FREE_LIMIT - total);
+  const remaining = Math.max(0, FREE_DAILY_LIMIT - dailyFreeAnswered);
   const el = document.getElementById('freeRemaining');
   if (el) el.textContent = remaining;
 }
@@ -1923,7 +2069,7 @@ function loadQ() {
 // ─────────────────────────────────────────
 function render() {
   const qLabel = freeMode
-    ? `${total + 1}問目（無料体験 ${total + 1}/${FREE_LIMIT}）`
+    ? `${total + 1}問目（今日 ${dailyFreeAnswered + 1}/${FREE_DAILY_LIMIT}）`
     : `${total + 1}問目`;
   document.getElementById('qCounter').textContent = qLabel;
   audioEl.src = '';
@@ -1987,6 +2133,18 @@ function choose(selected) {
     const requeuedQ = { ...current, hintLevel: (current.hintLevel || 0) + 1 };
     pools[currentLevel].splice(Math.min(3, pools[currentLevel].length), 0, requeuedQ);
   }
+  // 進捗をlocalStorageに保存
+  {
+    const p = loadProgress();
+    p.totalAnswered++;
+    if (ok) p.totalCorrect++;
+    if (freeMode) {
+      dailyFreeAnswered++;
+      p.todayAnswered = dailyFreeAnswered;
+      p.todayDate     = getToday();
+    }
+    saveProgress(p);
+  }
   updateScore();
   if (freeMode) updateFreeRemaining();
 
@@ -2029,8 +2187,8 @@ function choose(selected) {
   nextBtn.classList.add('show');
 
   // Change next button label in free mode when limit reached
-  if (freeMode && total >= FREE_LIMIT) {
-    nextBtn.textContent = '続けるにはプレミアムへ →';
+  if (freeMode && dailyFreeAnswered >= FREE_DAILY_LIMIT) {
+    nextBtn.textContent = '今日の練習が終わりました →';
   }
 
   // 次へボタンが見えるように自動スクロール
@@ -2053,8 +2211,8 @@ function toggleTranscript() {
 // NEXT
 // ─────────────────────────────────────────
 function next() {
-  if (freeMode && total >= FREE_LIMIT) {
-    showPaywall();
+  if (freeMode && dailyFreeAnswered >= FREE_DAILY_LIMIT) {
+    showPaywall('daily');
     return;
   }
   loadQ();
@@ -2179,6 +2337,11 @@ function shuffle(arr) {
   }
   return a;
 }
+
+// ─────────────────────────────────────────
+// PAGE INIT
+// ─────────────────────────────────────────
+document.addEventListener('DOMContentLoaded', showReturningStats);
 
 </script>
 <canvas id="confettiCanvas" style="position:fixed;inset:0;pointer-events:none;z-index:9999;display:none"></canvas>
