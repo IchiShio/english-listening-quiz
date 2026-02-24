@@ -765,6 +765,19 @@
     }
     .explanation.show { display: block; animation: slideUp 0.25s ease-out; }
 
+    /* ── HINT PANEL ── */
+    .hint-panel {
+      background: #fffbeb; border: 1px solid #fcd34d;
+      border-radius: var(--radius); padding: 14px 16px; margin-bottom: 14px;
+      display: none;
+    }
+    .hint-panel.show { display: block; animation: slideUp 0.25s ease-out; }
+    .hint-label { font-size: 12px; font-weight: 700; color: #b45309; margin-bottom: 8px; letter-spacing: 0.03em; }
+    .hint-kp { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 6px; }
+    .hint-kp:empty { display: none; }
+    .hint-expl { font-size: 13px; color: #78350f; line-height: 1.7; }
+    .hint-expl:empty { display: none; }
+
     @keyframes slideUp {
       from { opacity: 0; transform: translateY(10px); }
       to   { opacity: 1; transform: translateY(0); }
@@ -1242,6 +1255,11 @@
 
       <div class="quiz-right">
         <div class="question-label">この会話はどんな状況でしょう？</div>
+        <div class="hint-panel" id="hintPanel">
+          <div class="hint-label">💡 ヒント</div>
+          <div class="hint-kp" id="hintKP"></div>
+          <div class="hint-expl" id="hintExpl"></div>
+        </div>
         <div class="options-list" id="optList"></div>
 
         <div class="explanation" id="explEl">
@@ -1913,6 +1931,28 @@ function render() {
   document.getElementById('waveform').classList.remove('playing');
   document.getElementById('audioCard').classList.remove('is-playing');
 
+  // ヒントパネル
+  const hintLevel = current.hintLevel || 0;
+  const hintPanel = document.getElementById('hintPanel');
+  const hintKP    = document.getElementById('hintKP');
+  const hintExpl  = document.getElementById('hintExpl');
+  hintKP.innerHTML = '';
+  hintExpl.textContent = '';
+  if (hintLevel >= 1 && (current.kp || []).length > 0) {
+    (current.kp || []).forEach(p => {
+      const s = document.createElement('span');
+      s.className = 'kp';
+      s.textContent = p;
+      hintKP.appendChild(s);
+    });
+    if (hintLevel >= 2 && current.expl) {
+      hintExpl.textContent = current.expl;
+    }
+    hintPanel.classList.add('show');
+  } else {
+    hintPanel.classList.remove('show');
+  }
+
   // 選択肢をシャッフル（正解位置を毎回変える）
   const shuffled = [...current.choices].sort(() => Math.random() - 0.5);
 
@@ -1944,7 +1984,8 @@ function choose(selected) {
   } else {
     streak = 0; correctStreak = 0;
     if (currentLevel > 0) currentLevel--;
-    pools[currentLevel].splice(Math.min(3, pools[currentLevel].length), 0, current);
+    const requeuedQ = { ...current, hintLevel: (current.hintLevel || 0) + 1 };
+    pools[currentLevel].splice(Math.min(3, pools[currentLevel].length), 0, requeuedQ);
   }
   updateScore();
   if (freeMode) updateFreeRemaining();
