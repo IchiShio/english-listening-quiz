@@ -2048,10 +2048,12 @@ function updateScore() {
 // ─────────────────────────────────────────
 const audioEl = document.getElementById('audioEl');
 
+const AUDIO_BASE = window.location.pathname.startsWith('/listening') ? '/listening/' : '';
+
 function speak(audioPath) {
   audioEl.pause();
   audioEl.currentTime = 0;
-  audioEl.src = audioPath;
+  audioEl.src = AUDIO_BASE + audioPath;
 
   const onPlay = () => {
     isPlaying = true;
