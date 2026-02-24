@@ -125,8 +125,9 @@
     .score-num { font-size: 19px; font-weight: 800; color: var(--gold); display: inline-block; }
     .reset-btn {
       background: rgba(255,255,255,0.05); border: 1px solid var(--border);
-      color: var(--text-2); border-radius: 8px; padding: 5px 10px;
+      color: var(--text-2); border-radius: 8px; padding: 8px 14px;
       font-size: 12px; cursor: pointer; transition: all var(--t);
+      min-height: 44px;
     }
     .reset-btn:hover { background: rgba(255,255,255,0.09); color: var(--text-1); }
 
@@ -602,7 +603,7 @@
     .content {
       max-width: 480px;
       margin: 0 auto;
-      padding: 28px 16px 48px;
+      padding: 12px 14px 16px;
     }
 
     /* Free mode banner */
@@ -631,7 +632,7 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      margin-bottom: 18px;
+      margin-bottom: 12px;
     }
     .diff-pills { display: flex; gap: 6px; }
     .diff-pill {
@@ -648,8 +649,8 @@
     /* ── AUDIO CARD ── */
     .audio-card {
       background: var(--surface); border: 1px solid var(--border);
-      border-radius: var(--radius-lg); padding: 26px 24px 22px;
-      text-align: center; margin-bottom: 20px;
+      border-radius: var(--radius-lg); padding: 16px 20px 14px;
+      text-align: center; margin-bottom: 12px;
       position: relative; overflow: hidden;
       backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
       transition: border-color 0.4s, box-shadow 0.4s;
@@ -665,12 +666,12 @@
     }
     .audio-label {
       font-size: 10px; font-weight: 700; letter-spacing: 1px;
-      text-transform: uppercase; color: var(--text-3); margin-bottom: 18px;
+      text-transform: uppercase; color: var(--text-3); margin-bottom: 10px;
     }
 
     .waveform {
       display: flex; align-items: center; justify-content: center;
-      gap: 5px; height: 50px; margin-bottom: 18px;
+      gap: 5px; height: 36px; margin-bottom: 10px;
     }
     .bar {
       width: 4px; border-radius: 2px;
@@ -700,8 +701,9 @@
       display: inline-flex; align-items: center; gap: 8px;
       background: rgba(255,255,255,0.06); color: var(--text-1);
       border: 1px solid var(--border); border-radius: 50px;
-      padding: 11px 24px; font-size: 14px; font-weight: 600;
+      padding: 14px 28px; font-size: 14px; font-weight: 600;
       cursor: pointer; transition: all var(--t);
+      min-height: 48px;
     }
     .play-btn:hover { background: rgba(255,255,255,0.1); border-color: rgba(255,255,255,0.15); }
     .play-btn:active { transform: scale(0.97); }
@@ -714,19 +716,25 @@
       font-size: 14px; font-weight: 600; color: var(--text-2);
       text-align: center; margin-bottom: 14px;
     }
-    .options-list { display: flex; flex-direction: column; gap: 10px; margin-bottom: 18px; }
+    .options-list { display: flex; flex-direction: column; gap: 6px; margin-bottom: 12px; }
     .opt-btn {
       background: var(--surface); border: 1px solid var(--border);
-      border-radius: var(--radius); padding: 15px 16px;
-      display: flex; align-items: center; gap: 13px;
+      border-radius: var(--radius); padding: 12px 14px;
+      display: flex; align-items: center; gap: 10px;
       cursor: pointer; transition: all var(--t); text-align: left;
-      width: 100%; font-size: 15px; font-weight: 500; color: var(--text-1);
+      width: 100%; font-size: 14px; font-weight: 500; color: var(--text-1);
       backdrop-filter: blur(8px);
+      min-height: 44px;
     }
     .opt-btn:not(:disabled):hover {
       border-color: rgba(251,191,36,0.42); background: rgba(251,191,36,0.05);
       transform: translateX(6px);
       box-shadow: 0 4px 20px rgba(0,0,0,0.3), 0 0 0 1px rgba(251,191,36,0.18);
+    }
+    .opt-btn:not(:disabled):active {
+      transform: scale(0.98);
+      background: rgba(251,191,36,0.08);
+      border-color: rgba(251,191,36,0.5);
     }
     .opt-btn:disabled { cursor: default; }
     .opt-btn.correct {
@@ -779,8 +787,9 @@
       display: none; background: none;
       border: 1px dashed rgba(255,255,255,0.14); border-radius: 10px;
       color: var(--text-3); font-size: 12px; font-weight: 600;
-      letter-spacing: 0.3px; cursor: pointer; padding: 9px 16px;
+      letter-spacing: 0.3px; cursor: pointer; padding: 12px 16px;
       width: 100%; margin-top: 10px; transition: all var(--t);
+      min-height: 44px;
     }
     .transcript-toggle.show { display: block; }
     .transcript-toggle:hover {
@@ -804,10 +813,11 @@
       width: 100%;
       background: linear-gradient(135deg, #F59E0B 0%, #FBBF24 50%, #FCD34D 100%);
       color: #000; border: none; border-radius: var(--radius);
-      padding: 17px; font-size: 16px; font-weight: 800;
+      padding: 14px; font-size: 15px; font-weight: 800;
       cursor: pointer; transition: all var(--t);
       display: none; letter-spacing: -0.2px;
-      box-shadow: 0 4px 20px rgba(251,191,36,0.22); margin-top: 14px;
+      box-shadow: 0 4px 20px rgba(251,191,36,0.22); margin-top: 8px;
+      min-height: 44px;
     }
     .next-btn.show { display: block; animation: slideUp 0.25s ease-out; }
     .next-btn:hover { transform: translateY(-2px); box-shadow: 0 8px 36px rgba(251,191,36,0.42); filter: brightness(1.05); }
@@ -949,45 +959,61 @@
     }
     .paywall-skip:hover { color: var(--text-2); }
 
+    /* ── RESPONSIVE: SHORT SCREEN (iPhone SE etc.) max-height: 700px ── */
+    @media (max-height: 700px) {
+      .app-header   { height: 48px; }
+      .audio-label  { margin-bottom: 6px; }
+      .waveform     { height: 28px; margin-bottom: 6px; }
+      .options-list { gap: 4px; }
+      .opt-btn      { padding: 10px 14px; }
+      .opt-num      { width: 28px; height: 28px; font-size: 13px; }
+      .quiz-meta    { margin-bottom: 8px; }
+      .audio-card   { margin-bottom: 8px; }
+      .next-btn     { margin-top: 6px; padding: 12px; }
+    }
+
     /* ── RESPONSIVE: TABLET 640px+ ── */
     @media (min-width: 640px) {
-      .content      { max-width: 640px; padding: 36px 32px 64px; }
+      .content      { max-width: 640px; padding: 24px 24px 40px; }
       .diff-card    { padding: 20px 22px; }
       .diff-icon    { font-size: 32px; width: 50px; }
       .diff-name    { font-size: 16px; }
       .diff-sub     { font-size: 13px; }
       .diff-pill    { padding: 7px 15px; font-size: 13px; }
-      .quiz-meta    { margin-bottom: 22px; }
-      .audio-card   { padding: 36px 32px 30px; border-radius: 24px; }
-      .waveform     { height: 58px; gap: 6px; }
+      .quiz-meta    { margin-bottom: 18px; }
+      .audio-card   { padding: 24px 28px 20px; border-radius: 20px; margin-bottom: 16px; }
+      .waveform     { height: 48px; gap: 6px; margin-bottom: 14px; }
       .bar          { width: 5px; }
-      .play-btn     { padding: 14px 32px; font-size: 15px; }
+      .play-btn     { padding: 13px 28px; font-size: 15px; }
       .question-label { font-size: 15px; }
-      .opt-btn      { padding: 18px 20px; font-size: 16px; }
-      .opt-num      { width: 36px; height: 36px; font-size: 15px; }
-      .explanation  { padding: 20px 22px; border-radius: 18px; }
-      .expl-verdict { font-size: 16px; }
+      .options-list { gap: 8px; }
+      .opt-btn      { padding: 15px 18px; font-size: 15px; }
+      .opt-num      { width: 34px; height: 34px; font-size: 14px; }
+      .explanation  { padding: 18px 20px; border-radius: 16px; }
+      .expl-verdict { font-size: 15px; }
       .expl-text    { font-size: 14px; }
-      .next-btn     { padding: 20px; font-size: 17px; border-radius: 18px; }
+      .next-btn     { padding: 16px; font-size: 16px; border-radius: 16px; margin-top: 12px; }
     }
 
-    /* ── RESPONSIVE: DESKTOP 960px+ ── */
-    @media (min-width: 960px) {
-      .content      { max-width: 940px; padding: 52px 48px 88px; }
+    /* ── RESPONSIVE: DESKTOP 1024px+ ── */
+    @media (min-width: 1024px) {
+      .content      { max-width: 960px; padding: 40px 48px 64px; }
       .diff-card    { padding: 22px 26px; }
       .diff-icon    { font-size: 36px; width: 54px; }
-      .audio-card   { padding: 44px 40px 36px; border-radius: 28px; }
-      .waveform     { height: 68px; gap: 7px; }
+      .audio-card   { padding: 36px 32px 28px; border-radius: 24px; margin-bottom: 0; }
+      .audio-label  { margin-bottom: 16px; }
+      .waveform     { height: 60px; gap: 7px; margin-bottom: 16px; }
       .bar          { width: 6px; }
-      .play-btn     { padding: 16px 40px; font-size: 16px; }
-      .opt-btn      { padding: 20px 24px; font-size: 16px; border-radius: 18px; }
-      .opt-num      { width: 38px; height: 38px; font-size: 15px; }
-      .next-btn     { padding: 22px; font-size: 18px; border-radius: 18px; }
-      .explanation  { padding: 22px 26px; border-radius: 20px; }
+      .play-btn     { padding: 15px 36px; font-size: 16px; }
+      .options-list { gap: 10px; margin-bottom: 16px; }
+      .opt-btn      { padding: 16px 20px; font-size: 16px; border-radius: 14px; }
+      .opt-num      { width: 36px; height: 36px; font-size: 15px; }
+      .next-btn     { padding: 18px; font-size: 17px; border-radius: 16px; margin-top: 12px; }
+      .explanation  { padding: 20px 24px; border-radius: 18px; }
       .question-view.show {
-        display: flex; flex-direction: row; gap: 36px; align-items: start;
+        display: flex; flex-direction: row; gap: 40px; align-items: start;
       }
-      .quiz-left  { flex: 0 0 42%; position: sticky; top: 72px; }
+      .quiz-left  { flex: 0 0 40%; position: sticky; top: 72px; }
       .quiz-right { flex: 1; min-width: 0; }
     }
   </style>
@@ -1052,8 +1078,8 @@
     <div class="feature-item">
       <span class="feature-icon">📊</span>
       <div class="feature-text">
-        <strong>難易度3段階・全50問</strong>
-        <span>初級25 · 中級15 · 上級10</span>
+        <strong>難易度3段階・全455問</strong>
+        <span>初級155 · 中級139 · 上級161</span>
       </div>
     </div>
     <div class="feature-item">
@@ -1871,7 +1897,7 @@ function loadQ() {
     document.getElementById('loadingView').classList.remove('show');
     document.getElementById('questionView').classList.add('show');
     // 自動再生なし — ▶ボタンで再生
-  }, 1100);
+  }, 400);
 }
 
 // ─────────────────────────────────────────
@@ -1958,12 +1984,18 @@ function choose(selected) {
   document.getElementById('transcriptEl').classList.add('show');
   document.getElementById('transcriptToggle').classList.remove('show');
 
-  document.getElementById('nextBtn').classList.add('show');
+  const nextBtn = document.getElementById('nextBtn');
+  nextBtn.classList.add('show');
 
   // Change next button label in free mode when limit reached
   if (freeMode && total >= FREE_LIMIT) {
-    document.getElementById('nextBtn').textContent = '続けるにはプレミアムへ →';
+    nextBtn.textContent = '続けるにはプレミアムへ →';
   }
+
+  // 次へボタンが見えるように自動スクロール
+  setTimeout(() => {
+    nextBtn.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  }, 300);
 }
 
 // ─────────────────────────────────────────
@@ -2051,7 +2083,7 @@ function replay() {
 function setPlayBtn(playing) {
   document.getElementById('playBtn').classList.toggle('playing', playing);
   document.getElementById('playIcon').textContent  = playing ? '⏸' : '▶';
-  document.getElementById('playLabel').textContent = playing ? '再生中...' : (audioEl.src ? 'もう一度聴く' : '聴く');
+  document.getElementById('playLabel').textContent = playing ? '再生中...' : (audioEl.src ? 'もう一度聴く' : '音声を聴く');
 }
 
 // ─────────────────────────────────────────
@@ -2107,7 +2139,6 @@ function shuffle(arr) {
   return a;
 }
 
-setDiff('intermediate');
 </script>
 <canvas id="confettiCanvas" style="position:fixed;inset:0;pointer-events:none;z-index:9999;display:none"></canvas>
 </body>
