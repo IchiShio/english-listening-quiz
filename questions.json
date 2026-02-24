@@ -1,302 +1,5917 @@
 [
   {
-    "diff": "beginner",
-    "text": "Oh no, I just missed the bus! When's the next one? I really can't be late for school today.",
-    "answer": "バスに乗り遅れて次のバスを確認している",
-    "choices": ["バスに乗り遅れて次のバスを確認している", "電車が遅延して困っている", "タクシーを呼ぼうとしている", "学校を休もうとしている", "友達に迎えを頼んでいる"]
+    "text": "Ugh, the line is so long. I've been standing here for twenty minutes already.",
+    "answer": "列に並んで待ちくたびれている",
+    "choices": [
+      "列に並んで待ちくたびれている",
+      "バスが来なくて困っている",
+      "遊園地のアトラクションを待っている",
+      "レジが混んでいるのを見ている",
+      "受付で手続きを待っている"
+    ],
+    "audio": "audio/q01.mp3",
+    "diff": "beginner"
   },
   {
-    "diff": "beginner",
-    "text": "Can I get a Big Mac meal, large size? And could I swap the Coke for a Sprite? Oh, and extra ketchup on the side, please.",
-    "answer": "ファストフードで食事を注文している",
-    "choices": ["ファストフードで食事を注文している", "カフェでコーヒーを注文している", "コンビニで買い物をしている", "レストランでメニューを確認している", "食べ物のデリバリーを頼んでいる"]
+    "text": "Can you turn that down a little? I'm trying to get some sleep.",
+    "answer": "音がうるさくて眠れないと訴えている",
+    "choices": [
+      "音がうるさくて眠れないと訴えている",
+      "テレビのボリュームを上げようとしている",
+      "隣人に静かにするよう頼んでいる",
+      "子どもに早く寝るよう言っている",
+      "音楽を変えてほしいとお願いしている"
+    ],
+    "audio": "audio/q02.mp3",
+    "diff": "beginner"
   },
   {
-    "diff": "beginner",
-    "text": "Ugh, I think I left my wallet at home. Can I pay with my phone? I have Apple Pay.",
-    "answer": "財布を忘れてスマホで支払おうとしている",
-    "choices": ["財布を忘れてスマホで支払おうとしている", "クレジットカードが使えるか聞いている", "両替をしようとしている", "お金を借りようとしている", "支払いを後回しにしようとしている"]
+    "text": "I think I left my umbrella on the train. It was brand new too.",
+    "answer": "電車に傘を忘れて落ち込んでいる",
+    "choices": [
+      "電車に傘を忘れて落ち込んでいる",
+      "傘が壊れて捨てようとしている",
+      "雨の中で傘がなくて困っている",
+      "傘を誰かに貸そうとしている",
+      "落とし物を駅に問い合わせている"
+    ],
+    "audio": "audio/q03.mp3",
+    "diff": "beginner"
   },
   {
-    "diff": "beginner",
-    "text": "It's been raining all week! I'm so over it. My laundry's been sitting wet in the machine for two days.",
-    "answer": "雨続きの天気に不満を言っている",
-    "choices": ["雨続きの天気に不満を言っている", "洗濯機が壊れて困っている", "洗濯物を外に干せなくて困っている", "天気予報を確認しようとしている", "傘を持ってこなかったことを後悔している"]
+    "text": "Table for two, please. Do you have anything near the window?",
+    "answer": "レストランで窓際の席を希望している",
+    "choices": [
+      "レストランで窓際の席を希望している",
+      "カフェで友人と待ち合わせしている",
+      "ホテルのチェックインをしている",
+      "予約なしで入店しようとしている",
+      "席を別の場所に移してほしいと頼んでいる"
+    ],
+    "audio": "audio/q04.mp3",
+    "diff": "beginner"
   },
   {
-    "diff": "beginner",
-    "text": "Alright, I'm off! I'll text you when I land. Don't forget to water my plants, okay? See you in two weeks!",
-    "answer": "旅行に出発する前に見送りをしている",
-    "choices": ["旅行に出発する前に見送りをしている", "空港で友人を出迎えている", "引っ越しで別れを告げている", "長期入院前に挨拶している", "仕事の転勤で別れを告げている"]
+    "text": "My back is killing me. I think I slept in a weird position.",
+    "answer": "寝方が悪くて背中が痛い",
+    "choices": [
+      "寝方が悪くて背中が痛い",
+      "運動のしすぎで体が痛い",
+      "長時間デスクワークで腰が痛い",
+      "マッサージを予約しようとしている",
+      "病院で症状を説明している"
+    ],
+    "audio": "audio/q05.mp3",
+    "diff": "beginner"
   },
   {
-    "diff": "beginner",
-    "text": "Excuse me, do you have the time? My phone just died and I think I might be late for my dentist appointment.",
-    "answer": "スマホが切れて時間を人に聞いている",
-    "choices": ["スマホが切れて時間を人に聞いている", "電車の時刻を確認している", "友達との待ち合わせに遅れそうになっている", "スマホを充電しようとしている", "道に迷って時間を確認している"]
+    "text": "Do you have this in a size medium? I can't find it on the rack.",
+    "answer": "洋服店でMサイズを探している",
+    "choices": [
+      "洋服店でMサイズを探している",
+      "ネットショッピングでサイズを確認している",
+      "服のサイズを直してもらおうとしている",
+      "試着室の使い方を聞いている",
+      "在庫切れの商品を問い合わせている"
+    ],
+    "audio": "audio/q06.mp3",
+    "diff": "beginner"
   },
   {
-    "diff": "beginner",
-    "text": "Hi, I have a reservation under Tanaka. It should be a standard room with a king bed. Could I also get an extra towel? Oh, and is the gym open 24 hours?",
-    "answer": "ホテルにチェックインしながら確認事項を伝えている",
-    "choices": ["ホテルにチェックインしながら確認事項を伝えている", "ホテルの部屋をアップグレードしようとしている", "ホテルのサービスについてクレームを言っている", "ルームサービスを注文している", "チェックアウト時間を確認している"]
+    "text": "I completely blanked during the presentation. My mind just went empty.",
+    "answer": "プレゼン中に頭が真っ白になった",
+    "choices": [
+      "プレゼン中に頭が真っ白になった",
+      "スライドの内容を忘れて練習している",
+      "発表前に緊張していると話している",
+      "プレゼンが成功して安心している",
+      "聴衆の反応が悪くて落ち込んでいる"
+    ],
+    "audio": "audio/q07.mp3",
+    "diff": "beginner"
   },
   {
-    "diff": "beginner",
-    "text": "Two round trips to Boston, please. For this Saturday, returning Sunday evening. Do you have anything before noon?",
-    "answer": "電車のチケットを購入しようとしている",
-    "choices": ["電車のチケットを購入しようとしている", "バスの時刻表を確認している", "飛行機の予約を変更している", "レンタカーを予約している", "ツアーパッケージを申し込んでいる"]
+    "text": "Hey, you dropped something! Here, I think this is yours.",
+    "answer": "落とし物を拾って声をかけている",
+    "choices": [
+      "落とし物を拾って声をかけている",
+      "財布を失くして探している",
+      "誰かの忘れ物を届けようとしている",
+      "店員に落とし物を渡している",
+      "道で知り合いに偶然会っている"
+    ],
+    "audio": "audio/q08.mp3",
+    "diff": "beginner"
   },
   {
-    "diff": "beginner",
-    "text": "Oh gosh, I can't find my phone anywhere! Can you call it for me? It might be on silent though. Last time I had it was at the coffee shop.",
-    "answer": "スマホをなくして探している",
-    "choices": ["スマホをなくして探している", "スマホが壊れて修理に出そうとしている", "スマホの充電がなくなって困っている", "スマホを誰かに貸していて返ってこない", "スマホのロックを解除できなくて困っている"]
+    "text": "The Wi-Fi keeps cutting out. I can't get anything done working from home today.",
+    "answer": "Wi-Fi不安定で在宅勤務に支障",
+    "choices": [
+      "Wi-Fi不安定で在宅勤務に支障",
+      "パソコンが壊れて修理に出している",
+      "スマホのデータ通信量が超過している",
+      "インターネット回線を新しく契約しようとしている",
+      "オンライン会議に接続できなくて困っている"
+    ],
+    "audio": "audio/q09.mp3",
+    "diff": "beginner"
   },
   {
-    "diff": "beginner",
-    "text": "We just got a puppy! She's a golden retriever, only eight weeks old. She keeps chewing on everything, but she's just so cute I can't get mad.",
-    "answer": "新しく飼い始めた子犬について話している",
-    "choices": ["新しく飼い始めた子犬について話している", "ペットショップで犬を探している", "犬のしつけ方法を相談している", "子犬が病気で心配している", "犬を飼いたいと家族を説得している"]
+    "text": "I passed! I can't believe it. Three attempts and I finally got my driver's license!",
+    "answer": "三度目の試験でやっと運転免許を取得した",
+    "choices": [
+      "三度目の試験でやっと運転免許を取得した",
+      "資格試験に合格して喜んでいる",
+      "友人の合格を一緒に祝っている",
+      "試験に落ちてまた挑戦しようとしている",
+      "免許の更新手続きをしている"
+    ],
+    "audio": "audio/q10.mp3",
+    "diff": "beginner"
   },
   {
-    "diff": "beginner",
-    "text": "So for Saturday, I was thinking we could pack a lunch and head to Riverside Park. The forecast looks perfect — sunny and seventy-five. You in?",
-    "answer": "週末に公園でピクニックをする計画を立てている",
-    "choices": ["週末に公園でピクニックをする計画を立てている", "天気予報を確認して外出を迷っている", "ハイキングに行く計画を立てている", "友達にランチに誘っている", "バーベキューパーティの準備をしている"]
+    "text": "Could I get an extra blanket? It's a bit cold in here.",
+    "answer": "ホテルで毛布を追加してほしいと頼んでいる",
+    "choices": [
+      "ホテルで毛布を追加してほしいと頼んでいる",
+      "飛行機の中で毛布を借りている",
+      "病院のベッドで寒さを訴えている",
+      "エアコンの温度を上げてほしいと言っている",
+      "部屋が寒いので暖房をつけようとしている"
+    ],
+    "audio": "audio/q11.mp3",
+    "diff": "beginner"
   },
   {
-    "diff": "beginner",
-    "text": "My head is pounding. I've had this headache since this morning and it just won't go away. I think I need to lie down.",
-    "answer": "頭痛がひどくて横になろうとしている",
-    "choices": ["頭痛がひどくて横になろうとしている", "二日酔いで体調が悪い", "体調不良で病院に行こうとしている", "疲れて早めに帰ろうとしている", "薬を飲もうとしている"]
+    "text": "I've been on hold for forty minutes. This is ridiculous.",
+    "answer": "電話サポートで長時間待たされて怒っている",
+    "choices": [
+      "電話サポートで長時間待たされて怒っている",
+      "病院の予約が取れなくて困っている",
+      "コールセンターで苦情を言っている",
+      "電話が繋がらなくて別の方法を探している",
+      "長い行列に並んで不満を言っている"
+    ],
+    "audio": "audio/q12.mp3",
+    "diff": "beginner"
   },
   {
-    "diff": "beginner",
-    "text": "Hey, is it okay if I borrow your umbrella? I totally forgot mine and it's supposed to rain all afternoon. I'll bring it back tomorrow, promise.",
-    "answer": "傘を借りようとしている",
-    "choices": ["傘を借りようとしている", "傘をなくして困っている", "コンビニで傘を買おうとしている", "雨宿りする場所を探している", "天気予報が外れて驚いている"]
+    "text": "Watch your step! The floor's wet — they just mopped.",
+    "answer": "床が濡れていて危ないと注意を促している",
+    "choices": [
+      "床が濡れていて危ないと注意を促している",
+      "雨で床が滑りやすいと警告している",
+      "掃除中につき通行止めを伝えている",
+      "転倒した人を助けようとしている",
+      "清掃員に床を拭いてもらっている"
+    ],
+    "audio": "audio/q13.mp3",
+    "diff": "beginner"
   },
   {
-    "diff": "beginner",
-    "text": "Oh my gosh, have you seen Dune Part Two yet? The visuals were insane. I literally had chills the whole time. You have to go this weekend.",
-    "answer": "映画を観て感動して友達に勧めている",
-    "choices": ["映画を観て感動して友達に勧めている", "映画のチケットを予約しようとしている", "映画のあらすじを説明している", "映画の続編が公開されるのを待っている", "映画のレビューを読んで観るか迷っている"]
+    "text": "Do you mind if I sit here? All the other seats are taken.",
+    "answer": "空席がなくて相席をお願いしている",
+    "choices": [
+      "空席がなくて相席をお願いしている",
+      "指定席に別の人が座っていて困っている",
+      "友人のために席を確保しようとしている",
+      "カフェで好きな席を探している",
+      "混雑した電車で座れないでいる"
+    ],
+    "audio": "audio/q14.mp3",
+    "diff": "beginner"
   },
   {
-    "diff": "beginner",
-    "text": "I had the best ramen for lunch today. The broth was so rich and they put this slow-cooked egg on top — honestly, I'm still thinking about it.",
-    "answer": "ランチで食べたラーメンが美味しかったと話している",
-    "choices": ["ランチで食べたラーメンが美味しかったと話している", "おすすめのラーメン店を教えている", "昼食を何にするか迷っている", "食事制限のためにメニューを選んでいる", "ラーメンの作り方を説明している"]
+    "text": "The milk's gone bad. I just bought it yesterday!",
+    "answer": "買ったばかりの牛乳が傷んでいた",
+    "choices": [
+      "買ったばかりの牛乳が傷んでいた",
+      "冷蔵庫が壊れて食品が傷んでいる",
+      "賞味期限切れの食品を見つけた",
+      "スーパーに返品しようとしている",
+      "食中毒になって病院に行こうとしている"
+    ],
+    "audio": "audio/q15.mp3",
+    "diff": "beginner"
   },
   {
-    "diff": "beginner",
-    "text": "Excuse me, I'm looking for the cereal aisle. I've been going around in circles for five minutes and I still can't find it.",
-    "answer": "スーパーで売り場を探して店員に聞いている",
-    "choices": ["スーパーで売り場を探して店員に聞いている", "商品が品切れで困っている", "スーパーで道に迷っている", "商品の値段を確認している", "特売品を探している"]
+    "text": "Surprise! Happy birthday! We've been planning this for weeks!",
+    "answer": "サプライズ誕生会を開いている",
+    "choices": [
+      "サプライズ誕生会を開いている",
+      "友人の昇進をお祝いしている",
+      "パーティーの準備が大変だったと話している",
+      "誕生日プレゼントを渡している",
+      "誕生日を忘れていたことを謝っている"
+    ],
+    "audio": "audio/q16.mp3",
+    "diff": "beginner"
   },
   {
-    "diff": "beginner",
-    "text": "I am absolutely exhausted. Back-to-back meetings all day, then a two-hour commute home. I'm going to sleep for twelve hours.",
-    "answer": "仕事で疲れ果てて帰宅した",
-    "choices": ["仕事で疲れ果てて帰宅した", "残業を頼まれて断ろうとしている", "仕事の量が多すぎて上司に相談している", "長距離移動で疲れている", "体調が悪くて早退したい"]
+    "text": "I think I took a wrong turn. Can you pull up the map?",
+    "answer": "道を間違えてナビを確認しようとしている",
+    "choices": [
+      "道を間違えてナビを確認しようとしている",
+      "目的地までの所要時間を調べている",
+      "交通渋滞を避けるルートを探している",
+      "地図アプリの使い方がわからない",
+      "知らない道で迷子になっている"
+    ],
+    "audio": "audio/q17.mp3",
+    "diff": "beginner"
   },
   {
-    "diff": "beginner",
-    "text": "Let's meet at the park entrance at two, okay? If I'm a little late, just wait by the fountain. I'll text you if anything comes up.",
-    "answer": "友達と待ち合わせの場所と時間を決めている",
-    "choices": ["友達と待ち合わせの場所と時間を決めている", "待ち合わせに遅刻して謝っている", "集合場所の変更を伝えている", "道に迷って場所を確認している", "待ち合わせをキャンセルしようとしている"]
+    "text": "I can't find my keys anywhere. I'm going to be late!",
+    "answer": "鍵が見つからなくて遅刻しそうになっている",
+    "choices": [
+      "鍵が見つからなくて遅刻しそうになっている",
+      "玄関の鍵を閉め忘れて引き返している",
+      "鍵を車の中に閉じ込めてしまった",
+      "新しい家の鍵を受け取りに行っている",
+      "合い鍵を作るために店に行っている"
+    ],
+    "audio": "audio/q18.mp3",
+    "diff": "beginner"
   },
   {
-    "diff": "beginner",
-    "text": "Did you check the weather? It says there might be thunderstorms tonight. We should probably leave the event early just in case.",
-    "answer": "天気を心配して早めに帰ることを提案している",
-    "choices": ["天気を心配して早めに帰ることを提案している", "嵐の準備をするよう警告している", "天気予報が外れたと文句を言っている", "雨具を用意するよう勧めている", "屋外イベントの中止を心配している"]
+    "text": "This steak is amazing. Compliments to the chef!",
+    "answer": "料理が絶品で料理人を褒めている",
+    "choices": [
+      "料理が絶品で料理人を褒めている",
+      "レストランに料理の苦情を伝えている",
+      "料理教室で上手くできて喜んでいる",
+      "友人の手料理を褒めている",
+      "注文した料理が違うと伝えている"
+    ],
+    "audio": "audio/q19.mp3",
+    "diff": "beginner"
   },
   {
-    "diff": "beginner",
-    "text": "Shh! She has no idea we're doing this. Everyone needs to be here by six and hide before she walks in. Jake's bringing the cake.",
-    "answer": "誕生日のサプライズパーティを計画している",
-    "choices": ["誕生日のサプライズパーティを計画している", "誰かの帰宅を待ち伏せしようとしている", "パーティの準備が遅れていて焦っている", "友達の誕生日を忘れてプレゼントを急いでいる", "こっそりイベントを準備している"]
+    "text": "My flight got cancelled because of the storm. I need to rebook.",
+    "answer": "嵐でフライトがキャンセルに",
+    "choices": [
+      "嵐でフライトがキャンセルに",
+      "フライトに乗り遅れてカウンターに向かっている",
+      "悪天候で出発が遅延していると知らされた",
+      "予約を変更しようと航空会社に電話している",
+      "空港で荷物が行方不明になっている"
+    ],
+    "audio": "audio/q20.mp3",
+    "diff": "beginner"
   },
   {
-    "diff": "beginner",
-    "text": "Hi! Can I get a medium iced matcha latte with oat milk, half sweet? And can you put less ice? Oh, and I have a reward — let me pull up the app.",
-    "answer": "カフェでカスタマイズしたドリンクを注文している",
-    "choices": ["カフェでカスタマイズしたドリンクを注文している", "コーヒーショップのポイントを使おうとしている", "抹茶の作り方を聞いている", "テイクアウトのドリンクを受け取っている", "カフェのメニューを確認している"]
+    "text": "He proposed last night! Look at this ring!",
+    "answer": "昨夜プロポーズされてリングを見せている",
+    "choices": [
+      "昨夜プロポーズされてリングを見せている",
+      "結婚指輪を新しく買い直した",
+      "婚約パーティーの準備をしている",
+      "友人の結婚を羨ましがっている",
+      "アクセサリーショップで指輪を選んでいる"
+    ],
+    "audio": "audio/q21.mp3",
+    "diff": "beginner"
   },
   {
-    "diff": "beginner",
-    "text": "Sorry, could you slow down a bit? I didn't catch the last part. Could you say that again, a little more slowly?",
-    "answer": "相手の話が早くて聞き返している",
-    "choices": ["相手の話が早くて聞き返している", "電話の電波が悪くて聞き取れない", "周りが騒がしくて会話できない", "英語が難しすぎて理解できない", "発音が違うと指摘している"]
+    "text": "Can you proofread this email before I send it? I want to make sure the tone is right.",
+    "answer": "送信前にメールの文章チェックを頼んでいる",
+    "choices": [
+      "送信前にメールの文章チェックを頼んでいる",
+      "重要なメールを誤って送ってしまった",
+      "英語のメールの書き方を教わっている",
+      "クレームメールの返信を手伝ってもらっている",
+      "添付ファイルの送り方を確認している"
+    ],
+    "audio": "audio/q22.mp3",
+    "diff": "beginner"
   },
   {
-    "diff": "beginner",
-    "text": "I still have like three chapters left and the test is tomorrow morning. Why did I leave this to the last minute again? I need coffee.",
-    "answer": "試験前日に勉強が終わらなくて焦っている",
-    "choices": ["試験前日に勉強が終わらなくて焦っている", "宿題の締め切りを過ぎてしまった", "レポートを徹夜で書こうとしている", "試験勉強の方法が分からなくて困っている", "友達に勉強を手伝ってもらっている"]
+    "text": "I just got back from the gym. I'm absolutely exhausted but I feel great.",
+    "answer": "ジム帰りでへとへとだが満足",
+    "choices": [
+      "ジム帰りでへとへとだが満足",
+      "マラソン大会を走り終えて達成感がある",
+      "スポーツで怪我をして病院に行った",
+      "ダイエットの成果が出て喜んでいる",
+      "体調不良で運動できないと嘆いている"
+    ],
+    "audio": "audio/q23.mp3",
+    "diff": "beginner"
   },
   {
-    "diff": "beginner",
-    "text": "Excuse me! Could we get the check, please? And could you split it three ways? Actually, you know what, let's just do it evenly.",
-    "answer": "レストランで会計を頼んで割り勘にしようとしている",
-    "choices": ["レストランで会計を頼んで割り勘にしようとしている", "料金に間違いがあると申し出ている", "注文したものが来ていないと伝えている", "領収書を発行してもらおうとしている", "コースの追加注文をしている"]
+    "text": "Excuse me, is this seat taken? I just need somewhere to charge my phone.",
+    "answer": "コンセント席を探している",
+    "choices": [
+      "コンセント席を探している",
+      "バッテリー切れで充電器を借りようとしている",
+      "カフェで仕事をする場所を確保している",
+      "空席を確認してから荷物を置こうとしている",
+      "スマホの充電が切れて困っている"
+    ],
+    "audio": "audio/q24.mp3",
+    "diff": "beginner"
   },
   {
-    "diff": "beginner",
-    "text": "The train was absolutely packed this morning. I had someone's bag in my face the whole ride. I don't know how people do this every single day.",
-    "answer": "満員電車で通勤してうんざりしている",
-    "choices": ["満員電車で通勤してうんざりしている", "電車が遅延して怒っている", "電車で隣の人に迷惑を掛けてしまった", "混雑を避けるために時間をずらそうとしている", "公共交通機関を使うのをやめようとしている"]
+    "text": "I burned the rice again. I really need to get a rice cooker.",
+    "answer": "また炊飯を失敗し炊飯器を検討",
+    "choices": [
+      "また炊飯を失敗し炊飯器を検討",
+      "料理が下手で練習しようとしている",
+      "キッチン用品をオンラインで探している",
+      "外食ばかりで自炊できていないと反省している",
+      "火の消し忘れで家が焦げた"
+    ],
+    "audio": "audio/q25.mp3",
+    "diff": "beginner"
   },
   {
-    "diff": "intermediate",
-    "text": "Excuse me, I need to speak to the manager. The guests in the room next to ours were up until three in the morning making noise. We barely slept. We'd like to be moved to a different room.",
-    "answer": "ホテルで隣の部屋の騒音をマネージャーにクレームしている",
-    "choices": ["ホテルで隣の部屋の騒音をマネージャーにクレームしている", "ホテルの設備が壊れていて修理を頼んでいる", "チェックアウトを早めたいと申し出ている", "ホテルの周辺環境の騒音に困っている", "部屋のグレードアップを交渉している"]
+    "text": "I've been studying Japanese for two years now, and I finally feel like I'm making real progress.",
+    "answer": "2年の日本語学習でやっと上達",
+    "choices": [
+      "2年の日本語学習でやっと上達",
+      "語学留学から帰国して成長を感じている",
+      "日本語検定に向けて勉強中だと話している",
+      "外国語の難しさに挫折しそうになっている",
+      "オンライン語学講座を始めようとしている"
+    ],
+    "audio": "audio/q26.mp3",
+    "diff": "beginner"
   },
   {
-    "diff": "intermediate",
-    "text": "I'm picking up a rental. It's under Williams. Now, the agent mentioned the collision damage waiver — is that something I really need? What exactly does it cover?",
-    "answer": "レンタカーを借りる際に保険の内容を確認している",
-    "choices": ["レンタカーを借りる際に保険の内容を確認している", "車の事故後に保険会社に連絡している", "車を返却する際に傷の確認をしている", "レンタカーの料金プランを比較している", "海外旅行保険の補償内容を確認している"]
+    "text": "The printer is jammed again. Third time this week.",
+    "answer": "プリンターが3度目の紙詰まり",
+    "choices": [
+      "プリンターが3度目の紙詰まり",
+      "プリンターのインクが切れて困っている",
+      "コピー機の使い方がわからない",
+      "オフィスの機器が故障して修理を頼んだ",
+      "印刷設定を変更しようとしている"
+    ],
+    "audio": "audio/q27.mp3",
+    "diff": "beginner"
   },
   {
-    "diff": "intermediate",
-    "text": "I've been having sharp pains in my lower stomach since yesterday. It comes and goes, but it's getting worse. I also feel kind of nauseous. No fever, though.",
-    "answer": "医師に下腹部の痛みと吐き気の症状を説明している",
-    "choices": ["医師に下腹部の痛みと吐き気の症状を説明している", "薬局で痛み止めを求めている", "救急車を呼ぼうとしている", "食あたりの可能性を考えている", "過去の病歴を説明している"]
+    "text": "She just texted saying she'll be fifteen minutes late. Typical.",
+    "answer": "友人がまた遅刻の連絡をした",
+    "choices": [
+      "友人がまた遅刻の連絡をした",
+      "約束の時間を間違えて謝っている",
+      "待ち合わせ場所を変更しようとしている",
+      "遅刻した人を叱っている",
+      "電車の遅延で遅れると伝えている"
+    ],
+    "audio": "audio/q28.mp3",
+    "diff": "beginner"
   },
   {
-    "diff": "intermediate",
-    "text": "Come on, fifty dollars for this? Look at the stitching — it's not even that good quality. How about thirty? I'll take two of them if you do thirty each.",
-    "answer": "フリーマーケットで値段を交渉している",
-    "choices": ["フリーマーケットで値段を交渉している", "商品の品質に不満を言っている", "ネットショッピングで値段を比較している", "偽物商品を指摘している", "まとめ買いで割引を要求している"]
+    "text": "I need to cancel my gym membership. I've only been twice this whole year.",
+    "answer": "使わないジムの解約を考えている",
+    "choices": [
+      "使わないジムの解約を考えている",
+      "ジムの料金が高すぎると不満を言っている",
+      "新しいジムに乗り換えようとしている",
+      "運動不足を解消するため入会を検討している",
+      "ジムの設備に不満を持っている"
+    ],
+    "audio": "audio/q29.mp3",
+    "diff": "beginner"
   },
   {
-    "diff": "intermediate",
-    "text": "Hi, I'd like to make a reservation for Saturday evening, around eight o'clock. Table for five. Oh, and one of our guests has a severe nut allergy — can that be accommodated?",
-    "answer": "レストランにアレルギーを伝えながら予約を入れている",
-    "choices": ["レストランにアレルギーを伝えながら予約を入れている", "食べられないものをウェイターに確認している", "アレルギー反応が出て助けを求めている", "特別メニューのリクエストをしている", "食事制限のある友人のためにメニューを確認している"]
+    "text": "My neighbor's dog barks every night around two in the morning. I can't sleep.",
+    "answer": "隣の犬が深夜に吠えて眠れない",
+    "choices": [
+      "隣の犬が深夜に吠えて眠れない",
+      "犬が逃げ出して飼い主を探している",
+      "ペット可のマンションに引っ越そうとしている",
+      "隣人とトラブルになっている",
+      "犬の鳴き声がうるさいと管理人に相談している"
+    ],
+    "audio": "audio/q30.mp3",
+    "diff": "beginner"
   },
   {
-    "diff": "intermediate",
-    "text": "Hi, I received my order last week but the zipper on the jacket is completely broken. It's unworn — literally took it out of the box and noticed immediately. I'd like a full refund, please.",
-    "answer": "破損した商品の全額返金を求めている",
-    "choices": ["破損した商品の全額返金を求めている", "注文した商品が届かないと問い合わせている", "サイズが違う商品を交換しようとしている", "商品レビューの苦情を書いている", "返品の送料を負担してもらうよう交渉している"]
+    "text": "I'm calling to confirm my reservation for Saturday — two nights, non-smoking.",
+    "answer": "ホテルの週末予約内容を電話で確認している",
+    "choices": [
+      "ホテルの週末予約内容を電話で確認している",
+      "ホテルの予約を変更しようとしている",
+      "部屋のアップグレードをお願いしている",
+      "キャンセルポリシーを問い合わせている",
+      "旅行代理店に旅程を相談している"
+    ],
+    "audio": "audio/q31.mp3",
+    "diff": "beginner"
   },
   {
-    "diff": "intermediate",
-    "text": "Hi, I'm picking up a prescription for Nguyen. My doctor faxed it over this morning. Oh — is this one okay to take with ibuprofen? I'm also on that.",
-    "answer": "薬局で処方薬を受け取り他の薬との飲み合わせを確認している",
-    "choices": ["薬局で処方薬を受け取り他の薬との飲み合わせを確認している", "市販薬の効果を薬剤師に相談している", "処方箋がなくて薬をもらえるか聞いている", "薬の副作用について医師に相談している", "海外で薬を購入しようとしている"]
+    "text": "I just realized I double-booked myself. I have two meetings at the same time on Thursday.",
+    "answer": "木曜に会議が二重に入っていた",
+    "choices": [
+      "木曜に会議が二重に入っていた",
+      "スケジュールを秘書に管理してもらっている",
+      "会議の日程を変更するよう依頼している",
+      "予定を忘れていたことを謝っている",
+      "重要な会議に欠席せざるを得ない状況にある"
+    ],
+    "audio": "audio/q32.mp3",
+    "diff": "beginner"
   },
   {
-    "diff": "intermediate",
-    "text": "My bags weren't on the carousel. I've been waiting for forty minutes. I have a connecting flight in two hours and I need my luggage. What are my options here?",
-    "answer": "空港で荷物が出てこずスタッフに対応を求めている",
-    "choices": ["空港で荷物が出てこずスタッフに対応を求めている", "フライトに乗り遅れて振替を求めている", "荷物の重量オーバーで追加料金を払っている", "盗まれた荷物を申告している", "トランジット中の荷物の保管を頼んでいる"]
+    "text": "Could you wrap this as a gift, please? It's for my mom's birthday.",
+    "answer": "母の誕生日プレゼントの包装を依頼",
+    "choices": [
+      "母の誕生日プレゼントの包装を依頼",
+      "プレゼントの購入を迷っている",
+      "誕生日カードのメッセージを考えている",
+      "贈り物を宅配便で送ろうとしている",
+      "お店でプレゼントの中身を確認している"
+    ],
+    "audio": "audio/q33.mp3",
+    "diff": "beginner"
   },
   {
-    "diff": "intermediate",
-    "text": "Hi, I'm calling about a booking I have for the fourteenth. Something's come up and I need to change it to the seventeenth. Is there a change fee? The ticket was a flex fare.",
-    "answer": "航空便の日程変更を電話で依頼している",
-    "choices": ["航空便の日程変更を電話で依頼している", "フライトのキャンセルと払い戻しを求めている", "フライトの遅延に対する補償を求めている", "座席のアップグレードを申し込んでいる", "予約が見つからないと問い合わせている"]
+    "text": "The ATM swallowed my card and won't give it back.",
+    "answer": "ATMにカードが飲み込まれてしまった",
+    "choices": [
+      "ATMにカードが飲み込まれてしまった",
+      "銀行カードを紛失して再発行を申請している",
+      "暗証番号を間違えてカードがロックされた",
+      "外国のATMが使えなくて困っている",
+      "現金が不足していて困っている"
+    ],
+    "audio": "audio/q34.mp3",
+    "diff": "beginner"
   },
   {
-    "diff": "intermediate",
-    "text": "Well, I'd say my biggest strength is staying calm under pressure. In my last role, we had a product launch go sideways two days before the deadline, and I managed to coordinate the team to fix the core issues overnight.",
-    "answer": "就職面接でプレッシャー下での対処能力をアピールしている",
-    "choices": ["就職面接でプレッシャー下での対処能力をアピールしている", "職場でのトラブルを上司に報告している", "チームワークの重要性を説明している", "転職理由を面接官に説明している", "残業対応のエピソードを話している"]
+    "text": "I think I'm coming down with something. My throat's been sore all day.",
+    "answer": "喉が痛くて風邪の兆候がある",
+    "choices": [
+      "喉が痛くて風邪の兆候がある",
+      "花粉症がひどくて薬を飲もうとしている",
+      "病院で症状を医者に説明している",
+      "熱が出て仕事を休もうとしている",
+      "咳が止まらなくて耳鼻科に行くつもり"
+    ],
+    "audio": "audio/q35.mp3",
+    "diff": "beginner"
   },
   {
-    "diff": "intermediate",
-    "text": "Excuse me, I'm trying to find the Guggenheim Museum. I know it's somewhere on Fifth Avenue but I can't figure out which direction to walk from here.",
-    "answer": "観光地への道を地元の人に聞いている",
-    "choices": ["観光地への道を地元の人に聞いている", "観光案内所でマップをもらおうとしている", "タクシーの運転手に行き先を告げている", "スマホのナビが使えなくて困っている", "目的地の住所を確認しようとしている"]
+    "text": "Can I get a receipt for this? I need it for my expense report.",
+    "answer": "経費精算のためにレシートをもらっている",
+    "choices": [
+      "経費精算のためにレシートをもらっている",
+      "領収書の宛名を会社名にしてもらっている",
+      "クレジットカードの明細を確認している",
+      "商品の返品のためにレシートを探している",
+      "税金の申告書類を準備している"
+    ],
+    "audio": "audio/q36.mp3",
+    "diff": "beginner"
   },
   {
-    "diff": "intermediate",
-    "text": "Is the salmon wild-caught or farmed? And the risotto — is the broth vegetable-based? I try to avoid meat stock when I can. Also, can the scallops be made without butter?",
-    "answer": "食材や調理法について詳しくウェイターに確認している",
-    "choices": ["食材や調理法について詳しくウェイターに確認している", "ベジタリアン用メニューを求めている", "アレルギーのある食材を確認している", "料理の量が少ないと文句を言っている", "シェフのおすすめを聞いている"]
+    "text": "We're out of toilet paper again. Can you grab some on your way home?",
+    "answer": "トイレットペーパー購入を頼む",
+    "choices": [
+      "トイレットペーパー購入を頼む",
+      "日用品の買い出しリストを作っている",
+      "スーパーで特売品を探している",
+      "家の備蓄品が少なくなっていると気づいた",
+      "コンビニで急ぎの買い物を頼んでいる"
+    ],
+    "audio": "audio/q37.mp3",
+    "diff": "beginner"
   },
   {
-    "diff": "intermediate",
-    "text": "Okay so we're thinking two weeks in Southeast Asia — Thailand and Vietnam. We want a mix of beaches and culture. Should we fly into Bangkok or Ho Chi Minh first?",
-    "answer": "東南アジアへの旅行ルートを相談している",
-    "choices": ["東南アジアへの旅行ルートを相談している", "旅行代理店にツアーパッケージを依頼している", "バックパッカーとしての旅行を計画している", "ビザの取得方法を確認している", "現地での移動手段について相談している"]
+    "text": "My laptop battery is at two percent. Does anyone have a charger I can borrow?",
+    "answer": "PCの充電器を貸してほしい",
+    "choices": [
+      "PCの充電器を貸してほしい",
+      "スマホの充電器を忘れて困っている",
+      "パソコンが壊れて修理を頼んでいる",
+      "充電器の規格が合わなくて使えない",
+      "仕事中に停電になってパソコンが落ちた"
+    ],
+    "audio": "audio/q38.mp3",
+    "diff": "beginner"
   },
   {
-    "diff": "intermediate",
-    "text": "I'd like to open a checking account. I'm new to the area — just moved here for work. What do I need to bring? And is there a minimum balance requirement?",
-    "answer": "銀行で新規口座を開設しようとしている",
-    "choices": ["銀行で新規口座を開設しようとしている", "銀行に住所変更を届け出ている", "ローンの申請方法を確認している", "海外送金の手続きを行っている", "キャッシュカードの再発行を依頼している"]
+    "text": "The cherry blossoms are at full bloom. Let's grab a spot before it gets crowded.",
+    "answer": "花見場所を先に確保しようとする",
+    "choices": [
+      "花見場所を先に確保しようとする",
+      "お花見の計画を友人と話し合っている",
+      "公園で写真を撮ろうと誘っている",
+      "花粉の季節が来て外出を嫌がっている",
+      "春の行楽地の混雑を嘆いている"
+    ],
+    "audio": "audio/q39.mp3",
+    "diff": "beginner"
   },
   {
-    "diff": "intermediate",
-    "text": "Hi, I bought these jeans here about two weeks ago but they're a size too small. I haven't worn them — the tags are still on. Can I exchange them for the next size up?",
-    "answer": "購入した衣類のサイズ交換を申し出ている",
-    "choices": ["購入した衣類のサイズ交換を申し出ている", "破損した商品の返品を求めている", "セール品の返金ポリシーを確認している", "服のサイズ感についてスタッフに相談している", "オンラインで注文した商品を店舗で返品しようとしている"]
+    "text": "I accidentally sent that email to the wrong person. This is a disaster.",
+    "answer": "メールを誤送信してしまって焦っている",
+    "choices": [
+      "メールを誤送信してしまって焦っている",
+      "重要なファイルを削除してしまった",
+      "仕事上のミスを上司に謝っている",
+      "個人情報を誤って共有してしまった",
+      "メールの返信を忘れていたことに気づいた"
+    ],
+    "audio": "audio/q40.mp3",
+    "diff": "beginner"
   },
   {
-    "diff": "advanced",
-    "text": "Look, I hear what you're saying, but signing off on this without Sarah's input is a risk I'm not willing to take. Let's table it until Thursday and loop her in. I'd rather slow down and get it right.",
-    "answer": "重要な決定を関係者が揃うまで保留することを主張している",
-    "choices": ["重要な決定を関係者が揃うまで保留することを主張している", "責任の所在を部下に押し付けようとしている", "プロジェクトの進行が遅れていることに怒っている", "上司の判断に従わないと宣言している", "会議の参加者を制限しようとしている"]
+    "text": "I'm so full I can't move. That was the best barbecue I've ever had.",
+    "answer": "バーベキューを食べすぎてお腹がいっぱい",
+    "choices": [
+      "バーベキューを食べすぎてお腹がいっぱい",
+      "レストランの料理が多すぎて残している",
+      "食事会の後で満足感を語っている",
+      "キャンプでの食事を楽しんでいる",
+      "ダイエット中なのに食べすぎてしまった"
+    ],
+    "audio": "audio/q41.mp3",
+    "diff": "beginner"
   },
   {
-    "diff": "advanced",
-    "text": "Q3 revenue came in at eight point two million — that's about twelve percent below forecast. The shortfall was driven primarily by slower-than-expected enterprise adoption in EMEA. We do see recovery signals heading into Q4.",
-    "answer": "四半期決算の下振れ結果を投資家や経営陣に報告している",
-    "choices": ["四半期決算の下振れ結果を投資家や経営陣に報告している", "売上目標の達成を祝っている", "競合他社との比較分析を発表している", "新製品の販売戦略を説明している", "会計の不正を指摘している"]
+    "text": "Attention passengers: the northbound line is experiencing delays due to a signal failure.",
+    "answer": "信号故障で電車が遅延のアナウンス",
+    "choices": [
+      "信号故障で電車が遅延のアナウンス",
+      "強風で電車が運転見合わせになっている",
+      "駅員が利用客に振替輸送を案内している",
+      "終電が近づいていることをアナウンスしている",
+      "工事のため路線が変更になっていると伝えている"
+    ],
+    "audio": "audio/q42.mp3",
+    "diff": "beginner"
   },
   {
-    "diff": "advanced",
-    "text": "Mr. Harrington, I completely understand your frustration, and I sincerely apologize for the experience you had. What I'd like to do is escalate this to our senior team and have someone reach out to you within the hour with a concrete solution.",
-    "answer": "激怒した顧客に真摯に謝罪し上位対応を約束している",
-    "choices": ["激怒した顧客に真摯に謝罪し上位対応を約束している", "クレームを法的問題として処理しようとしている", "顧客の要求が不当だと断っている", "カスタマーサポートの標準対応を説明している", "担当外の問題だとして別部署に転送している"]
+    "text": "I can't remember if I locked the front door. I'm already on the highway.",
+    "answer": "鍵かけ忘れを心配しながら走っている",
+    "choices": [
+      "鍵かけ忘れを心配しながら走っている",
+      "家の鍵を車の中に閉じ込めてしまった",
+      "防犯のために鍵を交換しようとしている",
+      "旅行前に戸締まりを確認している",
+      "外出先で不安になって家族に確認を頼んでいる"
+    ],
+    "audio": "audio/q43.mp3",
+    "diff": "beginner"
   },
   {
-    "diff": "advanced",
-    "text": "I know the original deadline was the twenty-first, but we've hit some unexpected technical blockers on the API integration. We're looking at needing another five business days. I can send you a detailed breakdown of what happened.",
-    "answer": "技術的な問題を説明してプロジェクトの納期延長を依頼している",
-    "choices": ["技術的な問題を説明してプロジェクトの納期延長を依頼している", "APIの仕様変更を顧客に伝えている", "開発チームの怠慢を謝罪している", "追加費用が発生することを説明している", "納期を守れないことへの責任を回避している"]
+    "text": "Could you lower the blinds? The sun is shining right in my eyes.",
+    "answer": "日差しが眩しくブラインドを頼む",
+    "choices": [
+      "日差しが眩しくブラインドを頼む",
+      "部屋が暗すぎてカーテンを開けてほしい",
+      "日焼けしたくないので窓を閉めている",
+      "照明が明るすぎて目が疲れると訴えている",
+      "オフィスでエアコンの調整を頼んでいる"
+    ],
+    "audio": "audio/q44.mp3",
+    "diff": "beginner"
   },
   {
-    "diff": "advanced",
-    "text": "This is a Severity One incident. The production database is down and we're seeing a full outage for enterprise clients. I'm pulling in the infra team now. We need an all-hands call in ten minutes and a status page update immediately.",
-    "answer": "本番環境の重大障害発生を受けて緊急対応を指示している",
-    "choices": ["本番環境の重大障害発生を受けて緊急対応を指示している", "システムのメンテナンス計画を立てている", "セキュリティインシデントへの対応を指揮している", "データベースの移行作業を開始している", "サービスのパフォーマンス問題を報告している"]
+    "text": "He finally asked me out! We're going for dinner on Friday.",
+    "answer": "気になっていた人にデートに誘われた",
+    "choices": [
+      "気になっていた人にデートに誘われた",
+      "付き合っている彼氏とレストランに行く約束をした",
+      "友人グループで食事会の計画を立てている",
+      "同僚に食事に誘われて断り方を考えている",
+      "金曜日の夜の予定を友人に話している"
+    ],
+    "audio": "audio/q45.mp3",
+    "diff": "beginner"
   },
   {
-    "diff": "advanced",
-    "text": "We're okay with the sixty-day payment terms, but we'll need a clause protecting us if there's a currency fluctuation of more than three percent. Can your legal team turn that around before Friday's signing?",
-    "answer": "契約の支払い条件と為替変動リスクの条項を交渉している",
-    "choices": ["契約の支払い条件と為替変動リスクの条項を交渉している", "契約違反に対するペナルティを要求している", "支払い期限の延長を一方的に通告している", "為替リスクを保険で補う方法を相談している", "法律事務所に契約書のレビューを依頼している"]
+    "text": "This is my first time doing a job interview in English. I'm so nervous.",
+    "answer": "英語での就職面接が初めてで緊張している",
+    "choices": [
+      "英語での就職面接が初めてで緊張している",
+      "海外赴任が決まって英語を勉強し始めた",
+      "面接でうまく答えられなかったと落ち込んでいる",
+      "英語力を証明するための試験を受けようとしている",
+      "転職活動を始めたばかりで不安がある"
+    ],
+    "audio": "audio/q46.mp3",
+    "diff": "beginner"
   },
   {
-    "diff": "advanced",
-    "text": "We're a B2B SaaS platform targeting mid-market logistics companies. Our AI reduces manual data entry by seventy percent. We're pre-revenue but have six LOIs and are looking for a two-million-dollar seed round at an eight-million pre-money valuation.",
-    "answer": "投資家にスタートアップの事業内容と資金調達条件を説明している",
-    "choices": ["投資家にスタートアップの事業内容と資金調達条件を説明している", "新サービスの料金プランを顧客に提案している", "M&Aの交渉で会社の価値を主張している", "テクノロジーカンファレンスで製品を発表している", "共同創業者を探してパートナーシップを提案している"]
+    "text": "The vending machine took my money and didn't give me anything.",
+    "answer": "自販機でお金を取られ損した",
+    "choices": [
+      "自販機でお金を取られ損した",
+      "小銭がなくて自販機が使えない",
+      "自販機の前でどれを買うか迷っている",
+      "飲み物を買ったら冷たくなかった",
+      "自販機の釣り銭が出てこなかった"
+    ],
+    "audio": "audio/q47.mp3",
+    "diff": "beginner"
   },
   {
-    "diff": "advanced",
-    "text": "I want to acknowledge the strong work you've done on the client side — that's been genuinely excellent. The area we need to discuss is the internal reporting. There have been three missed deadlines this quarter, and that's affecting the broader team.",
-    "answer": "業績評価で優れた点を認めつつ改善すべき問題点を伝えている",
-    "choices": ["業績評価で優れた点を認めつつ改善すべき問題点を伝えている", "昇給の交渉をしている", "部下の退職を引き留めようとしている", "プロジェクトのフィードバックを伝えている", "社内表彰の対象者を発表している"]
+    "text": "I'm trying to cut back on coffee. I've already had four cups today and it's only noon.",
+    "answer": "コーヒー断ちを試みたが失敗した",
+    "choices": [
+      "コーヒー断ちを試みたが失敗した",
+      "カフェインが体に合わなくてやめようとしている",
+      "コーヒーの飲み過ぎで眠れなくなっている",
+      "コーヒー代が高くつくと気にしている",
+      "健康のためにお茶に切り替えようとしている"
+    ],
+    "audio": "audio/q48.mp3",
+    "diff": "beginner"
   },
   {
-    "diff": "advanced",
-    "text": "We need to get ahead of this before it hits the news cycle. Our comms team is drafting a statement, but I want to be clear — we lead with accountability, not deflection. No boilerplate. Genuine and specific.",
-    "answer": "報道される前にPRクライシスへの対応方針を社内で固めている",
-    "choices": ["報道される前にPRクライシスへの対応方針を社内で固めている", "プレスリリースの文章を校正している", "炎上したSNS投稿の削除を指示している", "弁護士と訴訟リスクについて相談している", "社内不正を外部に公表するか議論している"]
+    "text": "We need to talk about what happened in the meeting today. Do you have a minute?",
+    "answer": "今日の会議について話したい",
+    "choices": [
+      "今日の会議について話したい",
+      "会議の議事録を確認してほしいと頼んでいる",
+      "同僚に相談があると切り出している",
+      "上司に報告したいことがあると伝えている",
+      "会議の内容に不満があって苦情を言う"
+    ],
+    "audio": "audio/q49.mp3",
+    "diff": "beginner"
   },
   {
-    "diff": "advanced",
-    "text": "Before we finalize the agenda, I want to flag something. In our culture, showing enthusiasm by talking over each other is normal — but I understand that might read as interrupting here. Let's find a flow that works for everyone.",
-    "answer": "文化的なコミュニケーションスタイルの違いを率先して指摘している",
-    "choices": ["文化的なコミュニケーションスタイルの違いを率先して指摘している", "会議の議事進行ルールを厳しく伝えている", "多国籍チームへのダイバーシティ研修を行っている", "通訳が必要だと申し出ている", "相手の無礼な態度を指摘している"]
+    "text": "I swear the portion sizes here have gotten smaller. This used to be twice this big.",
+    "answer": "お気に入りの店の量が減ったと感じている",
+    "choices": [
+      "お気に入りの店の量が減ったと感じている",
+      "ダイエットのため少食にしている",
+      "値段が上がったのに量が変わらないと不満",
+      "レストランの盛り付けが少ないと文句を言っている",
+      "食べ放題で元を取れないと話している"
+    ],
+    "audio": "audio/q50.mp3",
+    "diff": "beginner"
+  },
+  {
+    "text": "I think I need reading glasses. The text is getting blurry lately.",
+    "answer": "老眼が進み老眼鏡が必要かも",
+    "choices": [
+      "老眼が進み老眼鏡が必要かも",
+      "目が疲れてコンタクトをやめようとしている",
+      "視力検査に行ったほうがいいと言われている",
+      "眼科で目の検査を受けた結果を話している",
+      "スマホの見すぎで目が悪くなった"
+    ],
+    "audio": "audio/q51.mp3",
+    "diff": "beginner"
+  },
+  {
+    "text": "Excuse me, do you know if there's a pharmacy nearby? I really need to pick up some medication.",
+    "answer": "近くの薬局を探している",
+    "choices": [
+      "近くの薬局を探している",
+      "病院への道を聞いている",
+      "コンビニの場所を確認している",
+      "観光案内所を探している",
+      "スーパーを探している"
+    ],
+    "audio": "audio/q52.mp3",
+    "diff": "beginner"
+  },
+  {
+    "text": "I can't believe how much my electric bill went up this month. I gotta start turning off lights.",
+    "answer": "電気代が高くて驚いている",
+    "choices": [
+      "電気代が高くて驚いている",
+      "ガス代の節約を考えている",
+      "水道代の請求を確認している",
+      "家賃の値上げに困っている",
+      "クレジットカードの明細を見ている"
+    ],
+    "audio": "audio/q53.mp3",
+    "diff": "beginner"
+  },
+  {
+    "text": "Hey, I just wanted to let you know the meeting's been pushed back to 3 o'clock. Can you make it?",
+    "answer": "会議の時間変更を伝えている",
+    "choices": [
+      "会議の時間変更を伝えている",
+      "ランチの約束をキャンセルしている",
+      "会議室の予約を確認している",
+      "残業のお願いをしている",
+      "仕事の締め切りを伝えている"
+    ],
+    "audio": "audio/q54.mp3",
+    "diff": "beginner"
+  },
+  {
+    "text": "My laptop keeps freezing up every time I try to open more than two tabs. It's driving me crazy.",
+    "answer": "パソコンの不具合に困っている",
+    "choices": [
+      "パソコンの不具合に困っている",
+      "インターネットが遅くて困っている",
+      "プリンターが壊れて困っている",
+      "スマホの充電ができない",
+      "ソフトウェアの更新ができない"
+    ],
+    "audio": "audio/q55.mp3",
+    "diff": "beginner"
+  },
+  {
+    "text": "Attention passengers: the 4:15 train to Chicago has been delayed by approximately 30 minutes due to signal problems.",
+    "answer": "列車の遅延をアナウンスしている",
+    "choices": [
+      "列車の遅延をアナウンスしている",
+      "バスの運休を知らせている",
+      "飛行機の搭乗開始を案内している",
+      "駅のホームを変更するアナウンス",
+      "特急列車の臨時停車を告げている"
+    ],
+    "audio": "audio/q56.mp3",
+    "diff": "beginner"
+  },
+  {
+    "text": "I scored two tickets to the game on Saturday. You wanna come? It's gonna be an awesome match.",
+    "answer": "試合のチケットを入手し誘っている",
+    "choices": [
+      "試合のチケットを入手し誘っている",
+      "スポーツジムに一緒に来るよう誘っている",
+      "コンサートチケットを自慢している",
+      "試合の結果を報告している",
+      "スポーツ観戦の予定を立てている"
+    ],
+    "audio": "audio/q57.mp3",
+    "diff": "beginner"
+  },
+  {
+    "text": "Hello, I'd like to schedule an appointment for a teeth cleaning. Do you have anything available next week?",
+    "answer": "歯の定期検診の予約をしている",
+    "choices": [
+      "歯の定期検診の予約をしている",
+      "歯医者に緊急の痛みを訴えている",
+      "矯正歯科の相談をしている",
+      "歯の治療費を問い合わせている",
+      "病院の受診予約を入れている"
+    ],
+    "audio": "audio/q58.mp3",
+    "diff": "beginner"
+  },
+  {
+    "text": "I'm seriously considering quitting my job. The hours are insane and my boss never gives me any credit.",
+    "answer": "仕事を辞めることを真剣に考えている",
+    "choices": [
+      "仕事を辞めることを真剣に考えている",
+      "昇進の交渉をしようとしている",
+      "転職活動を始めたことを報告している",
+      "仕事のストレスを友人に相談している",
+      "残業代の未払いに怒っている"
+    ],
+    "audio": "audio/q59.mp3",
+    "diff": "beginner"
+  },
+  {
+    "text": "Oh wow, is that a new haircut? It looks great on you! Really suits your face.",
+    "answer": "相手の新しい髪型を褒めている",
+    "choices": [
+      "相手の新しい髪型を褒めている",
+      "美容院の予約を取るよう勧めている",
+      "自分の髪型の変化を説明している",
+      "ヘアカラーを提案している",
+      "友人の服装を褒めている"
+    ],
+    "audio": "audio/q60.mp3",
+    "diff": "beginner"
+  },
+  {
+    "text": "The neighbors upstairs are stomping around at midnight every night. I'm going to have to say something.",
+    "answer": "上の階の住人の騒音に悩んでいる",
+    "choices": [
+      "上の階の住人の騒音に悩んでいる",
+      "隣の部屋が静かで住みやすいと話している",
+      "工事の騒音で困っている",
+      "深夜の電話に悩んでいる",
+      "ペットの鳴き声で眠れない"
+    ],
+    "audio": "audio/q61.mp3",
+    "diff": "beginner"
+  },
+  {
+    "text": "I'm thinking about getting a dog. My apartment allows pets and I think I could use the company.",
+    "answer": "犬を飼おうと考えている",
+    "choices": [
+      "犬を飼おうと考えている",
+      "ペットショップで猫を見ている",
+      "動物アレルギーを心配している",
+      "ペットホテルを探している",
+      "野良犬の世話をしている"
+    ],
+    "audio": "audio/q62.mp3",
+    "diff": "beginner"
+  },
+  {
+    "text": "The forecast says there's a 90% chance of rain this weekend. Maybe we should postpone the barbecue.",
+    "answer": "雨予報でバーベキューを延期しようと提案",
+    "choices": [
+      "雨予報でバーベキューを延期しようと提案",
+      "台風で旅行がキャンセルになった",
+      "晴れた日に公園でピクニックを計画している",
+      "週末の天気を確認している",
+      "室内での代替イベントを探している"
+    ],
+    "audio": "audio/q63.mp3",
+    "diff": "beginner"
+  },
+  {
+    "text": "I'm sorry, but your credit card was declined. Do you have another form of payment?",
+    "answer": "カードが使えず支払い変更を求められた",
+    "choices": [
+      "カードが使えず支払い変更を求められた",
+      "現金が足りなくて困っている",
+      "ポイントカードの使い方を確認している",
+      "電子マネーの残高不足を知らされた",
+      "銀行口座の引き落としが失敗した"
+    ],
+    "audio": "audio/q64.mp3",
+    "diff": "beginner"
+  },
+  {
+    "text": "Hey, do you know how to get to the central library from here? I keep getting turned around in this neighborhood.",
+    "answer": "中央図書館への道を尋ねている",
+    "choices": [
+      "中央図書館への道を尋ねている",
+      "地下鉄の乗り換えを確認している",
+      "駅までの最短ルートを聞いている",
+      "バス停の場所を教えてもらっている",
+      "博物館への行き方を尋ねている"
+    ],
+    "audio": "audio/q65.mp3",
+    "diff": "beginner"
+  },
+  {
+    "text": "My flight got cancelled because of the snowstorm. Now I'm stuck at the airport trying to get rebooked.",
+    "answer": "雪嵐でフライトがキャンセルになった",
+    "choices": [
+      "雪嵐でフライトがキャンセルになった",
+      "乗り継ぎ便に乗り遅れた",
+      "荷物が行方不明になっている",
+      "空港のホテルを急いで予約している",
+      "帰国便の変更手続きをしている"
+    ],
+    "audio": "audio/q66.mp3",
+    "diff": "beginner"
+  },
+  {
+    "text": "I'm looking for something for my mom's birthday. She likes gardening. Maybe some nice gloves or tools?",
+    "answer": "母の誕生日プレゼントを探している",
+    "choices": [
+      "母の誕生日プレゼントを探している",
+      "園芸用品の使い方を教わっている",
+      "母の日のギフトを選んでいる",
+      "家庭菜園を始めようとしている",
+      "祖母へのプレゼントを買っている"
+    ],
+    "audio": "audio/q67.mp3",
+    "diff": "beginner"
+  },
+  {
+    "text": "It's been raining non-stop for three days. The basement is starting to flood. We might need to call someone.",
+    "answer": "大雨で地下室が浸水しそうだ",
+    "choices": [
+      "大雨で地下室が浸水しそうだ",
+      "屋根から雨漏りがしている",
+      "台風の被害で道路が通れない",
+      "水道管が破裂して困っている",
+      "川が氾濫しそうで避難を考えている"
+    ],
+    "audio": "audio/q68.mp3",
+    "diff": "beginner"
+  },
+  {
+    "text": "I got a promotion! I'm now the head of the marketing department. It came with a really nice raise too.",
+    "answer": "昇進してマーケティング部長になった",
+    "choices": [
+      "昇進してマーケティング部長になった",
+      "転職して新しい会社に入った",
+      "ボーナスをもらって喜んでいる",
+      "仕事の成果を上司に認められた",
+      "新しいプロジェクトのリーダーになった"
+    ],
+    "audio": "audio/q69.mp3",
+    "diff": "beginner"
+  },
+  {
+    "text": "My son just started high school and he's already stressed about college applications. He's only 14!",
+    "answer": "14歳の息子が大学受験で早くも悩んでいる",
+    "choices": [
+      "14歳の息子が大学受験で早くも悩んでいる",
+      "子供が塾に通い始めた",
+      "進路相談のため学校を訪問している",
+      "子供の成績が下がって心配している",
+      "息子が部活を辞めたいと言っている"
+    ],
+    "audio": "audio/q70.mp3",
+    "diff": "beginner"
+  },
+  {
+    "text": "I can't find my keys anywhere. I've looked in every single room. Has anyone seen them?",
+    "answer": "鍵をどこかに置き忘れて探している",
+    "choices": [
+      "鍵をどこかに置き忘れて探している",
+      "財布を見つからなくて困っている",
+      "スマホを紛失して探している",
+      "眼鏡がどこかに行ってしまった",
+      "大事な書類をなくして焦っている"
+    ],
+    "audio": "audio/q71.mp3",
+    "diff": "beginner"
+  },
+  {
+    "text": "Is this seat taken? The café is totally packed today. Would you mind if I sat here?",
+    "answer": "満席のカフェで相席をお願いしている",
+    "choices": [
+      "満席のカフェで相席をお願いしている",
+      "電車で席を譲るよう頼んでいる",
+      "図書館の席を予約しようとしている",
+      "映画館で隣の席を確認している",
+      "公園のベンチで座る場所を探している"
+    ],
+    "audio": "audio/q72.mp3",
+    "diff": "beginner"
+  },
+  {
+    "text": "I'm returning this blender. It made a weird burning smell the second time I used it. Something's definitely wrong with it.",
+    "answer": "ブレンダーから焦げ臭がして返品している",
+    "choices": [
+      "ブレンダーから焦げ臭がして返品している",
+      "家電製品の修理を依頼している",
+      "電子レンジが壊れて困っている",
+      "購入した調理器具の使い方を聞いている",
+      "食器洗い機の不具合を報告している"
+    ],
+    "audio": "audio/q73.mp3",
+    "diff": "beginner"
+  },
+  {
+    "text": "I'm planning a surprise party for my husband's 40th birthday. He has no idea. Can you help me organize it?",
+    "answer": "夫の40歳誕生日サプライズ計画",
+    "choices": [
+      "夫の40歳誕生日サプライズ計画",
+      "子供のための誕生日パーティーを準備している",
+      "結婚記念日のサプライズを考えている",
+      "友人の送別会を企画している",
+      "会社の忘年会の幹事をしている"
+    ],
+    "audio": "audio/q74.mp3",
+    "diff": "beginner"
+  },
+  {
+    "text": "There's a sale at the bookstore this weekend. Everything is 40% off. I'm definitely going to stock up.",
+    "answer": "書店セールで本を大量購入予定",
+    "choices": [
+      "書店セールで本を大量購入予定",
+      "図書館で本を借りている",
+      "電子書籍の購入を検討している",
+      "お気に入りの著者の新作を予約している",
+      "古本屋でお気に入りの本を探している"
+    ],
+    "audio": "audio/q75.mp3",
+    "diff": "beginner"
+  },
+  {
+    "text": "I'm having lunch with my old college roommate today. We haven't seen each other in like five years.",
+    "answer": "5年ぶりの旧友と再会する",
+    "choices": [
+      "5年ぶりの旧友と再会する",
+      "同窓会の準備をしている",
+      "旧友にSNSで連絡を取った",
+      "職場の元同僚と食事をしている",
+      "海外からの友人を迎える準備をしている"
+    ],
+    "audio": "audio/q76.mp3",
+    "diff": "beginner"
+  },
+  {
+    "text": "The school just sent a notice saying classes are canceled tomorrow because of a water main break.",
+    "answer": "水道管の破裂で翌日の授業が休校になった",
+    "choices": [
+      "水道管の破裂で翌日の授業が休校になった",
+      "台風で学校が臨時休校になった",
+      "インフルエンザで学校閉鎖になった",
+      "暴風雪で学校が早退になった",
+      "工事のため学校施設が使えなくなった"
+    ],
+    "audio": "audio/q77.mp3",
+    "diff": "beginner"
+  },
+  {
+    "text": "The hotel we booked is right on the beach. I cannot wait. We leave in three days!",
+    "answer": "ビーチホテルの旅行が楽しみ",
+    "choices": [
+      "ビーチホテルの旅行が楽しみ",
+      "旅行の荷物をパッキングしている",
+      "海外旅行の旅程を最終確認している",
+      "リゾートホテルに到着して感動している",
+      "バカンスの計画を友人に話している"
+    ],
+    "audio": "audio/q78.mp3",
+    "diff": "beginner"
+  },
+  {
+    "text": "We just planted a vegetable garden. Tomatoes, zucchini, basil — I'm really hoping it actually grows this time.",
+    "answer": "家庭菜園でトマトなどを植えた",
+    "choices": [
+      "家庭菜園でトマトなどを植えた",
+      "農家体験に参加している",
+      "庭の雑草を取り除いている",
+      "観葉植物の世話の仕方を調べている",
+      "農業体験施設を訪問している"
+    ],
+    "audio": "audio/q79.mp3",
+    "diff": "beginner"
+  },
+  {
+    "text": "I just realized I've been paying for a streaming service I never use. I'm canceling it right now.",
+    "answer": "使わない動画配信を解約する",
+    "choices": [
+      "使わない動画配信を解約する",
+      "ネット動画の月額料金が高いと感じている",
+      "サブスクリプションの見直しをしている",
+      "映画サービスの新しいプランを申し込んでいる",
+      "音楽アプリの無料トライアルを試している"
+    ],
+    "audio": "audio/q80.mp3",
+    "diff": "beginner"
+  },
+  {
+    "text": "I just found out my company is being acquired. Nobody really knows what's going to happen to our jobs.",
+    "answer": "会社が買収され雇用の行方が不安",
+    "choices": [
+      "会社が買収され雇用の行方が不安",
+      "会社が倒産して解雇された",
+      "合併した会社の方針に不満がある",
+      "リストラの対象になるか心配している",
+      "新しい経営陣のもとで働き始めた"
+    ],
+    "audio": "audio/q81.mp3",
+    "diff": "beginner"
+  },
+  {
+    "text": "Excuse me, do you have this jacket in a medium? I couldn't find it on the rack.",
+    "answer": "ジャケットのサイズを店員に確認している",
+    "choices": [
+      "ジャケットのサイズを店員に確認している",
+      "服の在庫を問い合わせている",
+      "試着室の場所を尋ねている",
+      "セールの服を探している",
+      "オンラインで購入した服を交換している"
+    ],
+    "audio": "audio/q82.mp3",
+    "diff": "beginner"
+  },
+  {
+    "text": "This is the third time this week the copier has jammed. I've already submitted a maintenance request twice.",
+    "answer": "コピー機が何度も詰まってうんざりしている",
+    "choices": [
+      "コピー機が何度も詰まってうんざりしている",
+      "プリンターのインクが切れている",
+      "オフィス機器の修理業者を呼んだ",
+      "新しいコピー機の購入を上司に提案した",
+      "パソコンがクラッシュして仕事が止まった"
+    ],
+    "audio": "audio/q83.mp3",
+    "diff": "beginner"
+  },
+  {
+    "text": "I've been commuting 90 minutes each way for the past three years. I'm seriously considering moving closer to work.",
+    "answer": "片道90分通勤が辛くて転居検討",
+    "choices": [
+      "片道90分通勤が辛くて転居検討",
+      "在宅勤務への切り替えを上司に相談している",
+      "会社の近くの賃貸を探している",
+      "通勤時間を有効活用する方法を探している",
+      "電車の定期代が高くて節約したい"
+    ],
+    "audio": "audio/q84.mp3",
+    "diff": "beginner"
+  },
+  {
+    "text": "The auditor found some discrepancies in the accounts from last quarter. We need to look into this very carefully.",
+    "answer": "経理監査で先四半期に不正が見つかった",
+    "choices": [
+      "経理監査で先四半期に不正が見つかった",
+      "確定申告の書類を準備している",
+      "税務署から調査が入った",
+      "予算超過を上司に報告している",
+      "会計ソフトでミスを発見した"
+    ],
+    "audio": "audio/q85.mp3",
+    "diff": "beginner"
+  },
+  {
+    "text": "Hey, are you watching the game tonight? I'm thinking of ordering some wings and having people over.",
+    "answer": "自宅で試合観戦に友人を招く",
+    "choices": [
+      "自宅で試合観戦に友人を招く",
+      "スポーツバーで試合を一緒に見ようと誘っている",
+      "試合の結果を友人に伝えている",
+      "テレビの生中継を楽しみにしている",
+      "スポーツの練習に誘っている"
+    ],
+    "audio": "audio/q86.mp3",
+    "diff": "beginner"
+  },
+  {
+    "text": "My daughter has her school play tonight. She has the lead role and she's been practicing for weeks.",
+    "answer": "娘の学校劇があり主役を演じる",
+    "choices": [
+      "娘の学校劇があり主役を演じる",
+      "子供の音楽発表会を楽しみにしている",
+      "子供の運動会の応援に行く準備をしている",
+      "子供のピアノ発表会を見に行く",
+      "息子の卒業式に出席している"
+    ],
+    "audio": "audio/q87.mp3",
+    "diff": "beginner"
+  },
+  {
+    "text": "I've been dealing with this tax refund issue for three months. Every time I call they say it's still being processed.",
+    "answer": "3ヶ月税金還付が処理されない",
+    "choices": [
+      "3ヶ月税金還付が処理されない",
+      "確定申告の書類が複雑で困っている",
+      "税理士に申告の手続きを依頼した",
+      "税務署から追加書類の提出を求められた",
+      "還付金の使い道を考えている"
+    ],
+    "audio": "audio/q88.mp3",
+    "diff": "beginner"
+  },
+  {
+    "text": "I can't believe how expensive childcare is. We're spending more on daycare than on our rent.",
+    "answer": "保育費が家賃より高くて驚いている",
+    "choices": [
+      "保育費が家賃より高くて驚いている",
+      "子供の学費に悩んでいる",
+      "育児休暇中の収入減を心配している",
+      "保育園の空きがなくて困っている",
+      "ベビーシッターの費用を比較している"
+    ],
+    "audio": "audio/q89.mp3",
+    "diff": "beginner"
+  },
+  {
+    "text": "The Wi-Fi at this coffee shop is actually pretty fast. I might work here regularly instead of the library.",
+    "answer": "カフェのWi-Fiが速く仕事場にする",
+    "choices": [
+      "カフェのWi-Fiが速く仕事場にする",
+      "図書館の自習室を利用している",
+      "コワーキングスペースの料金を確認している",
+      "在宅勤務の環境を整えようとしている",
+      "カフェでフリーランスの仕事をしている"
+    ],
+    "audio": "audio/q90.mp3",
+    "diff": "beginner"
+  },
+  {
+    "text": "This is their third time rescheduling the appointment. I've been waiting four months to see this specialist.",
+    "answer": "専門医予約が繰り返しキャンセルに",
+    "choices": [
+      "専門医予約が繰り返しキャンセルに",
+      "人気の美容院の予約がなかなか取れない",
+      "歯科の予約を3回変更した",
+      "病院の待ち時間が長くて不満",
+      "予約制のレストランが何度も断られた"
+    ],
+    "audio": "audio/q91.mp3",
+    "diff": "beginner"
+  },
+  {
+    "text": "I volunteered to coordinate the office charity drive this year. I have no idea what I got myself into.",
+    "answer": "会社のチャリティー活動の担当になり不安",
+    "choices": [
+      "会社のチャリティー活動の担当になり不安",
+      "ボランティアの募集に応募した",
+      "地域活動のイベント運営を引き受けた",
+      "慈善団体への寄付を呼びかけている",
+      "NPOの活動に興味を持ち始めた"
+    ],
+    "audio": "audio/q92.mp3",
+    "diff": "beginner"
+  },
+  {
+    "text": "I got a noise complaint from my landlord. Apparently my neighbor could hear me playing video games at 1 AM.",
+    "answer": "深夜のゲームで隣人から騒音苦情が来た",
+    "choices": [
+      "深夜のゲームで隣人から騒音苦情が来た",
+      "音楽を大きな音で聴いて苦情を言われた",
+      "友人とのパーティーで騒ぎすぎた",
+      "子供の泣き声でアパートに苦情が来た",
+      "ペットの鳴き声で隣人に迷惑をかけた"
+    ],
+    "audio": "audio/q93.mp3",
+    "diff": "beginner"
+  },
+  {
+    "text": "I think we have mice. I saw droppings in the back of the kitchen cupboard. I'm going to call pest control.",
+    "answer": "台所にネズミの痕跡を見つけ駆除を頼む",
+    "choices": [
+      "台所にネズミの痕跡を見つけ駆除を頼む",
+      "害虫が出てアパートを引っ越した",
+      "ゴキブリの駆除剤を買ってきた",
+      "隣から虫が入ってくると大家に相談した",
+      "家の中にアリの行列を見つけた"
+    ],
+    "audio": "audio/q94.mp3",
+    "diff": "beginner"
+  },
+  {
+    "text": "The power went out in the whole neighborhood around 8 PM. It just came back on about an hour ago.",
+    "answer": "近所一帯が停電して1時間後に復旧した",
+    "choices": [
+      "近所一帯が停電して1時間後に復旧した",
+      "台風で長期間停電が続いた",
+      "家の電気回路がショートした",
+      "ブレーカーが落ちて電気が消えた",
+      "停電に備えて非常用電源を購入した"
+    ],
+    "audio": "audio/q95.mp3",
+    "diff": "beginner"
+  },
+  {
+    "text": "I got into an argument with a coworker about the project timeline. I think we just see things very differently.",
+    "answer": "プロジェクト日程で同僚と口論",
+    "choices": [
+      "プロジェクト日程で同僚と口論",
+      "上司の指示に納得できず反論した",
+      "クライアントとの交渉で意見が対立した",
+      "チームメンバーとの意思疎通がうまくいかない",
+      "職場で人間関係のトラブルが起きた"
+    ],
+    "audio": "audio/q96.mp3",
+    "diff": "beginner"
+  },
+  {
+    "text": "I'm so tired of this commute. Same crowded train, same delays, every single day. I need a change.",
+    "answer": "毎日混雑した通勤電車に嫌気がさしている",
+    "choices": [
+      "毎日混雑した通勤電車に嫌気がさしている",
+      "通勤の混雑を避けて時差出勤を始めた",
+      "自転車通勤を始めようとしている",
+      "会社の近くへの引っ越しを計画している",
+      "テレワークができる部署への異動を希望している"
+    ],
+    "audio": "audio/q97.mp3",
+    "diff": "beginner"
+  },
+  {
+    "text": "This is your boarding announcement for Flight 304 to London. Please proceed to Gate 12 immediately.",
+    "answer": "ロンドン行き搭乗を急ぐよう放送している",
+    "choices": [
+      "ロンドン行き搭乗を急ぐよう放送している",
+      "フライトの遅延をアナウンスしている",
+      "搭乗口の変更を知らせている",
+      "最終搭乗確認の呼び出しをしている",
+      "機内への持ち込み制限を説明している"
+    ],
+    "audio": "audio/q98.mp3",
+    "diff": "beginner"
+  },
+  {
+    "text": "I can't believe how long it takes to get anything approved around here. I submitted this budget three weeks ago.",
+    "answer": "3週前の予算申請がまだ未承認",
+    "choices": [
+      "3週前の予算申請がまだ未承認",
+      "上司が書類に判を押してくれない",
+      "稟議書が回覧されてから決裁が遅い",
+      "経費精算の処理が一ヶ月かかっている",
+      "役所の申請審査が長引いている"
+    ],
+    "audio": "audio/q99.mp3",
+    "diff": "beginner"
+  },
+  {
+    "text": "I'm thinking about growing a beard. I've never had one but I want to try something different.",
+    "answer": "初めてひげを伸ばしてみようと思っている",
+    "choices": [
+      "初めてひげを伸ばしてみようと思っている",
+      "ヘアスタイルを大幅に変えようとしている",
+      "美容院でイメージチェンジをした",
+      "友人のひげのスタイルを褒めている",
+      "ひげの手入れ用品を購入した"
+    ],
+    "audio": "audio/q100.mp3",
+    "diff": "beginner"
+  },
+  {
+    "text": "I managed to negotiate a four-day workweek with my employer. Same pay, just one less day in the office.",
+    "answer": "同給与で週4日勤務を交渉して勝ち取った",
+    "choices": [
+      "同給与で週4日勤務を交渉して勝ち取った",
+      "パートタイムへの変更を申請した",
+      "時短勤務を育児のために申請した",
+      "フレックスタイム制度を活用している",
+      "リモートワークを週に3日認められた"
+    ],
+    "audio": "audio/q101.mp3",
+    "diff": "beginner"
+  },
+  {
+    "text": "I twisted my knee during yoga class. Nothing serious, but I should probably take a few days off.",
+    "answer": "ヨガ中に膝を痛めて数日休もうとしている",
+    "choices": [
+      "ヨガ中に膝を痛めて数日休もうとしている",
+      "スポーツで肉離れを起こした",
+      "ジム中に腰を痛めた",
+      "マラソンで足首を痛めた",
+      "テニスで肩を壊した"
+    ],
+    "audio": "audio/q102.mp3",
+    "diff": "beginner"
+  },
+  {
+    "text": "I threw my back out lifting boxes. I can barely bend over. I knew I should have asked for help.",
+    "answer": "箱を持ち上げて腰を痛めた",
+    "choices": [
+      "箱を持ち上げて腰を痛めた",
+      "引っ越し作業で体を痛めた",
+      "重い荷物を持ちすぎて疲れた",
+      "整体で治療を受けることにした",
+      "腰の手術後のリハビリ中"
+    ],
+    "audio": "audio/q103.mp3",
+    "diff": "beginner"
+  },
+  {
+    "text": "We're hosting an exchange student for three months this fall. She's from France and is 16 years old.",
+    "answer": "秋にフランス人留学生を受け入れる",
+    "choices": [
+      "秋にフランス人留学生を受け入れる",
+      "留学プログラムに子供を参加させた",
+      "海外からの訪問者をもてなしている",
+      "ホームステイ先でのルールを説明している",
+      "文化の違いによる誤解を話している"
+    ],
+    "audio": "audio/q104.mp3",
+    "diff": "beginner"
+  },
+  {
+    "text": "I tried a floatation tank experience for the first time. You float in salted water in the dark. Weirdly relaxing.",
+    "answer": "フローティングタンクで深くリラックス",
+    "choices": [
+      "フローティングタンクで深くリラックス",
+      "スパで初めてのマッサージを受けた",
+      "アロマテラピーの効果を実感した",
+      "瞑想リトリートに参加した",
+      "新しいフィットネス体験を試した"
+    ],
+    "audio": "audio/q105.mp3",
+    "diff": "beginner"
+  },
+  {
+    "text": "I found out my favorite restaurant is closing at the end of the month. I've been going there for 12 years.",
+    "answer": "12年通った行きつけが閉店する",
+    "choices": [
+      "12年通った行きつけが閉店する",
+      "行きつけのカフェがリニューアルした",
+      "老舗の書店が閉店するというニュース",
+      "単身赴任で通い慣れた街を離れる",
+      "長年の友人が別の街に引っ越す"
+    ],
+    "audio": "audio/q106.mp3",
+    "diff": "beginner"
+  },
+  {
+    "text": "I just finished a 5-day hiking trip in the mountains. No cell service, no email. It was exactly what I needed.",
+    "answer": "5日間の山歩きで完全オフライン",
+    "choices": [
+      "5日間の山歩きで完全オフライン",
+      "自然の中でキャンプして英気を養った",
+      "登山に初めて挑戦して達成感を感じた",
+      "離島でのバカンスから帰ってきた",
+      "山小屋に泊まる旅を体験した"
+    ],
+    "audio": "audio/q107.mp3",
+    "diff": "beginner"
+  },
+  {
+    "text": "The grocery store I always go to is being replaced by a luxury condo. It's really sad actually.",
+    "answer": "通いなれたスーパーが閉店して残念",
+    "choices": [
+      "通いなれたスーパーが閉店して残念",
+      "長年通ったお店が閉店してしまった",
+      "地域の再開発で馴染みの景色が変わる",
+      "行きつけのカフェが閉まった",
+      "老舗の市場がなくなってしまった"
+    ],
+    "audio": "audio/q108.mp3",
+    "diff": "beginner"
+  },
+  {
+    "text": "There's a huge garage sale in our neighborhood this Saturday. I'm going early to look for vintage furniture.",
+    "answer": "ガレージセールで古い家具を探す",
+    "choices": [
+      "ガレージセールで古い家具を探す",
+      "フリマアプリで古い家具を売っている",
+      "骨董品のオークションに参加した",
+      "リサイクルショップで掘り出し物を探している",
+      "アンティーク市でお気に入りを見つけた"
+    ],
+    "audio": "audio/q109.mp3",
+    "diff": "beginner"
+  },
+  {
+    "text": "The restaurant was fantastic but the service was really slow. We waited 40 minutes just for our appetizers.",
+    "answer": "料理は良いが40分待たされた",
+    "choices": [
+      "料理は良いが40分待たされた",
+      "有名レストランの料理に期待外れだった",
+      "レストランのサービスに感動した",
+      "料理がまずくてクレームをつけた",
+      "料理の量が少なすぎてがっかりした"
+    ],
+    "audio": "audio/q110.mp3",
+    "diff": "beginner"
+  },
+  {
+    "text": "I just finished paying off my car loan. Five years of payments and I finally own it outright.",
+    "answer": "5年かけて車のローンを完済した",
+    "choices": [
+      "5年かけて車のローンを完済した",
+      "新しい車を購入するためローンを組んだ",
+      "車を売って次の車の頭金にした",
+      "リース車を買い取ることにした",
+      "車のローン金利が高くて困っている"
+    ],
+    "audio": "audio/q111.mp3",
+    "diff": "beginner"
+  },
+  {
+    "text": "I'm thinking of adopting a more minimalist lifestyle. I want to own less stuff and live more simply.",
+    "answer": "ミニマリストな暮らしを始めようと",
+    "choices": [
+      "ミニマリストな暮らしを始めようと",
+      "物を減らして引っ越し費用を抑えた",
+      "断捨離の本を読んでいる",
+      "倉庫代を節約するため物を売っている",
+      "フリマで持ち物を大量に売った"
+    ],
+    "audio": "audio/q112.mp3",
+    "diff": "beginner"
+  },
+  {
+    "text": "My dog chewed through the cord of my laptop charger. Again. This is the third charger this year.",
+    "answer": "犬が今年3本目の充電器を噛んだ",
+    "choices": [
+      "犬が今年3本目の充電器を噛んだ",
+      "猫がコードで遊んで断線した",
+      "充電器が壊れて買い替えた",
+      "ケーブルの断線が頻繁で困っている",
+      "電子機器の管理をペットに邪魔されている"
+    ],
+    "audio": "audio/q113.mp3",
+    "diff": "beginner"
+  },
+  {
+    "text": "I tried to fix the leaking tap myself using a YouTube tutorial. I made it worse. I'll call a plumber.",
+    "answer": "蛇口のセルフ修理が逆に悪化した",
+    "choices": [
+      "蛇口のセルフ修理が逆に悪化した",
+      "DIYで棚を作ったが上手くできなかった",
+      "壁の穴を自分でふさごうとして失敗した",
+      "電気工事を素人がやって問題が起きた",
+      "自分で車を修理しようとして断念した"
+    ],
+    "audio": "audio/q114.mp3",
+    "diff": "beginner"
+  },
+  {
+    "text": "I finally cleared out my email inbox. I had over 4,000 unread messages. It took the whole afternoon.",
+    "answer": "4000通の未読メールを整理した",
+    "choices": [
+      "4000通の未読メールを整理した",
+      "迷惑メールが大量に届いて困っている",
+      "仕事の重要なメールを見落としていた",
+      "メールの管理ツールを導入した",
+      "メールの返信を後回しにしすぎた"
+    ],
+    "audio": "audio/q115.mp3",
+    "diff": "beginner"
+  },
+  {
+    "text": "My doctor recommended I reduce my sodium intake. I guess I really do put too much salt on everything.",
+    "answer": "医師に塩分摂取量を減らすよう言われた",
+    "choices": [
+      "医師に塩分摂取量を減らすよう言われた",
+      "血圧が高くて食事改善を指示された",
+      "糖尿病の食事制限に取り組んでいる",
+      "コレステロールを下げる食事を始めた",
+      "腎臓病のため食事療法を受けている"
+    ],
+    "audio": "audio/q116.mp3",
+    "diff": "beginner"
+  },
+  {
+    "text": "I just discovered there's a great hiking trail only 20 minutes from my house. I had no idea it was there.",
+    "answer": "近所に素敵なハイキングコースを発見",
+    "choices": [
+      "近所に素敵なハイキングコースを発見",
+      "近くの公園の新しいエリアを見つけた",
+      "地元の観光スポットを初めて訪れた",
+      "自転車コースを探して見つかった",
+      "ウォーキングルートを新しく開拓した"
+    ],
+    "audio": "audio/q117.mp3",
+    "diff": "beginner"
+  },
+  {
+    "text": "I've been studying for the GMAT for four months. I take the test next week. Fingers crossed.",
+    "answer": "GMAT4ヶ月準備で来週試験",
+    "choices": [
+      "GMAT4ヶ月準備で来週試験",
+      "英語の資格試験を受けようとしている",
+      "大学院入試の準備が整った",
+      "難関資格の試験を受けた感想を語っている",
+      "TOEFLの対策に力を入れている"
+    ],
+    "audio": "audio/q118.mp3",
+    "diff": "beginner"
+  },
+  {
+    "text": "I accidentally threw out an important document with the recycling. I hope I can get a replacement.",
+    "answer": "大事な書類を誤って捨てた",
+    "choices": [
+      "大事な書類を誤って捨てた",
+      "パスポートを紛失して再発行を申請した",
+      "大事な書類をシュレッダーにかけてしまった",
+      "契約書類の原本が見つからない",
+      "書類を誤って別の封筒に入れて送った"
+    ],
+    "audio": "audio/q119.mp3",
+    "diff": "beginner"
+  },
+  {
+    "text": "We just had a big thunderstorm. There's water seeping in under the back door. We need to seal it properly.",
+    "answer": "大雷雨でドアの下から水が入り込んでいる",
+    "choices": [
+      "大雷雨でドアの下から水が入り込んでいる",
+      "雨漏りで天井から水が垂れている",
+      "台風で窓が壊れて水が入った",
+      "浸水で床が水浸しになった",
+      "屋根が劣化して雨水が漏れている"
+    ],
+    "audio": "audio/q120.mp3",
+    "diff": "beginner"
+  },
+  {
+    "text": "I just finished reading all seven Harry Potter books for the second time. Still just as magical as the first time.",
+    "answer": "ハリーポッター全7巻を2回目に読み終えた",
+    "choices": [
+      "ハリーポッター全7巻を2回目に読み終えた",
+      "お気に入りの本シリーズを全巻集めた",
+      "子供にファンタジー小説を薦めた",
+      "映画化された小説を読んだ",
+      "本のファンクラブに参加している"
+    ],
+    "audio": "audio/q121.mp3",
+    "diff": "beginner"
+  },
+  {
+    "text": "I started reading before bed instead of looking at my phone. I fall asleep much faster now.",
+    "answer": "就寝前の読書で寝つきが改善した",
+    "choices": [
+      "就寝前の読書で寝つきが改善した",
+      "睡眠の質を上げるための習慣を変えた",
+      "不眠症の改善のために読書を始めた",
+      "電子書籍より紙の本の方が好きだと気づいた",
+      "読書ペースが上がって本をたくさん読んでいる"
+    ],
+    "audio": "audio/q122.mp3",
+    "diff": "beginner"
+  },
+  {
+    "text": "I'm considering getting solar panels. The upfront cost is high but I think the long-term savings make sense.",
+    "answer": "長期節約でソーラー導入を検討中",
+    "choices": [
+      "長期節約でソーラー導入を検討中",
+      "省エネ家電に買い替えた",
+      "電力会社の料金プランを見直している",
+      "オール電化住宅への変更を検討している",
+      "自然エネルギーの利用を始めた"
+    ],
+    "audio": "audio/q123.mp3",
+    "diff": "beginner"
+  },
+  {
+    "text": "My company just announced a mandatory return to office five days a week starting next month. Everyone is upset.",
+    "answer": "週5出社義務化で社員が不満",
+    "choices": [
+      "週5出社義務化で社員が不満",
+      "テレワーク廃止の方針が発表された",
+      "在宅勤務の継続を上司に交渉した",
+      "出社日数を増やすよう指示された",
+      "勤務地の変更命令に困っている"
+    ],
+    "audio": "audio/q124.mp3",
+    "diff": "beginner"
+  },
+  {
+    "text": "I can't believe how much kids' birthday parties cost these days. We spent over $300 on my son's party.",
+    "answer": "子供の誕生日で300ドル超えて驚く",
+    "choices": [
+      "子供の誕生日で300ドル超えて驚く",
+      "誕生日の外食でお金がかかった",
+      "子育てにかかる費用を嘆いている",
+      "パーティーの準備で予算オーバーした",
+      "キッズパーティーの節約方法を調べている"
+    ],
+    "audio": "audio/q125.mp3",
+    "diff": "beginner"
+  },
+  {
+    "text": "I just signed up for a language exchange. I'll teach someone English and they'll teach me Mandarin.",
+    "answer": "英語と中国語の言語交換を始めた",
+    "choices": [
+      "英語と中国語の言語交換を始めた",
+      "オンライン英会話レッスンを始めた",
+      "外国人との友好関係を築こうとしている",
+      "語学交流アプリを使い始めた",
+      "ネイティブスピーカーと会話の練習をしている"
+    ],
+    "audio": "audio/q126.mp3",
+    "diff": "beginner"
+  },
+  {
+    "text": "I went to the emergency room at 2 AM with chest pains. Turns out it was just severe heartburn. Very scary.",
+    "answer": "深夜に救急に行ったら胸焼けだった",
+    "choices": [
+      "深夜に救急に行ったら胸焼けだった",
+      "心臓の不調で病院に緊急搬送された",
+      "急な腹痛で病院に駆け込んだ",
+      "救急車を呼ぶか迷っている",
+      "救急病院での対応が遅くて困った"
+    ],
+    "audio": "audio/q127.mp3",
+    "diff": "beginner"
+  },
+  {
+    "text": "I made the mistake of shopping on an empty stomach. I ended up buying twice as much as I needed.",
+    "answer": "空腹で買い物して必要の倍を買ってしまった",
+    "choices": [
+      "空腹で買い物して必要の倍を買ってしまった",
+      "特売品につられて買いすぎた",
+      "衝動買いして後悔している",
+      "食料品の買いすぎで冷蔵庫が一杯",
+      "食材を買い過ぎて無駄にしてしまった"
+    ],
+    "audio": "audio/q128.mp3",
+    "diff": "beginner"
+  },
+  {
+    "text": "We adopted a goldfish for the kids six months ago. Nobody thought it would survive. It's still going strong.",
+    "answer": "金魚を6ヶ月前に飼い今も元気",
+    "choices": [
+      "金魚を6ヶ月前に飼い今も元気",
+      "子供のペットを世話する責任感を話している",
+      "熱帯魚の飼育に挑戦している",
+      "ペットを亡くして悲しんでいる",
+      "動物のお世話を子供に任せた"
+    ],
+    "audio": "audio/q129.mp3",
+    "diff": "beginner"
+  },
+  {
+    "text": "I'm trying to reduce my carbon footprint. I've been taking shorter showers and eating less meat.",
+    "answer": "環境のためシャワーと肉食を見直した",
+    "choices": [
+      "環境のためシャワーと肉食を見直した",
+      "エコ活動に積極的に参加している",
+      "ゴミを減らすためリサイクルを徹底している",
+      "電気自動車に乗り換えた",
+      "太陽光発電を自宅に設置した"
+    ],
+    "audio": "audio/q130.mp3",
+    "diff": "beginner"
+  },
+  {
+    "text": "I'm spending the holidays with my partner's family this year. I'm nervous because I don't speak much Spanish.",
+    "answer": "パートナー家族の休日にスペイン語が不安",
+    "choices": [
+      "パートナー家族の休日にスペイン語が不安",
+      "義理の両親に初めて会う緊張を話している",
+      "異なる文化の家族行事に参加した",
+      "言語の壁がある親戚との交流に悩んでいる",
+      "パートナーの両親の家に初めて滞在する"
+    ],
+    "audio": "audio/q131.mp3",
+    "diff": "beginner"
+  },
+  {
+    "text": "I've been offered a book deal. A small publisher wants to publish my novel. I still can't believe it's real.",
+    "answer": "出版社から小説の出版を打診された",
+    "choices": [
+      "出版社から小説の出版を打診された",
+      "自費出版で本を出すことにした",
+      "文学賞の候補になった",
+      "ブログが話題になって本の出版につながった",
+      "作家として初のエッセイ集を発売した"
+    ],
+    "audio": "audio/q132.mp3",
+    "diff": "beginner"
+  },
+  {
+    "text": "We are now boarding rows 20 through 35. Please have your boarding pass and ID ready.",
+    "answer": "特定の列の搭乗を始めるアナウンス",
+    "choices": [
+      "特定の列の搭乗を始めるアナウンス",
+      "搭乗口での手荷物検査の案内",
+      "出発時刻の変更を告げるアナウンス",
+      "乗客に座席への着席を促している",
+      "搭乗口の変更をアナウンスしている"
+    ],
+    "audio": "audio/q133.mp3",
+    "diff": "beginner"
+  },
+  {
+    "text": "I've started cold showers every morning. It sounds miserable but it actually wakes me up better than coffee.",
+    "answer": "冷水シャワーで目覚めがコーヒー以上",
+    "choices": [
+      "冷水シャワーで目覚めがコーヒー以上",
+      "健康のために朝の入浴習慣を変えた",
+      "体の免疫力を上げる方法を試している",
+      "朝のルーティンを変えて生活が改善した",
+      "朝活で心身のリフレッシュをしている"
+    ],
+    "audio": "audio/q134.mp3",
+    "diff": "beginner"
+  },
+  {
+    "text": "I've decided I'm going to hike the Appalachian Trail next year. All 2,000 miles of it. People think I'm crazy.",
+    "answer": "アパラチアトレイル踏破を来年目指す",
+    "choices": [
+      "アパラチアトレイル踏破を来年目指す",
+      "無謀な登山計画に家族が反対している",
+      "長距離ハイキングへのチャレンジを宣言した",
+      "テント泊を伴う旅を計画している",
+      "自然の中でのサバイバル体験を予定している"
+    ],
+    "audio": "audio/q135.mp3",
+    "diff": "beginner"
+  },
+  {
+    "text": "I think someone is using my Netflix account without my permission. There are shows in my history I definitely didn't watch.",
+    "answer": "Netflixを無断使用されている",
+    "choices": [
+      "Netflixを無断使用されている",
+      "家族と一つのアカウントを共有している",
+      "サブスクのアカウントが乗っ取られた",
+      "ストリーミングサービスのパスワードが漏れた",
+      "共有パスワードを変更して友人を締め出した"
+    ],
+    "audio": "audio/q136.mp3",
+    "diff": "beginner"
+  },
+  {
+    "text": "I've started fostering rescue cats. It's only temporary but it's really hard to give them back every time.",
+    "answer": "保護猫を預かり毎回返すのが辛い",
+    "choices": [
+      "保護猫を預かり毎回返すのが辛い",
+      "保護犬のボランティア活動をしている",
+      "動物シェルターのスタッフになった",
+      "ペットを里親に渡したが後悔している",
+      "野良猫を引き取って飼い始めた"
+    ],
+    "audio": "audio/q137.mp3",
+    "diff": "beginner"
+  },
+  {
+    "text": "I just realized I've been paying for two gym memberships for the past six months. I forgot to cancel one.",
+    "answer": "6ヶ月間ジム会費を二重払いしていた",
+    "choices": [
+      "6ヶ月間ジム会費を二重払いしていた",
+      "使っていないサブスクを見直した",
+      "銀行の明細を確認して二重請求に気づいた",
+      "不要な出費が続いていたと気づいた",
+      "月額サービスの管理が苦手"
+    ],
+    "audio": "audio/q138.mp3",
+    "diff": "beginner"
+  },
+  {
+    "text": "I've been working on a side project — a mobile app to help people track their water intake. It's almost ready.",
+    "answer": "水分管理アプリを副業で開発中",
+    "choices": [
+      "水分管理アプリを副業で開発中",
+      "健康管理アプリの開発に参加している",
+      "アプリのビジネスプランを作成している",
+      "プログラミングを独学して初めてのアプリを完成させた",
+      "スタートアップのピッチに参加した"
+    ],
+    "audio": "audio/q139.mp3",
+    "diff": "beginner"
+  },
+  {
+    "text": "I found a $20 bill in an old coat pocket. Small victories. I thought it was a loss.",
+    "answer": "コートのポケットにお金を発見した",
+    "choices": [
+      "コートのポケットにお金を発見した",
+      "財布の奥から忘れていたお金を見つけた",
+      "落とし物として拾ったお金を届けた",
+      "貯金箱を開けたら思ったより貯まっていた",
+      "古い服に縫い込まれたお金を見つけた"
+    ],
+    "audio": "audio/q140.mp3",
+    "diff": "beginner"
+  },
+  {
+    "text": "I'm trying to figure out how to say no to people without feeling guilty. I've always been a people-pleaser.",
+    "answer": "断る勇気を身につけようとしている",
+    "choices": [
+      "断る勇気を身につけようとしている",
+      "自己主張できるよう努力している",
+      "人の頼みを断れない性格を変えたい",
+      "コミュニケーション力を上げようとしている",
+      "心理カウンセラーに自己表現を相談した"
+    ],
+    "audio": "audio/q141.mp3",
+    "diff": "beginner"
+  },
+  {
+    "text": "My dog is having surgery tomorrow. It's minor but I'm a nervous wreck. She's like my child.",
+    "answer": "明日の犬の手術に子供のように心配している",
+    "choices": [
+      "明日の犬の手術に子供のように心配している",
+      "ペットが急病で緊急入院した",
+      "動物病院で診察料金が高くて驚いた",
+      "ペット保険の適用範囲を確認している",
+      "愛犬の老齢化に向き合っている"
+    ],
+    "audio": "audio/q142.mp3",
+    "diff": "beginner"
+  },
+  {
+    "text": "My teenager is refusing to get off his phone at dinner. We've tried everything. Any suggestions?",
+    "answer": "10代の子が食事中もスマホを手放さない",
+    "choices": [
+      "10代の子が食事中もスマホを手放さない",
+      "子供のゲーム依存に悩んでいる",
+      "子供がSNSに熱中しすぎている",
+      "スマホルールについて子供と話し合っている",
+      "子供と食卓でのマナーを守る約束をした"
+    ],
+    "audio": "audio/q143.mp3",
+    "diff": "beginner"
+  },
+  {
+    "text": "I'm going to visit my old neighborhood this weekend. I moved away 10 years ago. I wonder how much has changed.",
+    "answer": "10年ぶりに昔の街を訪れる",
+    "choices": [
+      "10年ぶりに昔の街を訪れる",
+      "故郷に帰省する準備をしている",
+      "幼少期の思い出の場所を訪ねる旅をした",
+      "懐かしの友人が住む街を訪れた",
+      "以前住んでいた家の前を通った"
+    ],
+    "audio": "audio/q144.mp3",
+    "diff": "beginner"
+  },
+  {
+    "text": "I've been learning origami from YouTube videos. I started with cranes and now I'm doing modular designs.",
+    "answer": "YouTube動画で折り紙を学んでいる",
+    "choices": [
+      "YouTube動画で折り紙を学んでいる",
+      "日本文化に興味を持って折り紙を始めた",
+      "子供に折り紙を教えている",
+      "折り紙アート展示会に作品を出した",
+      "工作の趣味として折り紙を楽しんでいる"
+    ],
+    "audio": "audio/q145.mp3",
+    "diff": "beginner"
+  },
+  {
+    "text": "I got a 5% raise this year. It's not amazing but given the economy, I'm not complaining.",
+    "answer": "5%の昇給を受けた",
+    "choices": [
+      "5%の昇給を受けた",
+      "ボーナスが昨年より少なかった",
+      "同僚と給与格差があることに気づいた",
+      "インフレで実質賃金が下がっている",
+      "給料日前に手持ちが少なくなっている"
+    ],
+    "audio": "audio/q146.mp3",
+    "diff": "beginner"
+  },
+  {
+    "text": "I tried making sushi at home for the first time. It looked terrible but tasted surprisingly decent.",
+    "answer": "手作り寿司は見た目が残念だった",
+    "choices": [
+      "手作り寿司は見た目が残念だった",
+      "日本料理を家で作ろうとした",
+      "料理の見た目と味のギャップに驚いた",
+      "和食のレシピに挑戦している",
+      "料理教室で巻き寿司を習った"
+    ],
+    "audio": "audio/q147.mp3",
+    "diff": "beginner"
+  },
+  {
+    "text": "I've been having trouble concentrating lately. I think it might be related to too much screen time.",
+    "answer": "集中力低下はスクリーン過多が原因か",
+    "choices": [
+      "集中力低下はスクリーン過多が原因か",
+      "ADHDの診断を受けた",
+      "仕事のストレスで頭が働かない",
+      "睡眠不足で集中力が低下している",
+      "コーヒーに頼らないと仕事ができない"
+    ],
+    "audio": "audio/q148.mp3",
+    "diff": "beginner"
+  },
+  {
+    "text": "I accidentally hit reply-all to a company-wide email with a pretty personal message. It was mortifying.",
+    "answer": "全社員に誤って個人的メール送信",
+    "choices": [
+      "全社員に誤って個人的メール送信",
+      "上司への愚痴を誤って全員に送った",
+      "機密情報を誤って外部に送信した",
+      "間違った添付ファイルをメールに付けた",
+      "メールの返信先を間違えて恥ずかしい思いをした"
+    ],
+    "audio": "audio/q149.mp3",
+    "diff": "beginner"
+  },
+  {
+    "text": "I've been volunteering at a homeless shelter on Sunday mornings. It puts everything into perspective.",
+    "answer": "日曜にホームレス支援のボランティア",
+    "choices": [
+      "日曜にホームレス支援のボランティア",
+      "食料支援のボランティアに参加している",
+      "地域の支援活動に定期的に参加している",
+      "NPOの活動に時間を割いている",
+      "社会問題への関心を持ちボランティアを始めた"
+    ],
+    "audio": "audio/q150.mp3",
+    "diff": "beginner"
+  },
+  {
+    "text": "My parents bought me a gym membership as a birthday gift. I guess they're trying to tell me something.",
+    "answer": "親にジム会員権をもらい意味を疑った",
+    "choices": [
+      "親にジム会員権をもらい意味を疑った",
+      "ダイエットを勧められてショックを受けた",
+      "健康を心配した親からサプリをもらった",
+      "両親に健康管理を指摘された",
+      "親に運動不足を注意された"
+    ],
+    "audio": "audio/q151.mp3",
+    "diff": "beginner"
+  },
+  {
+    "text": "I accidentally double-booked two dentist appointments on the same day. I had to cancel one in a hurry.",
+    "answer": "同日に歯科予約を二重に入れた",
+    "choices": [
+      "同日に歯科予約を二重に入れた",
+      "予定の管理が苦手でよく間違える",
+      "カレンダーアプリを使い始めた理由を話している",
+      "急な予定変更に対応している",
+      "二重予約を防ぐシステムを探している"
+    ],
+    "audio": "audio/q152.mp3",
+    "diff": "beginner"
+  },
+  {
+    "text": "I've been job searching for five months with no offers. I'm starting to question everything.",
+    "answer": "5ヶ月就活でオファーなく自信喪失",
+    "choices": [
+      "5ヶ月就活でオファーなく自信喪失",
+      "面接が苦手でなかなか通過できない",
+      "書類選考で毎回落とされている",
+      "転職エージェントに相談を始めた",
+      "スキルアップのために資格を取ることにした"
+    ],
+    "audio": "audio/q153.mp3",
+    "diff": "beginner"
+  },
+  {
+    "text": "I've started taking my lunch break outside every day. Just 30 minutes in the fresh air makes such a difference.",
+    "answer": "毎日外でランチ休憩を取るようにして30分でも気持ちが違う",
+    "choices": [
+      "毎日外でランチ休憩を取るようにして30分でも気持ちが違う",
+      "仕事中のストレス発散のため散歩を始めた",
+      "デスクランチをやめて休憩室を使い始めた",
+      "オフィスでの過ごし方を見直した",
+      "昼休みを活用してジムに行っている"
+    ],
+    "audio": "audio/q154.mp3",
+    "diff": "beginner"
+  },
+  {
+    "text": "I've been doing 10 minutes of journaling every morning and it's really helped me process my thoughts.",
+    "answer": "毎朝10分の日記で思考を整理できている",
+    "choices": [
+      "毎朝10分の日記で思考を整理できている",
+      "ストレス管理のためノートに書き出している",
+      "朝のルーティンを確立しようとしている",
+      "感情の整理に役立つ方法を探している",
+      "自己啓発の一環として日記を始めた"
+    ],
+    "audio": "audio/q155.mp3",
+    "diff": "beginner"
+  },
+  {
+    "text": "I've been studying Japanese for about six months now. I can read hiragana but kanji is still really tough.",
+    "answer": "日本語学習の進捗を話している",
+    "choices": [
+      "日本語学習の進捗を話している",
+      "日本語の授業に申し込んでいる",
+      "語学学校を探している",
+      "日本語試験の結果を報告している",
+      "翻訳アプリを紹介している"
+    ],
+    "audio": "audio/q156.mp3",
+    "diff": "intermediate"
+  },
+  {
+    "text": "I got rear-ended on the way to work this morning. Nobody was hurt but my bumper is totally smashed.",
+    "answer": "追突事故に遭ったことを話している",
+    "choices": [
+      "追突事故に遭ったことを話している",
+      "車の修理費用を心配している",
+      "交通違反の罰金を払っている",
+      "駐車場で車をこすった話をしている",
+      "道路の穴でタイヤがパンクした"
+    ],
+    "audio": "audio/q157.mp3",
+    "diff": "intermediate"
+  },
+  {
+    "text": "I think I left my wallet in the cab. I had everything in there — my cards, my ID, like two hundred bucks.",
+    "answer": "タクシーに財布を忘れた",
+    "choices": [
+      "タクシーに財布を忘れた",
+      "財布を盗まれた",
+      "ATMでカードを忘れた",
+      "電車に荷物を置き忘れた",
+      "コンビニで財布を落とした"
+    ],
+    "audio": "audio/q158.mp3",
+    "diff": "intermediate"
+  },
+  {
+    "text": "We're almost out of coffee. Can you add it to the shopping list? Oh, and we need milk too.",
+    "answer": "買い物リストに追加するよう頼んでいる",
+    "choices": [
+      "買い物リストに追加するよう頼んでいる",
+      "コーヒーショップに行こうと誘っている",
+      "冷蔵庫の中身を確認している",
+      "スーパーへの行き方を教えている",
+      "コーヒーの注文を受けている"
+    ],
+    "audio": "audio/q159.mp3",
+    "diff": "intermediate"
+  },
+  {
+    "text": "I've had this cough for like two weeks. It's not getting any better so I guess I should see a doctor.",
+    "answer": "長引く咳で医者に行こうとしている",
+    "choices": [
+      "長引く咳で医者に行こうとしている",
+      "薬局で咳止めを探している",
+      "花粉症の症状を訴えている",
+      "インフルエンザの予防接種を検討している",
+      "子供の体調を心配している"
+    ],
+    "audio": "audio/q160.mp3",
+    "diff": "intermediate"
+  },
+  {
+    "text": "My landlord finally agreed to fix the heating. I've been asking for three months and it gets really cold at night.",
+    "answer": "大家が暖房を修理してくれることになった",
+    "choices": [
+      "大家が暖房を修理してくれることになった",
+      "新しい家に引っ越しを決めた",
+      "暖房費の節約方法を話している",
+      "エアコンの取り付けを依頼している",
+      "冬の光熱費を心配している"
+    ],
+    "audio": "audio/q161.mp3",
+    "diff": "intermediate"
+  },
+  {
+    "text": "This is your captain speaking. We're currently cruising at 35,000 feet and expect to land in about two hours.",
+    "answer": "機長が飛行情報を案内している",
+    "choices": [
+      "機長が飛行情報を案内している",
+      "フライトアテンダントが着陸を知らせている",
+      "地上スタッフが搭乗を促している",
+      "管制塔が着陸許可を出している",
+      "乗客に安全ベルトを促している"
+    ],
+    "audio": "audio/q162.mp3",
+    "diff": "intermediate"
+  },
+  {
+    "text": "I stayed up way too late last night watching that new series. Now I can barely keep my eyes open.",
+    "answer": "夜更かしして眠くて仕方ない",
+    "choices": [
+      "夜更かしして眠くて仕方ない",
+      "睡眠不足で体調が悪い",
+      "映画館で居眠りした",
+      "仕事が忙しすぎて疲れている",
+      "新しいドラマにはまっている"
+    ],
+    "audio": "audio/q163.mp3",
+    "diff": "intermediate"
+  },
+  {
+    "text": "I've been saving up to buy a new camera. I'm really into photography and want to go pro someday.",
+    "answer": "写真家を目指してカメラを貯金中",
+    "choices": [
+      "写真家を目指してカメラを貯金中",
+      "写真展の準備をしている",
+      "カメラの修理費用を心配している",
+      "スマホのカメラ機能を試している",
+      "写真撮影の趣味を始めたばかり"
+    ],
+    "audio": "audio/q164.mp3",
+    "diff": "intermediate"
+  },
+  {
+    "text": "We're having a potluck on Friday. If you wanna come, just bring a dish to share. The more the merrier!",
+    "answer": "持ち寄りパーティーに招待している",
+    "choices": [
+      "持ち寄りパーティーに招待している",
+      "レストランでの夕食に誘っている",
+      "料理教室に参加を促している",
+      "誕生日パーティーの準備をしている",
+      "食事の差し入れを頼んでいる"
+    ],
+    "audio": "audio/q165.mp3",
+    "diff": "intermediate"
+  },
+  {
+    "text": "I've got to cut back on eating out. I did the math and I spent like $400 on restaurants last month.",
+    "answer": "外食費を節約しようと決めた",
+    "choices": [
+      "外食費を節約しようと決めた",
+      "食費の予算を立て直している",
+      "外食が多くて栄養が偏っている",
+      "レストランのレビューを確認している",
+      "家での料理を始めようとしている"
+    ],
+    "audio": "audio/q166.mp3",
+    "diff": "intermediate"
+  },
+  {
+    "text": "There's a new Korean BBQ place that just opened downtown. I heard the wait can be like two hours on weekends.",
+    "answer": "新しく開店した韓国BBQ店を紹介している",
+    "choices": [
+      "新しく開店した韓国BBQ店を紹介している",
+      "人気レストランの予約方法を確認している",
+      "食べ放題の店を探している",
+      "週末のディナーを計画している",
+      "外国料理の料理教室を紹介している"
+    ],
+    "audio": "audio/q167.mp3",
+    "diff": "intermediate"
+  },
+  {
+    "text": "I'm hosting Thanksgiving this year and I've never cooked a turkey before. I'm a little stressed about it.",
+    "answer": "七面鳥の初調理で感謝祭主催が不安",
+    "choices": [
+      "七面鳥の初調理で感謝祭主催が不安",
+      "クリスマスディナーの準備をしている",
+      "大勢のゲストのための料理に悩んでいる",
+      "感謝祭の会場を探している",
+      "料理教室で特別料理を習っている"
+    ],
+    "audio": "audio/q168.mp3",
+    "diff": "intermediate"
+  },
+  {
+    "text": "The gym I go to is raising their membership fee by 30%. I'm thinking of canceling and just running outside instead.",
+    "answer": "ジムの値上げで退会を検討中",
+    "choices": [
+      "ジムの値上げで退会を検討中",
+      "新しいジムの入会を検討している",
+      "自宅でトレーニングを始めた",
+      "フィットネスクラスの種類を比較している",
+      "月額サービスの契約を見直している"
+    ],
+    "audio": "audio/q169.mp3",
+    "diff": "intermediate"
+  },
+  {
+    "text": "My cat got into the pantry and knocked over a whole bag of flour. There's flour everywhere. It's a disaster.",
+    "answer": "猫が食品庫で小麦粉をこぼして散らかした",
+    "choices": [
+      "猫が食品庫で小麦粉をこぼして散らかした",
+      "子供が台所で料理を散らかした",
+      "犬が部屋を走り回って壊した",
+      "調理中に鍋の中身をこぼした",
+      "料理中に爆発的に粉が飛び散った"
+    ],
+    "audio": "audio/q170.mp3",
+    "diff": "intermediate"
+  },
+  {
+    "text": "I think I've been putting on weight lately. I need to start watching what I eat and get moving.",
+    "answer": "体重増加を感じ生活習慣を改善",
+    "choices": [
+      "体重増加を感じ生活習慣を改善",
+      "ダイエットサプリを試している",
+      "医師に体重管理のアドバイスをもらった",
+      "食事制限で体調を崩している",
+      "ボディービルダーを目指している"
+    ],
+    "audio": "audio/q171.mp3",
+    "diff": "intermediate"
+  },
+  {
+    "text": "My internet has been going out every day around the same time. I think it might be a problem with the router.",
+    "answer": "毎日同じ時間にインターネットが切れる",
+    "choices": [
+      "毎日同じ時間にインターネットが切れる",
+      "プロバイダーとの契約を見直している",
+      "Wi-Fiの速度が遅くて困っている",
+      "ルーターの設定を変更しようとしている",
+      "スマホのモバイルデータが切れた"
+    ],
+    "audio": "audio/q172.mp3",
+    "diff": "intermediate"
+  },
+  {
+    "text": "Sorry, could you repeat that? The connection is really bad and I'm having trouble hearing you.",
+    "answer": "電話の接続が悪くて聞き取れない",
+    "choices": [
+      "電話の接続が悪くて聞き取れない",
+      "外国語で話しかけられて困っている",
+      "騒がしい場所で会話ができない",
+      "補聴器の調子が悪い",
+      "オンライン会議で音声が途切れる"
+    ],
+    "audio": "audio/q173.mp3",
+    "diff": "intermediate"
+  },
+  {
+    "text": "My daughter got into her first-choice university. We're so proud. She worked so hard all through high school.",
+    "answer": "娘が第一志望の大学に合格した",
+    "choices": [
+      "娘が第一志望の大学に合格した",
+      "息子が奨学金を獲得した",
+      "子供の受験の準備を手伝っている",
+      "大学の入学式の準備をしている",
+      "子供の成績に満足している"
+    ],
+    "audio": "audio/q174.mp3",
+    "diff": "intermediate"
+  },
+  {
+    "text": "I've been having a lot of trouble sleeping lately. I wake up at 3 AM and can't get back to sleep.",
+    "answer": "最近夜中に目が覚めて眠れない",
+    "choices": [
+      "最近夜中に目が覚めて眠れない",
+      "不眠症の治療薬を処方してもらった",
+      "睡眠アプリで睡眠の質を測っている",
+      "いびきがひどくて家族に迷惑をかけている",
+      "夜遅くまで仕事して睡眠不足になっている"
+    ],
+    "audio": "audio/q175.mp3",
+    "diff": "intermediate"
+  },
+  {
+    "text": "I hit 10,000 followers on Instagram today! I know it's not a huge number but it feels like a real milestone.",
+    "answer": "インスタのフォロワーが1万人に達した",
+    "choices": [
+      "インスタのフォロワーが1万人に達した",
+      "ユーチューブで最初の動画を公開した",
+      "SNSで炎上して困っている",
+      "SNSのアカウントを新しく開設した",
+      "フォロワーを増やす方法を探している"
+    ],
+    "audio": "audio/q176.mp3",
+    "diff": "intermediate"
+  },
+  {
+    "text": "I have to give a presentation to the board next Monday and I'm absolutely terrified. Public speaking is not my thing.",
+    "answer": "役員会でのプレゼンに緊張している",
+    "choices": [
+      "役員会でのプレゼンに緊張している",
+      "会議で意見を述べることが苦手",
+      "プレゼン資料の作成に困っている",
+      "英語のプレゼンに不安を感じている",
+      "オンラインセミナーで発表する予定"
+    ],
+    "audio": "audio/q177.mp3",
+    "diff": "intermediate"
+  },
+  {
+    "text": "I found a lump in my neck. It's probably nothing but my wife convinced me to go get it checked out.",
+    "answer": "首のしこりを医者に診てもらうことにした",
+    "choices": [
+      "首のしこりを医者に診てもらうことにした",
+      "頭痛が続いて心配している",
+      "皮膚科に肌荒れの相談をしに行った",
+      "健康診断でがん検査を受けた",
+      "虫歯の治療のため歯医者に行った"
+    ],
+    "audio": "audio/q178.mp3",
+    "diff": "intermediate"
+  },
+  {
+    "text": "I just adopted a rescue dog. She's a bit shy but already warming up to us. We named her Luna.",
+    "answer": "保護犬を引き取って新生活が始まった",
+    "choices": [
+      "保護犬を引き取って新生活が始まった",
+      "ペットショップで犬を購入した",
+      "犬のブリーダーから子犬を迎えた",
+      "迷子の犬を保護している",
+      "友人から犬を引き取った"
+    ],
+    "audio": "audio/q179.mp3",
+    "diff": "intermediate"
+  },
+  {
+    "text": "I'm exhausted. I've been on call all week and last night they actually called me in at 2 AM.",
+    "answer": "オンコールで夜中に呼び出されて疲れ果てた",
+    "choices": [
+      "オンコールで夜中に呼び出されて疲れ果てた",
+      "残業続きで疲労が溜まっている",
+      "夜勤シフトに慣れずに苦労している",
+      "仕事の量が多すぎて限界を感じている",
+      "休日出勤が続いて不満を感じている"
+    ],
+    "audio": "audio/q180.mp3",
+    "diff": "intermediate"
+  },
+  {
+    "text": "There's a really beautiful view from up here. You can see the whole city and the mountains in the background.",
+    "answer": "高い場所から街と山の景色を眺めている",
+    "choices": [
+      "高い場所から街と山の景色を眺めている",
+      "展望台から富士山を見ている",
+      "飛行機から地上の景色を楽しんでいる",
+      "ハイキング中に絶景を見ている",
+      "高層ビルの屋上からの夜景を撮影している"
+    ],
+    "audio": "audio/q181.mp3",
+    "diff": "intermediate"
+  },
+  {
+    "text": "My parents are coming to visit for two weeks next month. I love them but two weeks is a long time.",
+    "answer": "両親の2週間滞在に複雑な気持ち",
+    "choices": [
+      "両親の2週間滞在に複雑な気持ち",
+      "両親への親孝行旅行を計画している",
+      "遠方の実家へ帰省する準備をしている",
+      "親の体調を心配して連絡している",
+      "両親へのプレゼントを選んでいる"
+    ],
+    "audio": "audio/q182.mp3",
+    "diff": "intermediate"
+  },
+  {
+    "text": "I sprained my ankle playing soccer. It's swollen and I can barely walk. I think I need to see a doctor.",
+    "answer": "サッカー中に足首を捻挫した",
+    "choices": [
+      "サッカー中に足首を捻挫した",
+      "階段で転んで足を骨折した",
+      "ランニング中に膝を痛めた",
+      "バスケで肩を脱臼した",
+      "テニスで肘を痛めてしまった"
+    ],
+    "audio": "audio/q183.mp3",
+    "diff": "intermediate"
+  },
+  {
+    "text": "We're completely snowed in. There's like two feet of snow outside and the roads are closed. We're not going anywhere today.",
+    "answer": "大雪で外に出られず閉じ込められた",
+    "choices": [
+      "大雪で外に出られず閉じ込められた",
+      "台風で外出を自粛している",
+      "洪水で道路が通れなくなった",
+      "嵐の中キャンプを楽しんでいる",
+      "大雪で車が動かせなくなった"
+    ],
+    "audio": "audio/q184.mp3",
+    "diff": "intermediate"
+  },
+  {
+    "text": "My kids want a trampoline for the backyard. I'm a little nervous about safety but they've been asking for months.",
+    "answer": "子供にトランポリンをねだられた",
+    "choices": [
+      "子供にトランポリンをねだられた",
+      "庭にプールを設置しようとしている",
+      "子供の誕生日に大きなプレゼントを買った",
+      "スポーツ用品を購入するか迷っている",
+      "子供のスポーツクラブを探している"
+    ],
+    "audio": "audio/q185.mp3",
+    "diff": "intermediate"
+  },
+  {
+    "text": "I've started volunteering at the local food bank on weekends. It's only a few hours but it makes me feel good.",
+    "answer": "週末にフードバンクで奉仕活動",
+    "choices": [
+      "週末にフードバンクで奉仕活動",
+      "地域の清掃活動に参加している",
+      "チャリティーイベントの募金を集めている",
+      "動物シェルターでボランティアをしている",
+      "老人ホームでの慰問活動をしている"
+    ],
+    "audio": "audio/q186.mp3",
+    "diff": "intermediate"
+  },
+  {
+    "text": "Wow, I didn't realize how much I'd missed live music. That concert was absolutely electric. The crowd was amazing.",
+    "answer": "久しぶりのライブコンサートに感動した",
+    "choices": [
+      "久しぶりのライブコンサートに感動した",
+      "野外フェスティバルを楽しんでいる",
+      "お気に入りのバンドのコンサートに行った",
+      "有名なクラシック音楽を聴いて感動した",
+      "地域の音楽イベントに参加した"
+    ],
+    "audio": "audio/q187.mp3",
+    "diff": "intermediate"
+  },
+  {
+    "text": "I just locked myself out of the house. My phone is inside too. I'm literally standing on the porch in my socks.",
+    "answer": "家に鍵を閉め出され靴下で外に立っている",
+    "choices": [
+      "家に鍵を閉め出され靴下で外に立っている",
+      "カギを紛失して鍵屋を呼んでいる",
+      "スペアキーが見つからなくて困っている",
+      "車のカギを車内に閉じ込めてしまった",
+      "深夜に家の鍵を変えた"
+    ],
+    "audio": "audio/q188.mp3",
+    "diff": "intermediate"
+  },
+  {
+    "text": "I'm doing a digital detox for the weekend. No phone, no social media, no email. Just books and nature.",
+    "answer": "週末デジタルデトックスをしようとしている",
+    "choices": [
+      "週末デジタルデトックスをしようとしている",
+      "SNSで情報を発信するのをやめた",
+      "スマホの電源を切って旅行を楽しんでいる",
+      "インターネット依存症の治療を受けている",
+      "テレビを見ない生活を実践している"
+    ],
+    "audio": "audio/q189.mp3",
+    "diff": "intermediate"
+  },
+  {
+    "text": "I need to get my car emissions tested before I can renew my registration. It's overdue by two months.",
+    "answer": "車検が遅れていて排気ガス検査が必要",
+    "choices": [
+      "車検が遅れていて排気ガス検査が必要",
+      "車の定期メンテナンスに行かなければならない",
+      "車の保険の更新を忘れていた",
+      "タイヤ交換の時期を過ぎている",
+      "オイル交換を先延ばしにしている"
+    ],
+    "audio": "audio/q190.mp3",
+    "diff": "intermediate"
+  },
+  {
+    "text": "I think our upstairs neighbors are renovating. There's been drilling and hammering every morning since Monday.",
+    "answer": "上の階のリフォーム工事騒音に困っている",
+    "choices": [
+      "上の階のリフォーム工事騒音に困っている",
+      "道路工事の騒音で眠れない",
+      "マンションの共用部工事で不便を感じている",
+      "建設現場の近くに住んで騒音が辛い",
+      "隣の家の改築工事で埃がひどい"
+    ],
+    "audio": "audio/q191.mp3",
+    "diff": "intermediate"
+  },
+  {
+    "text": "I'm teaching myself to code. I've been watching tutorials on YouTube and I just built my first simple website.",
+    "answer": "独学で初ウェブサイトを作成した",
+    "choices": [
+      "独学で初ウェブサイトを作成した",
+      "プログラミング学校に通い始めた",
+      "IT企業への就職活動をしている",
+      "アプリ開発の依頼を受けた",
+      "ウェブデザインのコースを受講している"
+    ],
+    "audio": "audio/q192.mp3",
+    "diff": "intermediate"
+  },
+  {
+    "text": "My grandfather just turned 90. We threw him a big party with the whole family. He danced for the first time in years.",
+    "answer": "祖父が90歳になり大勢で祝った",
+    "choices": [
+      "祖父が90歳になり大勢で祝った",
+      "祖父母の金婚式を家族でお祝いした",
+      "父の還暦祝いを企画した",
+      "長寿のお祝いを温泉旅行でした",
+      "老人ホームで祖父の誕生日を祝った"
+    ],
+    "audio": "audio/q193.mp3",
+    "diff": "intermediate"
+  },
+  {
+    "text": "My boss asked me to work overtime this weekend without extra pay. I said yes but I'm not happy about it.",
+    "answer": "残業代なしの週末残業を了承したが不満",
+    "choices": [
+      "残業代なしの週末残業を了承したが不満",
+      "休日出勤の代休が取れないと困っている",
+      "サービス残業が多くて転職を考えている",
+      "上司の無理な要求に断れないでいる",
+      "労働基準法の残業規定を確認している"
+    ],
+    "audio": "audio/q194.mp3",
+    "diff": "intermediate"
+  },
+  {
+    "text": "I just started seeing a therapist. I've been dealing with anxiety for years and I finally decided to get help.",
+    "answer": "長年の不安症でセラピーを受け始めた",
+    "choices": [
+      "長年の不安症でセラピーを受け始めた",
+      "うつ病の薬を処方してもらった",
+      "カウンセリングで人間関係の悩みを話した",
+      "精神的に落ち込んで友人に相談した",
+      "ストレス管理のワークショップに参加した"
+    ],
+    "audio": "audio/q195.mp3",
+    "diff": "intermediate"
+  },
+  {
+    "text": "I've been going through old photos and found pictures from my graduation 20 years ago. Wow, time really flies.",
+    "answer": "20年前の卒業写真を見てしみじみしている",
+    "choices": [
+      "20年前の卒業写真を見てしみじみしている",
+      "古いアルバムを整理して懐かしんでいる",
+      "同窓会の案内状が届いた",
+      "学生時代の友人とSNSで再会した",
+      "子供の頃の自分の写真を見つけた"
+    ],
+    "audio": "audio/q196.mp3",
+    "diff": "intermediate"
+  },
+  {
+    "text": "I asked for a window seat but they gave me a middle seat between two strangers. Can I switch?",
+    "answer": "窓側席を頼んだのに真ん中席で変えてほしい",
+    "choices": [
+      "窓側席を頼んだのに真ん中席で変えてほしい",
+      "飛行機のシートアップグレードを頼んでいる",
+      "新幹線の指定席に別の人が座っていた",
+      "映画館で席の変更をお願いしている",
+      "電車の優先座席を確認している"
+    ],
+    "audio": "audio/q197.mp3",
+    "diff": "intermediate"
+  },
+  {
+    "text": "I got a free sample of this new protein powder at the gym. It actually tasted pretty good. I might buy a full bag.",
+    "answer": "ジムでプロテインを試して気に入った",
+    "choices": [
+      "ジムでプロテインを試して気に入った",
+      "筋トレ後のプロテイン摂取について話している",
+      "スポーツ栄養士にアドバイスをもらった",
+      "ビタミンサプリを試し始めた",
+      "栄養補助食品の購入を迷っている"
+    ],
+    "audio": "audio/q198.mp3",
+    "diff": "intermediate"
+  },
+  {
+    "text": "I've got an early morning flight tomorrow. I need to leave the house by 4 AM. I'll just stay up, I think.",
+    "answer": "早朝便で夜通し起きようとしている",
+    "choices": [
+      "早朝便で夜通し起きようとしている",
+      "空港のホテルに前泊することにした",
+      "早起きのためアラームを何個もセットした",
+      "深夜便の搭乗準備をしている",
+      "旅行前の最終確認をしている"
+    ],
+    "audio": "audio/q199.mp3",
+    "diff": "intermediate"
+  },
+  {
+    "text": "We've been trying to get pregnant for two years. We just found out IVF worked and we are beyond happy.",
+    "answer": "体外受精が成功して妊娠できた喜び",
+    "choices": [
+      "体外受精が成功して妊娠できた喜び",
+      "不妊治療を始めることを決意した",
+      "産婦人科に初めて診察に行った",
+      "二人目の子供を授かった",
+      "流産を乗り越えて再妊娠した"
+    ],
+    "audio": "audio/q200.mp3",
+    "diff": "intermediate"
+  },
+  {
+    "text": "I'm at the post office to mail a gift to my cousin overseas. Do I need to fill out a customs form for this?",
+    "answer": "海外への荷物で税関申告書を確認",
+    "choices": [
+      "海外への荷物で税関申告書を確認",
+      "小包の追跡番号を確認している",
+      "郵便局で書留郵便を出している",
+      "国際宅配便の料金を確認している",
+      "海外への荷物の禁止品を確認している"
+    ],
+    "audio": "audio/q201.mp3",
+    "diff": "intermediate"
+  },
+  {
+    "text": "Our team won the championship! We were the underdogs but we just kept fighting and pulled it off.",
+    "answer": "下馬評を覆して優勝した",
+    "choices": [
+      "下馬評を覆して優勝した",
+      "スポーツ大会で準優勝だった",
+      "チームの最後の試合を振り返っている",
+      "強豪チームに善戦した",
+      "地区予選を突破したことを喜んでいる"
+    ],
+    "audio": "audio/q202.mp3",
+    "diff": "intermediate"
+  },
+  {
+    "text": "We put in an offer on a house yesterday. The sellers are going to let us know by Friday. I can barely sleep.",
+    "answer": "家を購入申し込み、返答を待ち眠れない",
+    "choices": [
+      "家を購入申し込み、返答を待ち眠れない",
+      "住宅ローンの審査結果を待っている",
+      "不動産業者と購入条件を交渉した",
+      "新築物件の内覧に行ってきた",
+      "マンション購入の頭金を準備している"
+    ],
+    "audio": "audio/q203.mp3",
+    "diff": "intermediate"
+  },
+  {
+    "text": "I found a really good deal on a flight to Miami — only $89 each way. I'm thinking about a long weekend.",
+    "answer": "格安便でマイアミ旅行を計画中",
+    "choices": [
+      "格安便でマイアミ旅行を計画中",
+      "マイレージを使って無料でフライトをとった",
+      "最後の空席で高い航空券を購入した",
+      "出張のフライトを格安で手配した",
+      "旅行サイトで最安値のホテルを探している"
+    ],
+    "audio": "audio/q204.mp3",
+    "diff": "intermediate"
+  },
+  {
+    "text": "I'm trying to find a good gift for someone who already has everything. Any ideas? It's their 50th birthday.",
+    "answer": "何でも持つ人への誕生日ギフトに悩む",
+    "choices": [
+      "何でも持つ人への誕生日ギフトに悩む",
+      "母の日のプレゼント選びに悩んでいる",
+      "結婚祝いのプレゼントを考えている",
+      "卒業祝いに何を贈るか考えている",
+      "退職祝いのプレゼントを相談している"
+    ],
+    "audio": "audio/q205.mp3",
+    "diff": "intermediate"
+  },
+  {
+    "text": "I got the job! It took three rounds of interviews but they finally called to offer it. I start next Monday.",
+    "answer": "3回の面接を経てついに採用された",
+    "choices": [
+      "3回の面接を経てついに採用された",
+      "インターンシップの終了後に正社員になった",
+      "転職活動が長引いてやっと決まった",
+      "夢の会社からオファーが来た",
+      "昇進の知らせを受け取った"
+    ],
+    "audio": "audio/q206.mp3",
+    "diff": "intermediate"
+  },
+  {
+    "text": "We had a really bad hailstorm last night. It cracked the windshield on my car and dented the hood pretty bad.",
+    "answer": "昨夜の雹嵐でフロントガラスが割れた",
+    "choices": [
+      "昨夜の雹嵐でフロントガラスが割れた",
+      "台風で車に木が倒れた",
+      "洪水で駐車場の車が水没した",
+      "強風で車に飛来物が当たった",
+      "大雪で車の屋根が凹んだ"
+    ],
+    "audio": "audio/q207.mp3",
+    "diff": "intermediate"
+  },
+  {
+    "text": "I'm starting to think I need glasses. Things at a distance look blurry and I've been squinting a lot lately.",
+    "answer": "遠くがぼやけてメガネが必要かも",
+    "choices": [
+      "遠くがぼやけてメガネが必要かも",
+      "コンタクトレンズを初めてつけた",
+      "老眼が進んで細かい字が読めない",
+      "目の疲れで頭痛がする",
+      "目の検査で視力低下を指摘された"
+    ],
+    "audio": "audio/q208.mp3",
+    "diff": "intermediate"
+  },
+  {
+    "text": "I need to get my hair cut soon. I keep putting it off. It's getting to the point where it's really out of control.",
+    "answer": "先延ばしにしている散髪にそろそろ行くべき",
+    "choices": [
+      "先延ばしにしている散髪にそろそろ行くべき",
+      "美容院の予約がなかなか取れない",
+      "新しいヘアスタイルを試しに美容院へ",
+      "子供の散髪を自分でやろうとしている",
+      "ヘアカラーが気になってきた"
+    ],
+    "audio": "audio/q209.mp3",
+    "diff": "intermediate"
+  },
+  {
+    "text": "You know what, I think I'm just going to apply. The worst they can say is no, right? I've got nothing to lose.",
+    "answer": "ダメ元で応募してみることにした",
+    "choices": [
+      "ダメ元で応募してみることにした",
+      "コンテストに参加する勇気が出た",
+      "告白する決意をした",
+      "起業のアイデアを実行しようとしている",
+      "無理だと思っていたチャレンジに挑戦する"
+    ],
+    "audio": "audio/q210.mp3",
+    "diff": "intermediate"
+  },
+  {
+    "text": "I just started a new job and I still don't know anyone. Lunch is the most awkward part of the day.",
+    "answer": "新職場でランチの孤独を感じる",
+    "choices": [
+      "新職場でランチの孤独を感じる",
+      "会社での人間関係に悩んでいる",
+      "新入社員の研修中で緊張している",
+      "転職初日の緊張を話している",
+      "社内の派閥に馴染めないでいる"
+    ],
+    "audio": "audio/q211.mp3",
+    "diff": "intermediate"
+  },
+  {
+    "text": "My child's teacher called today to say he's been acting up in class. I don't know what to do. He seems fine at home.",
+    "answer": "子供の学校の問題行動を知らされた",
+    "choices": [
+      "子供の学校の問題行動を知らされた",
+      "子供の成績が下がって心配している",
+      "子供がいじめを受けていると相談した",
+      "子供が学校に行きたがらない",
+      "子供の担任の先生と面談した"
+    ],
+    "audio": "audio/q212.mp3",
+    "diff": "intermediate"
+  },
+  {
+    "text": "I'm completely lost. I followed the GPS but I ended up in some industrial area. There's no one around.",
+    "answer": "GPS通りに行ったら工業地帯に迷い込んだ",
+    "choices": [
+      "GPS通りに行ったら工業地帯に迷い込んだ",
+      "地図アプリの案内が間違っていた",
+      "知らない街で道に迷った",
+      "夜道で目的地が見つからない",
+      "観光地で観光マップを紛失した"
+    ],
+    "audio": "audio/q213.mp3",
+    "diff": "intermediate"
+  },
+  {
+    "text": "My phone screen cracked after I dropped it. I thought the case would protect it but apparently not.",
+    "answer": "スマホをケース入りで落とし画面割れ",
+    "choices": [
+      "スマホをケース入りで落とし画面割れ",
+      "スマホを水没させてしまった",
+      "スマホの修理に2万円かかると言われた",
+      "新しいスマホへの機種変更を検討している",
+      "スマホの保険が適用されるか確認している"
+    ],
+    "audio": "audio/q214.mp3",
+    "diff": "intermediate"
+  },
+  {
+    "text": "I signed up for a cooking class and learned how to make pasta from scratch. The instructor was amazing.",
+    "answer": "料理教室でパスタの手作りを習った",
+    "choices": [
+      "料理教室でパスタの手作りを習った",
+      "イタリアンレストランでシェフに料理を教わった",
+      "ユーチューブで料理動画を見て練習した",
+      "イタリアに留学して現地料理を習った",
+      "料理コンテストで入賞した"
+    ],
+    "audio": "audio/q215.mp3",
+    "diff": "intermediate"
+  },
+  {
+    "text": "I've decided to go back to school. I want to get my master's degree in data science while working full time.",
+    "answer": "仕事しながら修士号取得を決意",
+    "choices": [
+      "仕事しながら修士号取得を決意",
+      "大学院への入学手続きを進めている",
+      "社会人向けの夜間コースに入学した",
+      "オンライン大学でMBAを取得している",
+      "転職のために資格取得を目指している"
+    ],
+    "audio": "audio/q216.mp3",
+    "diff": "intermediate"
+  },
+  {
+    "text": "I ordered something on eBay a month ago and it still hasn't arrived. The tracking says it's been stuck in customs.",
+    "answer": "注文品が1ヶ月税関で止まっている",
+    "choices": [
+      "注文品が1ヶ月税関で止まっている",
+      "海外通販で偽物が届いた",
+      "荷物が途中で紛失した",
+      "配達業者に誤配されてしまった",
+      "税関で追加関税を払うよう求められた"
+    ],
+    "audio": "audio/q217.mp3",
+    "diff": "intermediate"
+  },
+  {
+    "text": "I went to an outdoor concert yesterday and completely forgot to put on sunscreen. I'm so sunburned.",
+    "answer": "野外コンサートで日焼けがひどい",
+    "choices": [
+      "野外コンサートで日焼けがひどい",
+      "海水浴で長時間日焼けしてしまった",
+      "ハイキング中に熱中症になった",
+      "屋外での作業で肌が荒れた",
+      "プールで肌が焼けて痛い"
+    ],
+    "audio": "audio/q218.mp3",
+    "diff": "intermediate"
+  },
+  {
+    "text": "I've been trying to cut plastic out of my life. I use reusable bags, a metal straw, and a bamboo toothbrush.",
+    "answer": "プラ削減でエコグッズを使用中",
+    "choices": [
+      "プラ削減でエコグッズを使用中",
+      "リサイクルを積極的に実践している",
+      "環境保護活動に参加している",
+      "ゴミのポイ捨て防止を呼びかけている",
+      "食品のプラ包装を減らすよう企業に要望している"
+    ],
+    "audio": "audio/q219.mp3",
+    "diff": "intermediate"
+  },
+  {
+    "text": "I'm really struggling with jet lag. I've been awake since 3 AM and I can't function.",
+    "answer": "時差ボケで明け方から目が覚めて辛い",
+    "choices": [
+      "時差ボケで明け方から目が覚めて辛い",
+      "長時間のフライトで疲れ果てた",
+      "夜更かしが続いて体内時計が狂った",
+      "旅行中に睡眠薬を飲んでいる",
+      "夜勤で生活リズムが乱れている"
+    ],
+    "audio": "audio/q220.mp3",
+    "diff": "intermediate"
+  },
+  {
+    "text": "I applied for a credit card but got rejected. I guess my credit score is lower than I thought.",
+    "answer": "カード申請却下でスコアが低かった",
+    "choices": [
+      "カード申請却下でスコアが低かった",
+      "銀行ローンの審査に通らなかった",
+      "住宅ローンの審査で問題が発覚した",
+      "クレジットカードの限度額を引き上げたい",
+      "クレジットヒストリーを積み上げようとしている"
+    ],
+    "audio": "audio/q221.mp3",
+    "diff": "intermediate"
+  },
+  {
+    "text": "I finally watched that movie everyone was talking about last year. I should've seen it sooner. It was incredible.",
+    "answer": "去年話題の映画をやっと観て感動した",
+    "choices": [
+      "去年話題の映画をやっと観て感動した",
+      "映画館での映画体験を楽しんでいる",
+      "映画のネタバレをうっかりしてしまった",
+      "映画批評を書いている",
+      "映画祭で新作を先行鑑賞した"
+    ],
+    "audio": "audio/q222.mp3",
+    "diff": "intermediate"
+  },
+  {
+    "text": "My son just got his acceptance letter from MIT. I still can't believe it. He worked so incredibly hard for this.",
+    "answer": "息子がMITの合格通知を受け取った",
+    "choices": [
+      "息子がMITの合格通知を受け取った",
+      "大学院の合格通知が来た",
+      "奨学金の給付が決まった",
+      "子供が海外の高校に進学した",
+      "有名大学のオープンキャンパスに行った"
+    ],
+    "audio": "audio/q223.mp3",
+    "diff": "intermediate"
+  },
+  {
+    "text": "I forgot my phone at home today. I feel so disconnected. It's crazy how dependent I am on it.",
+    "answer": "スマホを忘れてデジタル疎外感",
+    "choices": [
+      "スマホを忘れてデジタル疎外感",
+      "スマホの電池が切れて使えない",
+      "スマホを紛失して見つからない",
+      "スマホを海に落としてしまった",
+      "修理中でスマホなしで過ごしている"
+    ],
+    "audio": "audio/q224.mp3",
+    "diff": "intermediate"
+  },
+  {
+    "text": "I'm so nervous about meeting my girlfriend's parents for the first time. I want to make a good impression.",
+    "answer": "初めて彼女の両親に会うのが緊張する",
+    "choices": [
+      "初めて彼女の両親に会うのが緊張する",
+      "彼女を初デートに誘おうとしている",
+      "プロポーズの準備をしている",
+      "交際相手に両親を紹介した",
+      "義理の両親との関係で悩んでいる"
+    ],
+    "audio": "audio/q225.mp3",
+    "diff": "intermediate"
+  },
+  {
+    "text": "I've been doing intermittent fasting. I only eat between noon and 8 PM. I've lost 8 pounds in six weeks.",
+    "answer": "断食ダイエットで6週間で8ポンド落とした",
+    "choices": [
+      "断食ダイエットで6週間で8ポンド落とした",
+      "低炭水化物ダイエットの成果を報告している",
+      "1日1食ダイエットを始めた",
+      "ファスティングの注意点を確認している",
+      "ダイエットサプリで体重を落とした"
+    ],
+    "audio": "audio/q226.mp3",
+    "diff": "intermediate"
+  },
+  {
+    "text": "I need to find a summer camp for my kids. They're 8 and 11. Ideally something with outdoor activities.",
+    "answer": "子供の夏のキャンプを探している",
+    "choices": [
+      "子供の夏のキャンプを探している",
+      "学童保育に子供を入れることにした",
+      "夏休みに子供を旅行に連れて行く計画",
+      "子供のスポーツクラブの入会を申し込んだ",
+      "夏休みの習い事を検討している"
+    ],
+    "audio": "audio/q227.mp3",
+    "diff": "intermediate"
+  },
+  {
+    "text": "I think I'm allergic to something in this hotel room. My nose is running and I can't stop sneezing.",
+    "answer": "ホテルでアレルギー症状が出た",
+    "choices": [
+      "ホテルでアレルギー症状が出た",
+      "旅先で食あたりになった",
+      "旅行中に風邪をひいた",
+      "海外で薬局を探している",
+      "ホテルの清掃が不十分で苦情を言っている"
+    ],
+    "audio": "audio/q228.mp3",
+    "diff": "intermediate"
+  },
+  {
+    "text": "I've been going to therapy for a year and I finally feel like I'm starting to understand myself better.",
+    "answer": "1年間のセラピーで自己理解が深まってきた",
+    "choices": [
+      "1年間のセラピーで自己理解が深まってきた",
+      "心療内科への通院を始めた",
+      "メンタルヘルスの重要性を語っている",
+      "セルフケアの方法を友人に伝えている",
+      "感情管理の本を読んでいる"
+    ],
+    "audio": "audio/q229.mp3",
+    "diff": "intermediate"
+  },
+  {
+    "text": "I witnessed a car accident on the highway. I pulled over and called 911. Nobody was seriously hurt, thankfully.",
+    "answer": "高速道路での事故を目撃し911に通報した",
+    "choices": [
+      "高速道路での事故を目撃し911に通報した",
+      "救急車を呼ぶかどうか迷っている",
+      "交通事故の現場に居合わせた",
+      "負傷者に応急処置をした",
+      "事故現場を目撃して警察に証言した"
+    ],
+    "audio": "audio/q230.mp3",
+    "diff": "intermediate"
+  },
+  {
+    "text": "I've been growing herbs on my balcony — basil, mint, rosemary. It's so nice to cook with fresh herbs.",
+    "answer": "バルコニーのハーブを料理に活用",
+    "choices": [
+      "バルコニーのハーブを料理に活用",
+      "屋上菜園でトマトを育てている",
+      "室内でサラダ菜を水耕栽培している",
+      "観葉植物を増やしている",
+      "花の鉢植えをベランダに並べている"
+    ],
+    "audio": "audio/q231.mp3",
+    "diff": "intermediate"
+  },
+  {
+    "text": "I'm taking an online Spanish course. I'm not sure if I'm making progress but I'm enjoying the process.",
+    "answer": "オンラインでスペイン語を学んでいる",
+    "choices": [
+      "オンラインでスペイン語を学んでいる",
+      "語学交換アプリでスペイン語を練習している",
+      "スペイン語の試験に向けて勉強中",
+      "スペインに留学してスペイン語を学んでいる",
+      "外国語学習の習慣を身につけようとしている"
+    ],
+    "audio": "audio/q232.mp3",
+    "diff": "intermediate"
+  },
+  {
+    "text": "I feel like I'm invisible at work. My ideas never get listened to. I don't think my manager even knows my name.",
+    "answer": "職場で存在を無視されていると感じる",
+    "choices": [
+      "職場で存在を無視されていると感じる",
+      "会社でいじめに遭っている",
+      "新入社員で仕事に慣れていない",
+      "内向的な性格で意見を言えない",
+      "評価されないことへの不満を語っている"
+    ],
+    "audio": "audio/q233.mp3",
+    "diff": "intermediate"
+  },
+  {
+    "text": "I ordered my groceries online this week. It was so convenient. I might never go to the supermarket again.",
+    "answer": "初めてのネット食料品配送に感動",
+    "choices": [
+      "初めてのネット食料品配送に感動",
+      "デリバリーアプリで食事を注文した",
+      "ネットスーパーの品揃えを確認している",
+      "食料品の定期配達サービスに申し込んだ",
+      "スーパーの配達エリアを確認している"
+    ],
+    "audio": "audio/q234.mp3",
+    "diff": "intermediate"
+  },
+  {
+    "text": "I got selected for jury duty. I've always been curious about what it's like but now I'm a bit nervous.",
+    "answer": "陪審員に選ばれ期待と不安がある",
+    "choices": [
+      "陪審員に選ばれ期待と不安がある",
+      "裁判の証人として呼ばれた",
+      "法廷でのやり取りを体験した",
+      "弁護士との面談に向けて準備している",
+      "刑事事件の判決を読んでいる"
+    ],
+    "audio": "audio/q235.mp3",
+    "diff": "intermediate"
+  },
+  {
+    "text": "I've been offered a position in another city. The pay is great but I'd have to leave everything I know here.",
+    "answer": "好条件の転勤オファーに迷っている",
+    "choices": [
+      "好条件の転勤オファーに迷っている",
+      "海外赴任の打診を受けた",
+      "昇進のためのトレードオフを考えている",
+      "転職か現職継続か迷っている",
+      "リモートワーク可能な仕事を探している"
+    ],
+    "audio": "audio/q236.mp3",
+    "diff": "intermediate"
+  },
+  {
+    "text": "I'm not sure how to tell my roommate that her cooking smells too strong. I don't want to upset her.",
+    "answer": "料理の臭いを同居人に言いにくい",
+    "choices": [
+      "料理の臭いを同居人に言いにくい",
+      "ルームメイトに注意しにくいことがある",
+      "共同生活での衛生問題に悩んでいる",
+      "食の文化の違いで摩擦が起きている",
+      "シェアハウスでの共有スペースの問題"
+    ],
+    "audio": "audio/q237.mp3",
+    "diff": "intermediate"
+  },
+  {
+    "text": "I bought two plants last year and they're both thriving. I'm starting to think I might actually have a green thumb.",
+    "answer": "植物2鉢が育ち才能があると感じた",
+    "choices": [
+      "植物2鉢が育ち才能があると感じた",
+      "家庭菜園で初めての収穫をした",
+      "観葉植物の育て方を学んでいる",
+      "植物の手入れが得意で友人に教えている",
+      "植物が枯れてしまって悲しんでいる"
+    ],
+    "audio": "audio/q238.mp3",
+    "diff": "intermediate"
+  },
+  {
+    "text": "I finally confronted my boss about being passed over for promotion. He said he'd look into it, but I'm skeptical.",
+    "answer": "昇進見送りで上司に直談判した",
+    "choices": [
+      "昇進見送りで上司に直談判した",
+      "評価制度の不満を人事に伝えた",
+      "上司のハラスメントを会社に報告した",
+      "給与交渉をしたが断られた",
+      "不当解雇に対して法的手段を検討している"
+    ],
+    "audio": "audio/q239.mp3",
+    "diff": "intermediate"
+  },
+  {
+    "text": "My kid got in trouble at school again. This time he threw a paper airplane in class and hit the teacher.",
+    "answer": "子供が授業で紙飛行機を投げた",
+    "choices": [
+      "子供が授業で紙飛行機を投げた",
+      "子供が友達とケンカした",
+      "子供が学校の規則を破った",
+      "子供が宿題をやらないで叱られた",
+      "子供がクラスで悪戯をして注意された"
+    ],
+    "audio": "audio/q240.mp3",
+    "diff": "intermediate"
+  },
+  {
+    "text": "I've been learning to surf. It's way harder than it looks. I've fallen off about 200 times but I love it.",
+    "answer": "サーフィン練習で何度も転ぶが楽",
+    "choices": [
+      "サーフィン練習で何度も転ぶが楽",
+      "海水浴で泳ぎを練習している",
+      "スキーを初めて体験した",
+      "ウインドサーフィンを習っている",
+      "水上スポーツを始めて体力がついた"
+    ],
+    "audio": "audio/q241.mp3",
+    "diff": "intermediate"
+  },
+  {
+    "text": "This is the third pharmacy I've tried. They're all out of stock of my medication. I might have to call my doctor.",
+    "answer": "3軒の薬局で薬が在庫なし",
+    "choices": [
+      "3軒の薬局で薬が在庫なし",
+      "処方薬の種類を変えてもらった",
+      "薬の副作用が心配で医師に相談した",
+      "薬局で薬の使い方を確認している",
+      "市販薬で代用しようとしている"
+    ],
+    "audio": "audio/q242.mp3",
+    "diff": "intermediate"
+  },
+  {
+    "text": "I tried to return some shoes without a receipt but the store refused. They want the original packaging too.",
+    "answer": "レシートなし返品を断られた",
+    "choices": [
+      "レシートなし返品を断られた",
+      "サイズが合わない靴を交換してもらった",
+      "店のポリシーを確認せず購入して後悔",
+      "オンラインで買った商品の返品方法を調べている",
+      "返品保証のないセール品を買って困った"
+    ],
+    "audio": "audio/q243.mp3",
+    "diff": "intermediate"
+  },
+  {
+    "text": "I made a donation to a wildlife charity today. I saw a documentary about endangered species last night and felt compelled.",
+    "answer": "番組に感動して野生動物団体へ寄付",
+    "choices": [
+      "番組に感動して野生動物団体へ寄付",
+      "環境保護活動に参加することにした",
+      "自然保護区のボランティアに応募した",
+      "動物の里親プログラムに申し込んだ",
+      "植林活動に参加した"
+    ],
+    "audio": "audio/q244.mp3",
+    "diff": "intermediate"
+  },
+  {
+    "text": "My landlord finally agreed to let me paint the walls. I've had this beige apartment for two years. Time for some color.",
+    "answer": "大家に壁塗り替えを許可された",
+    "choices": [
+      "大家に壁塗り替えを許可された",
+      "新しい部屋のインテリアを計画している",
+      "家のリフォームを業者に依頼した",
+      "賃貸の原状回復について確認した",
+      "引っ越し先を自分の好みに改装した"
+    ],
+    "audio": "audio/q245.mp3",
+    "diff": "intermediate"
+  },
+  {
+    "text": "I think I need to update my resume. I haven't touched it in four years and a lot has changed.",
+    "answer": "4年ぶりに履歴書を更新しようとする",
+    "choices": [
+      "4年ぶりに履歴書を更新しようとする",
+      "就職活動のための自己PRを書いている",
+      "転職サイトにプロフィールを登録した",
+      "キャリアカウンセラーに相談している",
+      "職場での実績をまとめている"
+    ],
+    "audio": "audio/q246.mp3",
+    "diff": "intermediate"
+  },
+  {
+    "text": "I've started composting. I have this bin in the backyard and I put in all my vegetable scraps. It's surprisingly easy.",
+    "answer": "庭でコンポストを始めた",
+    "choices": [
+      "庭でコンポストを始めた",
+      "家庭菜園の肥料を手作りしている",
+      "ゴミの削減のためエコ活動をしている",
+      "リサイクルを徹底的に実践している",
+      "食品廃棄物の削減に取り組んでいる"
+    ],
+    "audio": "audio/q247.mp3",
+    "diff": "intermediate"
+  },
+  {
+    "text": "My manager just pulled me aside and said my performance review was really positive. I might be getting a raise.",
+    "answer": "上司に評価されて昇給の可能性",
+    "choices": [
+      "上司に評価されて昇給の可能性",
+      "半期の評価で高い得点を取った",
+      "ボーナス査定の結果を待っている",
+      "上司に仕事ぶりを褒められた",
+      "昇進の話が出ていると聞いた"
+    ],
+    "audio": "audio/q248.mp3",
+    "diff": "intermediate"
+  },
+  {
+    "text": "I got a follow-back from my favorite author on Twitter. I nearly fell off my chair. That never happens.",
+    "answer": "推し作家にSNSでフォローされた",
+    "choices": [
+      "推し作家にSNSでフォローされた",
+      "有名人にSNSで返信してもらった",
+      "インフルエンサーの投稿に共感した",
+      "憧れの芸能人に偶然会った",
+      "推しのアーティストの公演に当選した"
+    ],
+    "audio": "audio/q249.mp3",
+    "diff": "intermediate"
+  },
+  {
+    "text": "I got offered a full-time job but I'm not sure I want to give up the flexibility I have freelancing.",
+    "answer": "正社員かフリーか選択に葛藤",
+    "choices": [
+      "正社員かフリーか選択に葛藤",
+      "副業を続けながら正社員として働いている",
+      "フリーランスから正社員に転身した",
+      "雇用安定性と自由の間で迷っている",
+      "起業するか就職するかで迷っている"
+    ],
+    "audio": "audio/q250.mp3",
+    "diff": "intermediate"
+  },
+  {
+    "text": "My flight was overbooked and they asked for volunteers to take a later flight. I got a $400 voucher. Not bad.",
+    "answer": "遅便変更で400ドルもらった",
+    "choices": [
+      "遅便変更で400ドルもらった",
+      "航空便の遅延で補償を受けた",
+      "搭乗を拒否されて払い戻しを求めた",
+      "フライトのアップグレードに成功した",
+      "マイルを使って無料チケットをもらった"
+    ],
+    "audio": "audio/q251.mp3",
+    "diff": "intermediate"
+  },
+  {
+    "text": "I'm really impressed by how fluent my neighbor is in four languages. She just moves between them so naturally.",
+    "answer": "隣人の4言語堪能さに感銘した",
+    "choices": [
+      "隣人の4言語堪能さに感銘した",
+      "外国語の天才に会って驚いた",
+      "通訳者のスキルに感心している",
+      "多言語話者になりたいと思った",
+      "語学学習の動機付けについて話している"
+    ],
+    "audio": "audio/q252.mp3",
+    "diff": "intermediate"
+  },
+  {
+    "text": "I got a terrible review online for my small business. It was totally unfair and I don't know how to respond.",
+    "answer": "不当な低評価への対応に悩む",
+    "choices": [
+      "不当な低評価への対応に悩む",
+      "客からのクレームに謝罪している",
+      "ネガティブなフィードバックをどう活かすか考えている",
+      "競合他社の口コミを調べている",
+      "SNSでの悪評を削除しようとしている"
+    ],
+    "audio": "audio/q253.mp3",
+    "diff": "intermediate"
+  },
+  {
+    "text": "I've been using a budgeting app for three months and I've finally figured out where all my money was going.",
+    "answer": "3ヶ月の家計アプリで出費を把握",
+    "choices": [
+      "3ヶ月の家計アプリで出費を把握",
+      "節約のために家計簿をつけ始めた",
+      "ファイナンシャルプランナーに相談した",
+      "投資アプリで資産管理を始めた",
+      "財務計画を立て直すことにした"
+    ],
+    "audio": "audio/q254.mp3",
+    "diff": "intermediate"
+  },
+  {
+    "text": "I got upgraded to business class for the first time. I have no idea why but I'm not complaining at all.",
+    "answer": "初めてビジネスクラスに乗れた",
+    "choices": [
+      "初めてビジネスクラスに乗れた",
+      "マイルを使ってファーストクラスに乗った",
+      "プレミアム航空券を格安で手配した",
+      "友人のフライトを一等席で予約した",
+      "機内の快適なサービスに感動した"
+    ],
+    "audio": "audio/q255.mp3",
+    "diff": "intermediate"
+  },
+  {
+    "text": "I've been eating the same lunch at the same place for the past two years. I need to break out of this rut.",
+    "answer": "2年同じランチでマンネリを感じる",
+    "choices": [
+      "2年同じランチでマンネリを感じる",
+      "マンネリな毎日を変えようとしている",
+      "食事のバリエーションを増やしたい",
+      "新しいレストランを開拓しようとしている",
+      "飽き性でメニューをよく変える"
+    ],
+    "audio": "audio/q256.mp3",
+    "diff": "intermediate"
+  },
+  {
+    "text": "There was a gas leak in our building this morning. Everyone was evacuated for two hours while they fixed it.",
+    "answer": "今朝ガス漏れでビル全体が2時間避難した",
+    "choices": [
+      "今朝ガス漏れでビル全体が2時間避難した",
+      "火災報知器が誤作動して避難した",
+      "地震で建物から避難した",
+      "化学物質の漏洩で一帯が封鎖された",
+      "爆発事故でビルが大混乱した"
+    ],
+    "audio": "audio/q257.mp3",
+    "diff": "intermediate"
+  },
+  {
+    "text": "I've been documenting my travels on Instagram and I actually enjoy the creative side of it more than the travel itself.",
+    "answer": "旅行インスタで創作の楽しさを発見",
+    "choices": [
+      "旅行インスタで創作の楽しさを発見",
+      "写真撮影の腕を旅行で磨いている",
+      "旅行ブロガーとして収益を得ている",
+      "SNSのフォロワーを増やそうとしている",
+      "旅行の思い出をデジタルアルバムにした"
+    ],
+    "audio": "audio/q258.mp3",
+    "diff": "intermediate"
+  },
+  {
+    "text": "I volunteered to organize the company Christmas party and now I'm getting bombarded with requests and complaints already.",
+    "answer": "クリスマス会幹事で要望が殺到した",
+    "choices": [
+      "クリスマス会幹事で要望が殺到した",
+      "同僚の意見がまとまらず困っている",
+      "宴会の会場選びで揉めている",
+      "大人数のイベント管理に苦労している",
+      "送別会の準備が大変で後悔している"
+    ],
+    "audio": "audio/q259.mp3",
+    "diff": "intermediate"
+  },
+  {
+    "text": "I found out there was a recall on the baby formula I've been using. I'm heading to the store to return it right now.",
+    "answer": "ベビーミルクがリコールで返品に行く",
+    "choices": [
+      "ベビーミルクがリコールで返品に行く",
+      "子供の食品の安全性を心配している",
+      "アレルギー物質の含まれた食品を返品した",
+      "食品の品質問題を消費者センターに報告した",
+      "期限切れの食品を誤って購入した"
+    ],
+    "audio": "audio/q260.mp3",
+    "diff": "intermediate"
+  },
+  {
+    "text": "I've been looking for a part-time job on top of my full-time one. I want to pay off my credit card debt faster.",
+    "answer": "カード借金返済で副業を探している",
+    "choices": [
+      "カード借金返済で副業を探している",
+      "収入を増やして貯金を増やしたい",
+      "ダブルワークの疲れを友人に話している",
+      "転職してより高い給与を求めている",
+      "フリーランスの仕事を始めた"
+    ],
+    "audio": "audio/q261.mp3",
+    "diff": "intermediate"
+  },
+  {
+    "text": "I've started playing chess online. I was terrible at first but I've won three games in a row. I'm hooked.",
+    "answer": "オンラインチェスを始め3連勝した",
+    "choices": [
+      "オンラインチェスを始め3連勝した",
+      "ボードゲームカフェに行き楽しんだ",
+      "将棋の勉強を始めた",
+      "友人とチェスで勝負した",
+      "ゲームアプリに課金しすぎて後悔した"
+    ],
+    "audio": "audio/q262.mp3",
+    "diff": "intermediate"
+  },
+  {
+    "text": "I've been meal-prepping lunches for work and I've saved about $200 this month compared to buying lunch every day.",
+    "answer": "昼食の作り置きで今月200ドル節約した",
+    "choices": [
+      "昼食の作り置きで今月200ドル節約した",
+      "外食をやめて家での食事に変えた",
+      "食費削減のため料理を始めた",
+      "節約のためファストフードをやめた",
+      "食費の予算管理を徹底している"
+    ],
+    "audio": "audio/q263.mp3",
+    "diff": "intermediate"
+  },
+  {
+    "text": "Our team lost in the playoffs but honestly we played our best game all season. I'm proud of what we accomplished.",
+    "answer": "負けたが最高の試合に誇りを感じた",
+    "choices": [
+      "負けたが最高の試合に誇りを感じた",
+      "決勝戦でチームが敗退して悔しい",
+      "チームの引退試合を惜しんでいる",
+      "試合結果より参加の意義を感じている",
+      "スポーツで良い結果を残して喜んでいる"
+    ],
+    "audio": "audio/q264.mp3",
+    "diff": "intermediate"
+  },
+  {
+    "text": "I've just finished watching the final episode of my favorite series. I feel empty. What am I supposed to do with my evenings now?",
+    "answer": "ドラマ終了で喪失感を感じている",
+    "choices": [
+      "ドラマ終了で喪失感を感じている",
+      "シリーズのエンディングに納得できない",
+      "次に見る動画を探している",
+      "好きなドラマのシーズン2の制作を望んでいる",
+      "連続ドラマを見すぎて生活が乱れた"
+    ],
+    "audio": "audio/q265.mp3",
+    "diff": "intermediate"
+  },
+  {
+    "text": "I'm going to visit my grandmother in the nursing home today. She always lights up when I walk in the door.",
+    "answer": "祖母が入居する介護施設への面会に行く",
+    "choices": [
+      "祖母が入居する介護施設への面会に行く",
+      "入院中の祖父に定期的に面会している",
+      "実家の親の体調を心配して電話している",
+      "老人ホームへの入居を家族で検討している",
+      "遠方の祖父母に会いに新幹線で向かう"
+    ],
+    "audio": "audio/q266.mp3",
+    "diff": "intermediate"
+  },
+  {
+    "text": "I sprained my wrist at work lifting something. I need to wear a brace for two weeks. Typing is going to be fun.",
+    "answer": "仕事で手首を捻挫しサポーター生活",
+    "choices": [
+      "仕事で手首を捻挫しサポーター生活",
+      "料理中に手を切って包帯を巻いた",
+      "スポーツで骨折してギプスをつけた",
+      "手の手術後のリハビリをしている",
+      "腱鞘炎の治療のため安静にしている"
+    ],
+    "audio": "audio/q267.mp3",
+    "diff": "intermediate"
+  },
+  {
+    "text": "I've signed up for a 30-day writing challenge. One page a day. It sounds simple but I already missed day three.",
+    "answer": "ライティング挑戦だが早くも失敗",
+    "choices": [
+      "ライティング挑戦だが早くも失敗",
+      "日記を毎日書く習慣をつけようとしている",
+      "文章力を伸ばすために特訓中",
+      "創作の習慣化に苦労している",
+      "毎日のブログ更新を続けようとしている"
+    ],
+    "audio": "audio/q268.mp3",
+    "diff": "intermediate"
+  },
+  {
+    "text": "I've got a big dinner party this weekend. 12 people. I'm cooking everything from scratch and I'm already stressed.",
+    "answer": "12人分の料理を手作りして緊張",
+    "choices": [
+      "12人分の料理を手作りして緊張",
+      "大勢のゲストに料理を振る舞うのが初めて",
+      "ケータリングサービスを使うか迷っている",
+      "友人の誕生日パーティーを料亭で開いた",
+      "パーティー料理のレシピを探している"
+    ],
+    "audio": "audio/q269.mp3",
+    "diff": "intermediate"
+  },
+  {
+    "text": "I ran into an old classmate at the grocery store. We hadn't talked in 15 years. We ended up chatting for an hour.",
+    "answer": "スーパーで15年ぶりの旧友と再会",
+    "choices": [
+      "スーパーで15年ぶりの旧友と再会",
+      "同窓会で懐かしい友人に会った",
+      "SNSで昔の同僚と連絡が取れた",
+      "旧友から突然連絡が来た",
+      "偶然見かけた芸能人に声をかけた"
+    ],
+    "audio": "audio/q270.mp3",
+    "diff": "intermediate"
+  },
+  {
+    "text": "I need to get my eyes checked. I haven't had an eye exam in four years and things are getting blurry.",
+    "answer": "4年ぶりの眼科検診が必要な状態",
+    "choices": [
+      "4年ぶりの眼科検診が必要な状態",
+      "コンタクトレンズの度数を変えた",
+      "目の疲れが慢性的になっている",
+      "眼科で白内障の検査を受けた",
+      "老眼が進んで読書用メガネが必要"
+    ],
+    "audio": "audio/q271.mp3",
+    "diff": "intermediate"
+  },
+  {
+    "text": "My toddler drew all over the walls in permanent marker. I've been scrubbing for an hour and it won't come off.",
+    "answer": "子供の壁落書きが1時間落ちない",
+    "choices": [
+      "子供の壁落書きが1時間落ちない",
+      "子供が台所の壁をクレヨンで汚した",
+      "床に落書きされて怒っている",
+      "子供のいたずらで家具が傷ついた",
+      "子供に部屋の片付けを教えている"
+    ],
+    "audio": "audio/q272.mp3",
+    "diff": "intermediate"
+  },
+  {
+    "text": "I've started collecting vinyl records. It started with just one and now I have over 50. My partner is not impressed.",
+    "answer": "レコード50枚超えでパートナーが呆れ",
+    "choices": [
+      "レコード50枚超えでパートナーが呆れ",
+      "骨董品収集が趣味になった",
+      "音楽グッズのコレクションを増やしている",
+      "昔のCDを掘り起こして聴き直している",
+      "趣味のためにお金を使いすぎて批判された"
+    ],
+    "audio": "audio/q273.mp3",
+    "diff": "intermediate"
+  },
+  {
+    "text": "I got a standing ovation at the end of my presentation. I nearly cried. All that hard work paid off.",
+    "answer": "発表で全員のスタンディング拍手",
+    "choices": [
+      "発表で全員のスタンディング拍手",
+      "仕事の成果が上司に認められた",
+      "スピーチコンテストで優勝した",
+      "努力が実ってプロジェクトが大成功した",
+      "学術発表で好評を得た"
+    ],
+    "audio": "audio/q274.mp3",
+    "diff": "intermediate"
+  },
+  {
+    "text": "I overslept and missed the first two sessions of the conference. I'm so annoyed at myself.",
+    "answer": "寝坊してカンファレンス冒頭を欠席",
+    "choices": [
+      "寝坊してカンファレンス冒頭を欠席",
+      "電車の遅延で会議に遅刻した",
+      "アラームが鳴らず重要な約束を破った",
+      "重要なオンライン会議を見逃した",
+      "出張先で飛行機に乗り遅れた"
+    ],
+    "audio": "audio/q275.mp3",
+    "diff": "intermediate"
+  },
+  {
+    "text": "I've got to renew my gym membership but honestly I haven't gone in three months. Maybe I should just quit.",
+    "answer": "3ヶ月不参加のジム更新を迷っている",
+    "choices": [
+      "3ヶ月不参加のジム更新を迷っている",
+      "フィットネスクラブの料金が高い",
+      "ジムに行く気力が出ない",
+      "月額課金サービスの見直しをしている",
+      "在宅トレーニングに切り替えた"
+    ],
+    "audio": "audio/q276.mp3",
+    "diff": "intermediate"
+  },
+  {
+    "text": "I bought concert tickets six months ago and forgot about them. The concert is in three days. I almost missed it.",
+    "answer": "6ヶ月前のチケットであと3日の公演",
+    "choices": [
+      "6ヶ月前のチケットであと3日の公演",
+      "チケットが見つからなくて焦っている",
+      "公演のスケジュールを確認している",
+      "友人とチケットを予約しようとしている",
+      "チケットを売りたいが売れない"
+    ],
+    "audio": "audio/q277.mp3",
+    "diff": "intermediate"
+  },
+  {
+    "text": "I didn't realize the coupon had expired. I was embarrassed at the checkout. The cashier was really nice about it though.",
+    "answer": "期限切れクーポンでレジで恥をかいた",
+    "choices": [
+      "期限切れクーポンでレジで恥をかいた",
+      "割引券を間違えて使おうとした",
+      "ポイントが失効していて残念だった",
+      "セール品の適用外と言われて困った",
+      "クレジットカードの優待が終わっていた"
+    ],
+    "audio": "audio/q278.mp3",
+    "diff": "intermediate"
+  },
+  {
+    "text": "I've been going to the farmers market every Saturday for a year and I know all the vendors by name now.",
+    "answer": "1年通って農市場で顔馴染みになった",
+    "choices": [
+      "1年通って農市場で顔馴染みになった",
+      "地元の農産物を積極的に購入している",
+      "地域のコミュニティ活動に参加している",
+      "顔なじみの市場で買い物を楽しんでいる",
+      "農家と友好関係を築いている"
+    ],
+    "audio": "audio/q279.mp3",
+    "diff": "intermediate"
+  },
+  {
+    "text": "I've just started learning to swim at 40. The kids at the pool look at me funny but I don't care.",
+    "answer": "40歳から水泳を始めた",
+    "choices": [
+      "40歳から水泳を始めた",
+      "ダイビングのライセンスを取得した",
+      "水泳の記録を更新して喜んでいる",
+      "水泳が体力づくりに役立っている",
+      "市民プールに子供と一緒に行き始めた"
+    ],
+    "audio": "audio/q280.mp3",
+    "diff": "intermediate"
+  },
+  {
+    "text": "I got a noise complaint from my downstairs neighbor because of my treadmill. I run at 6 AM apparently.",
+    "answer": "早朝トレッドミルで騒音苦情が来た",
+    "choices": [
+      "早朝トレッドミルで騒音苦情が来た",
+      "室内運動で振動が響いて迷惑をかけた",
+      "マンションでの運動方法を見直した",
+      "早朝の騒音問題で管理会社に相談した",
+      "ジムが遠くて家でトレーニングしている"
+    ],
+    "audio": "audio/q281.mp3",
+    "diff": "intermediate"
+  },
+  {
+    "text": "I finally cleaned out the garage. There was so much junk in there. We donated two truckloads of stuff.",
+    "answer": "車庫を片付けてトラック2台分を寄付した",
+    "choices": [
+      "車庫を片付けてトラック2台分を寄付した",
+      "引っ越しのために荷物を処分した",
+      "不用品をフリマアプリで売った",
+      "春の大掃除をして家がすっきりした",
+      "ゴミ屋敷を片付けるため業者を呼んだ"
+    ],
+    "audio": "audio/q282.mp3",
+    "diff": "intermediate"
+  },
+  {
+    "text": "I got a cavity filled without any painkillers. The dentist said the decay wasn't deep enough to need them. It was surprisingly okay.",
+    "answer": "麻酔なし歯科治療で意外に平気だった",
+    "choices": [
+      "麻酔なし歯科治療で意外に平気だった",
+      "歯の治療が怖くて歯医者を避けていた",
+      "歯科治療に強い恐怖心がある",
+      "麻酔の副作用で口が痺れた",
+      "親知らず抜歯後の痛みに耐えた"
+    ],
+    "audio": "audio/q283.mp3",
+    "diff": "intermediate"
+  },
+  {
+    "text": "I just got back from a silent meditation retreat. Four days, no talking, no phones. It was intense and amazing.",
+    "answer": "4日間の沈黙瞑想リトリートから帰ってきた",
+    "choices": [
+      "4日間の沈黙瞑想リトリートから帰ってきた",
+      "ヨガリゾートで1週間過ごした",
+      "自然の中でのデジタルデトックスをした",
+      "修道院に宿泊する体験をした",
+      "無人島でのサバイバル体験をした"
+    ],
+    "audio": "audio/q284.mp3",
+    "diff": "intermediate"
+  },
+  {
+    "text": "I've been following this fitness influencer online and finally decided to try her workout plan. Day one nearly killed me.",
+    "answer": "流行の運動を試したら初日でバテた",
+    "choices": [
+      "流行の運動を試したら初日でバテた",
+      "ネットで見つけたダイエット法を試している",
+      "ジムのパーソナルトレーニングを受け始めた",
+      "筋トレ動画を参考に自主練習している",
+      "新しいワークアウトルーティンを始めた"
+    ],
+    "audio": "audio/q285.mp3",
+    "diff": "intermediate"
+  },
+  {
+    "text": "I've been dog-sitting my neighbor's golden retriever for the week. I want one so badly now. They're just the best dogs.",
+    "answer": "隣の犬を預かり自分も飼いたくなった",
+    "choices": [
+      "隣の犬を預かり自分も飼いたくなった",
+      "ペットシッターのアルバイトを始めた",
+      "ペットショップに行って犬を見た",
+      "保護犬の里親になることを検討している",
+      "犬を飼うことへの不安を話している"
+    ],
+    "audio": "audio/q286.mp3",
+    "diff": "intermediate"
+  },
+  {
+    "text": "I've been thinking about going back to my home country. I've been here for 10 years but I miss my family.",
+    "answer": "10年の海外生活で帰国を検討中",
+    "choices": [
+      "10年の海外生活で帰国を検討中",
+      "故郷の両親に会いに一時帰国した",
+      "海外移住生活の苦労を振り返っている",
+      "永住権を取得してこの国に残ることにした",
+      "子供を故郷の学校に通わせることにした"
+    ],
+    "audio": "audio/q287.mp3",
+    "diff": "intermediate"
+  },
+  {
+    "text": "I had a really insightful conversation with an elderly woman on the train. She's 83 and she's writing her memoirs.",
+    "answer": "電車で高齢女性と意義深い会話をした",
+    "choices": [
+      "電車で高齢女性と意義深い会話をした",
+      "偶然の出会いで素敵な人生の話を聞いた",
+      "知らない人に自分の悩みを話して楽になった",
+      "高齢者から人生の知恵を教わった",
+      "公共交通機関で親切にしてもらった"
+    ],
+    "audio": "audio/q288.mp3",
+    "diff": "intermediate"
+  },
+  {
+    "text": "I've just started learning to code in Python. It's been two weeks and I've already written my first small program.",
+    "answer": "Python2週間で初プログラムを作成",
+    "choices": [
+      "Python2週間で初プログラムを作成",
+      "AIを使ったプログラムを作っている",
+      "IT企業に転職するため技術を習得中",
+      "ゲーム開発を独学で始めた",
+      "データ分析ツールを使い始めた"
+    ],
+    "audio": "audio/q289.mp3",
+    "diff": "intermediate"
+  },
+  {
+    "text": "I just realized I've been mispronouncing a word in English for years. My coworker finally corrected me. So embarrassing.",
+    "answer": "長年の誤発音を同僚に指摘された",
+    "choices": [
+      "長年の誤発音を同僚に指摘された",
+      "英語の文法ミスが直らなくて困っている",
+      "外国語での発音改善に取り組んでいる",
+      "言葉の意味を間違えて使っていた",
+      "英語の表現を勘違いしていた"
+    ],
+    "audio": "audio/q290.mp3",
+    "diff": "intermediate"
+  },
+  {
+    "text": "I've been eating really well all week. I deserve a treat. I'm going to get the biggest slice of cake I can find.",
+    "answer": "健康食1週間のご褒美にケーキを買う",
+    "choices": [
+      "健康食1週間のご褒美にケーキを買う",
+      "チートデイでご褒美の食事をしている",
+      "ダイエット中だが誘惑に負けた",
+      "誕生日のお祝いにケーキを食べた",
+      "甘いものが食べたくてデザートを注文した"
+    ],
+    "audio": "audio/q291.mp3",
+    "diff": "intermediate"
+  },
+  {
+    "text": "My husband surprised me with flowers for no reason. No anniversary, no birthday. Just because. It made my whole day.",
+    "answer": "特別な日でもないのに夫がサプライズで花を贈ってくれた",
+    "choices": [
+      "特別な日でもないのに夫がサプライズで花を贈ってくれた",
+      "バレンタインに素敵なプレゼントをもらった",
+      "結婚記念日を素敵にお祝いしてもらった",
+      "誕生日に愛する人から贈り物が届いた",
+      "パートナーへの感謝を伝えている"
+    ],
+    "audio": "audio/q292.mp3",
+    "diff": "intermediate"
+  },
+  {
+    "text": "I've signed up for a half-day pottery class this Saturday. I need more hobbies that get me away from screens.",
+    "answer": "スクリーンから離れるため半日の陶芸クラスに申し込んだ",
+    "choices": [
+      "スクリーンから離れるため半日の陶芸クラスに申し込んだ",
+      "新しい趣味を探している",
+      "週末の過ごし方を変えようとしている",
+      "友人と一緒に陶芸を体験する",
+      "創作活動でリフレッシュしようとしている"
+    ],
+    "audio": "audio/q293.mp3",
+    "diff": "intermediate"
+  },
+  {
+    "text": "I've been going to the same coffee shop every morning for three years. They make my drink before I even order.",
+    "answer": "3年通い続けるカフェで注文前にドリンクを作ってもらえる",
+    "choices": [
+      "3年通い続けるカフェで注文前にドリンクを作ってもらえる",
+      "お気に入りのカフェを気に入っている",
+      "常連客として顔なじみになった",
+      "毎朝コーヒーを飲む習慣がある",
+      "カフェのスタッフと仲良くなった"
+    ],
+    "audio": "audio/q294.mp3",
+    "diff": "intermediate"
+  },
+  {
+    "text": "Uh, yeah, I'll have the grilled salmon with a side salad, please. And can I get that dressing on the side?",
+    "answer": "レストランで注文している",
+    "choices": [
+      "レストランで注文している",
+      "スーパーで魚を選んでいる",
+      "料理のレシピを確認している",
+      "テイクアウトを電話注文している",
+      "カフェでランチを頼んでいる"
+    ],
+    "audio": "audio/q295.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "We should probably leave by seven if we want to beat the traffic. The highway gets really backed up after eight.",
+    "answer": "渋滞を避けるため早めに出発を提案",
+    "choices": [
+      "渋滞を避けるため早めに出発を提案",
+      "電車の時刻を確認している",
+      "目的地までの距離を計算している",
+      "駐車場の場所を調べている",
+      "道路工事の情報を伝えている"
+    ],
+    "audio": "audio/q296.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "Could you turn that down a bit? I'm trying to get the baby to sleep and the music is pretty loud.",
+    "answer": "赤ちゃんを寝かせるため音楽を下げてと頼む",
+    "choices": [
+      "赤ちゃんを寝かせるため音楽を下げてと頼む",
+      "テレビの音量を上げるよう頼んでいる",
+      "隣人の騒音に文句を言っている",
+      "コンサートの音量が大きいと言っている",
+      "静かな部屋に移動しようとしている"
+    ],
+    "audio": "audio/q297.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "I checked in online last night so I should be good. Do I still need to go to the counter for my boarding pass?",
+    "answer": "搭乗手続きについて確認している",
+    "choices": [
+      "搭乗手続きについて確認している",
+      "ホテルのチェックインをしている",
+      "荷物の預け入れを済ませている",
+      "搭乗口の場所を確認している",
+      "乗り継ぎ便の情報を聞いている"
+    ],
+    "audio": "audio/q298.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "So, I'm thinking of going vegetarian. I've been reading a lot about the health benefits and it seems worth trying.",
+    "answer": "菜食主義にしようと考えている",
+    "choices": [
+      "菜食主義にしようと考えている",
+      "ダイエットを始めようとしている",
+      "食物アレルギーを心配している",
+      "新しいレシピを試そうとしている",
+      "栄養士に相談しようとしている"
+    ],
+    "audio": "audio/q299.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "Can I borrow fifty bucks until payday? I ran out of cash and I still need to buy groceries.",
+    "answer": "給料日まで現金を借りようとしている",
+    "choices": [
+      "給料日まで現金を借りようとしている",
+      "銀行に融資を申し込んでいる",
+      "友人に食事代をおごってもらっている",
+      "財布を忘れて困っている",
+      "クレジットカードの限度額が超えた"
+    ],
+    "audio": "audio/q300.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "I passed my driving test on the first try! I was so nervous but I didn't make any serious mistakes.",
+    "answer": "初回で運転試験に合格した",
+    "choices": [
+      "初回で運転試験に合格した",
+      "運転免許の更新を済ませた",
+      "教習所に通い始めたことを話している",
+      "運転試験に落ちて残念がっている",
+      "ペーパードライバー講習を受けた"
+    ],
+    "audio": "audio/q301.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "Welcome to Fresh Greens! Can I take your order? We've got a lunch special today — soup and sandwich for eight dollars.",
+    "answer": "カフェでランチスペシャルを案内している",
+    "choices": [
+      "カフェでランチスペシャルを案内している",
+      "スーパーの特売品を宣伝している",
+      "レストランの夜メニューを紹介している",
+      "コンビニの新商品を説明している",
+      "食料品店で割引を伝えている"
+    ],
+    "audio": "audio/q302.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "I just got the results from my blood test and my cholesterol is a little high. The doctor wants me to change my diet.",
+    "answer": "血液検査でコレステロール値が高かった",
+    "choices": [
+      "血液検査でコレステロール値が高かった",
+      "健康診断で血糖値が高いと言われた",
+      "医者から運動するよう勧められた",
+      "食事制限ダイエットを始めた",
+      "処方された薬を飲み始めた"
+    ],
+    "audio": "audio/q303.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "I finally finished my dissertation. Five years of work and it's done. I literally cried when I hit submit.",
+    "answer": "5年かけて論文を完成させた",
+    "choices": [
+      "5年かけて論文を完成させた",
+      "大学院への合格を喜んでいる",
+      "卒業論文のテーマを決めた",
+      "研究発表で評価された",
+      "博士号取得の祝賀会を開いている"
+    ],
+    "audio": "audio/q304.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "I signed up for a half marathon next spring. I've never run more than five miles but I'm going to start training.",
+    "answer": "ハーフマラソンに向けて練習開始",
+    "choices": [
+      "ハーフマラソンに向けて練習開始",
+      "フルマラソンで自己記録を更新した",
+      "ジムに入会して体を鍛えている",
+      "スポーツ大会の結果を報告している",
+      "ランニングシューズを購入した"
+    ],
+    "audio": "audio/q305.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "Could I get a refund for this jacket? I bought it last week but the zipper broke the first time I used it.",
+    "answer": "ジッパーが壊れて返金を求めている",
+    "choices": [
+      "ジッパーが壊れて返金を求めている",
+      "サイズが合わないので交換を求めている",
+      "洗濯で縮んだ服を返品しようとしている",
+      "値引きを交渉しようとしている",
+      "保証書を使って修理を依頼している"
+    ],
+    "audio": "audio/q306.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "I downloaded that meditation app everyone's been talking about. I'm only on day three but I already feel calmer.",
+    "answer": "瞑想アプリを使い始めて効果を感じている",
+    "choices": [
+      "瞑想アプリを使い始めて効果を感じている",
+      "ストレス解消のために運動を始めた",
+      "ヨガ教室に通い始めた",
+      "健康アプリで睡眠を管理している",
+      "マインドフルネスの本を読んでいる"
+    ],
+    "audio": "audio/q307.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "I got a text saying my package will be delivered between 2 and 6 PM today. I really hope I'm home in time.",
+    "answer": "荷物の配達時間に間に合うか心配している",
+    "choices": [
+      "荷物の配達時間に間に合うか心配している",
+      "宅配業者に不在票の対応を連絡している",
+      "オンラインで注文した商品を追跡している",
+      "荷物の紛失を問い合わせている",
+      "コンビニ受け取りを設定している"
+    ],
+    "audio": "audio/q308.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "I'm trying to reduce my screen time. I've been on my phone for like 7 hours a day and it's got to stop.",
+    "answer": "スマホの使用時間を減らしたい",
+    "choices": [
+      "スマホの使用時間を減らしたい",
+      "SNSのアカウントを削除しようとしている",
+      "子供のゲーム時間を制限しようとしている",
+      "テレビを見る時間が増えて心配している",
+      "スマホ依存症の治療を検討している"
+    ],
+    "audio": "audio/q309.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "I ordered a large pepperoni pizza, a Caesar salad, and two cans of soda for delivery. The total came out to $32.",
+    "answer": "ピザとサラダをデリバリー注文した",
+    "choices": [
+      "ピザとサラダをデリバリー注文した",
+      "ピザ屋で持ち帰りを注文している",
+      "ファストフードの注文金額を確認している",
+      "フードデリバリーアプリを使っている",
+      "レストランのメニューを選んでいる"
+    ],
+    "audio": "audio/q310.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "We're thinking about renovating the kitchen. It's pretty dated and we want to add an island and update the appliances.",
+    "answer": "キッチンのリノベーションを計画している",
+    "choices": [
+      "キッチンのリノベーションを計画している",
+      "新築物件の設計を依頼している",
+      "引っ越し先の間取りを確認している",
+      "家具を新しく買い替えようとしている",
+      "バスルームの改装を業者に依頼している"
+    ],
+    "audio": "audio/q311.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "I think I'm coming down with something. My throat is scratchy and my head feels heavy. I might skip the gym today.",
+    "answer": "体調不良の兆候でジムを休む",
+    "choices": [
+      "体調不良の兆候でジムを休む",
+      "風邪をひいて仕事を休んでいる",
+      "花粉症の症状がひどくなっている",
+      "二日酔いで体がだるい",
+      "疲れていて早めに就寝しようとしている"
+    ],
+    "audio": "audio/q312.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "Can you cover my shift on Sunday? I have a family thing I forgot about and I can't get out of it.",
+    "answer": "シフトの代理を頼んでいる",
+    "choices": [
+      "シフトの代理を頼んでいる",
+      "残業の交代要員を探している",
+      "上司に休暇申請をしている",
+      "シフトの変更を会社に申し出ている",
+      "同僚に仕事を引き継いでいる"
+    ],
+    "audio": "audio/q313.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "I forgot it was trash day again. The truck already came and went. Now I've got to hold onto all this for another week.",
+    "answer": "ゴミ収集日を忘れて出し損ねた",
+    "choices": [
+      "ゴミ収集日を忘れて出し損ねた",
+      "ゴミの分別方法を確認している",
+      "粗大ゴミの収集を申し込んでいる",
+      "リサイクル品の出し方を調べている",
+      "ゴミ袋を買い忘れた"
+    ],
+    "audio": "audio/q314.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "My back has been killing me since I started working from home. I think it's the chair. I need a proper desk setup.",
+    "answer": "在宅勤務の椅子で腰痛になった",
+    "choices": [
+      "在宅勤務の椅子で腰痛になった",
+      "デスクワークで肩こりがひどい",
+      "長時間の運転で腰を痛めた",
+      "立ち仕事で足が疲れている",
+      "新しい仕事用の椅子を購入した"
+    ],
+    "audio": "audio/q315.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "I got a notification that someone tried to log into my account from a different country. I changed my password right away.",
+    "answer": "不正ログインを受けてPW変更",
+    "choices": [
+      "不正ログインを受けてPW変更",
+      "フィッシング詐欺のメールを受け取った",
+      "SNSアカウントが乗っ取られた",
+      "クレジットカードの不正利用を発見した",
+      "パスワードを忘れてアカウントにアクセスできない"
+    ],
+    "audio": "audio/q316.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "I'm watching my neighbor's house while she's in Florida for the month. Just picking up her mail and watering her plants.",
+    "answer": "旅行中の隣人の家の留守番をしている",
+    "choices": [
+      "旅行中の隣人の家の留守番をしている",
+      "不動産管理会社に家の管理を依頼している",
+      "隣人と家の鍵を共有している",
+      "長期旅行前に家の管理を頼んでいる",
+      "空き家の防犯対策をしている"
+    ],
+    "audio": "audio/q317.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "I'm so full I can barely move. That was the best Thanksgiving dinner I've ever had. You outdid yourself.",
+    "answer": "感謝祭の食事が最高で食べ過ぎた",
+    "choices": [
+      "感謝祭の食事が最高で食べ過ぎた",
+      "レストランのコース料理で満腹になった",
+      "バイキングで食べ過ぎてしまった",
+      "誕生日ケーキをたくさん食べた",
+      "パーティーのごちそうを絶賛している"
+    ],
+    "audio": "audio/q318.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "I just got a parking ticket. I was only gone for five minutes but apparently that spot was permit parking only.",
+    "answer": "駐車許可ゾーンに停めて罰金を受けた",
+    "choices": [
+      "駐車許可ゾーンに停めて罰金を受けた",
+      "駐車メーターの時間を超過した",
+      "駐車違反の反則金を払っている",
+      "駐車場の料金が高くて驚いた",
+      "違法駐車で車をレッカー移動された"
+    ],
+    "audio": "audio/q319.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "I adopted a vegan diet three months ago and my energy levels are through the roof. I wish I'd done it sooner.",
+    "answer": "ビーガン食3ヶ月でエネルギー増",
+    "choices": [
+      "ビーガン食3ヶ月でエネルギー増",
+      "菜食主義の食事制限に苦労している",
+      "新しいダイエット方法の効果を報告している",
+      "健康的な食事の大切さを語っている",
+      "食事改善で体重を減らした"
+    ],
+    "audio": "audio/q320.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "I won a gift card in our office raffle. It's for a spa. I've never actually been to a spa before. Might be nice.",
+    "answer": "会社の抽選でスパのギフトカードが当たった",
+    "choices": [
+      "会社の抽選でスパのギフトカードが当たった",
+      "誕生日プレゼントにギフトカードをもらった",
+      "クーポンを使って旅行を申し込んだ",
+      "初めてのスパ体験を楽しみにしている",
+      "割引券を使って美容院へ行った"
+    ],
+    "audio": "audio/q321.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "I accidentally sent an email to the entire company instead of just my team. It had a complaint about management. So embarrassing.",
+    "answer": "会社全体に誤ってメールを送信してしまった",
+    "choices": [
+      "会社全体に誤ってメールを送信してしまった",
+      "重要なメールを間違ったアドレスに送った",
+      "仕事のメールで失礼な表現を使った",
+      "上司への不満をSNSに書いてしまった",
+      "会議資料を添付し忘れてメールを送った"
+    ],
+    "audio": "audio/q322.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "I need to cancel my gym membership but they're making it really difficult. They want a 30-day notice and a fee.",
+    "answer": "ジムの解約手続きが面倒で困っている",
+    "choices": [
+      "ジムの解約手続きが面倒で困っている",
+      "サブスクの自動更新を止めようとしている",
+      "携帯電話の契約解除料に驚いている",
+      "保険の解約方法を問い合わせている",
+      "会員制サービスの利用規約を確認している"
+    ],
+    "audio": "audio/q323.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "I need to be at work in 20 minutes and my car won't start. The battery must be dead. This is not good.",
+    "answer": "車のバッテリーが上がり出勤に遅刻しそう",
+    "choices": [
+      "車のバッテリーが上がり出勤に遅刻しそう",
+      "電車を乗り間違えて遅刻しそう",
+      "目覚まし時計が鳴らず寝坊した",
+      "道路渋滞で約束に遅れそう",
+      "タクシーがつかまらず焦っている"
+    ],
+    "audio": "audio/q324.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "I'm studying for my bar exam. It's in six weeks and I feel like I'll never cover all the material in time.",
+    "answer": "司法試験6週間前で焦り勉強中",
+    "choices": [
+      "司法試験6週間前で焦り勉強中",
+      "医師免許試験の勉強をしている",
+      "資格試験の直前で追い込み勉強中",
+      "大学院の入学試験を控えている",
+      "英語検定の試験に向けて勉強中"
+    ],
+    "audio": "audio/q325.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "We're thinking of going on a road trip this summer. Just rent a car and drive up the coast with no real plan.",
+    "answer": "今夏に海岸ドライブ旅行を計画",
+    "choices": [
+      "今夏に海岸ドライブ旅行を計画",
+      "レンタカーで北海道を一周する旅を計画",
+      "ファミリーキャンプの準備をしている",
+      "車でアメリカ大陸を横断する計画",
+      "鉄道でヨーロッパを旅する計画"
+    ],
+    "audio": "audio/q326.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "I almost got scammed today. Someone called claiming to be from my bank and asked for my account details. I hung up.",
+    "answer": "銀行を名乗る詐欺電話に気づいて切った",
+    "choices": [
+      "銀行を名乗る詐欺電話に気づいて切った",
+      "フィッシングメールのリンクを踏んだ",
+      "架空請求の詐欺メールを受け取った",
+      "オレオレ詐欺の電話がかかってきた",
+      "偽のオンラインショップに騙された"
+    ],
+    "audio": "audio/q327.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "I finally got my driver's license at 35. Better late than never, right? My kids are going to make so much fun of me.",
+    "answer": "35歳でようやく運転免許を取得した",
+    "choices": [
+      "35歳でようやく運転免許を取得した",
+      "マニュアル車の運転を練習している",
+      "ペーパードライバーを脱却した",
+      "高齢者の免許返納を勧められた",
+      "初めて自家用車を購入した"
+    ],
+    "audio": "audio/q328.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "I've been trying to learn to play guitar for six months. I can do a few chords but my fingers still hurt.",
+    "answer": "ギター半年目で数コードは弾けるが指が痛い",
+    "choices": [
+      "ギター半年目で数コードは弾けるが指が痛い",
+      "ピアノのレッスンを始めて上達してきた",
+      "バンドのメンバーを募集している",
+      "楽器店でギターを購入した",
+      "音楽系の専門学校に入学した"
+    ],
+    "audio": "audio/q329.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "I've been on hold for 45 minutes. The music is still playing. I don't know if anyone is ever going to pick up.",
+    "answer": "コールセンターに45分保留中",
+    "choices": [
+      "コールセンターに45分保留中",
+      "コールセンターへの苦情を書いている",
+      "電話番号を間違えてかけ続けている",
+      "フリーダイヤルがつながらなくて困っている",
+      "会社への問い合わせ方法を探している"
+    ],
+    "audio": "audio/q330.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "I'm trying to cut back on alcohol. I've been drinking every night after work and I don't think it's healthy.",
+    "answer": "毎晩飲む習慣を改めようとしている",
+    "choices": [
+      "毎晩飲む習慣を改めようとしている",
+      "禁酒を誓ったが続かないでいる",
+      "飲み会への参加を断ることにした",
+      "アルコール依存症の治療を考えている",
+      "健康のためにお酒をやめた"
+    ],
+    "audio": "audio/q331.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "I finally bit the bullet and booked tickets to Japan. I've been talking about going for years. I can't believe it's actually happening.",
+    "answer": "念願の日本旅行をついに予約",
+    "choices": [
+      "念願の日本旅行をついに予約",
+      "海外旅行先を初めてアジアにした",
+      "友人と海外旅行の計画を立てている",
+      "修学旅行で海外に行くことになった",
+      "格安航空券を見つけて旅行を決めた"
+    ],
+    "audio": "audio/q332.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "My colleague just resigned. She was the only one who knew how our filing system worked. This is going to be a nightmare.",
+    "answer": "ファイル管理を知っている同僚が辞めて困る",
+    "choices": [
+      "ファイル管理を知っている同僚が辞めて困る",
+      "急な退職でチームの業務に支障が出た",
+      "引き継ぎなしで退職した人の穴を埋めている",
+      "重要な業務を担う人材が不足している",
+      "業務マニュアルが整備されていないと嘆く"
+    ],
+    "audio": "audio/q333.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "I think I'm developing an allergy to cats. Every time I visit my friend's house I start sneezing and my eyes water.",
+    "answer": "友人宅で猫アレルギーが出る",
+    "choices": [
+      "友人宅で猫アレルギーが出る",
+      "春になると花粉症の症状がひどくなる",
+      "食物アレルギーが判明した",
+      "犬のいる公園で体が痒くなる",
+      "ハウスダストで咳が止まらない"
+    ],
+    "audio": "audio/q334.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "I think I left the stove on. I'm already ten minutes from home. Should I go back to check or am I being paranoid?",
+    "answer": "コンロ消し忘れか不安で戻るか迷う",
+    "choices": [
+      "コンロ消し忘れか不安で戻るか迷う",
+      "ドアの鍵をかけ忘れたか心配している",
+      "アイロンの電源を切ったか確認したい",
+      "ガスの元栓を閉め忘れたか不安",
+      "電気ストーブをつけっぱなしにした"
+    ],
+    "audio": "audio/q335.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "I need to cancel tomorrow's appointment. Something urgent came up at work and I can't get away. I'm so sorry.",
+    "answer": "急用で明日の予約をキャンセル",
+    "choices": [
+      "急用で明日の予約をキャンセル",
+      "体調不良で予約を取り消している",
+      "急な出張でランチの約束を断った",
+      "子供の体調不良でクラスをキャンセル",
+      "交通機関の乱れで約束を変更している"
+    ],
+    "audio": "audio/q336.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "I've been saving up for this for two years and I finally bought it — a proper espresso machine for my kitchen.",
+    "answer": "2年貯金でエスプレッソマシン購入",
+    "choices": [
+      "2年貯金でエスプレッソマシン購入",
+      "コーヒー豆の種類を比較している",
+      "カフェをオープンする夢を持っている",
+      "コーヒーの淹れ方を教えてもらっている",
+      "お気に入りのコーヒーショップを紹介している"
+    ],
+    "audio": "audio/q337.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "My flight lands at midnight. Is there still public transport running that late, or should I just book a taxi?",
+    "answer": "深夜着便の移動手段を検討中",
+    "choices": [
+      "深夜着便の移動手段を検討中",
+      "空港から市内への移動手段を調べている",
+      "深夜バスの時刻表を確認している",
+      "空港送迎を家族に頼もうとしている",
+      "夜行バスの予約をしようとしている"
+    ],
+    "audio": "audio/q338.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "My nephew just started walking. He's ten months old. He's so wobbly but he's so proud of himself.",
+    "answer": "10ヶ月の甥が歩き始めた",
+    "choices": [
+      "10ヶ月の甥が歩き始めた",
+      "子供の初めての言葉を聞いた",
+      "赤ちゃんのはじめての歯が生えた",
+      "姪が自転車に乗れるようになった",
+      "子供が初めて泳げるようになった"
+    ],
+    "audio": "audio/q339.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "I accidentally dyed my hair too dark. I was going for a warm brown but it came out almost black. I'm not happy.",
+    "answer": "セルフカラーで希望より暗くなった",
+    "choices": [
+      "セルフカラーで希望より暗くなった",
+      "美容院で希望と違うヘアカラーにされた",
+      "ヘアカラー剤で頭皮が荒れた",
+      "白髪を隠すヘアカラーを試した",
+      "美容師にヘアスタイルを任せて失敗した"
+    ],
+    "audio": "audio/q340.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "I'm trying to find a plumber. The one I usually use retired and I don't know who else to call.",
+    "answer": "配管業者が引退して後任を探す",
+    "choices": [
+      "配管業者が引退して後任を探す",
+      "水道の蛇口から水が漏れている",
+      "給湯器が壊れて修理業者を探している",
+      "浴室の詰まりを自分で修理しようとしている",
+      "トイレが詰まって緊急の業者を呼んでいる"
+    ],
+    "audio": "audio/q341.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "We're doing a dry January. No alcohol for the whole month. Day four and I already feel so much better.",
+    "answer": "禁酒4日目から体調改善を実感",
+    "choices": [
+      "禁酒4日目から体調改善を実感",
+      "ドライフルーツダイエットを始めた",
+      "断食チャレンジを開始した",
+      "カフェイン断ちを試みている",
+      "砂糖を1ヶ月断つチャレンジをしている"
+    ],
+    "audio": "audio/q342.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "I got a scholarship to study abroad for a semester. I've never lived outside the country before. I'm nervous and excited.",
+    "answer": "奨学金で留学が決まり不安と期待",
+    "choices": [
+      "奨学金で留学が決まり不安と期待",
+      "大学の交換留学プログラムに参加する",
+      "語学留学のための費用を貯金している",
+      "初めての一人旅の準備をしている",
+      "海外インターンシップの選考に合格した"
+    ],
+    "audio": "audio/q343.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "My subscription box arrived and this month's theme was self-care. I got bath salts, a face mask, and a fancy candle.",
+    "answer": "定期便でセルフケア用品が届いた",
+    "choices": [
+      "定期便でセルフケア用品が届いた",
+      "誕生日プレゼントにスパセットをもらった",
+      "コスメの定期便が届いた",
+      "ギフトボックスの中身を紹介している",
+      "美容品の通販を初めて利用した"
+    ],
+    "audio": "audio/q344.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "I can't believe my kids are already back in school. Summer went by so fast. I swear it gets shorter every year.",
+    "answer": "子供の夏休みが早く終わった感覚",
+    "choices": [
+      "子供の夏休みが早く終わった感覚",
+      "夏休みの宿題を子供と片付けた",
+      "新学期の用品を買い揃えている",
+      "学校の始業式に子供を送った",
+      "夏の思い出を振り返っている"
+    ],
+    "audio": "audio/q345.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "I've been saving up for years but the housing market is completely out of control. I don't think I'll ever be able to buy.",
+    "answer": "住宅価格高騰で購入できないでいる",
+    "choices": [
+      "住宅価格高騰で購入できないでいる",
+      "住宅ローンの審査が厳しくなっている",
+      "引っ越し先の家賃が払えない",
+      "物価の上昇で貯金が追いつかない",
+      "将来のマイホームのため投資を始めた"
+    ],
+    "audio": "audio/q346.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "I locked my keys in my car again. This is the third time. I really need to get a magnetic key box for under the bumper.",
+    "answer": "また車に鍵を閉じ込めた3回目",
+    "choices": [
+      "また車に鍵を閉じ込めた3回目",
+      "スペアキーを紛失した",
+      "車のスマートキーの電池が切れた",
+      "ロードサービスに緊急で電話した",
+      "車のドアが開かなくなった"
+    ],
+    "audio": "audio/q347.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "My husband and I are finally planning our honeymoon. We got married two years ago but kept putting it off.",
+    "answer": "結婚2年後にハネムーン計画",
+    "choices": [
+      "結婚2年後にハネムーン計画",
+      "結婚記念日に旅行をプレゼントした",
+      "新婚旅行先で観光スポットを紹介している",
+      "海外ウエディングを計画している",
+      "友人の結婚式で旅行を企画している"
+    ],
+    "audio": "audio/q348.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "I'm not very tech-savvy, but my granddaughter set up a video call for me. Now I talk to her every Sunday. It's wonderful.",
+    "answer": "孫がビデオ電話を設定してくれた",
+    "choices": [
+      "孫がビデオ電話を設定してくれた",
+      "スマートフォンを初めて使う練習をしている",
+      "老親のためにタブレットの使い方を教えた",
+      "テレビ電話で海外の家族と話している",
+      "年配者向けのITサポートを提供している"
+    ],
+    "audio": "audio/q349.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "I just realized I double-booked myself. I have a wedding and my nephew's graduation on the same day. I'm so stressed.",
+    "answer": "大事なイベントが同日で二重予約",
+    "choices": [
+      "大事なイベントが同日で二重予約",
+      "仕事の会議と病院の予約が重なった",
+      "二つのパーティーに同時に招待された",
+      "旅行と大事なイベントが同じ日になった",
+      "予定の管理が苦手で困っている"
+    ],
+    "audio": "audio/q350.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "I just saw that my ex is engaged. We broke up only eight months ago. I don't know how I feel about it.",
+    "answer": "元恋人の婚約を知り複雑な心境",
+    "choices": [
+      "元恋人の婚約を知り複雑な心境",
+      "SNSで元彼女の近況を知った",
+      "長年の友人が結婚を発表した",
+      "失恋後のネガティブな気持ちを吐き出している",
+      "元交際相手と偶然再会した"
+    ],
+    "audio": "audio/q351.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "I was in a minor fender bender in the parking lot. No injuries but the other driver is being difficult about insurance.",
+    "answer": "接触事故で保険対応が難しい",
+    "choices": [
+      "接触事故で保険対応が難しい",
+      "当て逃げをされてしまった",
+      "事故の相手と示談交渉をしている",
+      "車の保険申請の方法を確認している",
+      "自損事故で車が傷ついた"
+    ],
+    "audio": "audio/q352.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "I just got back from my first pottery class. I made the ugliest bowl you've ever seen but I absolutely loved it.",
+    "answer": "初陶芸は失敗したが楽しかった",
+    "choices": [
+      "初陶芸は失敗したが楽しかった",
+      "絵画教室に通い始めた",
+      "手芸クラブで初めての作品を作った",
+      "料理教室でうまく調理できなかった",
+      "ダンス教室で初めてのレッスンを受けた"
+    ],
+    "audio": "audio/q353.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "My uncle left me some money in his will. It's not a fortune but it's enough to pay off my student loans.",
+    "answer": "叔父の遺産でローン完済できる",
+    "choices": [
+      "叔父の遺産でローン完済できる",
+      "相続の手続きについて弁護士に相談した",
+      "宝くじで当選して借金を返した",
+      "ボーナスで住宅ローンを繰り上げ返済した",
+      "親に借金の肩代わりをしてもらった"
+    ],
+    "audio": "audio/q354.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "I got bitten by a dog at the park. It wasn't too deep but I went to urgent care just to be safe.",
+    "answer": "公園で犬に噛まれて急ぎ受診した",
+    "choices": [
+      "公園で犬に噛まれて急ぎ受診した",
+      "虫に刺されて腫れが引かない",
+      "犬の散歩中に転んで怪我した",
+      "蜂に刺されてアレルギー反応が出た",
+      "猫に引っかかれて傷が化膿した"
+    ],
+    "audio": "audio/q355.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "I've started a podcast. I only have three episodes out and about 40 listeners but I'm really enjoying it.",
+    "answer": "ポッドキャスト3話で40人が視聴",
+    "choices": [
+      "ポッドキャスト3話で40人が視聴",
+      "ユーチューブチャンネルを開設した",
+      "ラジオ番組のゲストとして出演した",
+      "ブログを書き始めて読者が増えた",
+      "SNSでフォロワーを増やしている"
+    ],
+    "audio": "audio/q356.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "I just asked my neighbor if she could turn down her music and she slammed the door in my face.",
+    "answer": "音量を下げてと頼んだら扉を閉められた",
+    "choices": [
+      "音量を下げてと頼んだら扉を閉められた",
+      "隣人との騒音トラブルを管理会社に報告した",
+      "騒音を巡る隣人トラブルが悪化している",
+      "マンションの規約違反を訴えた",
+      "ゴミのトラブルで隣人と口論した"
+    ],
+    "audio": "audio/q357.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "I won the auction! I bid on a vintage watch online and I actually got it for $80. It's in perfect condition.",
+    "answer": "オークションで時計を80ドルで落札",
+    "choices": [
+      "オークションで時計を80ドルで落札",
+      "フリマサイトで高値がついた",
+      "アンティーク市で掘り出し物を見つけた",
+      "中古品を安く仕入れて転売している",
+      "コレクションに新しいアイテムを加えた"
+    ],
+    "audio": "audio/q358.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "I've decided to take a gap year before starting university. I want to travel and figure out what I really want.",
+    "answer": "大学前にギャップイヤーを取る",
+    "choices": [
+      "大学前にギャップイヤーを取る",
+      "大学進学か就職かで迷っている",
+      "休学して海外ボランティアに参加した",
+      "大学を中退して起業した",
+      "社会人経験を積んでから大学に入り直した"
+    ],
+    "audio": "audio/q359.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "I found a book at the thrift store that I've been looking for forever. It was only 50 cents. I couldn't believe it.",
+    "answer": "中古店で探していた本を安く発見",
+    "choices": [
+      "中古店で探していた本を安く発見",
+      "図書館で絶版の本を借りられた",
+      "中古本屋でお気に入りの本を買った",
+      "フリマで珍しい本を安く入手した",
+      "ネットで読みたかった本を注文した"
+    ],
+    "audio": "audio/q360.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "I spilled coffee all over my keyboard. It still works somehow but some keys are sticky and it smells terrible.",
+    "answer": "キーボードにコーヒーをこぼした",
+    "choices": [
+      "キーボードにコーヒーをこぼした",
+      "ノートPCに水をかけてしまった",
+      "スマホを飲み物に落としてしまった",
+      "机の上の電子機器を液体で汚した",
+      "キーボードの故障で仕事が止まった"
+    ],
+    "audio": "audio/q361.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "I've been training for a 5K charity run. I could barely run for five minutes when I started. Now I can do three miles.",
+    "answer": "チャリティーラン向けに体力がついた",
+    "choices": [
+      "チャリティーラン向けに体力がついた",
+      "マラソン大会のエントリーを完了した",
+      "陸上競技の練習に励んでいる",
+      "体力不足を克服しようとしている",
+      "ランニングサークルに入った"
+    ],
+    "audio": "audio/q362.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "I bought a standing desk and it has totally changed how I feel during the day. My back pain is almost gone.",
+    "answer": "スタンディングデスクで腰痛がほぼ解消した",
+    "choices": [
+      "スタンディングデスクで腰痛がほぼ解消した",
+      "人間工学的なチェアを購入した",
+      "在宅勤務の作業環境を改善した",
+      "オフィスの机と椅子を新調した",
+      "理学療法でデスクワーク改善を学んだ"
+    ],
+    "audio": "audio/q363.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "I need to find a new GP. Mine just retired after 20 years and I have no idea where to start.",
+    "answer": "20年の主治医が引退し後任を探す",
+    "choices": [
+      "20年の主治医が引退し後任を探す",
+      "病院を別の地域のものに変えようとしている",
+      "新しい歯医者を探している",
+      "評判のよい外科医の紹介を頼んでいる",
+      "専門医への紹介状を書いてもらった"
+    ],
+    "audio": "audio/q364.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "I'm renovating my bathroom myself. It's a huge project but I figure I'll save a lot if I do the work.",
+    "answer": "節約のためセルフでバス改装中",
+    "choices": [
+      "節約のためセルフでバス改装中",
+      "業者にキッチンの改装を頼んだ",
+      "DIYで書棚を作っている",
+      "家の外装を自分で塗り替えた",
+      "修理を専門業者に依頼するか迷っている"
+    ],
+    "audio": "audio/q365.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "I can't stop watching cooking videos on YouTube. I don't even cook that often but I just love watching them.",
+    "answer": "料理しないのに料理動画が止まらない",
+    "choices": [
+      "料理しないのに料理動画が止まらない",
+      "料理のユーチューブチャンネルを開設した",
+      "レシピ動画を見て新しい料理を作った",
+      "料理系インフルエンサーを目指している",
+      "食べ物のドキュメンタリーが好き"
+    ],
+    "audio": "audio/q366.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "I was at the gym and someone took my stuff out of the locker. I don't understand why people do that.",
+    "answer": "ジムのロッカーから荷物を取り出されていた",
+    "choices": [
+      "ジムのロッカーから荷物を取り出されていた",
+      "ジムで財布を盗まれた",
+      "公共の場で荷物を盗まれた",
+      "更衣室で服を間違えて持っていかれた",
+      "バッグを盗まれて警察に届けた"
+    ],
+    "audio": "audio/q367.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "I'm thinking of downsizing. The kids have moved out and the house is way too big for just the two of us.",
+    "answer": "子供独立後の住み替えを検討中",
+    "choices": [
+      "子供独立後の住み替えを検討中",
+      "老後のために小さい家に引っ越した",
+      "管理費が高いので住み替えを検討している",
+      "郊外の広い家から都心の便利な場所へ移った",
+      "定年後のライフスタイルを見直している"
+    ],
+    "audio": "audio/q368.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "I found mold in the corner of my bathroom. I've scrubbed it twice but it keeps coming back. I need to fix the ventilation.",
+    "answer": "バスルームのカビが繰り返し生える",
+    "choices": [
+      "バスルームのカビが繰り返し生える",
+      "台所の換気扇が壊れて油汚れがひどい",
+      "湿気でカビが生えた食品を捨てた",
+      "押し入れのカビに困っている",
+      "エアコンのフィルターにカビが生えた"
+    ],
+    "audio": "audio/q369.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "I'm preparing for a job interview tomorrow. I've done so much research on the company and I feel pretty ready.",
+    "answer": "明日の面接に向けて準備は万全",
+    "choices": [
+      "明日の面接に向けて準備は万全",
+      "採用試験を受けてきた感想を話している",
+      "面接の練習をしている",
+      "履歴書の内容を最終確認している",
+      "面接当日の服装を考えている"
+    ],
+    "audio": "audio/q370.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "I'm trying to teach my dog to stop jumping on guests. He gets so excited when people come over. Any tips?",
+    "answer": "客に飛びかかる犬の躾を相談する",
+    "choices": [
+      "客に飛びかかる犬の躾を相談する",
+      "犬のトレーニング教室を探している",
+      "ペットの問題行動に困っている",
+      "犬を静かにさせる方法を調べている",
+      "犬が噛み癖を直せないでいる"
+    ],
+    "audio": "audio/q371.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "I need to replace my mattress. I've had this one for 12 years and I wake up with a sore back every single morning.",
+    "answer": "12年使用のマットレスで腰痛が毎朝",
+    "choices": [
+      "12年使用のマットレスで腰痛が毎朝",
+      "ベッドを新調して快適に眠れるようになった",
+      "睡眠の質改善のため枕を替えた",
+      "ソファで寝ていたら腰を痛めた",
+      "整骨院で腰痛の治療を受けている"
+    ],
+    "audio": "audio/q372.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "I got into a bidding war on a house and ended up paying $30,000 over asking price. I hope it was worth it.",
+    "answer": "競り合いで予算超過して家を買った",
+    "choices": [
+      "競り合いで予算超過して家を買った",
+      "不動産投資で損をした",
+      "中古住宅を相場より高く買った",
+      "オークションで予算を超えて落札した",
+      "不動産の値交渉に失敗した"
+    ],
+    "audio": "audio/q373.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "I went to a wine tasting with some colleagues. I don't really know much about wine but I had a great time.",
+    "answer": "ワインテイスティングに詳しくないが楽",
+    "choices": [
+      "ワインテイスティングに詳しくないが楽",
+      "ワイン初心者向けの講座を受講した",
+      "お気に入りのワインを見つけた",
+      "レストランでソムリエにワインを相談した",
+      "ワインセラーを自宅に設置した"
+    ],
+    "audio": "audio/q374.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "I'm learning how to knit. I've made one scarf that looks more like a zigzag than a scarf, but I'm improving.",
+    "answer": "編み物でスカーフを作り上達中",
+    "choices": [
+      "編み物でスカーフを作り上達中",
+      "手芸教室に通い始めた",
+      "初めての刺繍に挑戦している",
+      "母に編み物を教わっている",
+      "手作りのプレゼントを作っている"
+    ],
+    "audio": "audio/q375.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "I saw a therapist for the first time today. It was scary to open up but I feel a little lighter already.",
+    "answer": "初セラピーで怖くも少し楽になった",
+    "choices": [
+      "初セラピーで怖くも少し楽になった",
+      "精神科への受診を決意した",
+      "友人にメンタルヘルスの悩みを打ち明けた",
+      "カウンセリングの効果を実感している",
+      "心療内科で薬を処方された"
+    ],
+    "audio": "audio/q376.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "My cat keeps waking me up at 4 AM. She sits on my face. I don't know how she knows it's 4 AM every single time.",
+    "answer": "猫が毎朝4時に顔に乗って起こす",
+    "choices": [
+      "猫が毎朝4時に顔に乗って起こす",
+      "ペットの夜中の騒ぎで寝不足",
+      "猫の食事時間を調整しようとしている",
+      "ペットのせいで睡眠の質が落ちている",
+      "犬の早朝の要求に困っている"
+    ],
+    "audio": "audio/q377.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "I've been feeling really homesick lately. I moved here six months ago and I still feel like I haven't found my footing.",
+    "answer": "引越し半年でなじめずホームシック",
+    "choices": [
+      "引越し半年でなじめずホームシック",
+      "海外移住して文化の違いに戸惑っている",
+      "故郷の家族が恋しくなっている",
+      "一人暮らしの孤独を感じている",
+      "転勤先で友達がまだできていない"
+    ],
+    "audio": "audio/q378.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "I accidentally booked a non-refundable hotel room and now I can't make it. That's $250 I'm never seeing again.",
+    "answer": "返金不可ホテルに行けず損した",
+    "choices": [
+      "返金不可ホテルに行けず損した",
+      "旅行保険に入っておけばよかったと後悔している",
+      "ホテルのキャンセルポリシーを確認している",
+      "フライトのキャンセルで旅行がダメになった",
+      "予約変更に多額の手数料がかかった"
+    ],
+    "audio": "audio/q379.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "Ugh, I think I missed a spot shaving. I'll just have to live with it. No time to go back and fix it.",
+    "answer": "剃り残しがあるが今更直す時間がない",
+    "choices": [
+      "剃り残しがあるが今更直す時間がない",
+      "急いで出かけて準備が中途半端になった",
+      "寝坊して身だしなみを整える余裕がなかった",
+      "鏡で確認できなかった部分が気になる",
+      "朝の支度で失敗したことを話している"
+    ],
+    "audio": "audio/q380.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "I made my own kombucha for the first time. It took two weeks and it actually turned out really well. I'm kind of proud.",
+    "answer": "自家製コンブチャを初めて作った",
+    "choices": [
+      "自家製コンブチャを初めて作った",
+      "自家製ヨーグルトを作り始めた",
+      "発酵食品の健康効果に興味を持った",
+      "自家製ビールの仕込みに挑戦した",
+      "キムチを手作りして美味しくできた"
+    ],
+    "audio": "audio/q381.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "I have a 7 AM meeting tomorrow and I live an hour away. I'm going to need to set about five alarms.",
+    "answer": "朝7時会議で複数アラームをセット",
+    "choices": [
+      "朝7時会議で複数アラームをセット",
+      "寝坊が癖で毎朝アラームを多めにセットしている",
+      "朝の時間管理が苦手で困っている",
+      "早起きの習慣が身についていない",
+      "遠距離通勤で毎日疲れている"
+    ],
+    "audio": "audio/q382.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "I've started going to a book club. It's made me read books I never would have picked on my own and I love it.",
+    "answer": "読書クラブで新ジャンルを開拓",
+    "choices": [
+      "読書クラブで新ジャンルを開拓",
+      "図書館の読書推薦リストを利用している",
+      "電子書籍サービスに加入した",
+      "友人に本を借りて読んでいる",
+      "本のブログを書き始めた"
+    ],
+    "audio": "audio/q383.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "I've been skipping breakfast for a year now. People say it's bad but I feel fine. I just don't get hungry in the morning.",
+    "answer": "1年間朝食抜きでも体調は良好",
+    "choices": [
+      "1年間朝食抜きでも体調は良好",
+      "ダイエットのために食事を減らしている",
+      "朝の食欲がなくて困っている",
+      "朝食を食べる時間がないと言っている",
+      "子供に朝ごはんを食べさせている"
+    ],
+    "audio": "audio/q384.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "I've been gardening every weekend this summer and my pumpkins are finally ready. I'm so proud of these giant orange things.",
+    "answer": "庭でカボチャを収穫できて誇らしい",
+    "choices": [
+      "庭でカボチャを収穫できて誇らしい",
+      "家庭菜園でトマトが豊作だった",
+      "農業体験で収穫の喜びを感じた",
+      "ハーブガーデンに新しい植物を追加した",
+      "初めての家庭菜園で収穫ができた"
+    ],
+    "audio": "audio/q385.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "I've been putting off this one task for three weeks. It'll take maybe 20 minutes but I just can't bring myself to start.",
+    "answer": "20分の作業を3週間先延ばし中",
+    "choices": [
+      "20分の作業を3週間先延ばし中",
+      "仕事のプロジェクトが進まないでいる",
+      "先延ばし癖で締め切りを過ぎた",
+      "やる気が出なくて仕事が停滞している",
+      "難しいタスクに取り掛かれないでいる"
+    ],
+    "audio": "audio/q386.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "I'm making my own baby food. I've been pureeing vegetables and freezing them in little cubes. It saves so much money.",
+    "answer": "手作り離乳食で節約している",
+    "choices": [
+      "手作り離乳食で節約している",
+      "市販の離乳食の添加物が気になっている",
+      "育児用の食事を管理栄養士に相談した",
+      "離乳食の開始時期を小児科医に確認した",
+      "赤ちゃんの食物アレルギーが発覚した"
+    ],
+    "audio": "audio/q387.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "I'm trying to be more social this year. I said yes to three events this week that I would normally have skipped.",
+    "answer": "社交的になろうと3つのイベントへ",
+    "choices": [
+      "社交的になろうと3つのイベントへ",
+      "友人関係を広げようと努力している",
+      "人付き合いが苦手で悩んでいる",
+      "仕事の飲み会への参加を増やした",
+      "積極的に新しい出会いを求めている"
+    ],
+    "audio": "audio/q388.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "I can't believe I agreed to run the raffle at the school fair. I don't even have kids at that school anymore.",
+    "answer": "子供のいない学校の係を引き受けた",
+    "choices": [
+      "子供のいない学校の係を引き受けた",
+      "学校のPTA活動で幹事を任された",
+      "ボランティア活動を断れないでいる",
+      "地域の行事の手伝いを頼まれた",
+      "頼まれると断れない性格に困っている"
+    ],
+    "audio": "audio/q389.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "I've been thinking about adopting a minimalist wardrobe. Just 30 items that all mix and match. No more decision fatigue.",
+    "answer": "30着のミニマム衣装を取り入れたい",
+    "choices": [
+      "30着のミニマム衣装を取り入れたい",
+      "不用な服をすべて捨てた",
+      "毎朝の服選びに時間をかけすぎている",
+      "ユニフォームのような服装に切り替えた",
+      "ファッションの断捨離を実行した"
+    ],
+    "audio": "audio/q390.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "I've been trying to find a work-life balance and I think I'm finally getting there. I leave the office at 5 now, no exceptions.",
+    "answer": "5時退社でワークライフバランス改善",
+    "choices": [
+      "5時退社でワークライフバランス改善",
+      "残業をやめて家族との時間を作った",
+      "仕事を効率化して残業を減らした",
+      "テレワークで家族の時間が増えた",
+      "有給を積極的に使うようにした"
+    ],
+    "audio": "audio/q391.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "I took a free online course in digital marketing and now I've got three clients. I can't believe how quickly it took off.",
+    "answer": "無料講座後すぐ3クライアント獲得",
+    "choices": [
+      "無料講座後すぐ3クライアント獲得",
+      "Webマーケターとして転職した",
+      "オンラインビジネスを起業した",
+      "副業でSNS運用代行を始めた",
+      "フリーランスとして仕事を始めた"
+    ],
+    "audio": "audio/q392.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "I've been putting together IKEA furniture for eight hours. One step is missing from the instructions and I don't know what to do.",
+    "answer": "家具組立中に手順が抜けていた",
+    "choices": [
+      "家具組立中に手順が抜けていた",
+      "説明書通りにやったが完成しない",
+      "部品が足りなくて組み立てが止まった",
+      "DIYの家具作りで設計ミスをした",
+      "引っ越しの荷解きで疲れ果てた"
+    ],
+    "audio": "audio/q393.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "I am absolutely exhausted. I've been looking after three kids under five all week while my partner was traveling.",
+    "answer": "幼い子3人を1週間みてへとへと",
+    "choices": [
+      "幼い子3人を1週間みてへとへと",
+      "育児と仕事の両立に限界を感じている",
+      "シングルマザーとして子育てしている",
+      "産後の疲れで体がきつい",
+      "子供が病気で看病が大変だった"
+    ],
+    "audio": "audio/q394.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "I'm learning how to meditate. I'm not sure if I'm doing it right. My mind wanders after about 30 seconds.",
+    "answer": "瞑想を始めたが30秒で気が散ってしまう",
+    "choices": [
+      "瞑想を始めたが30秒で気が散ってしまう",
+      "ヨガ教室で瞑想の基本を習った",
+      "マインドフルネスの効果を実感している",
+      "呼吸法のトレーニングを始めた",
+      "寝る前のルーティンに瞑想を取り入れた"
+    ],
+    "audio": "audio/q395.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "I've been craving sushi all week and I finally gave in and ordered a huge platter. I have zero regrets.",
+    "answer": "1週間我慢してついに寿司を堪能",
+    "choices": [
+      "1週間我慢してついに寿司を堪能",
+      "お気に入りの食べ物を思い切り楽しんだ",
+      "ダイエット中の食欲に負けた",
+      "特別な日にご褒美の食事をした",
+      "記念日に豪華な食事を予約した"
+    ],
+    "audio": "audio/q396.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "I finally got around to repainting the front door. It was peeling badly and it just looks so much better now.",
+    "answer": "剥がれたドアをやっと塗り直した",
+    "choices": [
+      "剥がれたドアをやっと塗り直した",
+      "家の外壁の塗装工事を業者に依頼した",
+      "DIYで家の修繕をしている",
+      "春になって家の手入れをしている",
+      "引っ越し前に部屋のペイントを変えた"
+    ],
+    "audio": "audio/q397.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "I went to my first spin class today. I thought I was fit but I was dripping sweat after ten minutes.",
+    "answer": "初スピンクラスで10分で汗だくに",
+    "choices": [
+      "初スピンクラスで10分で汗だくに",
+      "ジムのグループレッスンを初めて受けた",
+      "エアロビクスクラスで体力不足を痛感した",
+      "水中ウォーキングを始めた",
+      "ヨガを初めて体験した"
+    ],
+    "audio": "audio/q398.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "My daughter just started kindergarten. She was brave and didn't cry at all. I was the one who cried.",
+    "answer": "娘の入園式で親が感動して泣いた",
+    "choices": [
+      "娘の入園式で親が感動して泣いた",
+      "子供の入学式で感動した",
+      "初めての保育園に子供を預けた",
+      "子供が学校に慣れるか心配している",
+      "子供の成長に感慨を覚えている"
+    ],
+    "audio": "audio/q399.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "I got a zero for an assignment because I forgot to hit submit. I did all the work. I'm so frustrated.",
+    "answer": "課題提出を押し忘れ0点になった",
+    "choices": [
+      "課題提出を押し忘れ0点になった",
+      "試験でカンニングの疑いをかけられた",
+      "締め切りを1日間違えて課題を出した",
+      "教授に採点の誤りを申し出た",
+      "成績に納得できず異議を申し立てた"
+    ],
+    "audio": "audio/q400.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "I just found out I'm pregnant. We're totally shocked but really happy. It's still early though so we're keeping it quiet.",
+    "answer": "妊娠が発覚し喜んでいる",
+    "choices": [
+      "妊娠が発覚し喜んでいる",
+      "赤ちゃんの性別を確認した",
+      "出産予定日が決まった",
+      "妊婦検診の予約をしている",
+      "育児休暇の取得を申請している"
+    ],
+    "audio": "audio/q401.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "Ugh, I totally blanked on the exam. I studied so hard but my mind just went blank when I saw the questions.",
+    "answer": "試験本番で頭が真っ白になった",
+    "choices": [
+      "試験本番で頭が真っ白になった",
+      "試験勉強が足りなかったと反省している",
+      "試験前にひどく緊張している",
+      "試験結果が悪くて落ち込んでいる",
+      "カンニングが見つかって困っている"
+    ],
+    "audio": "audio/q402.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "I need to renew my passport before our trip. The problem is it expires in only two months and we leave in six weeks.",
+    "answer": "旅行前にパスポートを急ぎ更新",
+    "choices": [
+      "旅行前にパスポートを急ぎ更新",
+      "ビザの申請が間に合わないか心配している",
+      "海外旅行の保険に入ろうとしている",
+      "観光地のパスを予約しようとしている",
+      "旅行先での両替を計画している"
+    ],
+    "audio": "audio/q403.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "I've been freelancing for a year now and honestly? I love the flexibility but the income is so unpredictable.",
+    "answer": "フリーランスの自由と収入不安を話す",
+    "choices": [
+      "フリーランスの自由と収入不安を話す",
+      "副業を始めようと考えている",
+      "会社員からフリーランスへ転身した",
+      "クライアントとのトラブルを話している",
+      "在宅勤務のメリットを語っている"
+    ],
+    "audio": "audio/q404.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "I just got back from a two-week trip to Italy. The food was incredible, the people were so friendly, I'd go back in a heartbeat.",
+    "answer": "2週間のイタリア旅行から帰ってきた",
+    "choices": [
+      "2週間のイタリア旅行から帰ってきた",
+      "ヨーロッパへの旅行を計画している",
+      "海外旅行で食あたりになった",
+      "観光地での体験を日記に書いている",
+      "旅行先の写真を整理している"
+    ],
+    "audio": "audio/q405.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "My roommate and I are really not getting along. She leaves dishes in the sink for days and plays music all night.",
+    "answer": "ルームメイトの生活習慣に悩む",
+    "choices": [
+      "ルームメイトの生活習慣に悩む",
+      "新しいルームメイトを探している",
+      "共有アパートのルールを相談している",
+      "同居人が家賃を払わないと困っている",
+      "シェアハウスへの引っ越しを検討している"
+    ],
+    "audio": "audio/q406.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "I just applied for a small business loan. I've been wanting to open my own bakery for years and this feels like the right time.",
+    "answer": "パン屋を開くため小企業融資を申請した",
+    "choices": [
+      "パン屋を開くため小企業融資を申請した",
+      "カフェのフランチャイズ契約を検討している",
+      "銀行の住宅ローンの審査を受けた",
+      "友人への投資を断られた",
+      "起業の準備として資金を集めている"
+    ],
+    "audio": "audio/q407.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "We finally sold the house after six months on the market. It went for a little less than we wanted but we're just glad it's done.",
+    "answer": "半年かけてようやく家を売却した",
+    "choices": [
+      "半年かけてようやく家を売却した",
+      "新しい家の購入手続きを進めている",
+      "不動産仲介業者と契約した",
+      "家の売却益を投資に回した",
+      "住宅ローンの残りを一括返済した"
+    ],
+    "audio": "audio/q408.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "I was supposed to meet her at noon but she never showed up and she's not answering her phone. I'm a little worried.",
+    "answer": "待ち合わせに来ない友人を心配している",
+    "choices": [
+      "待ち合わせに来ない友人を心配している",
+      "友人との約束をすっぽかしてしまった",
+      "電話に出ない親族を心配している",
+      "待ち合わせ場所を間違えた",
+      "遅刻した理由を説明しようとしている"
+    ],
+    "audio": "audio/q409.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "I burned the roast chicken. I set a timer and everything but I got distracted and left it in too long.",
+    "answer": "タイマーをかけていたのに鶏肉を焦がした",
+    "choices": [
+      "タイマーをかけていたのに鶏肉を焦がした",
+      "料理の失敗を家族に謝っている",
+      "新しいオーブンの使い方に慣れていない",
+      "夕食が遅くなって家族に謝っている",
+      "料理中に電話でついつい話し込んだ"
+    ],
+    "audio": "audio/q410.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "I made a sourdough bread from scratch for the first time. It took two days but it came out perfect. I'm so proud.",
+    "answer": "サワードウパンを手作りで成功",
+    "choices": [
+      "サワードウパンを手作りで成功",
+      "パン教室でバゲットの作り方を学んだ",
+      "友人が手作りのお菓子をくれた",
+      "料理コンテストでパンが入賞した",
+      "ホームベーカリーを購入した"
+    ],
+    "audio": "audio/q411.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "My dentist told me I need a root canal. I was hoping it was just a small cavity but apparently it's worse than that.",
+    "answer": "虫歯が悪化して根管治療が必要と言われた",
+    "choices": [
+      "虫歯が悪化して根管治療が必要と言われた",
+      "歯の定期検診で異常なしと言われた",
+      "親知らずを抜く手術を受けた",
+      "歯並びを矯正するブレースをつけた",
+      "虫歯の治療が終わり安心した"
+    ],
+    "audio": "audio/q412.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "I went to the farmers market this morning and picked up some amazing strawberries and fresh cheese. Totally worth the early wake-up.",
+    "answer": "朝のファーマーズマーケットで食材を買った",
+    "choices": [
+      "朝のファーマーズマーケットで食材を買った",
+      "地元の農産物直売所を訪れた",
+      "有機野菜の宅配サービスに申し込んだ",
+      "スーパーの朝市で特売品を買った",
+      "海外のマーケットで土産を購入した"
+    ],
+    "audio": "audio/q413.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "I've been binge-watching a true crime series and now I'm scared to sleep with the lights off. It's so addictive though.",
+    "answer": "クライムドラマを見すぎて怖くて眠れない",
+    "choices": [
+      "クライムドラマを見すぎて怖くて眠れない",
+      "ホラー映画を見て悪夢を見た",
+      "怖い本を読んで眠れなくなった",
+      "犯罪事件のニュースで怖くなった",
+      "深夜の映画鑑賞で睡眠不足になった"
+    ],
+    "audio": "audio/q414.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "We spent the whole afternoon baking Christmas cookies with the kids. The kitchen is a mess but it was so much fun.",
+    "answer": "子供たちとクリスマスクッキーを作った",
+    "choices": [
+      "子供たちとクリスマスクッキーを作った",
+      "クリスマスケーキの注文をしている",
+      "子供のお弁当作りを楽しんでいる",
+      "お菓子作りの授業に参加した",
+      "誕生日ケーキを手作りした"
+    ],
+    "audio": "audio/q415.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "My lease is up in two months and my landlord is raising the rent by $300. I'm not sure I can afford that.",
+    "answer": "家賃が300ドル値上げされて払えるか不安",
+    "choices": [
+      "家賃が300ドル値上げされて払えるか不安",
+      "新しい部屋を探し始めた",
+      "大家との家賃交渉に成功した",
+      "住宅ローンの返済が厳しくなっている",
+      "物価上昇で生活費が増えている"
+    ],
+    "audio": "audio/q416.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "I have so much stuff I never use. I think I'm going to do a big declutter this weekend and donate what I can.",
+    "answer": "週末に大掃除して不用品を寄付",
+    "choices": [
+      "週末に大掃除して不用品を寄付",
+      "引っ越しのために荷物を整理している",
+      "フリマアプリで使わない物を売ろうとしている",
+      "物を捨てることができなくて困っている",
+      "家の断捨離を始めようと決意した"
+    ],
+    "audio": "audio/q417.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "I can't decide whether to lease or buy a car. I've been researching for weeks and I'm still going back and forth.",
+    "answer": "車のリースと購入で何週間も迷っている",
+    "choices": [
+      "車のリースと購入で何週間も迷っている",
+      "中古車と新車どちらを買うか迷っている",
+      "車種の選択に迷って決められない",
+      "自動車ディーラーで値引き交渉をしている",
+      "電気自動車への買い替えを検討している"
+    ],
+    "audio": "audio/q418.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "I fell asleep on the train and missed my stop by three stations. Had to backtrack the whole way. I was so embarrassed.",
+    "answer": "電車で寝過ごして3駅行き過ぎた",
+    "choices": [
+      "電車で寝過ごして3駅行き過ぎた",
+      "乗り換えを間違えて遠回りになった",
+      "電車の遅延で約束に遅れた",
+      "終電を逃して困った",
+      "反対方向の電車に乗ってしまった"
+    ],
+    "audio": "audio/q419.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "I've been vegetarian for 10 years but I just tried a burger made from plants and I have to admit it was really good.",
+    "answer": "10年ぶりに肉代替品を食べた",
+    "choices": [
+      "10年ぶりに肉代替品を食べた",
+      "ベジタリアンのレストランを紹介している",
+      "代替肉製品の味について話し合っている",
+      "健康のために肉食を控えようとしている",
+      "新しいフードテクノロジーに興味を持った"
+    ],
+    "audio": "audio/q420.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "I've started meal prepping on Sundays. It takes a couple hours but it saves so much time and money during the week.",
+    "answer": "日曜に1週間分の食事を準備している",
+    "choices": [
+      "日曜に1週間分の食事を準備している",
+      "料理教室に通い始めた",
+      "外食を完全にやめた",
+      "栄養士に食事計画を作ってもらった",
+      "ダイエット食品のミールキットを試している"
+    ],
+    "audio": "audio/q421.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "I've got a huge deadline tomorrow and my internet just went out. I'm going to the library to try and finish this.",
+    "answer": "締め切り前日にネットが切れた",
+    "choices": [
+      "締め切り前日にネットが切れた",
+      "カフェで仕事をしようとしている",
+      "締め切りを延ばしてもらうよう頼んでいる",
+      "スマホのテザリングで代替している",
+      "会社に緊急で連絡している"
+    ],
+    "audio": "audio/q422.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "I lent my umbrella to someone at work three weeks ago and I've never gotten it back. I can't even remember who took it.",
+    "answer": "貸した傘が誰かわからず戻らない",
+    "choices": [
+      "貸した傘が誰かわからず戻らない",
+      "傘を電車に忘れてきた",
+      "友人に借りたものを返し忘れている",
+      "雨の中傘を持っていなくて困った",
+      "落とし物センターに傘を問い合わせている"
+    ],
+    "audio": "audio/q423.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "We had our first team meeting in person since the pandemic. It was so weird but so nice to see everyone's faces.",
+    "answer": "コロナ後初の対面チーム会議をした",
+    "choices": [
+      "コロナ後初の対面チーム会議をした",
+      "在宅勤務から出社勤務に戻った",
+      "オンライン会議のやり方を説明している",
+      "社内イベントが3年ぶりに開催された",
+      "社員旅行が数年ぶりに復活した"
+    ],
+    "audio": "audio/q424.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "I've started waking up at 5 AM to exercise before work. It's been tough but I feel so much more productive.",
+    "answer": "仕事前に朝5時に起きて運動し始めた",
+    "choices": [
+      "仕事前に朝5時に起きて運動し始めた",
+      "早起きを習慣にしようとしている",
+      "ジムの朝のクラスに通い始めた",
+      "ランニングクラブに参加している",
+      "朝の瞑想を習慣化した"
+    ],
+    "audio": "audio/q425.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "My sister just moved to a new city for a job. I miss her so much already. We used to see each other every week.",
+    "answer": "転職で引っ越した姉が恋しい",
+    "choices": [
+      "転職で引っ越した姉が恋しい",
+      "海外移住した友人に会いに行く計画を立てている",
+      "大学進学で上京した子供を心配している",
+      "遠距離恋愛の難しさを語っている",
+      "引っ越しの手伝いに行って寂しくなった"
+    ],
+    "audio": "audio/q426.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "I've been asked to be the maid of honor for my best friend's wedding. I'm so honored but also kind of freaking out.",
+    "answer": "親友の結婚式のサポート役を依頼された",
+    "choices": [
+      "親友の結婚式のサポート役を依頼された",
+      "結婚式の司会を任されて準備している",
+      "ウエディングプランナーとして仕事をしている",
+      "友人の結婚祝いに花束を贈った",
+      "親友の結婚式のスピーチを考えている"
+    ],
+    "audio": "audio/q427.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "I've been reading a lot of self-help books lately. I don't know if they're actually helping but I can't stop buying them.",
+    "answer": "自己啓発本を読むが効果は不明",
+    "choices": [
+      "自己啓発本を読むが効果は不明",
+      "ビジネス書を読んで仕事に活かそうとしている",
+      "読書習慣をつけようとしている",
+      "本の感想をブログに書いている",
+      "ブッククラブに参加して本を読んでいる"
+    ],
+    "audio": "audio/q428.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "I thought I was going to a casual dinner, but it turned out to be a formal event. I was so underdressed.",
+    "answer": "服装を誤解し場違いな格好になった",
+    "choices": [
+      "服装を誤解し場違いな格好になった",
+      "ドレスコードが必要な店に普段着で入った",
+      "スーツを着ていく場にジーンズで行った",
+      "式典の服装に迷って恥をかいた",
+      "パーティーに浮いた服装で参加した"
+    ],
+    "audio": "audio/q429.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "I'm going through a really tough time at the moment. I lost my job, my cat died, and I just broke up with my partner.",
+    "answer": "悪いことが重なり辛い状況にある",
+    "choices": [
+      "悪いことが重なり辛い状況にある",
+      "精神的に落ち込んでいる原因を話している",
+      "家族の不幸が立て続けにあった",
+      "長い闘病生活のつらさを語っている",
+      "友人に悩みを打ち明けている"
+    ],
+    "audio": "audio/q430.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "The ice cream truck just came around. I haven't heard that music since I was a kid. I had to run outside.",
+    "answer": "アイスクリーム車の音に飛び出した",
+    "choices": [
+      "アイスクリーム車の音に飛び出した",
+      "子供の頃の思い出の味を話している",
+      "子供のためにアイスを買いに行った",
+      "夏の風物詩を懐かしんでいる",
+      "街頭販売で甘いものを買った"
+    ],
+    "audio": "audio/q431.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "I got a message from HR saying I need to take the rest of my vacation days before the end of the year or I'll lose them.",
+    "answer": "有給を年内消化しないと失効する",
+    "choices": [
+      "有給を年内消化しないと失効する",
+      "有給休暇の申請が却下された",
+      "休暇中に仕事の連絡が入った",
+      "長期休暇の計画を立てている",
+      "有給取得率の低さを指摘されている"
+    ],
+    "audio": "audio/q432.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "I accidentally left my sunglasses at the restaurant. When I called, they said they'd found them and I could pick them up.",
+    "answer": "店に忘れたサングラスが見つかった",
+    "choices": [
+      "店に忘れたサングラスが見つかった",
+      "電車に傘を忘れて落とし物センターに問い合わせた",
+      "ショッピングモールで財布を忘れた",
+      "旅行先に大事な荷物を置き忘れた",
+      "映画館でジャケットを忘れてきた"
+    ],
+    "audio": "audio/q433.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "I had the most stressful week of my life but it's Friday and I'm just going to order food and watch TV tonight.",
+    "answer": "最悪な週の末にデリバリーで休む",
+    "choices": [
+      "最悪な週の末にデリバリーで休む",
+      "疲れを取るために早寝しようとしている",
+      "週末の旅行でリフレッシュしようとしている",
+      "仕事のストレスを友人に聞いてもらっている",
+      "連休の初日にゆっくり過ごしている"
+    ],
+    "audio": "audio/q434.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "I finally got around to learning how to ride a bike at 30. My kids are so proud of me. It's embarrassing and funny.",
+    "answer": "30歳で自転車に乗れるようになった",
+    "choices": [
+      "30歳で自転車に乗れるようになった",
+      "子供に自転車の乗り方を教えた",
+      "大人になってからスケートボードを練習した",
+      "水泳を大人になってから習い始めた",
+      "初めてスキーをやってみた"
+    ],
+    "audio": "audio/q435.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "I've been trying to get into classical music. My friend gave me a list of pieces to start with and I'm slowly working through it.",
+    "answer": "友人の薦めでクラシック音楽を始めた",
+    "choices": [
+      "友人の薦めでクラシック音楽を始めた",
+      "音楽の趣味の幅を広げようとしている",
+      "コンサートホールで初めての生演奏を聴いた",
+      "ジャズの入門曲を教えてもらった",
+      "音楽祭に初めて参加した"
+    ],
+    "audio": "audio/q436.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "I got rear-ended at a stoplight. No serious injuries but my neck has been sore since. I'm going to get it checked.",
+    "answer": "追突事故後の首の痛みで受診へ",
+    "choices": [
+      "追突事故後の首の痛みで受診へ",
+      "交通事故の後遺症でリハビリ中",
+      "むちうちの診断を受けた",
+      "交通事故で骨折して入院した",
+      "事故後の保険申請の手続きをしている"
+    ],
+    "audio": "audio/q437.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "I got a birthday text from someone and I have no idea who they are. I don't want to reply and seem rude.",
+    "answer": "誰からかわからない誕生日メッセージ",
+    "choices": [
+      "誰からかわからない誕生日メッセージ",
+      "友人の番号が変わって連絡先を更新した",
+      "間違った番号にメッセージが届いた",
+      "SNSで見知らぬ人からDMが来た",
+      "迷惑メッセージへの対応に困っている"
+    ],
+    "audio": "audio/q438.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "I thought I was going for a quick walk but I ended up hiking for three hours. My legs are going to kill me tomorrow.",
+    "answer": "散歩のつもりが3時間歩いた",
+    "choices": [
+      "散歩のつもりが3時間歩いた",
+      "ハイキングをしすぎて体がぐったり",
+      "友人に誘われて長距離を歩いた",
+      "迷って遠回りしてしまった",
+      "ジムで筋トレを頑張りすぎた"
+    ],
+    "audio": "audio/q439.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "The checkout line at the supermarket was so long. I switched to the self-checkout but that had problems too.",
+    "answer": "スーパーでレジが全て混んでいた",
+    "choices": [
+      "スーパーでレジが全て混んでいた",
+      "スーパーの混雑を避けて早朝に行くことにした",
+      "ネットスーパーに切り替えることにした",
+      "レジ袋が有料になって戸惑った",
+      "ポイントカードのスキャンに手間取った"
+    ],
+    "audio": "audio/q440.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "I just found out my best friend is moving to another country for work. I'm so happy for her but I'm going to miss her so much.",
+    "answer": "親友が海外転勤で嬉しい反面とても寂しい",
+    "choices": [
+      "親友が海外転勤で嬉しい反面とても寂しい",
+      "友人の引越しパーティーを準備している",
+      "長距離の友情を維持する方法を話している",
+      "友人を遠くに送り出す別れを惜しんでいる",
+      "友人の転勤先に遊びに行く計画を立てている"
+    ],
+    "audio": "audio/q441.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "I need to return this item, but I bought it online and the return process is so complicated. It'll cost me more to ship it back than the item is worth.",
+    "answer": "返品送料が商品代より高くて困る",
+    "choices": [
+      "返品送料が商品代より高くて困る",
+      "不良品の交換に手数料がかかると言われた",
+      "返品ポリシーが厳しくて困っている",
+      "返金に2週間以上かかると言われた",
+      "輸入品の返品手続きが複雑で諦めた"
+    ],
+    "audio": "audio/q442.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "I asked for a raise and my boss said the company couldn't afford it right now but said to check back in six months.",
+    "answer": "昇給を求め半年後に再確認と言われた",
+    "choices": [
+      "昇給を求め半年後に再確認と言われた",
+      "成果を上げたが評価されなかった",
+      "給与交渉が成功して喜んでいる",
+      "ボーナスカットを言い渡された",
+      "待遇改善のため転職を検討している"
+    ],
+    "audio": "audio/q443.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "I was walking home when someone on a bike cut in front of me and nearly knocked me over. So rude.",
+    "answer": "歩行中に自転車に急接近された",
+    "choices": [
+      "歩行中に自転車に急接近された",
+      "歩きスマホをしていて人にぶつかった",
+      "交差点で危険な目に遭った",
+      "無謀な運転の車に差し込まれた",
+      "走り回る子供に衝突しそうになった"
+    ],
+    "audio": "audio/q444.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "I'm trying out intermittent fasting. I skipped breakfast and I feel great. But it's 11 AM and I'm already daydreaming about lunch.",
+    "answer": "断食中だが昼食が待ち遠しい",
+    "choices": [
+      "断食中だが昼食が待ち遠しい",
+      "ダイエット中で食べたい衝動を抑えている",
+      "厳しい食事制限に耐えようとしている",
+      "食欲が強くてダイエットが続かない",
+      "空腹の状態が作業効率を上げると聞いた"
+    ],
+    "audio": "audio/q445.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "My car's check engine light has been on for two months. I keep meaning to take it in but I never get around to it.",
+    "answer": "エンジン警告灯を2ヶ月放置中",
+    "choices": [
+      "エンジン警告灯を2ヶ月放置中",
+      "車の定期点検を先延ばしにしている",
+      "車が突然エンストして焦っている",
+      "ガス欠の警告を無視して走り続けた",
+      "タイヤの空気圧が低いことに気づいた"
+    ],
+    "audio": "audio/q446.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "The restaurant has a dress code but nobody told me when I made the reservation. They want me to wear a jacket.",
+    "answer": "予告なしのドレスコードで困った",
+    "choices": [
+      "予告なしのドレスコードで困った",
+      "高級レストランの服装マナーを知らなかった",
+      "服装が原因で入店を断られた",
+      "フォーマルな場に適した服を持っていない",
+      "友人の結婚式に平服で来てしまった"
+    ],
+    "audio": "audio/q447.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "I've been offered a role in a local theater production. I used to act in college but that was 20 years ago.",
+    "answer": "20年ぶりに劇団の役をもらった",
+    "choices": [
+      "20年ぶりに劇団の役をもらった",
+      "趣味の演劇サークルに入った",
+      "舞台俳優を目指してオーディションに挑んだ",
+      "映画のエキストラに参加した",
+      "演劇ワークショップに参加した"
+    ],
+    "audio": "audio/q448.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "I had to euthanize my dog of 14 years today. I knew it was the right thing but it's the hardest thing I've ever done.",
+    "answer": "14年の愛犬の安楽死を決断した",
+    "choices": [
+      "14年の愛犬の安楽死を決断した",
+      "老犬が亡くなり深く悲しんでいる",
+      "ペットロスで気持ちが落ち込んでいる",
+      "末期の病気の愛猫を看取った",
+      "動物病院でペットの入院費を払っている"
+    ],
+    "audio": "audio/q449.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "I've been taking a break from social media and honestly I feel so much better. I didn't realize how much it was affecting me.",
+    "answer": "SNS断ちで気持ちが楽になった",
+    "choices": [
+      "SNS断ちで気持ちが楽になった",
+      "SNSをやめて趣味の時間が増えた",
+      "デジタルデトックスの効果を話している",
+      "スマホの使用時間を管理するアプリを使っている",
+      "SNSの投稿をやめて人間関係が変わった"
+    ],
+    "audio": "audio/q450.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "My sister and I used to fight constantly but we've gotten so close as adults. I don't know what I'd do without her.",
+    "answer": "子供の頃よくケンカした姉と今は大親友",
+    "choices": [
+      "子供の頃よくケンカした姉と今は大親友",
+      "兄弟との関係改善について話している",
+      "姉と仲直りして以来よく連絡している",
+      "遠方の姉に久しぶりに会いに行く",
+      "家族の絆の大切さを感じている"
+    ],
+    "audio": "audio/q451.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "I've been meaning to learn how to change a tire for years. I finally watched a video and did it in the parking lot. Easy enough.",
+    "answer": "ずっと後回しのタイヤ交換を習得",
+    "choices": [
+      "ずっと後回しのタイヤ交換を習得",
+      "車の基本的なメンテナンスを自分でやり始めた",
+      "タイヤがパンクして困った経験を話している",
+      "ロードサービスを呼ばずに自分で解決した",
+      "自動車整備士のような技術を習得した"
+    ],
+    "audio": "audio/q452.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "I told my boss I was overwhelmed and needed to reduce my workload. I was terrified but he was actually very understanding.",
+    "answer": "業務削減を上司に申し出て理解を得た",
+    "choices": [
+      "業務削減を上司に申し出て理解を得た",
+      "過労で倒れて休職することになった",
+      "残業を断ったら評価が下がった",
+      "仕事量の相談が人事まで伝わった",
+      "業務効率化を提案してプロジェクトを削減した"
+    ],
+    "audio": "audio/q453.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "I've been procrastinating on filing my taxes for so long that I actually got an extension, and now I'm procrastinating again.",
+    "answer": "延長した税申告をまた先延ばしにした",
+    "choices": [
+      "延長した税申告をまた先延ばしにした",
+      "税金の申告方法がわからなくて困っている",
+      "税理士に申告を依頼することにした",
+      "確定申告で還付金が戻ってきた",
+      "節税対策のアドバイスをもらっている"
+    ],
+    "audio": "audio/q454.mp3",
+    "diff": "advanced"
+  },
+  {
+    "text": "I found an old journal from when I was 16. It's so cringe-worthy but also kind of sweet to read.",
+    "answer": "16歳の日記を見つけて懐かしんだ",
+    "choices": [
+      "16歳の日記を見つけて懐かしんだ",
+      "引っ越しの荷物整理で昔の思い出を見つけた",
+      "古い写真を整理していたら感慨深かった",
+      "子供の頃の作文を読んで笑った",
+      "学生時代の作品を見て成長を感じた"
+    ],
+    "audio": "audio/q455.mp3",
+    "diff": "advanced"
   }
 ]

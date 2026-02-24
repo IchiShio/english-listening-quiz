@@ -26,8 +26,8 @@ import os
 import edge_tts
 
 # ── 設定 ──────────────────────────────────────────────
-VOICE      = "en-US-JennyNeural"
-RATE       = "+0%"          # 速度調整: "-10%" で少し遅く
+VOICE      = "en-US-AriaNeural"
+RATE       = "+0%"
 OUTPUT_DIR = "audio"
 QUESTIONS  = "questions.json"
 # ──────────────────────────────────────────────────────
