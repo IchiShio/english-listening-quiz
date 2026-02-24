@@ -1148,36 +1148,11 @@
         </div>
       </div>
 
-      <!-- Difficulty Selection -->
+      <!-- Adaptive Start -->
       <div class="diff-select-wrap" id="diffSelectWrap">
-        <div class="section-eyebrow" style="margin-top:48px;text-align:center">SELECT LEVEL</div>
-        <h3 class="diff-select-h" style="text-align:center">難易度を選んでスタート</h3>
-        <div class="diff-list">
-          <button class="diff-card" id="d-beginner" onclick="setDiff('beginner')">
-            <div class="diff-icon">🌱</div>
-            <div class="diff-info">
-              <div class="diff-name">初級</div>
-              <div class="diff-sub">日常会話・明確なシチュエーション・ゆっくりめ</div>
-            </div>
-            <div class="diff-radio"></div>
-          </button>
-          <button class="diff-card active" id="d-intermediate" onclick="setDiff('intermediate')">
-            <div class="diff-icon">🌿</div>
-            <div class="diff-info">
-              <div class="diff-name">中級</div>
-              <div class="diff-sub">自然な会話・慣用表現も含む・標準スピード</div>
-            </div>
-            <div class="diff-radio"></div>
-          </button>
-          <button class="diff-card" id="d-advanced" onclick="setDiff('advanced')">
-            <div class="diff-icon">🌳</div>
-            <div class="diff-info">
-              <div class="diff-name">上級</div>
-              <div class="diff-sub">スラング・ビジネス用語・微妙なニュアンス</div>
-            </div>
-            <div class="diff-radio"></div>
-          </button>
-        </div>
+        <div class="section-eyebrow" style="margin-top:48px;text-align:center">ADAPTIVE QUIZ</div>
+        <h3 class="diff-select-h" style="text-align:center">あなたに合わせて自動調整</h3>
+        <p style="text-align:center;color:var(--text-2);margin-bottom:28px;font-size:14px;line-height:1.7">正解・不正解に応じて問題の難易度が自動で変わります<br>選択不要、そのままスタートできます</p>
         <button class="start-btn" onclick="startPremiumTrial()">7日間無料で始める →</button>
         <p style="text-align:center;font-size:12px;color:var(--text-3);margin-top:10px">クレジットカード不要</p>
       </div>
@@ -1209,13 +1184,8 @@
       <a onclick="scrollToDiffAndUpgrade()">→ プレミアムで続ける</a>
     </div>
 
-    <!-- Difficulty pills -->
+    <!-- Question counter -->
     <div class="quiz-meta">
-      <div class="diff-pills">
-        <button class="diff-pill" id="p-beginner"     onclick="changeDiff('beginner')"    >🌱 初級</button>
-        <button class="diff-pill active" id="p-intermediate" onclick="changeDiff('intermediate')">🌿 中級</button>
-        <button class="diff-pill" id="p-advanced"     onclick="changeDiff('advanced')"    >🌳 上級</button>
-      </div>
       <div class="q-counter" id="qCounter">—</div>
     </div>
 
@@ -1770,8 +1740,10 @@ const FREE_LIMIT = 3;
 // ─────────────────────────────────────────
 // STATE
 // ─────────────────────────────────────────
-let diff      = 'intermediate';
-let queue     = [];
+const LEVELS = ['beginner', 'intermediate', 'advanced'];
+let currentLevel  = 1; // intermediate からスタート
+let correctStreak = 0;
+let pools         = {};
 let current   = null;
 let score     = 0;
 let total     = 0;
@@ -1794,31 +1766,6 @@ function scrollToDiffAndUpgrade() {
 }
 
 // ─────────────────────────────────────────
-// DIFFICULTY
-// ─────────────────────────────────────────
-function setDiff(d) {
-  diff = d;
-  document.querySelectorAll('.diff-card').forEach(el => el.classList.remove('active'));
-  document.getElementById('d-' + d).classList.add('active');
-  syncPills(d);
-}
-
-function changeDiff(d) {
-  diff = d;
-  document.querySelectorAll('.diff-card').forEach(el => el.classList.remove('active'));
-  document.getElementById('d-' + d).classList.add('active');
-  syncPills(d);
-  buildQueue();
-  loadQ();
-}
-
-function syncPills(d) {
-  document.querySelectorAll('.diff-pill').forEach(el => el.classList.remove('active'));
-  const pill = document.getElementById('p-' + d);
-  if (pill) pill.classList.add('active');
-}
-
-// ─────────────────────────────────────────
 // START
 // ─────────────────────────────────────────
 function startFreeQuiz() {
@@ -1833,8 +1780,8 @@ function startPremiumTrial() {
 
 function beginQuiz() {
   score = 0; total = 0; streak = 0;
-  buildQueue();
-  syncPills(diff);
+  currentLevel = 1; correctStreak = 0;
+  initPools();
   document.getElementById('startScreen').classList.remove('active');
   document.getElementById('quizScreen').classList.add('active');
   document.getElementById('appHeader').style.display = 'flex';
@@ -1889,12 +1836,14 @@ function updateFreeRemaining() {
 }
 
 // ─────────────────────────────────────────
-// QUEUE
+// POOLS (Adaptive)
 // ─────────────────────────────────────────
-function buildQueue() {
-  let pool = DATA.filter(q => q.diff === diff);
-  if (!pool.length) pool = [...DATA];
-  queue = shuffle(pool);
+function initPools() {
+  pools = {
+    0: shuffle(DATA.filter(q => q.diff === 'beginner')),
+    1: shuffle(DATA.filter(q => q.diff === 'intermediate')),
+    2: shuffle(DATA.filter(q => q.diff === 'advanced'))
+  };
 }
 
 // ─────────────────────────────────────────
@@ -1914,8 +1863,10 @@ function loadQ() {
   document.getElementById('nextBtn').classList.remove('show');
 
   setTimeout(() => {
-    if (!queue.length) buildQueue();
-    current = queue.shift();
+    if (!pools[currentLevel].length) {
+      pools[currentLevel] = shuffle(DATA.filter(q => q.diff === LEVELS[currentLevel]));
+    }
+    current = pools[currentLevel].shift();
     render();
     document.getElementById('loadingView').classList.remove('show');
     document.getElementById('questionView').classList.add('show');
@@ -1958,7 +1909,17 @@ function choose(selected) {
   answered = true;
   total++;
   const ok = selected === current.answer;
-  if (ok) { score++; streak++; } else { streak = 0; queue.splice(Math.min(3, queue.length), 0, current); }
+  if (ok) {
+    score++; streak++; correctStreak++;
+    if (correctStreak >= 2 && currentLevel < 2) {
+      currentLevel++;
+      correctStreak = 0;
+    }
+  } else {
+    streak = 0; correctStreak = 0;
+    if (currentLevel > 0) currentLevel--;
+    pools[currentLevel].splice(Math.min(3, pools[currentLevel].length), 0, current);
+  }
   updateScore();
   if (freeMode) updateFreeRemaining();
 
