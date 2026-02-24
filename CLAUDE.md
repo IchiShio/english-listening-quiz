@@ -23,8 +23,9 @@
 |---|---|
 | `index.html` | メインUI（問題データ・ロジック含む） |
 | `audio/` | MP3音声ファイル（464件、`q001.mp3`〜） |
-| `gen_questions.py` | 問題自動生成スクリプト |
-| `gen_audio.py` | 音声生成スクリプト（Azure TTS / en-US-AriaNeural） |
+| `gen_questions.py` | 問題自動生成スクリプト（Claude Haiku） |
+| `gen_audio.py` | 音声生成スクリプト（edge-tts / 5音声ローテーション） |
+| `gen_translation.py` | 日本語仮訳生成スクリプト（Claude Haiku） |
 
 ## 問題データ構造
 
@@ -32,7 +33,8 @@
 {
   "id": "q001",
   "diff": "beginner",
-  "text": "会話スクリプト",
+  "text": "英語スクリプト",
+  "ja": "日本語仮訳",
   "answer": "正解選択肢",
   "choices": ["選択肢A", "選択肢B", "選択肢C", "選択肢D", "選択肢E"],
   "audio": "audio/q001.mp3",
@@ -42,7 +44,8 @@
 ```
 
 - 455問（beginner: 155 / intermediate: 139 / advanced: 161）
-- 音声: `en-US-AriaNeural`（単一女性音声・Azure TTS 無料版）、有料版は ElevenLabs を予定
+- 音声: 5種ローテーション（AriaNeural/SoniaNeural/GuyNeural/NatashaNeural/RyanNeural）
+- `ja` フィールド: Claude Haiku で生成した日本語仮訳（2026-02-25追加）
 
 ## アルゴリズム
 
@@ -60,6 +63,12 @@
 - 不正解 → 再出題（2回目）: キーフレーズ（`kp`）をアンバー色パネルで表示
 - 再出題（3回目以降）: キーフレーズ + 解説（`expl`）を表示
 - `hintLevel` プロパティを問題オブジェクトに付与して管理（0=なし / 1=kp / 2=kp+expl）
+
+### 日本語仮訳（2026-02-25実装）
+
+- 回答後のトランスクリプト欄（英文スクリプトの下）に `ja` フィールドの内容を表示
+- `ja` が空の場合はラベルごと非表示（`:empty` で制御）
+- `gen_translation.py` で再生成可能（実行前に既存 `ja: "` を削除すること）
 
 ## CSS設計
 
