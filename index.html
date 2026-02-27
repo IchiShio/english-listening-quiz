@@ -2120,12 +2120,37 @@ function showReturningStats() {
 }
 
 // ─────────────────────────────────────────
+// DIFFICULTY SCORING (IRT)
+// ─────────────────────────────────────────
+const _CLAUSE_RE = /\b(and|but|or|so|because|when|if|that|which|who|whom|whose|although|though|while|since|after|before|until|unless|however|therefore|moreover|furthermore|nevertheless|whereas|whether|as soon as|even though|as long as|in order to|so that|provided that|given that|not only|either|neither|once|whenever|wherever|whatever|whoever|however much)\b/gi;
+const _CONTRACTION_RE = /\b\w+'(t|s|re|ve|ll|d|m)\b/gi;
+const _FILLER_RE = /\b(uh|um|like|you know|I mean|well|so|anyway|basically|actually|honestly|literally|right|okay)\b/gi;
+const _PHRASAL_RE = /\b(turn (down|up|off|on|out|around)|pick (up|out)|give (up|in|out)|take (off|on|out|over|up)|put (on|off|up|down|out|away)|get (up|out|off|on|over|through)|come (up|on|out|back|across)|go (on|out|off|through|over)|look (up|out|into|after|forward)|run (out|into|over)|break (down|up|out|in)|bring (up|back|down|out)|figure (out)|work (out|on)|set (up|off|out)|hold (on|up|off)|cut (off|out|down)|pull (off|out|up))\b/gi;
+const _COMMON = new Set(["the","be","to","of","and","a","in","that","have","i","it","for","not","on","with","he","as","you","do","at","this","but","his","by","from","they","we","say","her","she","or","an","will","my","one","all","would","there","their","what","so","up","out","if","about","who","get","which","go","me","when","make","can","like","time","no","just","him","know","take","people","into","year","your","good","some","could","them","see","other","than","then","now","look","only","come","its","over","think","also","back","after","use","two","how","our","work","first","well","way","even","new","want","give","most","find","here","thing","many","day","had","has","been","did","got","am","are","is","was","were","very","much","too","really","right","still","own","down","should","need","home","big","old","long","may"]);
+
+function computeScore(text) {
+  const words = text.split(/\s+/);
+  const wc = words.length;
+  const clauseN = (text.match(_CLAUSE_RE) || []).length;
+  const wcScore = Math.min(wc / 20, 3);
+  const ccScore = Math.min(clauseN / 3, 3);
+  const longRare = words.filter(w => w.replace(/[.,!?;:'"]/g, '').length >= 7 && !_COMMON.has(w.toLowerCase().replace(/[.,!?;:'"]/g, ''))).length;
+  const vdScore = Math.min(longRare / Math.max(wc, 1) * 10, 2);
+  const contrN = (text.match(_CONTRACTION_RE) || []).length;
+  const fillN = (text.match(_FILLER_RE) || []).length;
+  const phraN = (text.match(_PHRASAL_RE) || []).length;
+  const odScore = Math.min((contrN + fillN + phraN) / Math.max(wc, 1) * 8, 2);
+  return Math.round(Math.max(1, Math.min(10, wcScore + ccScore + vdScore + odScore + 1)) * 10) / 10;
+}
+
+// 初期化時に全問題にスコアを付与
+DATA.forEach(q => { if (q.score == null) q.score = computeScore(q.text); });
+
+// ─────────────────────────────────────────
 // STATE
 // ─────────────────────────────────────────
-const LEVELS = ['beginner', 'intermediate', 'advanced'];
-let currentLevel  = 1; // intermediate からスタート
-let correctStreak = 0;
-let pools         = {};
+let userAbility   = 5.0; // IRT能力値（1.0〜10.0、中間からスタート）
+let questionPool  = [];   // 出題候補プール
 let current   = null;
 let score     = 0;
 let total     = 0;
@@ -2175,8 +2200,8 @@ function beginQuiz() {
   saveProgress(p);
 
   score = 0; total = 0; streak = 0;
-  currentLevel = 1; correctStreak = 0;
-  initPools();
+  userAbility = 5.0;
+  initPool();
   document.getElementById('startScreen').classList.remove('active');
   document.getElementById('quizScreen').classList.add('active');
   document.getElementById('appHeader').style.display = 'flex';
@@ -2241,14 +2266,53 @@ function updateFreeRemaining() {
 }
 
 // ─────────────────────────────────────────
-// POOLS (Adaptive)
+// POOL (IRT Adaptive)
 // ─────────────────────────────────────────
-function initPools() {
-  pools = {
-    0: shuffle(DATA.filter(q => q.diff === 'beginner')),
-    1: shuffle(DATA.filter(q => q.diff === 'intermediate')),
-    2: shuffle(DATA.filter(q => q.diff === 'advanced'))
-  };
+function initPool() {
+  questionPool = shuffle([...DATA]);
+}
+
+function selectNextQuestion() {
+  // 能力値に近い問題を優先的に選出（±1.5 の範囲）
+  const margin = 1.5;
+  let candidates = questionPool.filter(q =>
+    Math.abs((q.score || 5) - userAbility) <= margin
+  );
+  // 候補が少なければ範囲を広げる
+  if (candidates.length < 3) {
+    candidates = questionPool.filter(q =>
+      Math.abs((q.score || 5) - userAbility) <= margin * 2
+    );
+  }
+  if (candidates.length === 0) candidates = questionPool;
+
+  // 能力値に近い問題ほど選ばれやすいように重み付き選択
+  const weights = candidates.map(q => {
+    const diff = Math.abs((q.score || 5) - userAbility);
+    return 1 / (1 + diff);
+  });
+  const totalW = weights.reduce((a, b) => a + b, 0);
+  let r = Math.random() * totalW;
+  for (let i = 0; i < candidates.length; i++) {
+    r -= weights[i];
+    if (r <= 0) {
+      const idx = questionPool.indexOf(candidates[i]);
+      if (idx !== -1) questionPool.splice(idx, 1);
+      return candidates[i];
+    }
+  }
+  return questionPool.shift();
+}
+
+function updateAbility(correct, questionScore) {
+  const expected = 1 / (1 + Math.exp(-(userAbility - questionScore)));
+  const lr = 0.8;
+  if (correct) {
+    userAbility += lr * (1 - expected);
+  } else {
+    userAbility -= lr * expected;
+  }
+  userAbility = Math.max(1.0, Math.min(10.0, userAbility));
 }
 
 // ─────────────────────────────────────────
@@ -2268,10 +2332,10 @@ function loadQ() {
   document.getElementById('nextBtn').classList.remove('show');
 
   setTimeout(() => {
-    if (!pools[currentLevel].length) {
-      pools[currentLevel] = shuffle(DATA.filter(q => q.diff === LEVELS[currentLevel]));
+    if (!questionPool.length) {
+      questionPool = shuffle([...DATA]);
     }
-    current = pools[currentLevel].shift();
+    current = selectNextQuestion();
     render();
     document.getElementById('loadingView').classList.remove('show');
     document.getElementById('questionView').classList.add('show');
@@ -2341,17 +2405,15 @@ function choose(selected) {
   answered = true;
   total++;
   const ok = selected === current.answer;
+  const qScore = current.score || 5;
+  updateAbility(ok, qScore);
   if (ok) {
-    score++; streak++; correctStreak++;
-    if (correctStreak >= 2 && currentLevel < 2) {
-      currentLevel++;
-      correctStreak = 0;
-    }
+    score++; streak++;
   } else {
-    streak = 0; correctStreak = 0;
-    if (currentLevel > 0) currentLevel--;
+    streak = 0;
+    // 不正解問題をヒント付きで再挿入（能力値付近に出やすいよう）
     const requeuedQ = { ...current, hintLevel: (current.hintLevel || 0) + 1 };
-    pools[currentLevel].splice(Math.min(3, pools[currentLevel].length), 0, requeuedQ);
+    questionPool.splice(Math.min(3, questionPool.length), 0, requeuedQ);
   }
   // 進捗をlocalStorageに保存
   {
