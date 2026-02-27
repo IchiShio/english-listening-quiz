@@ -24,69 +24,51 @@ Claude Haiku API を使って英語リスニングクイズの問題を生成す
 """
 === 3,000問達成スケジュール（2週間: 2/27〜3/13） ===
 
-■ Week 1: インフラ整備 + 1,500問生成
+■ 最終ティア配分（超初級40%重視 + 高難度補填）:
+  ティア 1-4  (超初級):  1,200問 (40%) — 各300問
+  ティア 5-10 (初中級):    900問 (30%) — 各150問
+  ティア 11-13 (中上級):   400問 (13%) — 各133問
+  ティア 14-20 (上級):     500問 (17%) — 各71問
+
+  既存455問を差し引いた新規生成数: 2,545問
+
+■ Week 1: インフラ整備 + 超初級集中生成
   Day 1-2 (2/27-28): インフラ整備
     - [済] 難易度スコアリング (1.0-10.0) 設計・実装
-    - [済] gen_questions.py: 20段階ティア対応、TARGET=3000
+    - [済] gen_questions.py: 20段階ティア・不足分補填モード
     - [済] gen_audio.py: 速度バリエーション対応
     - [済] index.html: IRT適応アルゴリズム実装
-    - 既存455問の動作確認
+    - [済] 既存455問のティア分類
 
-  Day 3-4 (3/1-2): 第1弾生成（q456〜q955 = 500問）
-    - python3 gen_questions.py  ※TARGET=500, 差分生成
-    - python3 gen_audio.py
-    - python3 add_expl_kp.py
-    - python3 gen_translation.py
-    - index.html に統合、動作確認
+  Day 3-4 (3/1-2): 超初級集中（ティア1-4 = ~600問）
+    - ティア1: 300問、ティア2: 299問 生成
+    - 音声・翻訳・解説生成
 
-  Day 5-6 (3/3-4): 第2弾生成（q956〜q1455 = 500問）
-    - 同上の生成パイプライン実行
-    - 重複チェック・品質確認
+  Day 5-6 (3/3-4): 超初級 + 初中級（ティア3-6 = ~500問）
+    - ティア3: 293問、ティア4: 286問の残り + ティア5-6
+    - 音声・翻訳・解説生成
 
-  Day 7 (3/5): 第3弾生成（q1456〜q1955 = 500問）
+  Day 7 (3/5): 初中級（ティア7-10 = ~300問）
+    - ティア7: 41問、ティア8: 75問、ティア9: 55問、ティア10: 121問
+
+■ Week 2: 中上級〜上級 + 品質管理
+  Day 8-9 (3/6-7): 中上級（ティア11-13 = ~376問）
     - 生成パイプライン実行
-    - Week 1 QA: 全1,955問の品質レビュー
 
-■ Week 2: 残り1,045問 + 品質管理
-  Day 8-9 (3/6-7): 第4弾生成（q1956〜q2455 = 500問）
-    - 生成パイプライン実行
-    - スコア分布の偏りがないか確認・調整
-
-  Day 10-11 (3/8-9): 第5弾生成（q2456〜q3000 = 545問）
-    - 生成パイプライン実行
-    - 全3,000問統合
+  Day 10-11 (3/8-9): 上級（ティア14-20 = 500問）
+    - 高難度問題の集中生成（全ティア初出）
 
   Day 12 (3/10): 品質管理
     - 重複問題の検出・除去
-    - スコア分布の最終確認
-    - 選択肢の質チェック
+    - ティア分布の最終確認
 
   Day 13 (3/11): アルゴリズム調整
-    - IRT パラメータ（学習率、選出範囲）の微調整
+    - IRT パラメータの微調整
     - 3,000問での応答速度テスト
 
-  Day 14 (3/12-13): デプロイ・バッファ
-    - 最終テスト
+  Day 14 (3/12-13): デプロイ
     - eikaiwa-hikaku/listening/ への反映
     - 本番デプロイ
-
-■ 各バッチの実行手順:
-  1. gen_questions.py を実行（TARGET を調整）
-  2. gen_audio.py を実行（MP3 生成）
-  3. add_expl_kp.py を実行（解説・キーフレーズ付与）
-  4. gen_translation.py を実行（日本語仮訳）
-  5. index.html の DATA 配列に統合
-  6. 動作確認 → コミット
-
-■ API コスト見積り:
-  - 問題生成: ~128 API calls × $0.003 ≈ $0.38
-  - 解説生成: ~128 API calls × $0.003 ≈ $0.38
-  - 翻訳生成: ~128 API calls × $0.003 ≈ $0.38
-  - 合計: 約 $1.14（Haiku使用時）
-
-■ 音声生成:
-  - edge-tts は無料（Microsoft Edge TTS）
-  - 3,000ファイル × ~2秒/件 ≈ 約100分
 """
 
 import json
@@ -229,10 +211,23 @@ COMPLEXITY_TIERS = {
     20: "非常に長い（65語以上）。接続詞10個以上。スピーチ・講演の一節。高度な語彙・複文多用。",
 }
 
-# 各ティアの生成目標比率（中間難度を厚めに分布 — 正規分布的）
-TIER_WEIGHTS = {
-    1: 3, 2: 4, 3: 5, 4: 6, 5: 7, 6: 8, 7: 9, 8: 10, 9: 10, 10: 10,
-    11: 10, 12: 9, 13: 8, 14: 7, 15: 6, 16: 5, 17: 4, 18: 3, 19: 2, 20: 2,
+# 既存455問のティア分布（index.html 内 2026-02-27時点）
+# 新規生成時にこの分布を差し引いて不足分を補填する
+EXISTING_TIER_COUNTS = {
+    1: 0, 2: 1, 3: 7, 4: 14, 5: 34, 6: 67, 7: 109, 8: 75, 9: 95, 10: 29,
+    11: 18, 12: 5, 13: 1, 14: 0, 15: 0, 16: 0, 17: 0, 18: 0, 19: 0, 20: 0,
+}
+
+# 最終目標: 3,000問のティア別配分
+# 超初級（ティア1-4）: 40% = 1,200問（各300問）
+# 初級〜中級（ティア5-10）: 30% = 900問（各150問）
+# 中上級（ティア11-13）: 13% = 400問（各133問）
+# 上級（ティア14-20）: 17% = 500問（各71問）
+TARGET_PER_TIER = {
+    1: 300, 2: 300, 3: 300, 4: 300,
+    5: 150, 6: 150, 7: 150, 8: 150, 9: 150, 10: 150,
+    11: 133, 12: 133, 13: 134,
+    14: 72, 15: 72, 16: 72, 17: 71, 18: 71, 19: 71, 20: 71,
 }
 
 
@@ -285,22 +280,30 @@ def generate_batch(batch_size: int, tier: int) -> list[dict]:
 
 # ── メイン ────────────────────────────────────────
 def main() -> None:
-    total_weight = sum(TIER_WEIGHTS.values())
+    # 既存問題との差分から各ティアの生成数を算出
     plans = []
+    total_new = 0
+    print("=" * 60)
+    print("  生成計画（既存問題を考慮した不足分補填）")
+    print("=" * 60)
+    print(f"  {'ティア':>6} {'目標':>6} {'既存':>6} {'生成':>6}")
+    print("-" * 40)
     for tier in sorted(COMPLEXITY_TIERS.keys()):
-        goal = max(1, round(TARGET * TIER_WEIGHTS[tier] / total_weight))
-        plans.append((tier, goal))
-
-    # 端数調整
-    diff = TARGET - sum(g for _, g in plans)
-    if diff > 0:
-        plans[9] = (plans[9][0], plans[9][1] + diff)
-    elif diff < 0:
-        plans[9] = (plans[9][0], max(1, plans[9][1] + diff))
+        target = TARGET_PER_TIER[tier]
+        existing = EXISTING_TIER_COUNTS.get(tier, 0)
+        to_gen = max(0, target - existing)
+        plans.append((tier, to_gen))
+        total_new += to_gen
+        print(f"  {tier:4d}   {target:5d}  {existing:5d}  {to_gen:5d}")
+    print("-" * 40)
+    print(f"  合計   {sum(TARGET_PER_TIER.values()):5d}  {sum(EXISTING_TIER_COUNTS.values()):5d}  {total_new:5d}")
+    print()
 
     questions: list[dict] = []
 
     for tier, goal in plans:
+        if goal == 0:
+            continue
         generated = 0
         print(f"\n── ティア {tier:2d}/20 ({goal}問) ──────────────")
         while generated < goal:
@@ -330,16 +333,29 @@ def main() -> None:
     from collections import Counter
     c = Counter(q["diff"] for q in questions)
     scores = [q["score"] for q in questions]
-    print(f"\n✅ 完了: 計{len(questions)}問 を {OUTPUT} に保存")
+    print(f"\n✅ 完了: 新規{len(questions)}問 を {OUTPUT} に保存")
     print(f"  スコア範囲: {min(scores):.1f} 〜 {max(scores):.1f}")
     print(f"  beginner:     {c.get('beginner', 0)} 問")
     print(f"  intermediate: {c.get('intermediate', 0)} 問")
     print(f"  advanced:     {c.get('advanced', 0)} 問")
-    print(f"\n  スコア分布:")
-    for bucket in range(1, 11):
-        count = sum(1 for s in scores if bucket <= s < bucket + 1)
-        bar = "█" * (count // 5)
-        print(f"    {bucket:2d}.0〜{bucket}.9: {count:4d} {bar}")
+
+    # 既存+新規の最終ティア分布
+    print(f"\n  最終ティア分布（既存{sum(EXISTING_TIER_COUNTS.values())}問 + 新規{len(questions)}問）:")
+    for tier in range(1, 21):
+        lo = 1.0 + (tier - 1) * 9.0 / 19
+        hi = 1.0 + tier * 9.0 / 19
+        new_count = sum(1 for q in questions
+                        if lo <= q["score"] < hi or (tier == 20 and q["score"] >= lo))
+        existing = EXISTING_TIER_COUNTS.get(tier, 0)
+        total_t = existing + new_count
+        target = TARGET_PER_TIER.get(tier, 0)
+        bar = "█" * (total_t // 10)
+        print(f"    ティア{tier:2d} ({lo:.1f}〜{hi:.1f}): "
+              f"{total_t:4d}/{target:4d} {bar}")
+
+    print(f"\n  超初級（ティア1-4）: "
+          f"{sum(EXISTING_TIER_COUNTS.get(t,0) for t in range(1,5)) + sum(1 for q in questions if q['score'] < 2.9)}問 "
+          f"/ {sum(TARGET_PER_TIER[t] for t in range(1,5))}問目標")
     print("\n次のステップ: python3 gen_audio.py")
 
 
